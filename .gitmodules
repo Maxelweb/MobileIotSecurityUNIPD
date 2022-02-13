@@ -1,0 +1,3 @@
+[submodule "static/extra/apk-malware-samples"]
+	path = static/extra/apk-malware-samples
+	url = https://github.com/quark-engine/apk-malware-samples
