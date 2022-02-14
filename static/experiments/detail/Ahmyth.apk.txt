@@ -1,0 +1,2274 @@
+
+    ________                      __
+    \_____  \  __ _______ _______|  | __
+     /  / \  \|  |  \__  \_  __ \  |/ /
+    /   \_/.  \  |  // __ \|  | \/    <
+    \_____\ \_/____/(____  /__|  |__|_ \
+           \__>          \/           \/ v22.1.1
+    
+                An Obfuscation-Neglect Android Malware Scoring System
+                
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00001.json
+Rule crime: Initialize bitmap object and compress data (e.g. JPEG) into bitmap object
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/graphics/BitmapFactory; decodeByteArray ([B I I)Landroid/graphics/Bitmap;
+		 Landroid/graphics/Bitmap; compress (Landroid/graphics/Bitmap$CompressFormat; I Ljava/io/OutputStream;)Z
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lahmyth/mine/king/ahmyth/CameraManager; sendPhoto ([B)V
+		 Second API show up in:
+		 Lahmyth/mine/king/ahmyth/CameraManager; sendPhoto ([B)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lahmyth/mine/king/ahmyth/CameraManager; sendPhoto ([B)V
+	[✓]5.Native API Use Same Parameter
+		 Lahmyth/mine/king/ahmyth/CameraManager; sendPhoto ([B)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00002.json
+Rule crime: Open the camera and take picture
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/hardware/Camera; open (I)Landroid/hardware/Camera;
+		 Landroid/hardware/Camera; takePicture (Landroid/hardware/Camera$ShutterCallback; Landroid/hardware/Camera$PictureCallback; Landroid/hardware/Camera$PictureCallback;)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lahmyth/mine/king/ahmyth/CameraManager; startUp (I)V
+		 Second API show up in:
+		 Lahmyth/mine/king/ahmyth/CameraManager; startUp (I)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lahmyth/mine/king/ahmyth/CameraManager; startUp (I)V
+	[✓]5.Native API Use Same Parameter
+		 Lahmyth/mine/king/ahmyth/CameraManager; startUp (I)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00003.json
+Rule crime: Put the compressed bitmap data into JSON object
+
+Confidence: 80%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/graphics/Bitmap; compress (Landroid/graphics/Bitmap$CompressFormat; I Ljava/io/OutputStream;)Z
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Z)Lorg/json/JSONObject;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lahmyth/mine/king/ahmyth/CameraManager; sendPhoto ([B)V
+		 Second API show up in:
+		 Lahmyth/mine/king/ahmyth/ConnectionManager; x0000lm ()V
+		 Lio/socket/parser/Binary; _deconstructPacket (Ljava/lang/Object; Ljava/util/List;)Ljava/lang/Object;
+		 Lahmyth/mine/king/ahmyth/MicManager; sendVoice (Ljava/io/File;)V
+		 Lahmyth/mine/king/ahmyth/CameraManager; sendPhoto ([B)V
+		 Lahmyth/mine/king/ahmyth/FileManager; downloadFile (Ljava/lang/String;)V
+		 Lahmyth/mine/king/ahmyth/FileManager; walk (Ljava/lang/String;)Lorg/json/JSONArray;
+		 Lahmyth/mine/king/ahmyth/CameraManager; findCameraList ()Lorg/json/JSONObject;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lahmyth/mine/king/ahmyth/CameraManager; sendPhoto ([B)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00004.json
+Rule crime: Get filename and put it to JSON object
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; getName ()Ljava/lang/String;
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lahmyth/mine/king/ahmyth/FileManager; downloadFile (Ljava/lang/String;)V
+		 Lahmyth/mine/king/ahmyth/FileManager; walk (Ljava/lang/String;)Lorg/json/JSONArray;
+		 Lahmyth/mine/king/ahmyth/MicManager; sendVoice (Ljava/io/File;)V
+		 Second API show up in:
+		 Lio/socket/parser/Binary; _reconstructPacket (Ljava/lang/Object; [[B)Ljava/lang/Object;
+		 Lahmyth/mine/king/ahmyth/FileManager; downloadFile (Ljava/lang/String;)V
+		 Lahmyth/mine/king/ahmyth/CallsManager; getCallsLogs ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/CameraManager; findCameraList ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/SMSManager; getSMSList ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/ContactsManager; getContacts ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/MicManager; sendVoice (Ljava/io/File;)V
+		 Lahmyth/mine/king/ahmyth/CameraManager; sendPhoto ([B)V
+		 Lio/socket/parser/Binary; _deconstructPacket (Ljava/lang/Object; Ljava/util/List;)Ljava/lang/Object;
+		 Lahmyth/mine/king/ahmyth/FileManager; walk (Ljava/lang/String;)Lorg/json/JSONArray;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lahmyth/mine/king/ahmyth/FileManager; downloadFile (Ljava/lang/String;)V
+		 Lahmyth/mine/king/ahmyth/FileManager; walk (Ljava/lang/String;)Lorg/json/JSONArray;
+		 Lahmyth/mine/king/ahmyth/MicManager; sendVoice (Ljava/io/File;)V
+	[✓]5.Native API Use Same Parameter
+		 Lahmyth/mine/king/ahmyth/FileManager; downloadFile (Ljava/lang/String;)V
+		 Lahmyth/mine/king/ahmyth/FileManager; walk (Ljava/lang/String;)Lorg/json/JSONArray;
+		 Lahmyth/mine/king/ahmyth/MicManager; sendVoice (Ljava/io/File;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00005.json
+Rule crime: Get absolute path of file and put it to JSON object
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; getAbsolutePath ()Ljava/lang/String;
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lahmyth/mine/king/ahmyth/MicManager; startRecording (I)V
+		 Lahmyth/mine/king/ahmyth/FileManager; walk (Ljava/lang/String;)Lorg/json/JSONArray;
+		 Second API show up in:
+		 Lio/socket/parser/Binary; _reconstructPacket (Ljava/lang/Object; [[B)Ljava/lang/Object;
+		 Lahmyth/mine/king/ahmyth/FileManager; downloadFile (Ljava/lang/String;)V
+		 Lahmyth/mine/king/ahmyth/CallsManager; getCallsLogs ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/CameraManager; findCameraList ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/SMSManager; getSMSList ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/ContactsManager; getContacts ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/MicManager; sendVoice (Ljava/io/File;)V
+		 Lahmyth/mine/king/ahmyth/CameraManager; sendPhoto ([B)V
+		 Lio/socket/parser/Binary; _deconstructPacket (Ljava/lang/Object; Ljava/util/List;)Ljava/lang/Object;
+		 Lahmyth/mine/king/ahmyth/FileManager; walk (Ljava/lang/String;)Lorg/json/JSONArray;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lahmyth/mine/king/ahmyth/FileManager; walk (Ljava/lang/String;)Lorg/json/JSONArray;
+	[✓]5.Native API Use Same Parameter
+		 Lahmyth/mine/king/ahmyth/FileManager; walk (Ljava/lang/String;)Lorg/json/JSONArray;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00006.json
+Rule crime: Scheduling recording task
+
+Confidence: 80%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/media/MediaRecorder; <init> ()V
+		 Ljava/util/Timer; <init> ()V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lahmyth/mine/king/ahmyth/MicManager; startRecording (I)V
+		 Second API show up in:
+		 Lahmyth/mine/king/ahmyth/MicManager; startRecording (I)V
+		 Lio/socket/client/Manager$1; run ()V
+		 Lio/socket/client/Manager; reconnect ()V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lahmyth/mine/king/ahmyth/MicManager; startRecording (I)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00007.json
+Rule crime: Use absolute path of directory for the output media file path
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; getAbsolutePath ()Ljava/lang/String;
+		 Landroid/media/MediaRecorder; setOutputFile (Ljava/lang/String;)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lahmyth/mine/king/ahmyth/MicManager; startRecording (I)V
+		 Lahmyth/mine/king/ahmyth/FileManager; walk (Ljava/lang/String;)Lorg/json/JSONArray;
+		 Second API show up in:
+		 Lahmyth/mine/king/ahmyth/MicManager; startRecording (I)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lahmyth/mine/king/ahmyth/MicManager; startRecording (I)V
+	[✓]5.Native API Use Same Parameter
+		 Lahmyth/mine/king/ahmyth/MicManager; startRecording (I)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00008.json
+Rule crime: Check if successfully sending out SMS
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/telephony/SmsManager; sendTextMessage (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V
+		 Ljava/lang/Boolean; valueOf (Z)Ljava/lang/Boolean;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lahmyth/mine/king/ahmyth/SMSManager; sendSMS (Ljava/lang/String; Ljava/lang/String;)Z
+		 Second API show up in:
+		 Lahmyth/mine/king/ahmyth/ConnectionManager; x0000sm (I Ljava/lang/String; Ljava/lang/String;)V
+		 Lokhttp3/internal/platform/AndroidPlatform; configureTlsExtensions (Ljavax/net/ssl/SSLSocket; Ljava/lang/String; Ljava/util/List;)V
+		 Lokhttp3/internal/platform/JdkWithJettyBootPlatform$JettyNegoProvider; invoke (Ljava/lang/Object; Ljava/lang/reflect/Method; [Ljava/lang/Object;)Ljava/lang/Object;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lahmyth/mine/king/ahmyth/ConnectionManager; x0000sm (I Ljava/lang/String; Ljava/lang/String;)V
+	[✓]5.Native API Use Same Parameter
+		 Lahmyth/mine/king/ahmyth/ConnectionManager; x0000sm (I Ljava/lang/String; Ljava/lang/String;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00009.json
+Rule crime: Put data in cursor to JSON object
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/database/Cursor; getString (I)Ljava/lang/String;
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lahmyth/mine/king/ahmyth/CallsManager; getCallsLogs ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/ContactsManager; getContacts ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/SMSManager; getSMSList ()Lorg/json/JSONObject;
+		 Second API show up in:
+		 Lio/socket/parser/Binary; _reconstructPacket (Ljava/lang/Object; [[B)Ljava/lang/Object;
+		 Lahmyth/mine/king/ahmyth/FileManager; downloadFile (Ljava/lang/String;)V
+		 Lahmyth/mine/king/ahmyth/CallsManager; getCallsLogs ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/CameraManager; findCameraList ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/SMSManager; getSMSList ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/ContactsManager; getContacts ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/MicManager; sendVoice (Ljava/io/File;)V
+		 Lahmyth/mine/king/ahmyth/CameraManager; sendPhoto ([B)V
+		 Lio/socket/parser/Binary; _deconstructPacket (Ljava/lang/Object; Ljava/util/List;)Ljava/lang/Object;
+		 Lahmyth/mine/king/ahmyth/FileManager; walk (Ljava/lang/String;)Lorg/json/JSONArray;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lahmyth/mine/king/ahmyth/CallsManager; getCallsLogs ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/ContactsManager; getContacts ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/SMSManager; getSMSList ()Lorg/json/JSONObject;
+	[✓]5.Native API Use Same Parameter
+		 Lahmyth/mine/king/ahmyth/CallsManager; getCallsLogs ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/ContactsManager; getContacts ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/SMSManager; getSMSList ()Lorg/json/JSONObject;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00010.json
+Rule crime: Read sensitive data(SMS, CALLLOG) and put it into JSON object
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/ContentResolver; query (Landroid/net/Uri; [Ljava/lang/String; Ljava/lang/String; [Ljava/lang/String; Ljava/lang/String;)Landroid/database/Cursor;
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lahmyth/mine/king/ahmyth/CallsManager; getCallsLogs ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/ContactsManager; getContacts ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/SMSManager; getSMSList ()Lorg/json/JSONObject;
+		 Second API show up in:
+		 Lio/socket/parser/Binary; _reconstructPacket (Ljava/lang/Object; [[B)Ljava/lang/Object;
+		 Lahmyth/mine/king/ahmyth/FileManager; downloadFile (Ljava/lang/String;)V
+		 Lahmyth/mine/king/ahmyth/CallsManager; getCallsLogs ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/CameraManager; findCameraList ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/SMSManager; getSMSList ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/ContactsManager; getContacts ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/MicManager; sendVoice (Ljava/io/File;)V
+		 Lahmyth/mine/king/ahmyth/CameraManager; sendPhoto ([B)V
+		 Lio/socket/parser/Binary; _deconstructPacket (Ljava/lang/Object; Ljava/util/List;)Ljava/lang/Object;
+		 Lahmyth/mine/king/ahmyth/FileManager; walk (Ljava/lang/String;)Lorg/json/JSONArray;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lahmyth/mine/king/ahmyth/CallsManager; getCallsLogs ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/ContactsManager; getContacts ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/SMSManager; getSMSList ()Lorg/json/JSONObject;
+	[✓]5.Native API Use Same Parameter
+		 Lahmyth/mine/king/ahmyth/CallsManager; getCallsLogs ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/ContactsManager; getContacts ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/SMSManager; getSMSList ()Lorg/json/JSONObject;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00011.json
+Rule crime: Query data from URI (SMS, CALLLOGS)
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/Uri; parse (Ljava/lang/String;)Landroid/net/Uri;
+		 Landroid/content/ContentResolver; query (Landroid/net/Uri; [Ljava/lang/String; Ljava/lang/String; [Ljava/lang/String; Ljava/lang/String;)Landroid/database/Cursor;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lahmyth/mine/king/ahmyth/CallsManager; getCallsLogs ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/SMSManager; getSMSList ()Lorg/json/JSONObject;
+		 Second API show up in:
+		 Lahmyth/mine/king/ahmyth/CallsManager; getCallsLogs ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/ContactsManager; getContacts ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/SMSManager; getSMSList ()Lorg/json/JSONObject;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lahmyth/mine/king/ahmyth/CallsManager; getCallsLogs ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/SMSManager; getSMSList ()Lorg/json/JSONObject;
+	[✓]5.Native API Use Same Parameter
+		 Lahmyth/mine/king/ahmyth/CallsManager; getCallsLogs ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/SMSManager; getSMSList ()Lorg/json/JSONObject;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00012.json
+Rule crime: Read data and put it into a buffer stream
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/FileInputStream; <init> (Ljava/io/File;)V
+		 Ljava/io/BufferedInputStream; <init> (Ljava/io/InputStream;)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lahmyth/mine/king/ahmyth/FileManager; downloadFile (Ljava/lang/String;)V
+		 Lahmyth/mine/king/ahmyth/MicManager; sendVoice (Ljava/io/File;)V
+		 Lokio/Okio; source (Ljava/io/File;)Lokio/Source;
+		 Second API show up in:
+		 Lio/socket/engineio/client/transports/PollingXHR$Request; onLoad ()V
+		 Lahmyth/mine/king/ahmyth/FileManager; downloadFile (Ljava/lang/String;)V
+		 Lahmyth/mine/king/ahmyth/MicManager; sendVoice (Ljava/io/File;)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lahmyth/mine/king/ahmyth/FileManager; downloadFile (Ljava/lang/String;)V
+		 Lahmyth/mine/king/ahmyth/MicManager; sendVoice (Ljava/io/File;)V
+	[✓]5.Native API Use Same Parameter
+		 Lahmyth/mine/king/ahmyth/FileManager; downloadFile (Ljava/lang/String;)V
+		 Lahmyth/mine/king/ahmyth/MicManager; sendVoice (Ljava/io/File;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00013.json
+Rule crime: Read file and put it into a stream
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; <init> (Ljava/lang/String;)V
+		 Ljava/io/FileInputStream; <init> (Ljava/io/File;)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lahmyth/mine/king/ahmyth/FileManager; downloadFile (Ljava/lang/String;)V
+		 Lahmyth/mine/king/ahmyth/FileManager; walk (Ljava/lang/String;)Lorg/json/JSONArray;
+		 Second API show up in:
+		 Lahmyth/mine/king/ahmyth/FileManager; downloadFile (Ljava/lang/String;)V
+		 Lahmyth/mine/king/ahmyth/MicManager; sendVoice (Ljava/io/File;)V
+		 Lokio/Okio; source (Ljava/io/File;)Lokio/Source;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lahmyth/mine/king/ahmyth/FileManager; downloadFile (Ljava/lang/String;)V
+	[✓]5.Native API Use Same Parameter
+		 Lahmyth/mine/king/ahmyth/FileManager; downloadFile (Ljava/lang/String;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00014.json
+Rule crime: Read file into a stream and put it into a JSON object
+
+Confidence: 80%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/FileInputStream; <init> (Ljava/io/File;)V
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lahmyth/mine/king/ahmyth/FileManager; downloadFile (Ljava/lang/String;)V
+		 Lahmyth/mine/king/ahmyth/MicManager; sendVoice (Ljava/io/File;)V
+		 Lokio/Okio; source (Ljava/io/File;)Lokio/Source;
+		 Second API show up in:
+		 Lio/socket/parser/Binary; _reconstructPacket (Ljava/lang/Object; [[B)Ljava/lang/Object;
+		 Lahmyth/mine/king/ahmyth/FileManager; downloadFile (Ljava/lang/String;)V
+		 Lahmyth/mine/king/ahmyth/CallsManager; getCallsLogs ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/CameraManager; findCameraList ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/SMSManager; getSMSList ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/ContactsManager; getContacts ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/MicManager; sendVoice (Ljava/io/File;)V
+		 Lahmyth/mine/king/ahmyth/CameraManager; sendPhoto ([B)V
+		 Lio/socket/parser/Binary; _deconstructPacket (Ljava/lang/Object; Ljava/util/List;)Ljava/lang/Object;
+		 Lahmyth/mine/king/ahmyth/FileManager; walk (Ljava/lang/String;)Lorg/json/JSONArray;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lahmyth/mine/king/ahmyth/FileManager; downloadFile (Ljava/lang/String;)V
+		 Lahmyth/mine/king/ahmyth/MicManager; sendVoice (Ljava/io/File;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00015.json
+Rule crime: Put buffer stream (data) to JSON object
+
+Confidence: 80%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/BufferedInputStream; read ([B I I)I
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lahmyth/mine/king/ahmyth/FileManager; downloadFile (Ljava/lang/String;)V
+		 Lahmyth/mine/king/ahmyth/MicManager; sendVoice (Ljava/io/File;)V
+		 Second API show up in:
+		 Lio/socket/parser/Binary; _reconstructPacket (Ljava/lang/Object; [[B)Ljava/lang/Object;
+		 Lahmyth/mine/king/ahmyth/FileManager; downloadFile (Ljava/lang/String;)V
+		 Lahmyth/mine/king/ahmyth/CallsManager; getCallsLogs ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/CameraManager; findCameraList ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/SMSManager; getSMSList ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/ContactsManager; getContacts ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/MicManager; sendVoice (Ljava/io/File;)V
+		 Lahmyth/mine/king/ahmyth/CameraManager; sendPhoto ([B)V
+		 Lio/socket/parser/Binary; _deconstructPacket (Ljava/lang/Object; Ljava/util/List;)Ljava/lang/Object;
+		 Lahmyth/mine/king/ahmyth/FileManager; walk (Ljava/lang/String;)Lorg/json/JSONArray;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lahmyth/mine/king/ahmyth/FileManager; downloadFile (Ljava/lang/String;)V
+		 Lahmyth/mine/king/ahmyth/MicManager; sendVoice (Ljava/io/File;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00016.json
+Rule crime: Get location info of the device and put it to JSON object
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/location/Location; getLongitude ()D
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lahmyth/mine/king/ahmyth/LocManager; getLocation ()Landroid/location/Location;
+		 Lahmyth/mine/king/ahmyth/LocManager; getLongitude ()D
+		 Second API show up in:
+		 Lio/socket/parser/Binary; _reconstructPacket (Ljava/lang/Object; [[B)Ljava/lang/Object;
+		 Lahmyth/mine/king/ahmyth/FileManager; downloadFile (Ljava/lang/String;)V
+		 Lahmyth/mine/king/ahmyth/CallsManager; getCallsLogs ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/CameraManager; findCameraList ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/SMSManager; getSMSList ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/ContactsManager; getContacts ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/MicManager; sendVoice (Ljava/io/File;)V
+		 Lahmyth/mine/king/ahmyth/CameraManager; sendPhoto ([B)V
+		 Lio/socket/parser/Binary; _deconstructPacket (Ljava/lang/Object; Ljava/util/List;)Ljava/lang/Object;
+		 Lahmyth/mine/king/ahmyth/FileManager; walk (Ljava/lang/String;)Lorg/json/JSONArray;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00017.json
+Rule crime: Get Location of the device and append this info to a string
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/location/Location; getLatitude ()D
+		 Ljava/lang/StringBuilder; append (D)Ljava/lang/StringBuilder;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lahmyth/mine/king/ahmyth/LocManager; getLatitude ()D
+		 Lahmyth/mine/king/ahmyth/LocManager; getLocation ()Landroid/location/Location;
+		 Second API show up in:
+		 Lahmyth/mine/king/ahmyth/ConnectionManager; x0000lm ()V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lahmyth/mine/king/ahmyth/ConnectionManager; x0000lm ()V
+	[✓]5.Native API Use Same Parameter
+		 Lahmyth/mine/king/ahmyth/ConnectionManager; x0000lm ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00018.json
+Rule crime: Get JSON object prepared and fill in location info
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Lorg/json/JSONObject; <init> ()V
+		 Landroid/location/LocationManager; requestLocationUpdates (Ljava/lang/String; J F Landroid/location/LocationListener;)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lahmyth/mine/king/ahmyth/ConnectionManager; x0000lm ()V
+		 Lahmyth/mine/king/ahmyth/FileManager; downloadFile (Ljava/lang/String;)V
+		 Lahmyth/mine/king/ahmyth/CallsManager; getCallsLogs ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/CameraManager; findCameraList ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/SMSManager; getSMSList ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/ContactsManager; getContacts ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/MicManager; sendVoice (Ljava/io/File;)V
+		 Lahmyth/mine/king/ahmyth/CameraManager; sendPhoto ([B)V
+		 Lio/socket/parser/Binary; _deconstructPacket (Ljava/lang/Object; Ljava/util/List;)Ljava/lang/Object;
+		 Lahmyth/mine/king/ahmyth/FileManager; walk (Ljava/lang/String;)Lorg/json/JSONArray;
+		 Second API show up in:
+		 Lahmyth/mine/king/ahmyth/LocManager; getLocation ()Landroid/location/Location;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00019.json
+Rule crime: Find a method from given class name, usually for reflection
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Object; getClass ()Ljava/lang/Class;
+		 Ljava/lang/Class; getMethod (Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lokhttp3/internal/connection/RouteSelector; resetNextInetSocketAddress (Ljava/net/Proxy;)V
+		 Lokhttp3/internal/tls/TrustRootIndex; get (Ljavax/net/ssl/X509TrustManager;)Lokhttp3/internal/tls/TrustRootIndex;
+		 Lokhttp3/internal/platform/OptionalMethod; isSupported (Ljava/lang/Object;)Z
+		 Lokio/ForwardingSink; toString ()Ljava/lang/String;
+		 Lokhttp3/OkHttpClient$Builder; sslSocketFactory (Ljavax/net/ssl/SSLSocketFactory;)Lokhttp3/OkHttpClient$Builder;
+		 Lokhttp3/internal/platform/Platform; readFieldOrNull (Ljava/lang/Object; Ljava/lang/Class; Ljava/lang/String;)Ljava/lang/Object;
+		 Lokhttp3/internal/platform/AndroidPlatform; trustManager (Ljavax/net/ssl/SSLSocketFactory;)Ljavax/net/ssl/X509TrustManager;
+		 Lokhttp3/internal/platform/OptionalMethod; invokeOptional (Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+		 Lokio/ForwardingSource; toString ()Ljava/lang/String;
+		 Lokhttp3/internal/platform/OptionalMethod; invoke (Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+		 Second API show up in:
+		 Lokhttp3/internal/platform/AndroidPlatform$CloseGuard; get ()Lokhttp3/internal/platform/AndroidPlatform$CloseGuard;
+		 Lokhttp3/internal/platform/OptionalMethod; getPublicMethod (Ljava/lang/Class; Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+		 Lokhttp3/internal/platform/AndroidPlatform; isCleartextTrafficPermitted (Ljava/lang/String;)Z
+		 Lokhttp3/internal/platform/Jdk9Platform; buildIfSupported ()Lokhttp3/internal/platform/Jdk9Platform;
+		 Lokhttp3/internal/platform/JdkWithJettyBootPlatform; buildIfSupported ()Lokhttp3/internal/platform/Platform;
+		 Lokhttp3/internal/platform/AndroidPlatform; buildCertificateChainCleaner (Ljavax/net/ssl/X509TrustManager;)Lokhttp3/internal/tls/CertificateChainCleaner;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lokhttp3/internal/platform/OptionalMethod; isSupported (Ljava/lang/Object;)Z
+		 Lokhttp3/internal/platform/OptionalMethod; invoke (Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+		 Lokhttp3/internal/platform/OptionalMethod; invokeOptional (Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+	[✓]5.Native API Use Same Parameter
+		 Lokhttp3/internal/platform/OptionalMethod; isSupported (Ljava/lang/Object;)Z
+		 Lokhttp3/internal/platform/OptionalMethod; invoke (Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+		 Lokhttp3/internal/platform/OptionalMethod; invokeOptional (Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00020.json
+Rule crime: Get absolute path of the file and store in string
+
+Confidence: 80%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; getAbsolutePath ()Ljava/lang/String;
+		 Ljava/lang/StringBuilder; toString ()Ljava/lang/String;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lahmyth/mine/king/ahmyth/MicManager; startRecording (I)V
+		 Lahmyth/mine/king/ahmyth/FileManager; walk (Ljava/lang/String;)Lorg/json/JSONArray;
+		 Second API show up in:
+		 Lokhttp3/internal/http/StatusLine; parse (Ljava/lang/String;)Lokhttp3/internal/http/StatusLine;
+		 Lokhttp3/internal/tls/DistinguishedNameParser; getByte (I)I
+		 Lio/socket/utf8/UTF8; ucs2encode ([I)Ljava/lang/String;
+		 Lokio/Okio$2; toString ()Ljava/lang/String;
+		 Lokhttp3/Challenge; toString ()Ljava/lang/String;
+		 Lokhttp3/HttpUrl$Builder; host (Ljava/lang/String;)Lokhttp3/HttpUrl$Builder;
+		 Lokio/Buffer; read (Lokio/Buffer; J)J
+		 Lokio/ByteString; substring (I I)Lokio/ByteString;
+		 Lokhttp3/internal/http2/Http2; <clinit> ()V
+		 Lokhttp3/internal/connection/ConnectionSpecSelector; configureSecureSocket (Ljavax/net/ssl/SSLSocket;)Lokhttp3/ConnectionSpec;
+		 Lokhttp3/internal/cache/DiskLruCache; readJournal ()V
+		 Lokio/Okio$1; toString ()Ljava/lang/String;
+		 Lokio/Timeout; deadline (J Ljava/util/concurrent/TimeUnit;)Lokio/Timeout;
+		 Lokio/Buffer; readHexadecimalUnsignedLong ()J
+		 Lokhttp3/ResponseBody; bytes ()[B
+		 Lokhttp3/internal/http/StatusLine; toString ()Ljava/lang/String;
+		 Lokio/Buffer; writeUtf8 (Ljava/lang/String; I I)Lokio/Buffer;
+		 Lokhttp3/TlsVersion; forJavaName (Ljava/lang/String;)Lokhttp3/TlsVersion;
+		 Lokio/RealBufferedSource; read (Lokio/Buffer; J)J
+		 Lokio/RealBufferedSource$1; toString ()Ljava/lang/String;
+		 Lokhttp3/internal/http/RealInterceptorChain; proceed (Lokhttp3/Request; Lokhttp3/internal/connection/StreamAllocation; Lokhttp3/internal/http/HttpCodec; Lokhttp3/Connection;)Lokhttp3/Response;
+		 Lokhttp3/internal/connection/RouteSelector; resetNextInetSocketAddress (Ljava/net/Proxy;)V
+		 Lokhttp3/internal/http2/Hpack$Reader; readIndexedHeader (I)V
+		 Lokio/ForwardingSink; toString ()Ljava/lang/String;
+		 Lokhttp3/Protocol; get (Ljava/lang/String;)Lokhttp3/Protocol;
+		 Lokhttp3/ConnectionPool; <init> (I J Ljava/util/concurrent/TimeUnit;)V
+		 Lokhttp3/HttpUrl$Builder; toString ()Ljava/lang/String;
+		 Lokhttp3/internal/connection/RealConnection; createTunnel (I I Lokhttp3/Request; Lokhttp3/HttpUrl;)Lokhttp3/Request;
+		 Lokhttp3/internal/http2/Hpack; checkLowercase (Lokio/ByteString;)Lokio/ByteString;
+		 Lokio/Buffer; readFrom (Ljava/io/InputStream; J)Lokio/Buffer;
+		 Lokhttp3/internal/http2/Http2Stream$FramedDataSource; read (Lokio/Buffer; J)J
+		 Lio/socket/engineio/client/Socket$9; call ([Ljava/lang/Object;)V
+		 Lokhttp3/CacheControl$Builder; maxAge (I Ljava/util/concurrent/TimeUnit;)Lokhttp3/CacheControl$Builder;
+		 Lokhttp3/internal/ws/RealWebSocket$2; onResponse (Lokhttp3/Call; Lokhttp3/Response;)V
+		 Lokhttp3/Headers; toString ()Ljava/lang/String;
+		 Lokhttp3/Credentials; basic (Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+		 Lokhttp3/ConnectionSpec; toString ()Ljava/lang/String;
+		 Lokhttp3/MultipartBody; <init> (Lokio/ByteString; Lokhttp3/MediaType; Ljava/util/List;)V
+		 Lokio/Okio$2; read (Lokio/Buffer; J)J
+		 Lokhttp3/internal/ws/WebSocketReader; readMessageFrame ()V
+		 Lokhttp3/internal/http2/StreamResetException; <init> (Lokhttp3/internal/http2/ErrorCode;)V
+		 Lokio/Pipe; <init> (J)V
+		 Lokio/AsyncTimeout$2; toString ()Ljava/lang/String;
+		 Lokhttp3/Request; toString ()Ljava/lang/String;
+		 Lokio/ByteString; toString ()Ljava/lang/String;
+		 Lio/socket/yeast/Yeast; encode (J)Ljava/lang/String;
+		 Lokhttp3/internal/platform/OptionalMethod; invoke (Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+		 Lokhttp3/internal/http1/Http1Codec$FixedLengthSource; read (Lokio/Buffer; J)J
+		 Lokhttp3/internal/ws/WebSocketProtocol; closeCodeExceptionMessage (I)Ljava/lang/String;
+		 Lokhttp3/ConnectionPool; pruneAndGetAllocationCount (Lokhttp3/internal/connection/RealConnection; J)I
+		 Lokio/Buffer; writeUtf8CodePoint (I)Lokio/Buffer;
+		 Lokhttp3/internal/cache/DiskLruCache$Entry; invalidLengths ([Ljava/lang/String;)Ljava/io/IOException;
+		 Lokio/Buffer; readString (J Ljava/nio/charset/Charset;)Ljava/lang/String;
+		 Lokio/ByteString; decodeHex (Ljava/lang/String;)Lokio/ByteString;
+		 Lokhttp3/HttpUrl$Builder; scheme (Ljava/lang/String;)Lokhttp3/HttpUrl$Builder;
+		 Lokhttp3/CacheControl$Builder; minFresh (I Ljava/util/concurrent/TimeUnit;)Lokhttp3/CacheControl$Builder;
+		 Lokio/Buffer; readByteArray (J)[B
+		 Lokhttp3/Cookie$Builder; domain (Ljava/lang/String; Z)Lokhttp3/Cookie$Builder;
+		 Lokhttp3/HttpUrl; getChecked (Ljava/lang/String;)Lokhttp3/HttpUrl;
+		 Lio/socket/engineio/client/transports/Polling; uri ()Ljava/lang/String;
+		 Lio/socket/engineio/parser/Parser; decodePayload ([B Lio/socket/engineio/parser/Parser$DecodePayloadCallback;)V
+		 Lokhttp3/internal/ws/WebSocketReader; readMessage (Lokio/Buffer;)V
+		 Lokio/AsyncTimeout$1; toString ()Ljava/lang/String;
+		 Lokhttp3/Response; toString ()Ljava/lang/String;
+		 Lokio/GzipSink; write (Lokio/Buffer; J)V
+		 Lokhttp3/internal/ws/RealWebSocket; <init> (Lokhttp3/Request; Lokhttp3/WebSocketListener; Ljava/util/Random;)V
+		 Lokhttp3/internal/tls/BasicCertificateChainCleaner; clean (Ljava/util/List; Ljava/lang/String;)Ljava/util/List;
+		 Lokhttp3/internal/http1/Http1Codec$FixedLengthSink; write (Lokio/Buffer; J)V
+		 Lokio/InflaterSource; read (Lokio/Buffer; J)J
+		 Lio/socket/utf8/UTF8; encode (Ljava/lang/String;)Ljava/lang/String;
+		 Lokhttp3/HttpUrl$Builder; encodedPath (Ljava/lang/String;)Lokhttp3/HttpUrl$Builder;
+		 Lokhttp3/internal/connection/RealConnection; connect (I I I Ljava/util/List; Z)V
+		 Lio/socket/engineio/parser/Parser; decodePayload (Ljava/lang/String; Lio/socket/engineio/parser/Parser$DecodePayloadCallback;)V
+		 Lokio/DeflaterSink; toString ()Ljava/lang/String;
+		 Lokhttp3/internal/ws/RealWebSocket; checkResponse (Lokhttp3/Response;)V
+		 Lio/socket/engineio/client/Socket; <init> (Lio/socket/engineio/client/Socket$Options;)V
+		 Lokhttp3/OkHttpClient$Builder; sslSocketFactory (Ljavax/net/ssl/SSLSocketFactory;)Lokhttp3/OkHttpClient$Builder;
+		 Lokhttp3/RealCall$AsyncCall; execute ()V
+		 Lokhttp3/internal/platform/Platform; logCloseableLeak (Ljava/lang/String; Ljava/lang/Object;)V
+		 Lokhttp3/internal/connection/StreamAllocation; streamFinished (Z Lokhttp3/internal/http/HttpCodec;)V
+		 Lahmyth/mine/king/ahmyth/ConnectionManager; x0000lm ()V
+		 Lokhttp3/internal/connection/RouteSelector; nextInetSocketAddress ()Ljava/net/InetSocketAddress;
+		 Lokhttp3/internal/connection/RealConnection; connectSocket (I I)V
+		 Lokio/Buffer$1; toString ()Ljava/lang/String;
+		 Lokhttp3/internal/ws/WebSocketReader; readControlFrame ()V
+		 Lokio/RealBufferedSink; toString ()Ljava/lang/String;
+		 Lokhttp3/internal/http1/Http1Codec; writeRequest (Lokhttp3/Headers; Ljava/lang/String;)V
+		 Lokhttp3/internal/http/RequestLine; requestPath (Lokhttp3/HttpUrl;)Ljava/lang/String;
+		 Lokhttp3/internal/http/BridgeInterceptor; cookieHeader (Ljava/util/List;)Ljava/lang/String;
+		 Lokio/Buffer; readUtf8LineStrict ()Ljava/lang/String;
+		 Lokhttp3/internal/cache/DiskLruCache; initialize ()V
+		 Lokio/RealBufferedSink$1; toString ()Ljava/lang/String;
+		 Lokhttp3/CertificatePinner; pin (Ljava/security/cert/Certificate;)Ljava/lang/String;
+		 Lokhttp3/RequestBody; create (Lokhttp3/MediaType; Ljava/lang/String;)Lokhttp3/RequestBody;
+		 Lio/socket/parser/Parser$Decoder; decodeString (Ljava/lang/String;)Lio/socket/parser/Packet;
+		 Lokhttp3/Cache$Entry; <init> (Lokio/Source;)V
+		 Lokhttp3/internal/platform/JdkWithJettyBootPlatform; buildIfSupported ()Lokhttp3/internal/platform/Platform;
+		 Lokhttp3/internal/Util; hostHeader (Lokhttp3/HttpUrl; Z)Ljava/lang/String;
+		 Lokio/RealBufferedSource; readUtf8LineStrict ()Ljava/lang/String;
+		 Lokhttp3/CertificatePinner$Pin; <init> (Ljava/lang/String; Ljava/lang/String;)V
+		 Lokhttp3/internal/http1/Http1Codec$AbstractSource; endOfInput (Z)V
+		 Lokio/Buffer; readLong ()J
+		 Lokhttp3/MultipartBody$Part; createFormData (Ljava/lang/String; Ljava/lang/String; Lokhttp3/RequestBody;)Lokhttp3/MultipartBody$Part;
+		 Lahmyth/mine/king/ahmyth/IOSocket; <init> ()V
+		 Lokhttp3/ResponseBody; create (Lokhttp3/MediaType; Ljava/lang/String;)Lokhttp3/ResponseBody;
+		 Lokhttp3/CacheControl; headerValue ()Ljava/lang/String;
+		 Lokhttp3/Response$Builder; checkSupportResponse (Ljava/lang/String; Lokhttp3/Response;)V
+		 Lokhttp3/Request$Builder; method (Ljava/lang/String; Lokhttp3/RequestBody;)Lokhttp3/Request$Builder;
+		 Lokhttp3/internal/http1/Http1Codec; newFixedLengthSink (J)Lokio/Sink;
+		 Lokhttp3/Headers$Builder; add (Ljava/lang/String;)Lokhttp3/Headers$Builder;
+		 Lokio/Okio$4; timedOut ()V
+		 Lokhttp3/Request$Builder; url (Ljava/lang/String;)Lokhttp3/Request$Builder;
+		 Lokhttp3/internal/ws/WebSocketReader; readHeader ()V
+		 Lokhttp3/CertificatePinner$Pin; toString ()Ljava/lang/String;
+		 Lokio/Buffer; readUtf8CodePoint ()I
+		 Lio/socket/yeast/Yeast; yeast ()Ljava/lang/String;
+		 Lokhttp3/HttpUrl$Builder; parse (Lokhttp3/HttpUrl; Ljava/lang/String;)Lokhttp3/HttpUrl$Builder$ParseResult;
+		 Lio/socket/engineio/client/transports/WebSocket; uri ()Ljava/lang/String;
+		 Lokhttp3/internal/platform/AndroidPlatform; log (I Ljava/lang/String; Ljava/lang/Throwable;)V
+		 Lokio/GzipSource; read (Lokio/Buffer; J)J
+		 Lokio/Buffer; readDecimalLong ()J
+		 Lokhttp3/CertificatePinner; check (Ljava/lang/String; Ljava/util/List;)V
+		 Lokhttp3/internal/connection/RouteSelector; nextProxy ()Ljava/net/Proxy;
+		 Lio/socket/engineio/client/transports/PollingXHR$Request; onLoad ()V
+		 Lokhttp3/internal/tls/DistinguishedNameParser; findMostSpecific (Ljava/lang/String;)Ljava/lang/String;
+		 Lokhttp3/internal/ws/RealWebSocket; close (I Ljava/lang/String; J)Z
+		 Lio/socket/engineio/parser/Parser; encodePacket (Lio/socket/engineio/parser/Packet; Z Lio/socket/engineio/parser/Parser$EncodeCallback;)V
+		 Lokhttp3/internal/io/FileSystem$1; delete (Ljava/io/File;)V
+		 Lokio/ByteString; decodeHexDigit (C)I
+		 Lokhttp3/internal/tls/OkHostnameVerifier; verifyHostname (Ljava/lang/String; Ljava/lang/String;)Z
+		 Lokhttp3/internal/http1/Http1Codec; newChunkedSource (Lokhttp3/HttpUrl;)Lokio/Source;
+		 Lokhttp3/OkHttpClient; systemDefaultTrustManager ()Ljavax/net/ssl/X509TrustManager;
+		 Lokio/RealBufferedSource; toString ()Ljava/lang/String;
+		 Lokhttp3/internal/http/RetryAndFollowUpInterceptor; intercept (Lokhttp3/Interceptor$Chain;)Lokhttp3/Response;
+		 Lokio/ForwardingSource; toString ()Ljava/lang/String;
+		 Lokhttp3/internal/connection/RealConnection; connectTls (I I Lokhttp3/internal/connection/ConnectionSpecSelector;)V
+		 Lokhttp3/internal/http2/Http2Connection; pushDataLater (I Lokio/BufferedSource; I Z)V
+		 Lokhttp3/internal/http2/Hpack$Reader; readHeaders ()V
+		 Lio/socket/utf8/UTF8; encodeCodePoint (I)Ljava/lang/String;
+		 Lokhttp3/Cookie; toString (Z)Ljava/lang/String;
+		 Lokhttp3/internal/io/FileSystem$1; deleteContents (Ljava/io/File;)V
+		 Lokhttp3/internal/connection/RealConnection; buildTunneledConnection (I I I Lokhttp3/internal/connection/ConnectionSpecSelector;)V
+		 Lokhttp3/HttpUrl$Builder; port (I)Lokhttp3/HttpUrl$Builder;
+		 Lokhttp3/internal/tls/DistinguishedNameParser; getEscaped ()C
+		 Lokhttp3/internal/http1/Http1Codec$UnknownLengthSource; read (Lokio/Buffer; J)J
+		 Lio/socket/parseqs/ParseQS; encode (Ljava/util/Map;)Ljava/lang/String;
+		 Lokhttp3/internal/http/CallServerInterceptor; intercept (Lokhttp3/Interceptor$Chain;)Lokhttp3/Response;
+		 Lokhttp3/HttpUrl$Builder; setPathSegment (I Ljava/lang/String;)Lokhttp3/HttpUrl$Builder;
+		 Lokhttp3/internal/http1/Http1Codec$ChunkedSource; readChunkSize ()V
+		 Lokhttp3/internal/http/RequestLine; get (Lokhttp3/Request; Ljava/net/Proxy$Type;)Ljava/lang/String;
+		 Lokhttp3/internal/http1/Http1Codec; newChunkedSink ()Lokio/Sink;
+		 Lokhttp3/MediaType; parse (Ljava/lang/String;)Lokhttp3/MediaType;
+		 Lokhttp3/OkHttpClient$Builder; checkDuration (Ljava/lang/String; J Ljava/util/concurrent/TimeUnit;)I
+		 Lokio/Timeout; timeout (J Ljava/util/concurrent/TimeUnit;)Lokio/Timeout;
+		 Lokhttp3/Headers; of ([Ljava/lang/String;)Lokhttp3/Headers;
+		 Lokio/Buffer; readShort ()S
+		 Lokhttp3/internal/http1/Http1Codec; newFixedLengthSource (J)Lokio/Source;
+		 Lokhttp3/internal/cache/DiskLruCache; completeEdit (Lokhttp3/internal/cache/DiskLruCache$Editor; Z)V
+		 Lokio/Buffer; snapshot ()Lokio/ByteString;
+		 Lokhttp3/Cache; readInt (Lokio/BufferedSource;)I
+		 Lio/socket/parser/Parser$Encoder; encodeAsString (Lio/socket/parser/Packet;)Ljava/lang/String;
+		 Lokio/RealBufferedSource; request (J)Z
+		 Lokhttp3/internal/http2/Http2Connection$ReaderRunnable$1; execute ()V
+		 Lokio/Buffer$2; toString ()Ljava/lang/String;
+		 Lokhttp3/internal/connection/RealConnection; toString ()Ljava/lang/String;
+		 Lokhttp3/internal/tls/DistinguishedNameParser; nextAT ()Ljava/lang/String;
+		 Lokhttp3/CacheControl$Builder; maxStale (I Ljava/util/concurrent/TimeUnit;)Lokhttp3/CacheControl$Builder;
+		 Lio/socket/engineio/parser/Parser; byteArrayToString ([B)Ljava/lang/String;
+		 Lokhttp3/Headers; of (Ljava/util/Map;)Lokhttp3/Headers;
+		 Lokhttp3/Dispatcher; setMaxRequests (I)V
+		 Lokhttp3/internal/cache/DiskLruCache; readJournalLine (Ljava/lang/String;)V
+		 Lokhttp3/Response$Builder; build ()Lokhttp3/Response;
+		 Lokhttp3/internal/http2/Http2Codec; readHttp2HeadersList (Ljava/util/List;)Lokhttp3/Response$Builder;
+		 Lio/socket/client/Url; parse (Ljava/net/URI;)Ljava/net/URL;
+		 Lio/socket/client/Url; extractId (Ljava/net/URL;)Ljava/lang/String;
+		 Lokhttp3/RealCall; toLoggableString ()Ljava/lang/String;
+		 Lokhttp3/Request$Builder; url (Ljava/net/URL;)Lokhttp3/Request$Builder;
+		 Lokhttp3/MultipartBody$Builder; setType (Lokhttp3/MediaType;)Lokhttp3/MultipartBody$Builder;
+		 Lokio/Buffer; readInt ()I
+		 Lokhttp3/Cache$Entry; <clinit> ()V
+		 Lokhttp3/internal/http1/Http1Codec$ChunkedSource; read (Lokio/Buffer; J)J
+		 Lokio/Buffer; writeString (Ljava/lang/String; I I Ljava/nio/charset/Charset;)Lokio/Buffer;
+		 Lokhttp3/HttpUrl; query ()Ljava/lang/String;
+		 Lio/socket/utf8/UTF8; checkScalarValue (I)V
+		 Lokhttp3/OkHttpClient$Builder; protocols (Ljava/util/List;)Lokhttp3/OkHttpClient$Builder;
+		 Lokhttp3/internal/cache/DiskLruCache; validateKey (Ljava/lang/String;)V
+		 Lokhttp3/internal/http1/Http1Codec; readResponse ()Lokhttp3/Response$Builder;
+		 Lokhttp3/Dispatcher; setMaxRequestsPerHost (I)V
+		 Lokhttp3/HttpUrl$Builder; setEncodedPathSegment (I Ljava/lang/String;)Lokhttp3/HttpUrl$Builder;
+		 Lokhttp3/internal/http1/Http1Codec; newUnknownLengthSource ()Lokio/Source;
+		 Lokhttp3/internal/tls/DistinguishedNameParser; hexAV ()Ljava/lang/String;
+		 Lokhttp3/internal/cache/DiskLruCache$Entry; <init> (Lokhttp3/internal/cache/DiskLruCache; Ljava/lang/String;)V
+		 Lokhttp3/internal/io/FileSystem$1; rename (Ljava/io/File; Ljava/io/File;)V
+		 Lokhttp3/internal/tls/DistinguishedNameParser; quotedAV ()Ljava/lang/String;
+		 Lokhttp3/internal/ws/WebSocketProtocol; acceptHeader (Ljava/lang/String;)Ljava/lang/String;
+		 Lokio/ByteString; read (Ljava/io/InputStream; I)Lokio/ByteString;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lahmyth/mine/king/ahmyth/ConnectionManager$2; call ([Ljava/lang/Object;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00021.json
+Rule crime: Load additional DEX files dynamically
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; getAbsolutePath ()Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00022.json
+Rule crime: Open a file from given absolute path of the file
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; getAbsolutePath ()Ljava/lang/String;
+		 Ljava/io/File; <init> (Ljava/lang/String;)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lahmyth/mine/king/ahmyth/MicManager; startRecording (I)V
+		 Lahmyth/mine/king/ahmyth/FileManager; walk (Ljava/lang/String;)Lorg/json/JSONArray;
+		 Second API show up in:
+		 Lahmyth/mine/king/ahmyth/FileManager; downloadFile (Ljava/lang/String;)V
+		 Lahmyth/mine/king/ahmyth/FileManager; walk (Ljava/lang/String;)Lorg/json/JSONArray;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00023.json
+Rule crime: Start another application from current application
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00024.json
+Rule crime: Write file after Base64 decoding
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00025.json
+Rule crime: Monitor the general action to be performed
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/String; equals (Ljava/lang/Object;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00026.json
+Rule crime: Method reflection
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Class; getMethod (Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+		 Ljava/lang/reflect/Method; invoke (Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lokhttp3/internal/platform/AndroidPlatform$CloseGuard; get ()Lokhttp3/internal/platform/AndroidPlatform$CloseGuard;
+		 Lokhttp3/internal/platform/OptionalMethod; getPublicMethod (Ljava/lang/Class; Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+		 Lokhttp3/internal/platform/AndroidPlatform; isCleartextTrafficPermitted (Ljava/lang/String;)Z
+		 Lokhttp3/internal/platform/Jdk9Platform; buildIfSupported ()Lokhttp3/internal/platform/Jdk9Platform;
+		 Lokhttp3/internal/platform/JdkWithJettyBootPlatform; buildIfSupported ()Lokhttp3/internal/platform/Platform;
+		 Lokhttp3/internal/platform/AndroidPlatform; buildCertificateChainCleaner (Ljavax/net/ssl/X509TrustManager;)Lokhttp3/internal/tls/CertificateChainCleaner;
+		 Second API show up in:
+		 Lokhttp3/internal/tls/TrustRootIndex$AndroidTrustRootIndex; findByIssuerAndSignature (Ljava/security/cert/X509Certificate;)Ljava/security/cert/X509Certificate;
+		 Lokhttp3/internal/platform/JdkWithJettyBootPlatform$JettyNegoProvider; invoke (Ljava/lang/Object; Ljava/lang/reflect/Method; [Ljava/lang/Object;)Ljava/lang/Object;
+		 Lokhttp3/internal/platform/JdkWithJettyBootPlatform; afterHandshake (Ljavax/net/ssl/SSLSocket;)V
+		 Lokhttp3/internal/connection/RouteException; addSuppressedIfPossible (Ljava/io/IOException; Ljava/io/IOException;)V
+		 Lokhttp3/internal/platform/Jdk9Platform; getSelectedProtocol (Ljavax/net/ssl/SSLSocket;)Ljava/lang/String;
+		 Lokhttp3/internal/platform/JdkWithJettyBootPlatform; getSelectedProtocol (Ljavax/net/ssl/SSLSocket;)Ljava/lang/String;
+		 Lokhttp3/internal/platform/AndroidPlatform$CloseGuard; createAndOpen (Ljava/lang/String;)Ljava/lang/Object;
+		 Lokhttp3/internal/platform/AndroidPlatform; isCleartextTrafficPermitted (Ljava/lang/String;)Z
+		 Lokhttp3/internal/platform/AndroidPlatform$CloseGuard; warnIfOpen (Ljava/lang/Object;)Z
+		 Lokhttp3/internal/platform/Jdk9Platform; configureTlsExtensions (Ljavax/net/ssl/SSLSocket; Ljava/lang/String; Ljava/util/List;)V
+		 Lokhttp3/internal/platform/JdkWithJettyBootPlatform; configureTlsExtensions (Ljavax/net/ssl/SSLSocket; Ljava/lang/String; Ljava/util/List;)V
+		 Lokhttp3/internal/platform/AndroidPlatform$AndroidCertificateChainCleaner; clean (Ljava/util/List; Ljava/lang/String;)Ljava/util/List;
+		 Lokhttp3/internal/platform/OptionalMethod; invoke (Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+		 Lokhttp3/internal/platform/OptionalMethod; invokeOptional (Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lokhttp3/internal/platform/AndroidPlatform; isCleartextTrafficPermitted (Ljava/lang/String;)Z
+	[✓]5.Native API Use Same Parameter
+		 Lokhttp3/internal/platform/AndroidPlatform; isCleartextTrafficPermitted (Ljava/lang/String;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00027.json
+Rule crime: Get specific method from other Dex files
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Class; getMethod (Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00028.json
+Rule crime: Read file from assets directory
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/InputStream; read ([B)I
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00029.json
+Rule crime: Initialize class object dynamically
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Class; forName (Ljava/lang/String;)Ljava/lang/Class;
+		 Ljava/lang/reflect/Constructor; newInstance ([Ljava/lang/Object;)Ljava/lang/Object;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lokhttp3/internal/platform/AndroidPlatform; buildIfSupported ()Lokhttp3/internal/platform/Platform;
+		 Lokhttp3/internal/platform/AndroidPlatform; isCleartextTrafficPermitted (Ljava/lang/String;)Z
+		 Lokhttp3/internal/platform/AndroidPlatform$CloseGuard; get ()Lokhttp3/internal/platform/AndroidPlatform$CloseGuard;
+		 Lokhttp3/internal/platform/JdkWithJettyBootPlatform; buildIfSupported ()Lokhttp3/internal/platform/Platform;
+		 Lokhttp3/internal/platform/AndroidPlatform; buildCertificateChainCleaner (Ljavax/net/ssl/X509TrustManager;)Lokhttp3/internal/tls/CertificateChainCleaner;
+		 Lokhttp3/internal/platform/Platform; trustManager (Ljavax/net/ssl/SSLSocketFactory;)Ljavax/net/ssl/X509TrustManager;
+		 Second API show up in:
+		 Lokhttp3/internal/platform/AndroidPlatform; buildCertificateChainCleaner (Ljavax/net/ssl/X509TrustManager;)Lokhttp3/internal/tls/CertificateChainCleaner;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lokhttp3/internal/platform/AndroidPlatform; buildCertificateChainCleaner (Ljavax/net/ssl/X509TrustManager;)Lokhttp3/internal/tls/CertificateChainCleaner;
+	[✓]5.Native API Use Same Parameter
+		 Lokhttp3/internal/platform/AndroidPlatform; buildCertificateChainCleaner (Ljavax/net/ssl/X509TrustManager;)Lokhttp3/internal/tls/CertificateChainCleaner;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00030.json
+Rule crime: Connect to the remote server through the given URL
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/URL; openConnection ()Ljava/net/URLConnection;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00031.json
+Rule crime: Check the list of currently running applications
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00032.json
+Rule crime: Load external class
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Class; getClassLoader ()Ljava/lang/ClassLoader;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00033.json
+Rule crime: Query the IMEI number
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00034.json
+Rule crime: Query the current data network type
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00035.json
+Rule crime: Query the list of the installed packages
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getPackageManager ()Landroid/content/pm/PackageManager;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00036.json
+Rule crime: Get resource file from res/raw directory
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/Uri; parse (Ljava/lang/String;)Landroid/net/Uri;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00037.json
+Rule crime: Send notification
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00038.json
+Rule crime: Query the phone number
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00039.json
+Rule crime: Start a web server
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00040.json
+Rule crime: Send SMS
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00041.json
+Rule crime: Save recorded audio/video to file
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/media/MediaRecorder; setOutputFile (Ljava/lang/String;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00042.json
+Rule crime: Query WiFi BSSID and scan results
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00043.json
+Rule crime: Calculate WiFi signal strength
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00044.json
+Rule crime: Query the last time this package's activity was used
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00045.json
+Rule crime: Query the name of currently running application
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00046.json
+Rule crime: Method reflection
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Class; getDeclaredMethod (Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+		 Ljava/lang/reflect/Method; invoke (Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lokhttp3/internal/tls/TrustRootIndex; get (Ljavax/net/ssl/X509TrustManager;)Lokhttp3/internal/tls/TrustRootIndex;
+		 Lokhttp3/internal/connection/RouteException; <clinit> ()V
+		 Second API show up in:
+		 Lokhttp3/internal/tls/TrustRootIndex$AndroidTrustRootIndex; findByIssuerAndSignature (Ljava/security/cert/X509Certificate;)Ljava/security/cert/X509Certificate;
+		 Lokhttp3/internal/platform/JdkWithJettyBootPlatform$JettyNegoProvider; invoke (Ljava/lang/Object; Ljava/lang/reflect/Method; [Ljava/lang/Object;)Ljava/lang/Object;
+		 Lokhttp3/internal/platform/JdkWithJettyBootPlatform; afterHandshake (Ljavax/net/ssl/SSLSocket;)V
+		 Lokhttp3/internal/connection/RouteException; addSuppressedIfPossible (Ljava/io/IOException; Ljava/io/IOException;)V
+		 Lokhttp3/internal/platform/Jdk9Platform; getSelectedProtocol (Ljavax/net/ssl/SSLSocket;)Ljava/lang/String;
+		 Lokhttp3/internal/platform/JdkWithJettyBootPlatform; getSelectedProtocol (Ljavax/net/ssl/SSLSocket;)Ljava/lang/String;
+		 Lokhttp3/internal/platform/AndroidPlatform$CloseGuard; createAndOpen (Ljava/lang/String;)Ljava/lang/Object;
+		 Lokhttp3/internal/platform/AndroidPlatform; isCleartextTrafficPermitted (Ljava/lang/String;)Z
+		 Lokhttp3/internal/platform/AndroidPlatform$CloseGuard; warnIfOpen (Ljava/lang/Object;)Z
+		 Lokhttp3/internal/platform/Jdk9Platform; configureTlsExtensions (Ljavax/net/ssl/SSLSocket; Ljava/lang/String; Ljava/util/List;)V
+		 Lokhttp3/internal/platform/JdkWithJettyBootPlatform; configureTlsExtensions (Ljavax/net/ssl/SSLSocket; Ljava/lang/String; Ljava/util/List;)V
+		 Lokhttp3/internal/platform/AndroidPlatform$AndroidCertificateChainCleaner; clean (Ljava/util/List; Ljava/lang/String;)Ljava/util/List;
+		 Lokhttp3/internal/platform/OptionalMethod; invoke (Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+		 Lokhttp3/internal/platform/OptionalMethod; invokeOptional (Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00047.json
+Rule crime: Query the local IP address
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/InetAddress; getHostAddress ()Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00048.json
+Rule crime: Query the SMS contents
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00049.json
+Rule crime: Query the phone number from SMS sender
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00050.json
+Rule crime: Query the SMS service centre timestamp
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00051.json
+Rule crime: Implicit intent(view a web page, make a phone call, etc.) via setData
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/Uri; parse (Ljava/lang/String;)Landroid/net/Uri;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00052.json
+Rule crime: Deletes media specified by a content URI(SMS, CALL_LOG, File, etc.)
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/Uri; parse (Ljava/lang/String;)Landroid/net/Uri;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00053.json
+Rule crime: Monitor data identified by a given content URI changes(SMS, MMS, etc.)
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/Uri; parse (Ljava/lang/String;)Landroid/net/Uri;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00054.json
+Rule crime: Install other APKs from file
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00055.json
+Rule crime: Query the SMS content and the source of the phone number
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00056.json
+Rule crime: Modify voice volume
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00057.json
+Rule crime: Return the DHCP-assigned addresses from the last successful DHCP request
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/StringBuilder; toString ()Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00058.json
+Rule crime: Connect to the specific WIFI network
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00059.json
+Rule crime: Query the SIM card status
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Integer; intValue ()I
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00060.json
+Rule crime: Query the network operator name
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Integer; valueOf (I)Ljava/lang/Integer;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00061.json
+Rule crime: Return dynamic information about the current Wi-Fi connection
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Integer; valueOf (I)Ljava/lang/Integer;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00062.json
+Rule crime: Query WiFi information and WiFi Mac Address
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00063.json
+Rule crime: Implicit intent(view a web page, make a phone call, etc.)
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/Uri; parse (Ljava/lang/String;)Landroid/net/Uri;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00064.json
+Rule crime: Monitor incoming call status
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00065.json
+Rule crime: Get the country code of the SIM card provider
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00066.json
+Rule crime: Query the ICCID number
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00067.json
+Rule crime: Query the IMSI number
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00068.json
+Rule crime: Executes the specified string Linux command
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00069.json
+Rule crime: Run shell script programmably
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00070.json
+Rule crime: Get sender's address and send SMS
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/telephony/SmsManager; sendTextMessage (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00071.json
+Rule crime: Write the ISO country code of the current network operator into a file
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00072.json
+Rule crime: Write HTTP input stream into a file
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/HttpURLConnection; getInputStream ()Ljava/io/InputStream;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00073.json
+Rule crime: Write the SIM card information into a file
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00074.json
+Rule crime: Get IMSI and the ISO country code
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00075.json
+Rule crime: Get location of the device
+
+Confidence: 80%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/location/LocationManager; isProviderEnabled (Ljava/lang/String;)Z
+		 Landroid/location/LocationManager; getLastKnownLocation (Ljava/lang/String;)Landroid/location/Location;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lahmyth/mine/king/ahmyth/LocManager; getLocation ()Landroid/location/Location;
+		 Second API show up in:
+		 Lahmyth/mine/king/ahmyth/LocManager; getLocation ()Landroid/location/Location;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lahmyth/mine/king/ahmyth/LocManager; getLocation ()Landroid/location/Location;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00076.json
+Rule crime: Get the current WiFi information and put it into JSON
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00077.json
+Rule crime: Read sensitive data(SMS, CALLLOG, etc)
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getContentResolver ()Landroid/content/ContentResolver;
+		 Landroid/content/ContentResolver; query (Landroid/net/Uri; [Ljava/lang/String; Ljava/lang/String; [Ljava/lang/String; Ljava/lang/String;)Landroid/database/Cursor;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lahmyth/mine/king/ahmyth/CallsManager; getCallsLogs ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/IOSocket; <init> ()V
+		 Lahmyth/mine/king/ahmyth/ContactsManager; getContacts ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/SMSManager; getSMSList ()Lorg/json/JSONObject;
+		 Second API show up in:
+		 Lahmyth/mine/king/ahmyth/CallsManager; getCallsLogs ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/ContactsManager; getContacts ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/SMSManager; getSMSList ()Lorg/json/JSONObject;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lahmyth/mine/king/ahmyth/CallsManager; getCallsLogs ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/ContactsManager; getContacts ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/SMSManager; getSMSList ()Lorg/json/JSONObject;
+	[✓]5.Native API Use Same Parameter
+		 Lahmyth/mine/king/ahmyth/CallsManager; getCallsLogs ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/ContactsManager; getContacts ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/SMSManager; getSMSList ()Lorg/json/JSONObject;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00078.json
+Rule crime: Get the network operator name
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00079.json
+Rule crime: Hide the current app's icon
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getPackageManager ()Landroid/content/pm/PackageManager;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00080.json
+Rule crime: Save recorded audio/video to a file
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/media/MediaRecorder; setOutputFile (Ljava/lang/String;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00081.json
+Rule crime: Get declared method from given method name
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/StringBuilder; <init> ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00082.json
+Rule crime: Get the current WiFi MAC address
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00083.json
+Rule crime: Query the IMEI number
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00084.json
+Rule crime: Get the ISO country code and IMSI
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00085.json
+Rule crime: Get the ISO country code and put it into JSON
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00086.json
+Rule crime: Check if the device is in data roaming mode
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Object; equals (Ljava/lang/Object;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00087.json
+Rule crime: Check the current network type
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Object; equals (Ljava/lang/Object;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00088.json
+Rule crime: Create a secure socket connection to the given host address
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/InetAddress; getHostAddress ()Ljava/lang/String;
+		 Ljavax/net/ssl/SSLSocketFactory; createSocket (Ljava/net/Socket; Ljava/lang/String; I Z)Ljava/net/Socket;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lokhttp3/internal/connection/RouteSelector; getHostString (Ljava/net/InetSocketAddress;)Ljava/lang/String;
+		 Second API show up in:
+		 Lokhttp3/internal/connection/RealConnection; connectTls (I I Lokhttp3/internal/connection/ConnectionSpecSelector;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00089.json
+Rule crime: Connect to a URL and receive input stream from the server
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/URL; openConnection ()Ljava/net/URLConnection;
+		 Ljava/net/HttpURLConnection; getInputStream ()Ljava/io/InputStream;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lio/socket/engineio/client/transports/PollingXHR$Request; create ()V
+		 Second API show up in:
+		 Lio/socket/engineio/client/transports/PollingXHR$Request; onLoad ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00090.json
+Rule crime: Set recroded audio/video file format
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/media/MediaRecorder; setOutputFormat (I)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00091.json
+Rule crime: Retrieve data from broadcast
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00092.json
+Rule crime: Send broadcast
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00093.json
+Rule crime: Get the content of SMS and forward it to others via SMS
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/telephony/SmsManager; sendTextMessage (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00094.json
+Rule crime: Connect to a URL and read data from it
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/URL; openConnection ()Ljava/net/URLConnection;
+		 Ljava/io/InputStream; read ([B)I
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lio/socket/engineio/client/transports/PollingXHR$Request; create ()V
+		 Second API show up in:
+		 Lio/socket/engineio/client/transports/PollingXHR$Request; onLoad ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00095.json
+Rule crime: Write the ICCID of device into a file
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00096.json
+Rule crime: Connect to a URL and set request method
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/URL; openConnection ()Ljava/net/URLConnection;
+		 Ljava/net/HttpURLConnection; setRequestMethod (Ljava/lang/String;)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lio/socket/engineio/client/transports/PollingXHR$Request; create ()V
+		 Second API show up in:
+		 Lio/socket/engineio/client/transports/PollingXHR$Request; create ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00097.json
+Rule crime: Get the sender address of the SMS and put it into JSON
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00098.json
+Rule crime: Check if the network is connected
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Object; equals (Ljava/lang/Object;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00099.json
+Rule crime: Get location of the current GSM and put it into JSON
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Lorg/json/JSONObject; put (Ljava/lang/String; I)Lorg/json/JSONObject;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00100.json
+Rule crime: Check the network capabilities
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Object; equals (Ljava/lang/Object;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00101.json
+Rule crime: Initialize recorder
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/media/MediaRecorder; prepare ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00102.json
+Rule crime: Set the phone speaker on
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00103.json
+Rule crime: Check the active network type
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Object; equals (Ljava/lang/Object;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00104.json
+Rule crime: Check if the given path is directory
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; isDirectory ()Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00105.json
+Rule crime: Append the sender's address to the string
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/StringBuilder; append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00106.json
+Rule crime: Get the currently formatted WiFi IP address
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00107.json
+Rule crime: Write the IMSI number into a file
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00108.json
+Rule crime: Read the input stream from given URL
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/HttpURLConnection; getInputStream ()Ljava/io/InputStream;
+		 Ljava/io/InputStream; read ([B)I
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lio/socket/engineio/client/transports/PollingXHR$Request; onLoad ()V
+		 Second API show up in:
+		 Lio/socket/engineio/client/transports/PollingXHR$Request; onLoad ()V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lio/socket/engineio/client/transports/PollingXHR$Request; onLoad ()V
+	[✓]5.Native API Use Same Parameter
+		 Lio/socket/engineio/client/transports/PollingXHR$Request; onLoad ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00109.json
+Rule crime: Connect to a URL and get the response code
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/URL; openConnection ()Ljava/net/URLConnection;
+		 Ljava/net/HttpURLConnection; getResponseCode ()I
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lio/socket/engineio/client/transports/PollingXHR$Request; create ()V
+		 Second API show up in:
+		 Lio/socket/engineio/client/transports/PollingXHR$Request$1; run ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00110.json
+Rule crime: Query the ICCID number
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00111.json
+Rule crime: Get the sender address of the SMS
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00112.json
+Rule crime: Get the date of the calendar event
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/util/Calendar; getTimeInMillis ()J
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00113.json
+Rule crime: Get location and put it into JSON
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/location/LocationManager; getLastKnownLocation (Ljava/lang/String;)Landroid/location/Location;
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lahmyth/mine/king/ahmyth/LocManager; getLocation ()Landroid/location/Location;
+		 Second API show up in:
+		 Lio/socket/parser/Binary; _reconstructPacket (Ljava/lang/Object; [[B)Ljava/lang/Object;
+		 Lahmyth/mine/king/ahmyth/FileManager; downloadFile (Ljava/lang/String;)V
+		 Lahmyth/mine/king/ahmyth/CallsManager; getCallsLogs ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/CameraManager; findCameraList ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/SMSManager; getSMSList ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/ContactsManager; getContacts ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/MicManager; sendVoice (Ljava/io/File;)V
+		 Lahmyth/mine/king/ahmyth/CameraManager; sendPhoto ([B)V
+		 Lio/socket/parser/Binary; _deconstructPacket (Ljava/lang/Object; Ljava/util/List;)Ljava/lang/Object;
+		 Lahmyth/mine/king/ahmyth/FileManager; walk (Ljava/lang/String;)Lorg/json/JSONArray;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00114.json
+Rule crime: Create a secure socket connection to the proxy address
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/Proxy; address ()Ljava/net/SocketAddress;
+		 Ljavax/net/ssl/SSLSocketFactory; createSocket (Ljava/net/Socket; Ljava/lang/String; I Z)Ljava/net/Socket;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lokhttp3/internal/connection/RouteSelector; connectFailed (Lokhttp3/Route; Ljava/io/IOException;)V
+		 Lokhttp3/internal/connection/RouteSelector; resetNextInetSocketAddress (Ljava/net/Proxy;)V
+		 Second API show up in:
+		 Lokhttp3/internal/connection/RealConnection; connectTls (I I Lokhttp3/internal/connection/ConnectionSpecSelector;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00115.json
+Rule crime: Get last known location of the device
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/location/LocationManager; getLastKnownLocation (Ljava/lang/String;)Landroid/location/Location;
+		 Landroid/location/Location; getLongitude ()D
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lahmyth/mine/king/ahmyth/LocManager; getLocation ()Landroid/location/Location;
+		 Second API show up in:
+		 Lahmyth/mine/king/ahmyth/LocManager; getLocation ()Landroid/location/Location;
+		 Lahmyth/mine/king/ahmyth/LocManager; getLongitude ()D
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lahmyth/mine/king/ahmyth/LocManager; getLocation ()Landroid/location/Location;
+	[✓]5.Native API Use Same Parameter
+		 Lahmyth/mine/king/ahmyth/LocManager; getLocation ()Landroid/location/Location;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00116.json
+Rule crime: Get the current WiFi MAC address and put it into JSON
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00117.json
+Rule crime: Get the IMSI and network operator name
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00118.json
+Rule crime: Check if the content of SMS contains given string
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/String; contains (Ljava/lang/CharSequence;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00119.json
+Rule crime: Write the IMEI number into a file
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00120.json
+Rule crime: Append the sender's address to the string
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/StringBuilder; append (I)Ljava/lang/StringBuilder;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00121.json
+Rule crime: Create a directory
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; mkdirs ()Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00122.json
+Rule crime: Check if the sender address of SMS contains the given string
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/String; contains (Ljava/lang/CharSequence;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00123.json
+Rule crime: Save the response to JSON after connecting to the remote server
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Lorg/json/JSONObject; <init> (Ljava/lang/String;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00124.json
+Rule crime: Check the current active network type
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Object; equals (Ljava/lang/Object;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00125.json
+Rule crime: Check if the given file path exist
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; exists ()Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00126.json
+Rule crime: Read sensitive data(SMS, CALLLOG, etc)
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/ContentResolver; query (Landroid/net/Uri; [Ljava/lang/String; Ljava/lang/String; [Ljava/lang/String; Ljava/lang/String;)Landroid/database/Cursor;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00127.json
+Rule crime: Monitor the broadcast action events (BOOT_COMPLETED, etc)
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00128.json
+Rule crime: Query user account information
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00129.json
+Rule crime: Get the content of SMS
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00130.json
+Rule crime: Get the current WIFI information
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00131.json
+Rule crime: Get location of the current GSM and put it into JSON
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Lorg/json/JSONObject; put (Ljava/lang/String; I)Lorg/json/JSONObject;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00132.json
+Rule crime: Query The ISO country code
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00133.json
+Rule crime: Start recording
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/media/MediaRecorder; start ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00134.json
+Rule crime: Get the current WiFi IP address
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00135.json
+Rule crime: Get the current WiFi id and put it into JSON.
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00136.json
+Rule crime: Stop recording
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/media/MediaRecorder; stop ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00137.json
+Rule crime: Get last known location of the device
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/location/LocationManager; getLastKnownLocation (Ljava/lang/String;)Landroid/location/Location;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00138.json
+Rule crime: Set the audio source (MIC)
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/media/MediaRecorder; setAudioSource (I)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00139.json
+Rule crime: Get the current WiFi id
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00140.json
+Rule crime: Write the phone number into a file
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00141.json
+Rule crime: Load class from given class name
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/StringBuilder; toString ()Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00142.json
+Rule crime: Get calendar information
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/StringBuilder; append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00143.json
+Rule crime: Get external class from given path or file name
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/StringBuilder; toString ()Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00144.json
+Rule crime: Write SIM card serial number into a file
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00145.json
+Rule crime: Create a socket connection to the proxy address
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/Proxy; address ()Ljava/net/SocketAddress;
+		 Ljavax/net/SocketFactory; createSocket ()Ljava/net/Socket;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lokhttp3/internal/connection/RouteSelector; connectFailed (Lokhttp3/Route; Ljava/io/IOException;)V
+		 Lokhttp3/internal/connection/RouteSelector; resetNextInetSocketAddress (Ljava/net/Proxy;)V
+		 Second API show up in:
+		 Lokhttp3/internal/connection/RealConnection; connectSocket (I I)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00146.json
+Rule crime: Get the network operator name and IMSI
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00147.json
+Rule crime: Get the time of current location
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/location/LocationManager; isProviderEnabled (Ljava/lang/String;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00148.json
+Rule crime: Create a socket connection to the given host address
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/InetAddress; getHostAddress ()Ljava/lang/String;
+		 Ljavax/net/SocketFactory; createSocket ()Ljava/net/Socket;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lokhttp3/internal/connection/RouteSelector; getHostString (Ljava/net/InetSocketAddress;)Ljava/lang/String;
+		 Second API show up in:
+		 Lokhttp3/internal/connection/RealConnection; connectSocket (I I)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00149.json
+Rule crime: Unpack an asset, possibly decrypt it and load it as DEX
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00150.json
+Rule crime: Send IMSI over Internet
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+		 android.permission.INTERNET
+	[✓]2.Native API Usage
+		 Ljava/net/URL; openConnection ()Ljava/net/URLConnection;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00151.json
+Rule crime: Send phone number over Internet
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+		 android.permission.INTERNET
+	[✓]2.Native API Usage
+		 Ljava/net/URL; openConnection ()Ljava/net/URLConnection;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00152.json
+Rule crime: Get data from HTTP and send SMS
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+		 android.permission.INTERNET
+	[✓]2.Native API Usage
+		 Ljava/net/URL; openConnection ()Ljava/net/URLConnection;
+		 Landroid/telephony/SmsManager; sendTextMessage (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lio/socket/engineio/client/transports/PollingXHR$Request; create ()V
+		 Second API show up in:
+		 Lahmyth/mine/king/ahmyth/SMSManager; sendSMS (Ljava/lang/String; Ljava/lang/String;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00153.json
+Rule crime: Send binary data over HTTP
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+		 android.permission.INTERNET
+	[✓]2.Native API Usage
+		 Ljava/net/HttpURLConnection; getOutputStream ()Ljava/io/OutputStream;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00154.json
+Rule crime: Connect hostname to TCP or UDP socket using KryoNet
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00155.json
+Rule crime: Execute commands on shell using DataOutputStream object
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00156.json
+Rule crime: Acquire lock on Power Manager 
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+		 android.permission.WAKE_LOCK
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00157.json
+Rule crime: Instantiate new object using reflection, possibly used for dexClassLoader 
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Class; getConstructor ([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+		 Ljava/lang/reflect/Constructor; newInstance ([Ljava/lang/Object;)Ljava/lang/Object;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lokhttp3/internal/platform/AndroidPlatform; buildCertificateChainCleaner (Ljavax/net/ssl/X509TrustManager;)Lokhttp3/internal/tls/CertificateChainCleaner;
+		 Second API show up in:
+		 Lokhttp3/internal/platform/AndroidPlatform; buildCertificateChainCleaner (Ljavax/net/ssl/X509TrustManager;)Lokhttp3/internal/tls/CertificateChainCleaner;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lokhttp3/internal/platform/AndroidPlatform; buildCertificateChainCleaner (Ljavax/net/ssl/X509TrustManager;)Lokhttp3/internal/tls/CertificateChainCleaner;
+	[✓]5.Native API Use Same Parameter
+		 Lokhttp3/internal/platform/AndroidPlatform; buildCertificateChainCleaner (Ljavax/net/ssl/X509TrustManager;)Lokhttp3/internal/tls/CertificateChainCleaner;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00158.json
+Rule crime: Connect to a URL and send sensitive data got from resolver
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/ContentResolver; query (Landroid/net/Uri; [Ljava/lang/String; Ljava/lang/String; [Ljava/lang/String; Ljava/lang/String;)Landroid/database/Cursor;
+		 Ljava/net/HttpURLConnection; getOutputStream ()Ljava/io/OutputStream;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lahmyth/mine/king/ahmyth/CallsManager; getCallsLogs ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/ContactsManager; getContacts ()Lorg/json/JSONObject;
+		 Lahmyth/mine/king/ahmyth/SMSManager; getSMSList ()Lorg/json/JSONObject;
+		 Second API show up in:
+		 Lio/socket/engineio/client/transports/PollingXHR$Request$1; run ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00159.json
+Rule crime: Use accessibility service to perform action getting node info by text
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00160.json
+Rule crime: Use accessibility service to perform action getting node info by View Id
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00161.json
+Rule crime: Perfom accessibility service action on accessibility node info
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00162.json
+Rule crime: Create InetSocketAddress object and connecting to it
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00163.json
+Rule crime: Create new Socket and connecting to it
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00164.json
+Rule crime: Get SMS address and send it through http
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/HttpURLConnection; getOutputStream ()Ljava/io/OutputStream;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00165.json
+Rule crime: Get SMS message body and send it through http
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/HttpURLConnection; getOutputStream ()Ljava/io/OutputStream;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00166.json
+Rule crime: Get SMS message body and retrieve a string from it (possibly PIN / mTAN)
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00167.json
+Rule crime: Use accessibility service to perform action getting root in active window
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00168.json
+Rule crime: Use accessibility service to perform global action getting node info by text
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00169.json
+Rule crime: Use accessibility service to perform global action getting node info by View Id
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00170.json
+Rule crime: Get installed applications and put the list in shared preferences
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00171.json
+Rule crime: Compare network operator with a string
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/String; equals (Ljava/lang/Object;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00172.json
+Rule crime: Check Admin permissions to (probably) get them
+
+Confidence: 0%
+
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00173.json
+Rule crime: Get bounds in screen of an AccessibilityNodeInfo and perform action
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00174.json
+Rule crime: Get all accounts by type and put them in a JSON object
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00175.json
+Rule crime: Get notification manager and cancel notifications 
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00176.json
+Rule crime: Send sms to a contact of contact list
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+		 android.permission.SEND_SMS
+		 android.permission.READ_CONTACTS
+	[✓]2.Native API Usage
+		 Landroid/telephony/SmsManager; sendTextMessage (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00177.json
+Rule crime: Check if permission is granted and request it
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00178.json
+Rule crime: Execute Linux commands via ProcessBuilder
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00179.json
+Rule crime: Send Location via SMS
+
+Confidence: 0%
+
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00180.json
+Rule crime: Load native libraries(.so) via System.loadLibrary (60% means caught)
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00181.json
+Rule crime: Load native libraries(.so) via System.load (60% means caught)
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK

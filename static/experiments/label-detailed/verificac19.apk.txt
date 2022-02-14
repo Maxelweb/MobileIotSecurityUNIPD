@@ -1,0 +1,53 @@
+$ quark -a extra/verificac19.apk -l detailed
+
+    ________                      __
+    \_____  \  __ _______ _______|  | __
+     /  / \  \|  |  \__  \_  __ \  |/ /
+    /   \_/.  \  |  // __ \|  | \/    <
+    \_____\ \_/____/(____  /__|  |__|_ \
+           \__>          \/           \/ v22.1.1
+    
+                An Obfuscation-Neglect Android Malware Scoring System
+                
+Requested API level 30 is larger than maximum we have, returning API level 28 instead.
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 181/181 [03:59<00:00,  1.32s/it]
+[*] Total Label found: 34
+[*] Rules with label which max confidence >= 80%: 16
++-----------------------+------------------------------------------------------+-----------------+------------------+----------------+---------------+-----------------------------------+
+|         Label         |                     Description                      | Number of rules | MAX Confidence % | AVG Confidence | Std Deviation | # of Rules with Confidence >= 80% |
++-----------------------+------------------------------------------------------+-----------------+------------------+----------------+---------------+-----------------------------------+
+|       collection      |                          -                           |        76       |       100        |     38.42      |     21.71     |                 6                 |
+|        command        |                          -                           |        27       |       100        |     52.59      |     21.19     |                 3                 |
+|          sms          |             Read/Write/Send sms content              |        26       |       100        |     35.38      |     18.65     |                 1                 |
+|        network        |                          -                           |        24       |       100        |     61.67      |     19.08     |                 4                 |
+|          file         |                          -                           |        23       |       100        |     54.78      |     22.24     |                 4                 |
+|       reflection      |                          -                           |        20       |       100        |      77.0      |     29.85     |                 12                |
+|       telephony       |                          -                           |        16       |        60        |     33.75      |     11.66     |                 0                 |
+|          wifi         |                          -                           |        13       |        40        |     27.69      |      9.73     |                 0                 |
+|        location       |          Leakage of Location of the device           |        11       |       100        |     49.09      |      34.5     |                 3                 |
+|        control        |                          -                           |        10       |       100        |      58.0      |     30.27     |                 3                 |
+|         record        |                          -                           |        8        |        40        |      37.5      |      6.61     |                 0                 |
+| accessibility service |   Use Accessibility Service to perform user actions  |        7        |        60        |     51.43      |      9.9      |                 0                 |
+|        calllog        |  Retrieve or manipulate sensitive data from call log |        4        |       100        |      65.0      |     21.79     |                 1                 |
+|        calendar       |      Get calendar information as calendar event      |        4        |       100        |      75.0      |     25.98     |                 2                 |
+|         socket        |                          -                           |        3        |       100        |      60.0      |     28.28     |                 1                 |
+|        privacy        |                          -                           |        3        |        60        |     46.67      |      9.43     |                 0                 |
+|          http         |            Use http to send sensitive data           |        3        |        60        |     46.67      |      9.43     |                 0                 |
+|         camera        |                          -                           |        3        |        60        |     46.67      |      9.43     |                 0                 |
+|           so          |              Load native libraries(.so)              |        2        |        60        |      60.0      |      0.0      |                 0                 |
+|         phone         |                          -                           |        2        |        40        |      40.0      |      0.0      |                 0                 |
+|     power manager     |                          -                           |        1        |       100        |     100.0      |      0.0      |                 1                 |
+|          pin          |                          -                           |        1        |        20        |      20.0      |      0.0      |                 0                 |
+|       permission      |                          -                           |        1        |       100        |     100.0      |      0.0      |                 1                 |
+|         packer        |                          -                           |        1        |        20        |      20.0      |      0.0      |                 0                 |
+|      notification     |                          -                           |        1        |        60        |      60.0      |      0.0      |                 0                 |
+|          lock         |                          -                           |        1        |       100        |     100.0      |      0.0      |                 1                 |
+|          exec         |                          -                           |        1        |        40        |      40.0      |      0.0      |                 0                 |
+|        evasion        |                          -                           |        1        |       100        |     100.0      |      0.0      |                 1                 |
+|     dexClassLoader    |                          -                           |        1        |       100        |     100.0      |      0.0      |                 1                 |
+|       connection      |                          -                           |        1        |        60        |      60.0      |      0.0      |                 0                 |
+|      applications     |                          -                           |        1        |        40        |      40.0      |      0.0      |                 0                 |
+|         admin         |                          -                           |        1        |        0         |      0.0       |      0.0      |                 0                 |
+|        accounts       |                          -                           |        1        |        20        |      20.0      |      0.0      |                 0                 |
+|        account        |                          -                           |        1        |        20        |      20.0      |      0.0      |                 0                 |
++-----------------------+------------------------------------------------------+-----------------+------------------+----------------+---------------+-----------------------------------+

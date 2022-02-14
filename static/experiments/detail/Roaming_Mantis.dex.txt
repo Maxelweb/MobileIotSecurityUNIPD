@@ -1,0 +1,3541 @@
+
+    ________                      __
+    \_____  \  __ _______ _______|  | __
+     /  / \  \|  |  \__  \_  __ \  |/ /
+    /   \_/.  \  |  // __ \|  | \/    <
+    \_____\ \_/____/(____  /__|  |__|_ \
+           \__>          \/           \/ v22.1.1
+    
+                An Obfuscation-Neglect Android Malware Scoring System
+                
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00001.json
+Rule crime: Initialize bitmap object and compress data (e.g. JPEG) into bitmap object
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00002.json
+Rule crime: Open the camera and take picture
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00003.json
+Rule crime: Put the compressed bitmap data into JSON object
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00004.json
+Rule crime: Get filename and put it to JSON object
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; getName ()Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00005.json
+Rule crime: Get absolute path of file and put it to JSON object
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; getAbsolutePath ()Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00006.json
+Rule crime: Scheduling recording task
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/media/MediaRecorder; <init> ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00007.json
+Rule crime: Use absolute path of directory for the output media file path
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; getAbsolutePath ()Ljava/lang/String;
+		 Landroid/media/MediaRecorder; setOutputFile (Ljava/lang/String;)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader$x; a ([Ljava/lang/Object;)Lc/a/h;
+		 Second API show up in:
+		 Lcom/j; a ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00008.json
+Rule crime: Check if successfully sending out SMS
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Boolean; valueOf (Z)Ljava/lang/Boolean;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00009.json
+Rule crime: Put data in cursor to JSON object
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/database/Cursor; getString (I)Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00010.json
+Rule crime: Read sensitive data(SMS, CALLLOG) and put it into JSON object
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/ContentResolver; query (Landroid/net/Uri; [Ljava/lang/String; Ljava/lang/String; [Ljava/lang/String; Ljava/lang/String;)Landroid/database/Cursor;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00011.json
+Rule crime: Query data from URI (SMS, CALLLOGS)
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/Uri; parse (Ljava/lang/String;)Landroid/net/Uri;
+		 Landroid/content/ContentResolver; query (Landroid/net/Uri; [Ljava/lang/String; Ljava/lang/String; [Ljava/lang/String; Ljava/lang/String;)Landroid/database/Cursor;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/p; a (Landroid/content/Context;)Ljava/util/ArrayList;
+		 Lcom/Loader$c$2$1; b ()V
+		 Lcom/e; a (Landroid/content/Context; Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 Lcom/Loader$aa; a ([Ljava/lang/Object;)Lc/a/h;
+		 Lcom/e; b (Landroid/content/Context; Ljava/lang/String;)[B
+		 Lcom/p; b (Landroid/content/Context; Ljava/lang/String;)V
+		 Lcom/e; a (Landroid/content/Context; I)Lcom/e$a;
+		 Lcom/a; a (Landroid/content/Context;)Ljava/util/Set;
+		 Lcom/Loader$g; a (Ljava/lang/Object;)V
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/Loader$k$1; a (Ljava/lang/Object;)V
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Second API show up in:
+		 Lcom/p; a (Landroid/content/Context;)Ljava/util/ArrayList;
+		 Lcom/e; a (Landroid/content/Context; Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/e; a (Landroid/content/Context; I)Lcom/e$a;
+		 Lcom/Loader$k$1; a (Ljava/lang/Object;)V
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/a; a (Landroid/content/Context;)Ljava/util/Set;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/p; a (Landroid/content/Context;)Ljava/util/ArrayList;
+		 Lcom/e; a (Landroid/content/Context; Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/e; a (Landroid/content/Context; I)Lcom/e$a;
+		 Lcom/a; a (Landroid/content/Context;)Ljava/util/Set;
+		 Lcom/Loader$k$1; a (Ljava/lang/Object;)V
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/p; a (Landroid/content/Context;)Ljava/util/ArrayList;
+		 Lcom/e; a (Landroid/content/Context; I)Lcom/e$a;
+		 Lcom/a; a (Landroid/content/Context;)Ljava/util/Set;
+		 Lcom/Loader$k$1; a (Ljava/lang/Object;)V
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00012.json
+Rule crime: Read data and put it into a buffer stream
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/FileInputStream; <init> (Ljava/io/File;)V
+		 Ljava/io/BufferedInputStream; <init> (Ljava/io/InputStream;)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/q; c (Ljava/io/File; Ljava/util/zip/ZipOutputStream; Ljava/lang/String;)V
+		 Ljavax/activation/FileDataSource; getInputStream ()Ljava/io/InputStream;
+		 Ld/c/d; a (Ljava/io/File;)[B
+		 Second API show up in:
+		 Ljavax/mail/util/SharedFileInputStream; <init> (Ljava/lang/String; I)V
+		 Ljavax/mail/internet/MimeBodyPart; <init> (Ljava/io/InputStream;)V
+		 Ljavax/mail/Session; loadFile (Ljava/lang/String; Ljavax/mail/StreamLoader;)V
+		 Ljavax/mail/util/SharedFileInputStream; <init> (Ljavax/mail/util/SharedFileInputStream$SharedFile; J J I)V
+		 Ljavax/mail/internet/MimeMultipart; parsebm ()V
+		 Ljavax/mail/internet/MimeMessage; parse (Ljava/io/InputStream;)V
+		 Lcom/b/a/a/t; a (Ljava/net/Socket;)Lcom/b/a/a/aa;
+		 Ljavax/mail/util/SharedFileInputStream; <init> (Ljava/io/File; I)V
+		 Ljavax/mail/internet/MimeMultipart; parse ()V
+		 Lcom/q; c (Ljava/io/File; Ljava/util/zip/ZipOutputStream; Ljava/lang/String;)V
+		 Lcom/sun/mail/smtp/SMTPTransport; initStreams ()V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/q; c (Ljava/io/File; Ljava/util/zip/ZipOutputStream; Ljava/lang/String;)V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/q; c (Ljava/io/File; Ljava/util/zip/ZipOutputStream; Ljava/lang/String;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00013.json
+Rule crime: Read file and put it into a stream
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; <init> (Ljava/lang/String;)V
+		 Ljava/io/FileInputStream; <init> (Ljava/io/File;)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader$c; a (Ljava/lang/Object;)V
+		 Ljavax/activation/MimetypesFileTypeMap$1; run ()Ljava/lang/Object;
+		 Ljavax/mail/internet/MimeBodyPart; saveFile (Ljava/lang/String;)V
+		 Lcom/p; a ()Z
+		 Ljavax/activation/FileDataSource; <init> (Ljava/lang/String;)V
+		 Lcom/j; a ()V
+		 Lcom/sun/a/a/g; <init> (Ljava/lang/String;)V
+		 Ljavax/mail/internet/MimeBodyPart; attachFile (Ljava/lang/String;)V
+		 Lcom/Loader$x; a ([Ljava/lang/Object;)Lc/a/h;
+		 Lcom/j; <init> (Ljava/lang/String;)V
+		 Lcom/Loader$ap; run ()V
+		 Lcom/q; a (Ljava/io/OutputStream; [Ljava/lang/String;)V
+		 Ljavax/activation/MailcapCommandMap$1; run ()Ljava/lang/Object;
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Second API show up in:
+		 Lcom/q; c (Ljava/io/File; Ljava/util/zip/ZipOutputStream; Ljava/lang/String;)V
+		 Ljavax/activation/FileDataSource; getInputStream ()Ljava/io/InputStream;
+		 Ld/c/d; a (Ljava/io/File;)[B
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/q; a (Ljava/io/OutputStream; [Ljava/lang/String;)V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/q; a (Ljava/io/OutputStream; [Ljava/lang/String;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00014.json
+Rule crime: Read file into a stream and put it into a JSON object
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/FileInputStream; <init> (Ljava/io/File;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00015.json
+Rule crime: Put buffer stream (data) to JSON object
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/BufferedInputStream; read ([B I I)I
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00016.json
+Rule crime: Get location info of the device and put it to JSON object
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00017.json
+Rule crime: Get Location of the device and append this info to a string
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00018.json
+Rule crime: Get JSON object prepared and fill in location info
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00019.json
+Rule crime: Find a method from given class name, usually for reflection
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Object; getClass ()Ljava/lang/Class;
+		 Ljava/lang/Class; getMethod (Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/sun/mail/util/logging/MailHandler; writeLogRecords (I)Ljavax/mail/MessageContext;
+		 Ljavax/activation/ObjectDataContentHandler; getTransferDataFlavors ()[Ljavax/activation/ActivationDataFlavor;
+		 Lcom/Loader; f ()V
+		 Lcom/sun/mail/util/logging/MailHandler; contentTypeOf (Ljava/lang/String;)Ljava/lang/String;
+		 Ljavax/mail/internet/MimeBodyPart; updateHeaders (Ljavax/mail/internet/MimePart;)V
+		 Lcom/sun/mail/handlers/text_plain; writeTo (Ljava/lang/Object; Ljava/lang/String; Ljava/io/OutputStream;)V
+		 Lcom/sun/mail/util/logging/MailHandler; isMissingContent (Ljavax/mail/Message; Ljava/lang/Throwable;)Z
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/Loader$b; onCallStateChanged (I Ljava/lang/String;)V
+		 Lcom/sun/mail/util/logging/MailHandler; copyOf ([Ljava/lang/Object; I Ljava/lang/Class;)[Ljava/lang/Object;
+		 Lcom/sun/mail/util/logging/MailHandler; descriptionFrom (Ljava/util/logging/Formatter; Ljava/util/logging/Filter; Ljava/util/logging/Formatter;)Ljava/lang/String;
+		 Lcom/sun/mail/util/logging/MailHandler; verifySettings (Ljavax/mail/Session;)V
+		 Ljavax/activation/DataHandler; setDataContentHandlerFactory (Ljavax/activation/DataContentHandlerFactory;)V
+		 Ld/d/b/l; a (Ld/d/b/i;)Ljava/lang/String;
+		 Lcom/sun/mail/util/logging/MailHandler; init (Z)V
+		 Lcom/sun/mail/util/logging/MailHandler; fixUpContent (Ljavax/mail/internet/MimeMessage; Ljava/lang/String; Ljava/lang/Throwable;)V
+		 Ljavax/activation/MailcapCommandMap; loadResource (Ljava/lang/String;)Lcom/sun/a/a/c;
+		 Ljavax/activation/MimetypesFileTypeMap; loadAllResources (Ljava/util/Vector; Ljava/lang/String;)V
+		 Ld/d/b/d; a (Ljava/util/Collection; [Ljava/lang/Object;)[Ljava/lang/Object;
+		 Lcom/sun/mail/util/logging/MailHandler; copyOf ([Ljava/lang/Object; I)[Ljava/lang/Object;
+		 Lcom/sun/mail/util/logging/MailHandler; getClassId (Ljava/util/logging/Formatter;)Ljava/lang/String;
+		 Lcom/sun/mail/util/logging/MailHandler; descriptionFrom (Ljava/util/Comparator; Ljava/util/logging/Level; Ljava/util/logging/Filter;)Ljava/lang/String;
+		 Ljavax/mail/Session; getDefaultInstance (Ljava/util/Properties; Ljavax/mail/Authenticator;)Ljavax/mail/Session;
+		 Ljavax/activation/MailcapCommandMap; loadAllResources (Ljava/util/List; Ljava/lang/String;)V
+		 Lcom/sun/mail/handlers/image_gif; writeTo (Ljava/lang/Object; Ljava/lang/String; Ljava/io/OutputStream;)V
+		 Lcom/sun/mail/handlers/text_xml; writeTo (Ljava/lang/Object; Ljava/lang/String; Ljava/io/OutputStream;)V
+		 Lcom/sun/mail/util/logging/MailHandler; setMailer (Ljavax/mail/Message;)V
+		 Ljavax/activation/MailcapCommandMap; getDataContentHandler (Ljava/lang/String;)Ljavax/activation/DataContentHandler;
+		 Ljavax/mail/Session; getService (Ljavax/mail/Provider; Ljavax/mail/URLName;)Ljava/lang/Object;
+		 Lcom/Loader$aq; onSignalStrengthsChanged (Landroid/telephony/SignalStrength;)V
+		 Ljavax/mail/Session; <init> (Ljava/util/Properties; Ljavax/mail/Authenticator;)V
+		 Ld/d/b/n; a (Ljava/lang/Object; Ljava/lang/String;)V
+		 Ljavax/activation/DataHandler; getBean (Ljavax/activation/CommandInfo;)Ljava/lang/Object;
+		 Ljavax/activation/MimetypesFileTypeMap; loadResource (Ljava/lang/String;)Lcom/sun/a/a/g;
+		 Lcom/sun/mail/util/logging/MailHandler; initSession ()Ljavax/mail/Session;
+		 Ljavax/activation/CommandMap; setDefaultCommandMap (Ljavax/activation/CommandMap;)V
+		 Lcom/sun/mail/util/logging/MailHandler$TailNameFormatter; hashCode ()I
+		 Ljavax/mail/FetchProfile$Item; toString ()Ljava/lang/String;
+		 Ljavax/activation/FileTypeMap; setDefaultFileTypeMap (Ljavax/activation/FileTypeMap;)V
+		 Second API show up in:
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 Lcom/Loader; f ()V
+		 Lcom/sun/mail/util/SocketFetcher; createSocket (Ljava/net/InetAddress; I Ljava/lang/String; I I I Ljava/util/Properties; Ljava/lang/String; Ljavax/net/SocketFactory; Z)Ljava/net/Socket;
+		 Lcom/sun/mail/util/SocketFetcher; matchCert (Ljava/lang/String; Ljava/security/cert/X509Certificate;)Z
+		 Lcom/Loader$aq; onSignalStrengthsChanged (Landroid/telephony/SignalStrength;)V
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/sun/mail/util/SocketFetcher; getSocketFactory (Ljava/lang/String;)Ljavax/net/SocketFactory;
+		 Lcom/sun/mail/util/MimeUtil; <clinit> ()V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/Loader; f ()V
+		 Lcom/Loader$aq; onSignalStrengthsChanged (Landroid/telephony/SignalStrength;)V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/Loader; f ()V
+		 Lcom/Loader$aq; onSignalStrengthsChanged (Landroid/telephony/SignalStrength;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00020.json
+Rule crime: Get absolute path of the file and store in string
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; getAbsolutePath ()Ljava/lang/String;
+		 Ljava/lang/StringBuilder; toString ()Ljava/lang/String;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader$x; a ([Ljava/lang/Object;)Lc/a/h;
+		 Second API show up in:
+		 Ljavax/activation/MimeType; toString ()Ljava/lang/String;
+		 Lcom/Loader$f$1; a (Ljava/lang/String;)V
+		 Lc/a/e/b/b; a (I Ljava/lang/String;)I
+		 Lcom/sun/a/a/c; a (Ljava/io/Reader;)V
+		 Lcom/e; a (Landroid/content/Context; I)Lcom/e$a;
+		 Lcom/b/a/a/p; n (Lcom/b/a/a/z;)V
+		 Lcom/p; b (Ljava/lang/String;)Ljava/lang/String;
+		 Lorg/msgpack/core/buffer/c; <clinit> ()V
+		 Lcom/n; a (Landroid/content/Intent; I)V
+		 Lcom/Loader$c; a (Ljava/lang/Object;)V
+		 Lcom/l; toString ()Ljava/lang/String;
+		 Ljavax/activation/MimetypesFileTypeMap; loadAllResources (Ljava/util/Vector; Ljava/lang/String;)V
+		 Lcom/b/a/a/n; a (Ljava/io/InputStream;)V
+		 Lcom/Loader; <init> ()V
+		 Ld/h/l; a (Ljava/lang/CharSequence; Ld/d/a/b;)Ljava/lang/String;
+		 Ld/a/o; listIterator (I)Ljava/util/ListIterator;
+		 Ld/d/b/g; toString ()Ljava/lang/String;
+		 Ljavax/activation/MailcapCommandMap$1; run ()Ljava/lang/Object;
+		 Ld/d/b/h; c (Ljava/lang/String;)V
+		 Lcom/sun/a/a/c; b (Ljava/lang/String;)Ljava/util/Map;
+		 Lcom/b/a/a/p; b ()Lcom/b/a/a/z;
+		 Ljavax/activation/MimeType; getBaseType ()Ljava/lang/String;
+		 Lcom/g$c$a; a (Lcom/b/a/a/t; Lcom/b/a/a/ad;)V
+		 Lc/a/c/a; a (Lc/a/c/a$b;)V
+		 Ld/c; toString ()Ljava/lang/String;
+		 Lcom/Loader$f; run ()V
+		 Lcom/sun/a/a/c; a (I I Ljava/lang/String;)V
+		 Ljavax/activation/ObjectDataContentHandler; writeTo (Ljava/lang/Object; Ljava/lang/String; Ljava/io/OutputStream;)V
+		 Lorg/msgpack/core/n; a (Ljava/lang/String; B)Lorg/msgpack/core/h;
+		 Ljavax/activation/MailcapCommandMap; <init> (Ljava/lang/String;)V
+		 Lcom/b/a/a/ae; d (Lcom/b/a/a/z;)V
+		 Lcom/q; c (Ljava/io/File; Ljava/util/zip/ZipOutputStream; Ljava/lang/String;)V
+		 Lb/c; a (Lb/d; Lb/e;)V
+		 Lcom/Loader$i; b ()Ljava/lang/String;
+		 Lorg/msgpack/a/a/c; toString ()Ljava/lang/String;
+		 Lcom/Loader$f$1$2; a (Ljava/lang/Throwable;)V
+		 Lb/e; b (I)Ljava/lang/String;
+		 Ljavax/activation/ObjectDataContentHandler; getTransferData (Ljavax/activation/ActivationDataFlavor; Ljavax/activation/DataSource;)Ljava/lang/Object;
+		 Lcom/b/a/a/t; a (Ljava/net/Socket;)Lcom/b/a/a/aa;
+		 Lcom/sun/a/a/c; <init> (Ljava/lang/String;)V
+		 Lorg/msgpack/a/a/c; A ()Ljava/lang/String;
+		 Lorg/msgpack/a/a/h; A ()Ljava/lang/String;
+		 Lcom/q; a (Ljava/io/File; Ljava/util/zip/ZipOutputStream; Ljava/lang/String;)V
+		 Lcom/b/a/a/p; b (Ljava/util/List;)[B
+		 Lcom/sun/a/a/c; e (Ljava/lang/String;)V
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/e; a (Landroid/content/Context; Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/p; a ()Z
+		 Lcom/Loader$aa; a ([Ljava/lang/Object;)Lc/a/h;
+		 Ld/c/d; a (Ljava/io/File;)[B
+		 Ld/a/o; a (I)Ljava/lang/Void;
+		 Lcom/b/a/a/aa; a (J Z [B)[B
+		 Lcom/b/a/a/p; a ([B)V
+		 Ld/h/v; a (Ljava/lang/CharSequence; [Ljava/lang/String; I Z I)Ld/g/a;
+		 Lcom/b/a/a/y; b (Ljava/lang/String;)Ljava/lang/String;
+		 Lc/a/c/a; <init> (Ljava/lang/Iterable;)V
+		 Lc/a/b/f; toString ()Ljava/lang/String;
+		 Lcom/sun/a/a/g; d (Ljava/lang/String;)V
+		 Ld/d/b/n; a (Ljava/lang/Object; Ljava/lang/String;)V
+		 Lcom/c; <clinit> ()V
+		 Ld/e/a; toString ()Ljava/lang/String;
+		 Lcom/sun/a/a/f; toString ()Ljava/lang/String;
+		 Ljavax/activation/DataSourceDataContentHandler; getTransferData (Ljavax/activation/ActivationDataFlavor; Ljavax/activation/DataSource;)Ljava/lang/Object;
+		 Lcom/Loader; c ()V
+		 Lcom/b/a/a/n; c ()Ljava/lang/String;
+		 Lcom/g$c$1; a (I Ljava/lang/String; Ljava/lang/Throwable;)V
+		 Lcom/p$a; run ()V
+		 Lcom/b/a/a/ae; run ()V
+		 Lorg/msgpack/a/a/h; toString ()Ljava/lang/String;
+		 Lcom/Loader; b (Landroid/accounts/Account;)Ljava/lang/String;
+		 Ljavax/activation/MailcapCommandMap; createDataContentHandler (Ljava/lang/String;)Ljavax/activation/DataContentHandler;
+		 Ld/e/f; a (I I I)I
+		 Lcom/sun/a/a/c; a (I I I I Ljava/lang/String;)V
+		 Lb/d; toString ()Ljava/lang/String;
+		 Ld/d/b/h; b (Ljava/lang/String;)V
+		 Ld/e/c; toString ()Ljava/lang/String;
+		 Ld/d/b/c; toString ()Ljava/lang/String;
+		 Lb/e; b ()V
+		 Ljavax/activation/MailcapCommandMap; <init> ()V
+		 Lcom/b/a/a/t; b (Ljava/net/Socket;)Lcom/b/a/a/ac;
+		 Lcom/e; b (Landroid/content/Context; Ljava/lang/String;)[B
+		 Ljavax/activation/MailcapCommandMap; loadResource (Ljava/lang/String;)Lcom/sun/a/a/c;
+		 Ld/a/m; a (Ljava/lang/Iterable; Ljava/lang/CharSequence; Ljava/lang/CharSequence; Ljava/lang/CharSequence; I Ljava/lang/CharSequence; Ld/d/a/b;)Ljava/lang/String;
+		 Lcom/b/a/a/y; a (Ljava/lang/String;)Z
+		 Lcom/Loader$s$e$1; a (Ljavax/mail/Session; Ljava/lang/String; Ljava/lang/String;)Ljavax/mail/internet/MimeMessage;
+		 Lcom/Loader; getTopActivityName$loader_release (Landroid/content/Context;)Ljava/lang/String;
+		 Ld/h/g; toString ()Ljava/lang/String;
+		 Ljavax/activation/MailcapCommandMap; loadAllResources (Ljava/util/List; Ljava/lang/String;)V
+		 Lcom/sun/a/a/b; a (Ljava/lang/String; Ljava/lang/Throwable;)V
+		 Lb/d; b ()V
+		 Lc/a/e/g/e; toString ()Ljava/lang/String;
+		 Lc/a/e/g/e; newThread (Ljava/lang/Runnable;)Ljava/lang/Thread;
+		 Lcom/b/a/a/p; run ()V
+		 Lb/e; a (Ljava/lang/String;)V
+		 Lcom/b/a/a/x; toString ()Ljava/lang/String;
+		 Lcom/Loader$x; a ([Ljava/lang/Object;)Lc/a/h;
+		 Lcom/Loader$ax; a (Lb/d; Lb/e;)V
+		 Ljavax/activation/MimetypesFileTypeMap; <init> ()V
+		 Lcom/Loader; a (Landroid/accounts/Account;)Ljava/lang/String;
+		 Lcom/j; a ()V
+		 Lcom/b/a/a/p; q (Lcom/b/a/a/z;)V
+		 Lcom/Loader; f ()V
+		 Lcom/j; <init> (Ljava/lang/String;)V
+		 Ld/h/v; a (Ljava/lang/CharSequence; I I Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+		 Lcom/Loader$s$b; run ()V
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/b/a/a/q; e ()V
+		 Ld/h/v; a (Ljava/lang/CharSequence; [C I Z I)Ld/g/a;
+		 Lcom/sun/a/a/c; d (Ljava/lang/String;)V
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 Lcom/q; b (Ljava/io/File; Ljava/util/zip/ZipOutputStream; Ljava/lang/String;)V
+		 Lcom/b/a/a/b; a ([B)Ljava/lang/String;
+		 Lcom/b/a/a/ae; f ()V
+		 Ljavax/activation/CommandInfo$Beans; instantiate (Ljava/lang/ClassLoader; Ljava/lang/String;)Ljava/lang/Object;
+		 Lcom/p; a (Ljava/lang/String;)Ljava/lang/String;
+		 Lorg/msgpack/a/a/j; A ()Ljava/lang/String;
+		 Lorg/msgpack/core/buffer/c; toHexString (I I)Ljava/lang/String;
+		 Ljavax/activation/MimetypesFileTypeMap$1; run ()Ljava/lang/Object;
+		 Lcom/sun/a/a/c; a (I I I Ljava/lang/String;)V
+		 Lcom/Loader$c$2$1; b ()V
+		 Ld/g/d; a (Ld/g/a; Ljava/lang/CharSequence; Ljava/lang/CharSequence; Ljava/lang/CharSequence; I Ljava/lang/CharSequence; Ld/d/a/b;)Ljava/lang/String;
+		 Ljavax/activation/DataSourceDataContentHandler; writeTo (Ljava/lang/Object; Ljava/lang/String; Ljava/io/OutputStream;)V
+		 Ljavax/activation/MimeTypeParameterList; parse (Ljava/lang/String;)V
+		 Lcom/Loader$ab; a ([Ljava/lang/Object;)Lc/a/h;
+		 Ljavax/activation/MailcapCommandMap; getDataContentHandler (Ljava/lang/String;)Ljavax/activation/DataContentHandler;
+		 Lcom/sun/a/a/g; a (Ljava/io/BufferedReader;)V
+		 Lcom/sun/a/a/c; a (Ljava/lang/String;)Ljava/util/Map;
+		 Ld/a/o; subList (I I)Ljava/util/List;
+		 Lorg/msgpack/a/a/a; A ()Ljava/lang/String;
+		 Lcom/Loader$w; a ([Ljava/lang/Object;)Lc/a/h;
+		 Lcom/b/a/a/z; toString ()Ljava/lang/String;
+		 Ljavax/activation/DataHandler; getInputStream ()Ljava/io/InputStream;
+		 Lb/g; run ()V
+		 Lcom/b/a/a/y; a (Z Ljava/lang/String; Ljava/lang/String; I Ljava/lang/String; Ljava/lang/String; Lcom/b/a/a/q;)Lcom/b/a/a/t;
+		 Ljavax/activation/MimetypesFileTypeMap; loadResource (Ljava/lang/String;)Lcom/sun/a/a/g;
+		 Ld/h/b; a (I)I
+		 Lorg/msgpack/a/a/j; toString ()Ljava/lang/String;
+		 Ld/d/b/h; a (Ljava/lang/Object; Ljava/lang/String;)V
+		 Lcom/g; b (Ljava/lang/Object;)Lorg/msgpack/a/x;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader$x; a ([Ljava/lang/Object;)Lc/a/h;
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader$x; a ([Ljava/lang/Object;)Lc/a/h;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00021.json
+Rule crime: Load additional DEX files dynamically
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; getAbsolutePath ()Ljava/lang/String;
+		 Ljava/lang/ClassLoader; loadClass (Ljava/lang/String;)Ljava/lang/Class;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader$x; a ([Ljava/lang/Object;)Lc/a/h;
+		 Second API show up in:
+		 Ljavax/activation/MailcapCommandMap; getDataContentHandler (Ljava/lang/String;)Ljavax/activation/DataContentHandler;
+		 Lorg/msgpack/core/buffer/b; <clinit> ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00022.json
+Rule crime: Open a file from given absolute path of the file
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; getAbsolutePath ()Ljava/lang/String;
+		 Ljava/io/File; <init> (Ljava/lang/String;)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader$x; a ([Ljava/lang/Object;)Lc/a/h;
+		 Second API show up in:
+		 Lcom/Loader$c; a (Ljava/lang/Object;)V
+		 Ljavax/activation/MimetypesFileTypeMap$1; run ()Ljava/lang/Object;
+		 Ljavax/mail/internet/MimeBodyPart; saveFile (Ljava/lang/String;)V
+		 Lcom/p; a ()Z
+		 Ljavax/activation/FileDataSource; <init> (Ljava/lang/String;)V
+		 Lcom/j; a ()V
+		 Lcom/sun/a/a/g; <init> (Ljava/lang/String;)V
+		 Ljavax/mail/internet/MimeBodyPart; attachFile (Ljava/lang/String;)V
+		 Lcom/Loader$x; a ([Ljava/lang/Object;)Lc/a/h;
+		 Lcom/j; <init> (Ljava/lang/String;)V
+		 Lcom/Loader$ap; run ()V
+		 Lcom/q; a (Ljava/io/OutputStream; [Ljava/lang/String;)V
+		 Ljavax/activation/MailcapCommandMap$1; run ()Ljava/lang/Object;
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader$x; a ([Ljava/lang/Object;)Lc/a/h;
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader$x; a ([Ljava/lang/Object;)Lc/a/h;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00023.json
+Rule crime: Start another application from current application
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/pm/PackageManager; getLaunchIntentForPackage (Ljava/lang/String;)Landroid/content/Intent;
+		 Landroid/content/Context; startActivity (Landroid/content/Intent;)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader$c$2$1$a$1; b ()V
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/Loader; requestIgnoreBatteryOpt2 ()V
+		 Second API show up in:
+		 Lcom/Loader$c$2$1$a$1; b ()V
+		 Lcom/Loader$c$2$1; b ()V
+		 Lcom/Loader$aa; a ([Ljava/lang/Object;)Lc/a/h;
+		 Lcom/Loader$w$1$a; run ()V
+		 Lcom/p; b (Landroid/content/Context; Ljava/lang/String;)V
+		 Lcom/b$a; run ()V
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/Loader$ar$a; run ()V
+		 Lcom/Loader$s$a; run ()V
+		 Lcom/Loader; requestIgnoreBatteryOpt2 ()V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader$c$2$1$a$1; b ()V
+		 Lcom/Loader; requestIgnoreBatteryOpt2 ()V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader$c$2$1$a$1; b ()V
+		 Lcom/Loader; requestIgnoreBatteryOpt2 ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00024.json
+Rule crime: Write file after Base64 decoding
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/FileOutputStream; write ([B)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00025.json
+Rule crime: Monitor the general action to be performed
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Intent; getAction ()Ljava/lang/String;
+		 Ljava/lang/String; equals (Ljava/lang/Object;)Z
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Second API show up in:
+		 Ld/d/a; a (Ld/f/b;)Ljava/lang/Class;
+		 Lcom/sun/mail/handlers/text_xml; isXmlType (Ljava/lang/String;)Z
+		 Ljavax/mail/internet/InternetHeaders; addHeader (Ljava/lang/String; Ljava/lang/String;)V
+		 Ljavax/mail/internet/NewsAddress; equals (Ljava/lang/Object;)Z
+		 Ljavax/mail/URLName; equals (Ljava/lang/Object;)Z
+		 Lcom/j; <init> (Ljava/lang/String;)V
+		 Lcom/sun/mail/util/logging/MailHandler; isMissingContent (Ljavax/mail/Message; Ljava/lang/Throwable;)Z
+		 Ljavax/mail/internet/MimeMultipart; parse ()V
+		 Ljavax/mail/Service; connect (Ljava/lang/String; I Ljava/lang/String; Ljava/lang/String;)V
+		 Ljavax/mail/search/StringTerm; equals (Ljava/lang/Object;)Z
+		 Lcom/sun/mail/util/logging/MailHandler$TailNameFormatter; equals (Ljava/lang/Object;)Z
+		 Ljavax/mail/internet/ParameterList; set (Ljava/lang/String; Ljava/lang/String;)V
+		 Ljavax/mail/internet/MimeMessage$RecipientType; readResolve ()Ljava/lang/Object;
+		 Lcom/b/a/a/n; a (Ljava/io/InputStream;)V
+		 Ljavax/mail/internet/MimeMultipart; parsebm ()V
+		 Lcom/sun/mail/util/SocketFetcher; createSocket (Ljava/net/InetAddress; I Ljava/lang/String; I I I Ljava/util/Properties; Ljava/lang/String; Ljavax/net/SocketFactory; Z)Ljava/net/Socket;
+		 Ljavax/mail/Message$RecipientType; readResolve ()Ljava/lang/Object;
+		 Ljavax/mail/internet/MimeMultipart; getBodyPart (Ljava/lang/String;)Ljavax/mail/BodyPart;
+		 Lb/h; a (Ljava/util/List;)I
+		 Ld/d/b/g; toString ()Ljava/lang/String;
+		 Lcom/sun/a/a/c; b (Ljava/lang/String;)Ljava/util/Map;
+		 Ld/d/b/h; a (Ljava/lang/Throwable; Ljava/lang/String;)Ljava/lang/Throwable;
+		 Lcom/sun/a/a/c; e (Ljava/lang/String;)V
+		 Lcom/sun/mail/util/UUDecoderStream; decode ()Z
+		 Ljavax/activation/MailcapCommandMap; checkForVerb (Ljava/util/List; Ljava/lang/String;)Z
+		 Lcom/sun/mail/smtp/DigestMD5; authServer (Ljava/lang/String;)Z
+		 Lcom/sun/mail/util/logging/MailHandler; verifySettings0 (Ljavax/mail/Session; Ljava/lang/String;)V
+		 Lb/h; b (Lb/d; Lb/e;)V
+		 Lcom/sun/a/a/c; a (Ljava/lang/String;)Ljava/util/Map;
+		 Ljavax/activation/MimeType; match (Ljavax/activation/MimeType;)Z
+		 Lb/d; b ()V
+		 Ld/d/b/g; equals (Ljava/lang/Object;)Z
+		 La/b; a (Ljava/lang/String;)[B
+		 Lcom/sun/a/a/g; d (Ljava/lang/String;)V
+		 Ljavax/mail/internet/ParameterList; <init> (Ljava/lang/String;)V
+		 La/a; a (Landroid/content/Context;)Ljava/lang/String;
+		 Lcom/sun/mail/util/SocketFetcher; startTLS (Ljava/net/Socket; Ljava/lang/String; Ljava/util/Properties; Ljava/lang/String;)Ljava/net/Socket;
+		 Lb/h; <init> (Ljava/lang/String;)V
+		 Ld/d/a; b (Ld/f/b;)Ljava/lang/Class;
+		 Lcom/sun/mail/smtp/SMTPSaslAuthenticator$1; handle ([Ljavax/security/auth/callback/Callback;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00026.json
+Rule crime: Method reflection
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Class; getMethod (Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+		 Ljava/lang/reflect/Method; invoke (Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 Lcom/Loader; f ()V
+		 Lcom/sun/mail/util/SocketFetcher; createSocket (Ljava/net/InetAddress; I Ljava/lang/String; I I I Ljava/util/Properties; Ljava/lang/String; Ljavax/net/SocketFactory; Z)Ljava/net/Socket;
+		 Lcom/sun/mail/util/SocketFetcher; matchCert (Ljava/lang/String; Ljava/security/cert/X509Certificate;)Z
+		 Lcom/Loader$aq; onSignalStrengthsChanged (Landroid/telephony/SignalStrength;)V
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/sun/mail/util/SocketFetcher; getSocketFactory (Ljava/lang/String;)Ljavax/net/SocketFactory;
+		 Lcom/sun/mail/util/MimeUtil; <clinit> ()V
+		 Second API show up in:
+		 Lcom/sun/mail/util/MimeUtil; cleanContentType (Ljavax/mail/internet/MimePart; Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 Lorg/msgpack/core/buffer/b; a (J I I Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
+		 Lorg/msgpack/core/buffer/b; a (Ljava/lang/Object;)J
+		 Lcom/Loader; f ()V
+		 Ljavax/activation/CommandInfo$Beans; instantiate (Ljava/lang/ClassLoader; Ljava/lang/String;)Ljava/lang/Object;
+		 Lorg/msgpack/core/buffer/b; b (Ljava/lang/Object;)V
+		 Lcom/sun/mail/util/SocketFetcher; matchCert (Ljava/lang/String; Ljava/security/cert/X509Certificate;)Z
+		 Lcom/sun/mail/util/SocketFetcher; createSocket (Ljava/net/InetAddress; I Ljava/lang/String; I I I Ljava/util/Properties; Ljava/lang/String; Ljavax/net/SocketFactory; Z)Ljava/net/Socket;
+		 Lcom/Loader$aq; onSignalStrengthsChanged (Landroid/telephony/SignalStrength;)V
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/sun/mail/util/SocketFetcher; getSocketFactory (Ljava/lang/String;)Ljavax/net/SocketFactory;
+		 Lcom/Loader$b; onCallStateChanged (I Ljava/lang/String;)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 Lcom/Loader; f ()V
+		 Lcom/sun/mail/util/SocketFetcher; createSocket (Ljava/net/InetAddress; I Ljava/lang/String; I I I Ljava/util/Properties; Ljava/lang/String; Ljavax/net/SocketFactory; Z)Ljava/net/Socket;
+		 Lcom/sun/mail/util/SocketFetcher; matchCert (Ljava/lang/String; Ljava/security/cert/X509Certificate;)Z
+		 Lcom/Loader$aq; onSignalStrengthsChanged (Landroid/telephony/SignalStrength;)V
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/sun/mail/util/SocketFetcher; getSocketFactory (Ljava/lang/String;)Ljavax/net/SocketFactory;
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 Lcom/Loader; f ()V
+		 Lcom/sun/mail/util/SocketFetcher; createSocket (Ljava/net/InetAddress; I Ljava/lang/String; I I I Ljava/util/Properties; Ljava/lang/String; Ljavax/net/SocketFactory; Z)Ljava/net/Socket;
+		 Lcom/sun/mail/util/SocketFetcher; matchCert (Ljava/lang/String; Ljava/security/cert/X509Certificate;)Z
+		 Lcom/Loader$aq; onSignalStrengthsChanged (Landroid/telephony/SignalStrength;)V
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/sun/mail/util/SocketFetcher; getSocketFactory (Ljava/lang/String;)Ljavax/net/SocketFactory;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00027.json
+Rule crime: Get specific method from other Dex files
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/ClassLoader; loadClass (Ljava/lang/String;)Ljava/lang/Class;
+		 Ljava/lang/Class; getMethod (Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Ljavax/activation/MailcapCommandMap; getDataContentHandler (Ljava/lang/String;)Ljavax/activation/DataContentHandler;
+		 Lorg/msgpack/core/buffer/b; <clinit> ()V
+		 Second API show up in:
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 Lcom/Loader; f ()V
+		 Lcom/sun/mail/util/SocketFetcher; createSocket (Ljava/net/InetAddress; I Ljava/lang/String; I I I Ljava/util/Properties; Ljava/lang/String; Ljavax/net/SocketFactory; Z)Ljava/net/Socket;
+		 Lcom/sun/mail/util/SocketFetcher; matchCert (Ljava/lang/String; Ljava/security/cert/X509Certificate;)Z
+		 Lcom/Loader$aq; onSignalStrengthsChanged (Landroid/telephony/SignalStrength;)V
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/sun/mail/util/SocketFetcher; getSocketFactory (Ljava/lang/String;)Ljavax/net/SocketFactory;
+		 Lcom/sun/mail/util/MimeUtil; <clinit> ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00028.json
+Rule crime: Read file from assets directory
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/InputStream; read ([B)I
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00029.json
+Rule crime: Initialize class object dynamically
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Class; forName (Ljava/lang/String;)Ljava/lang/Class;
+		 Ljava/lang/reflect/Constructor; newInstance ([Ljava/lang/Object;)Ljava/lang/Object;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/sun/mail/handlers/text_xml; class$ (Ljava/lang/String;)Ljava/lang/Class;
+		 Ljavax/mail/Session; class$ (Ljava/lang/String;)Ljava/lang/Class;
+		 Lorg/msgpack/core/buffer/b; <clinit> ()V
+		 Ld/d/b/k; <clinit> ()V
+		 Lcom/sun/mail/handlers/message_rfc822; class$ (Ljava/lang/String;)Ljava/lang/Class;
+		 Ljavax/activation/CommandInfo$Beans; <clinit> ()V
+		 Ljavax/activation/MailcapCommandMap; getDataContentHandler (Ljava/lang/String;)Ljavax/activation/DataContentHandler;
+		 Ljavax/mail/Session; getService (Ljavax/mail/Provider; Ljavax/mail/URLName;)Ljava/lang/Object;
+		 Lcom/sun/mail/util/logging/LogManagerProperties; tryLoad (Ljava/lang/String; Ljava/lang/ClassLoader;)Ljava/lang/Class;
+		 Lcom/sun/mail/util/MimeUtil; class$ (Ljava/lang/String;)Ljava/lang/Class;
+		 Lcom/sun/mail/util/SocketFetcher; class$ (Ljava/lang/String;)Ljava/lang/Class;
+		 Lcom/sun/mail/smtp/SMTPTransport; class$ (Ljava/lang/String;)Ljava/lang/Class;
+		 Lcom/sun/mail/handlers/image_jpeg; class$ (Ljava/lang/String;)Ljava/lang/Class;
+		 Lcom/sun/mail/util/logging/LogManagerProperties; class$ (Ljava/lang/String;)Ljava/lang/Class;
+		 Lorg/msgpack/core/buffer/c; <clinit> ()V
+		 Lcom/sun/mail/handlers/text_html; class$ (Ljava/lang/String;)Ljava/lang/Class;
+		 Lcom/Loader$b; onCallStateChanged (I Ljava/lang/String;)V
+		 Lcom/sun/mail/handlers/text_plain; class$ (Ljava/lang/String;)Ljava/lang/Class;
+		 Lcom/sun/mail/util/SocketFetcher; createSocket (Ljava/net/InetAddress; I Ljava/lang/String; I I I Ljava/util/Properties; Ljava/lang/String; Ljavax/net/SocketFactory; Z)Ljava/net/Socket;
+		 Lcom/sun/mail/util/SocketFetcher; matchCert (Ljava/lang/String; Ljava/security/cert/X509Certificate;)Z
+		 Lcom/sun/mail/handlers/multipart_mixed; class$ (Ljava/lang/String;)Ljava/lang/Class;
+		 Ljavax/mail/internet/MimeUtility; class$ (Ljava/lang/String;)Ljava/lang/Class;
+		 Lcom/sun/mail/smtp/SMTPTransport; sasllogin ([Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Z
+		 Ljavax/activation/ActivationDataFlavor; <init> (Ljava/lang/String; Ljava/lang/String;)V
+		 Lcom/sun/mail/util/logging/MailHandler; class$ (Ljava/lang/String;)Ljava/lang/Class;
+		 Lcom/sun/mail/util/SocketFetcher; getSocketFactory (Ljava/lang/String;)Ljavax/net/SocketFactory;
+		 Lcom/sun/mail/handlers/image_gif; class$ (Ljava/lang/String;)Ljava/lang/Class;
+		 Lcom/sun/mail/util/MimeUtil; <clinit> ()V
+		 Second API show up in:
+		 Lorg/msgpack/core/buffer/b; a (J I I Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
+		 Lorg/msgpack/core/buffer/c; newInstance (Ljava/lang/reflect/Constructor; [Ljava/lang/Object;)Lorg/msgpack/core/buffer/c;
+		 Lcom/sun/mail/smtp/SMTPTransport; sasllogin ([Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Z
+		 Lcom/sun/mail/util/logging/LogManagerProperties; newObjectFrom (Ljava/lang/String; Ljava/lang/Class;)Ljava/lang/Object;
+		 Ljavax/mail/Session; getService (Ljavax/mail/Provider; Ljavax/mail/URLName;)Ljava/lang/Object;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/sun/mail/smtp/SMTPTransport; sasllogin ([Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Z
+	[✓]5.Native API Use Same Parameter
+		 Lcom/sun/mail/smtp/SMTPTransport; sasllogin ([Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00030.json
+Rule crime: Connect to the remote server through the given URL
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/URL; openConnection ()Ljava/net/URLConnection;
+		 Ljava/net/HttpURLConnection; connect ()V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Ljavax/activation/URLDataSource; getOutputStream ()Ljava/io/OutputStream;
+		 Lcom/Loader$y$1$1; run ()V
+		 La/b; a (Ljava/lang/String;)[B
+		 Ljavax/activation/URLDataSource; getContentType ()Ljava/lang/String;
+		 Second API show up in:
+		 La/b; a (Ljava/lang/String;)[B
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 La/b; a (Ljava/lang/String;)[B
+	[✓]5.Native API Use Same Parameter
+		 La/b; a (Ljava/lang/String;)[B
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00031.json
+Rule crime: Check the list of currently running applications
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/app/ActivityManager; getRunningTasks (I)Ljava/util/List;
+		 Landroid/content/ComponentName; getPackageName ()Ljava/lang/String;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader; getTopActivityName$loader_release (Landroid/content/Context;)Ljava/lang/String;
+		 Second API show up in:
+		 Lcom/Loader; getTopActivityName$loader_release (Landroid/content/Context;)Ljava/lang/String;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader; getTopActivityName$loader_release (Landroid/content/Context;)Ljava/lang/String;
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader; getTopActivityName$loader_release (Landroid/content/Context;)Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00032.json
+Rule crime: Load external class
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Class; getClassLoader ()Ljava/lang/ClassLoader;
+		 Ljava/lang/ClassLoader; loadClass (Ljava/lang/String;)Ljava/lang/Class;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Ljavax/mail/Session; getDefaultInstance (Ljava/util/Properties; Ljavax/mail/Authenticator;)Ljavax/mail/Session;
+		 Ljavax/activation/MailcapCommandMap; loadAllResources (Ljava/util/List; Ljava/lang/String;)V
+		 Ljavax/activation/DataHandler; setDataContentHandlerFactory (Ljavax/activation/DataContentHandlerFactory;)V
+		 Ljavax/activation/DataHandler; getBean (Ljavax/activation/CommandInfo;)Ljava/lang/Object;
+		 Ljavax/activation/MimetypesFileTypeMap; loadAllResources (Ljava/util/Vector; Ljava/lang/String;)V
+		 Ljavax/activation/CommandMap; setDefaultCommandMap (Ljavax/activation/CommandMap;)V
+		 Ljavax/mail/Session; loadAllResources (Ljava/lang/String; Ljava/lang/Class; Ljavax/mail/StreamLoader;)V
+		 Ljavax/mail/Session; getService (Ljavax/mail/Provider; Ljavax/mail/URLName;)Ljava/lang/Object;
+		 Ljavax/activation/MailcapCommandMap; getDataContentHandler (Ljava/lang/String;)Ljavax/activation/DataContentHandler;
+		 Ljavax/activation/FileTypeMap; setDefaultFileTypeMap (Ljavax/activation/FileTypeMap;)V
+		 Second API show up in:
+		 Ljavax/activation/MailcapCommandMap; getDataContentHandler (Ljava/lang/String;)Ljavax/activation/DataContentHandler;
+		 Lorg/msgpack/core/buffer/b; <clinit> ()V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Ljavax/activation/MailcapCommandMap; getDataContentHandler (Ljava/lang/String;)Ljavax/activation/DataContentHandler;
+	[✓]5.Native API Use Same Parameter
+		 Ljavax/activation/MailcapCommandMap; getDataContentHandler (Ljava/lang/String;)Ljavax/activation/DataContentHandler;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00033.json
+Rule crime: Query the IMEI number
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+		 Landroid/telephony/TelephonyManager; getDeviceId ()Ljava/lang/String;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader; getTopActivityName$loader_release (Landroid/content/Context;)Ljava/lang/String;
+		 Lcom/Loader$at; a (Lb/d; Lb/e;)V
+		 Lcom/n; b ()V
+		 Lcom/Loader; a (Z)V
+		 Lcom/Loader; f ()V
+		 Lcom/Loader$an; run ()V
+		 Lcom/Loader$u$1; a ()V
+		 Lcom/Loader; e ()V
+		 Lcom/Loader$ak$1; a ()V
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/Loader$w; a ([Ljava/lang/Object;)Lc/a/h;
+		 Lcom/Loader$b; onCallStateChanged (I Ljava/lang/String;)V
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 La/a; a (Landroid/content/Context;)Ljava/lang/String;
+		 Lcom/p; b (Landroid/content/Context;)Z
+		 Lcom/Loader$al; run ()V
+		 Lcom/Loader$m; a (Ljava/lang/Object;)V
+		 Lcom/Loader$b$a$a; onClick (Landroid/content/DialogInterface; I)V
+		 Lcom/p; a (Landroid/content/Context; Ljava/lang/String;)V
+		 Lcom/Loader; c ()V
+		 Lcom/Loader; onStop ()V
+		 Lcom/Loader$ag$1; a (Lc/a/i;)V
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/Loader$s$e$1; a (Ljavax/mail/Session; Ljava/lang/String; Ljava/lang/String;)Ljavax/mail/internet/MimeMessage;
+		 Second API show up in:
+		 Lcom/Loader; c ()V
+		 La/a; a (Landroid/content/Context;)Ljava/lang/String;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader; c ()V
+		 La/a; a (Landroid/content/Context;)Ljava/lang/String;
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader; c ()V
+		 La/a; a (Landroid/content/Context;)Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00034.json
+Rule crime: Query the current data network type
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+		 Landroid/telephony/TelephonyManager; getNetworkType ()I
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader; getTopActivityName$loader_release (Landroid/content/Context;)Ljava/lang/String;
+		 Lcom/Loader$at; a (Lb/d; Lb/e;)V
+		 Lcom/n; b ()V
+		 Lcom/Loader; a (Z)V
+		 Lcom/Loader; f ()V
+		 Lcom/Loader$an; run ()V
+		 Lcom/Loader$u$1; a ()V
+		 Lcom/Loader; e ()V
+		 Lcom/Loader$ak$1; a ()V
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/Loader$w; a ([Ljava/lang/Object;)Lc/a/h;
+		 Lcom/Loader$b; onCallStateChanged (I Ljava/lang/String;)V
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 La/a; a (Landroid/content/Context;)Ljava/lang/String;
+		 Lcom/p; b (Landroid/content/Context;)Z
+		 Lcom/Loader$al; run ()V
+		 Lcom/Loader$m; a (Ljava/lang/Object;)V
+		 Lcom/Loader$b$a$a; onClick (Landroid/content/DialogInterface; I)V
+		 Lcom/p; a (Landroid/content/Context; Ljava/lang/String;)V
+		 Lcom/Loader; c ()V
+		 Lcom/Loader; onStop ()V
+		 Lcom/Loader$ag$1; a (Lc/a/i;)V
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/Loader$s$e$1; a (Ljavax/mail/Session; Ljava/lang/String; Ljava/lang/String;)Ljavax/mail/internet/MimeMessage;
+		 Second API show up in:
+		 Lcom/Loader; f ()V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader; f ()V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader; f ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00035.json
+Rule crime: Query the list of the installed packages
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getPackageManager ()Landroid/content/pm/PackageManager;
+		 Landroid/content/pm/PackageManager; getInstalledPackages (I)Ljava/util/List;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader; getFirstAppDate ()J
+		 Lcom/Loader$c$2$1$a$1; b ()V
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 Lcom/Loader$ab; a ([Ljava/lang/Object;)Lc/a/h;
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/Loader; requestIgnoreBatteryOpt2 ()V
+		 Second API show up in:
+		 Lcom/Loader; getFirstAppDate ()J
+		 Lcom/Loader$ab; a ([Ljava/lang/Object;)Lc/a/h;
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader; getFirstAppDate ()J
+		 Lcom/Loader$ab; a ([Ljava/lang/Object;)Lc/a/h;
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader; getFirstAppDate ()J
+		 Lcom/Loader$ab; a ([Ljava/lang/Object;)Lc/a/h;
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00036.json
+Rule crime: Get resource file from res/raw directory
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getPackageName ()Ljava/lang/String;
+		 Landroid/net/Uri; parse (Ljava/lang/String;)Landroid/net/Uri;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader; f ()V
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/Loader$g; a (Ljava/lang/Object;)V
+		 Second API show up in:
+		 Lcom/p; a (Landroid/content/Context;)Ljava/util/ArrayList;
+		 Lcom/Loader$c$2$1; b ()V
+		 Lcom/e; a (Landroid/content/Context; Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 Lcom/Loader$aa; a ([Ljava/lang/Object;)Lc/a/h;
+		 Lcom/e; b (Landroid/content/Context; Ljava/lang/String;)[B
+		 Lcom/p; b (Landroid/content/Context; Ljava/lang/String;)V
+		 Lcom/e; a (Landroid/content/Context; I)Lcom/e$a;
+		 Lcom/a; a (Landroid/content/Context;)Ljava/util/Set;
+		 Lcom/Loader$g; a (Ljava/lang/Object;)V
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/Loader$k$1; a (Ljava/lang/Object;)V
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00037.json
+Rule crime: Send notification
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/app/Notification$Builder; build ()Landroid/app/Notification;
+		 Landroid/app/NotificationManager; notify (I Landroid/app/Notification;)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader$g; a (Ljava/lang/Object;)V
+		 Second API show up in:
+		 Lcom/Loader$g; a (Ljava/lang/Object;)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader$g; a (Ljava/lang/Object;)V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader$g; a (Ljava/lang/Object;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00038.json
+Rule crime: Query the phone number
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+		 Landroid/telephony/TelephonyManager; getLine1Number ()Ljava/lang/String;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader; getTopActivityName$loader_release (Landroid/content/Context;)Ljava/lang/String;
+		 Lcom/Loader$at; a (Lb/d; Lb/e;)V
+		 Lcom/n; b ()V
+		 Lcom/Loader; a (Z)V
+		 Lcom/Loader; f ()V
+		 Lcom/Loader$an; run ()V
+		 Lcom/Loader$u$1; a ()V
+		 Lcom/Loader; e ()V
+		 Lcom/Loader$ak$1; a ()V
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/Loader$w; a ([Ljava/lang/Object;)Lc/a/h;
+		 Lcom/Loader$b; onCallStateChanged (I Ljava/lang/String;)V
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 La/a; a (Landroid/content/Context;)Ljava/lang/String;
+		 Lcom/p; b (Landroid/content/Context;)Z
+		 Lcom/Loader$al; run ()V
+		 Lcom/Loader$m; a (Ljava/lang/Object;)V
+		 Lcom/Loader$b$a$a; onClick (Landroid/content/DialogInterface; I)V
+		 Lcom/p; a (Landroid/content/Context; Ljava/lang/String;)V
+		 Lcom/Loader; c ()V
+		 Lcom/Loader; onStop ()V
+		 Lcom/Loader$ag$1; a (Lc/a/i;)V
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/Loader$s$e$1; a (Ljavax/mail/Session; Ljava/lang/String; Ljava/lang/String;)Ljavax/mail/internet/MimeMessage;
+		 Second API show up in:
+		 Lcom/Loader$at; a (Lb/d; Lb/e;)V
+		 Lcom/Loader; c ()V
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 Lcom/Loader$s$e$1; a (Ljavax/mail/Session; Ljava/lang/String; Ljava/lang/String;)Ljavax/mail/internet/MimeMessage;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader$at; a (Lb/d; Lb/e;)V
+		 Lcom/Loader; c ()V
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 Lcom/Loader$s$e$1; a (Ljavax/mail/Session; Ljava/lang/String; Ljava/lang/String;)Ljavax/mail/internet/MimeMessage;
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader; c ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00039.json
+Rule crime: Start a web server
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/ServerSocket; accept ()Ljava/net/Socket;
+		 Ljava/net/Socket; getInetAddress ()Ljava/net/InetAddress;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lb/g; run ()V
+		 Second API show up in:
+		 Lcom/sun/mail/smtp/SMTPTransport; openServer ()V
+		 Lcom/sun/mail/util/SocketFetcher; startTLS (Ljava/net/Socket; Ljava/util/Properties; Ljava/lang/String;)Ljava/net/Socket;
+		 Lb/g; run ()V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lb/g; run ()V
+	[✓]5.Native API Use Same Parameter
+		 Lb/g; run ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00040.json
+Rule crime: Send SMS
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/telephony/SmsManager; divideMessage (Ljava/lang/String;)Ljava/util/ArrayList;
+		 Landroid/telephony/SmsManager; sendMultipartTextMessage (Ljava/lang/String; Ljava/lang/String; Ljava/util/ArrayList; Ljava/util/ArrayList; Ljava/util/ArrayList;)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/n; b ()V
+		 Second API show up in:
+		 Lcom/n; b ()V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/n; b ()V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/n; b ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00041.json
+Rule crime: Save recorded audio/video to file
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; toString ()Ljava/lang/String;
+		 Landroid/media/MediaRecorder; setOutputFile (Ljava/lang/String;)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/j; a ()V
+		 Lcom/j; <init> (Ljava/lang/String;)V
+		 Second API show up in:
+		 Lcom/j; a ()V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/j; a ()V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/j; a ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00042.json
+Rule crime: Query WiFi BSSID and scan results
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/wifi/WifiInfo; getBSSID ()Ljava/lang/String;
+		 Landroid/net/wifi/WifiManager; getScanResults ()Ljava/util/List;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader; f ()V
+		 Second API show up in:
+		 Lcom/Loader; f ()V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader; f ()V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader; f ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00043.json
+Rule crime: Calculate WiFi signal strength
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/wifi/WifiInfo; getRssi ()I
+		 Landroid/net/wifi/WifiManager; calculateSignalLevel (I I)I
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader; f ()V
+		 Second API show up in:
+		 Lcom/Loader; f ()V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader; f ()V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader; f ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00044.json
+Rule crime: Query the last time this package's activity was used
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/app/usage/UsageStatsManager; queryUsageStats (I J J)Ljava/util/List;
+		 Landroid/app/usage/UsageStats; getLastTimeUsed ()J
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader; getTopActivityName$loader_release (Landroid/content/Context;)Ljava/lang/String;
+		 Lcom/Loader; f ()V
+		 Second API show up in:
+		 Lcom/Loader; getTopActivityName$loader_release (Landroid/content/Context;)Ljava/lang/String;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader; getTopActivityName$loader_release (Landroid/content/Context;)Ljava/lang/String;
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader; getTopActivityName$loader_release (Landroid/content/Context;)Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00045.json
+Rule crime: Query the name of currently running application
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/app/usage/UsageStatsManager; queryUsageStats (I J J)Ljava/util/List;
+		 Landroid/app/usage/UsageStats; getPackageName ()Ljava/lang/String;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader; getTopActivityName$loader_release (Landroid/content/Context;)Ljava/lang/String;
+		 Lcom/Loader; f ()V
+		 Second API show up in:
+		 Lcom/Loader; getTopActivityName$loader_release (Landroid/content/Context;)Ljava/lang/String;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader; getTopActivityName$loader_release (Landroid/content/Context;)Ljava/lang/String;
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader; getTopActivityName$loader_release (Landroid/content/Context;)Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00046.json
+Rule crime: Method reflection
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Class; getDeclaredMethod (Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+		 Ljava/lang/reflect/Method; invoke (Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Ljavax/activation/CommandInfo$Beans; <clinit> ()V
+		 Lorg/msgpack/core/buffer/b; <clinit> ()V
+		 Lcom/Loader$b; onCallStateChanged (I Ljava/lang/String;)V
+		 Second API show up in:
+		 Lcom/sun/mail/util/MimeUtil; cleanContentType (Ljavax/mail/internet/MimePart; Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 Lorg/msgpack/core/buffer/b; a (J I I Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
+		 Lorg/msgpack/core/buffer/b; a (Ljava/lang/Object;)J
+		 Lcom/Loader; f ()V
+		 Ljavax/activation/CommandInfo$Beans; instantiate (Ljava/lang/ClassLoader; Ljava/lang/String;)Ljava/lang/Object;
+		 Lorg/msgpack/core/buffer/b; b (Ljava/lang/Object;)V
+		 Lcom/sun/mail/util/SocketFetcher; matchCert (Ljava/lang/String; Ljava/security/cert/X509Certificate;)Z
+		 Lcom/sun/mail/util/SocketFetcher; createSocket (Ljava/net/InetAddress; I Ljava/lang/String; I I I Ljava/util/Properties; Ljava/lang/String; Ljavax/net/SocketFactory; Z)Ljava/net/Socket;
+		 Lcom/Loader$aq; onSignalStrengthsChanged (Landroid/telephony/SignalStrength;)V
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/sun/mail/util/SocketFetcher; getSocketFactory (Ljava/lang/String;)Ljavax/net/SocketFactory;
+		 Lcom/Loader$b; onCallStateChanged (I Ljava/lang/String;)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader$b; onCallStateChanged (I Ljava/lang/String;)V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader$b; onCallStateChanged (I Ljava/lang/String;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00047.json
+Rule crime: Query the local IP address
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/Socket; getLocalAddress ()Ljava/net/InetAddress;
+		 Ljava/net/InetAddress; getHostAddress ()Ljava/lang/String;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lb/d; toString ()Ljava/lang/String;
+		 Lcom/sun/mail/smtp/SMTPTransport; getLocalHost ()Ljava/lang/String;
+		 Second API show up in:
+		 Lb/d; toString ()Ljava/lang/String;
+		 Lcom/sun/mail/smtp/SMTPTransport; getLocalHost ()Ljava/lang/String;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lb/d; toString ()Ljava/lang/String;
+		 Lcom/sun/mail/smtp/SMTPTransport; getLocalHost ()Ljava/lang/String;
+	[✓]5.Native API Use Same Parameter
+		 Lb/d; toString ()Ljava/lang/String;
+		 Lcom/sun/mail/smtp/SMTPTransport; getLocalHost ()Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00048.json
+Rule crime: Query the SMS contents
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/telephony/SmsMessage; createFromPdu ([B)Landroid/telephony/SmsMessage;
+		 Landroid/telephony/SmsMessage; getDisplayMessageBody ()Ljava/lang/String;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Second API show up in:
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00049.json
+Rule crime: Query the phone number from SMS sender
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/telephony/SmsMessage; createFromPdu ([B)Landroid/telephony/SmsMessage;
+		 Landroid/telephony/SmsMessage; getDisplayOriginatingAddress ()Ljava/lang/String;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Second API show up in:
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00050.json
+Rule crime: Query the SMS service centre timestamp
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/telephony/SmsMessage; createFromPdu ([B)Landroid/telephony/SmsMessage;
+		 Landroid/telephony/SmsMessage; getTimestampMillis ()J
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Second API show up in:
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00051.json
+Rule crime: Implicit intent(view a web page, make a phone call, etc.) via setData
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/Uri; parse (Ljava/lang/String;)Landroid/net/Uri;
+		 Landroid/content/Intent; setData (Landroid/net/Uri;)Landroid/content/Intent;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/p; a (Landroid/content/Context;)Ljava/util/ArrayList;
+		 Lcom/Loader$c$2$1; b ()V
+		 Lcom/e; a (Landroid/content/Context; Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 Lcom/Loader$aa; a ([Ljava/lang/Object;)Lc/a/h;
+		 Lcom/e; b (Landroid/content/Context; Ljava/lang/String;)[B
+		 Lcom/p; b (Landroid/content/Context; Ljava/lang/String;)V
+		 Lcom/e; a (Landroid/content/Context; I)Lcom/e$a;
+		 Lcom/a; a (Landroid/content/Context;)Ljava/util/Set;
+		 Lcom/Loader$g; a (Ljava/lang/Object;)V
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/Loader$k$1; a (Ljava/lang/Object;)V
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Second API show up in:
+		 Lcom/p; b (Landroid/content/Context; Ljava/lang/String;)V
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/Loader$g; a (Ljava/lang/Object;)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/p; b (Landroid/content/Context; Ljava/lang/String;)V
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/Loader$g; a (Ljava/lang/Object;)V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/p; b (Landroid/content/Context; Ljava/lang/String;)V
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/Loader$g; a (Ljava/lang/Object;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00052.json
+Rule crime: Deletes media specified by a content URI(SMS, CALL_LOG, File, etc.)
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/Uri; parse (Ljava/lang/String;)Landroid/net/Uri;
+		 Landroid/content/ContentResolver; delete (Landroid/net/Uri; Ljava/lang/String; [Ljava/lang/String;)I
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/p; a (Landroid/content/Context;)Ljava/util/ArrayList;
+		 Lcom/Loader$c$2$1; b ()V
+		 Lcom/e; a (Landroid/content/Context; Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 Lcom/Loader$aa; a ([Ljava/lang/Object;)Lc/a/h;
+		 Lcom/e; b (Landroid/content/Context; Ljava/lang/String;)[B
+		 Lcom/p; b (Landroid/content/Context; Ljava/lang/String;)V
+		 Lcom/e; a (Landroid/content/Context; I)Lcom/e$a;
+		 Lcom/a; a (Landroid/content/Context;)Ljava/util/Set;
+		 Lcom/Loader$g; a (Ljava/lang/Object;)V
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/Loader$k$1; a (Ljava/lang/Object;)V
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Second API show up in:
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00053.json
+Rule crime: Monitor data identified by a given content URI changes(SMS, MMS, etc.)
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/Uri; parse (Ljava/lang/String;)Landroid/net/Uri;
+		 Landroid/content/ContentResolver; registerContentObserver (Landroid/net/Uri; Z Landroid/database/ContentObserver;)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/p; a (Landroid/content/Context;)Ljava/util/ArrayList;
+		 Lcom/Loader$c$2$1; b ()V
+		 Lcom/e; a (Landroid/content/Context; Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 Lcom/Loader$aa; a ([Ljava/lang/Object;)Lc/a/h;
+		 Lcom/e; b (Landroid/content/Context; Ljava/lang/String;)[B
+		 Lcom/p; b (Landroid/content/Context; Ljava/lang/String;)V
+		 Lcom/e; a (Landroid/content/Context; I)Lcom/e$a;
+		 Lcom/a; a (Landroid/content/Context;)Ljava/util/Set;
+		 Lcom/Loader$g; a (Ljava/lang/Object;)V
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/Loader$k$1; a (Ljava/lang/Object;)V
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Second API show up in:
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00054.json
+Rule crime: Install other APKs from file
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/Uri; fromFile (Ljava/io/File;)Landroid/net/Uri;
+		 Landroid/content/Intent; setDataAndType (Landroid/net/Uri; Ljava/lang/String;)Landroid/content/Intent;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/b; a (Landroid/content/Context; Ljava/io/File;)V
+		 Second API show up in:
+		 Lcom/b; a (Landroid/content/Context; Ljava/io/File;)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/b; a (Landroid/content/Context; Ljava/io/File;)V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/b; a (Landroid/content/Context; Ljava/io/File;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00055.json
+Rule crime: Query the SMS content and the source of the phone number
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/telephony/SmsMessage; getDisplayMessageBody ()Ljava/lang/String;
+		 Landroid/telephony/SmsMessage; getDisplayOriginatingAddress ()Ljava/lang/String;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Second API show up in:
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00056.json
+Rule crime: Modify voice volume
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/media/AudioManager; getStreamMaxVolume (I)I
+		 Landroid/media/AudioManager; setStreamVolume (I I I)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader$m; a (Ljava/lang/Object;)V
+		 Lcom/Loader$b; onCallStateChanged (I Ljava/lang/String;)V
+		 Second API show up in:
+		 Lcom/Loader$m; a (Ljava/lang/Object;)V
+		 Lcom/Loader$b; onCallStateChanged (I Ljava/lang/String;)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader$m; a (Ljava/lang/Object;)V
+		 Lcom/Loader$b; onCallStateChanged (I Ljava/lang/String;)V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader$m; a (Ljava/lang/Object;)V
+		 Lcom/Loader$b; onCallStateChanged (I Ljava/lang/String;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00057.json
+Rule crime: Return the DHCP-assigned addresses from the last successful DHCP request
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/wifi/WifiManager; getDhcpInfo ()Landroid/net/DhcpInfo;
+		 Ljava/lang/StringBuilder; toString ()Ljava/lang/String;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader; f ()V
+		 Second API show up in:
+		 Ljavax/activation/MimeType; toString ()Ljava/lang/String;
+		 Lcom/Loader$f$1; a (Ljava/lang/String;)V
+		 Lc/a/e/b/b; a (I Ljava/lang/String;)I
+		 Lcom/sun/a/a/c; a (Ljava/io/Reader;)V
+		 Lcom/e; a (Landroid/content/Context; I)Lcom/e$a;
+		 Lcom/b/a/a/p; n (Lcom/b/a/a/z;)V
+		 Lcom/p; b (Ljava/lang/String;)Ljava/lang/String;
+		 Lorg/msgpack/core/buffer/c; <clinit> ()V
+		 Lcom/n; a (Landroid/content/Intent; I)V
+		 Lcom/Loader$c; a (Ljava/lang/Object;)V
+		 Lcom/l; toString ()Ljava/lang/String;
+		 Ljavax/activation/MimetypesFileTypeMap; loadAllResources (Ljava/util/Vector; Ljava/lang/String;)V
+		 Lcom/b/a/a/n; a (Ljava/io/InputStream;)V
+		 Lcom/Loader; <init> ()V
+		 Ld/h/l; a (Ljava/lang/CharSequence; Ld/d/a/b;)Ljava/lang/String;
+		 Ld/a/o; listIterator (I)Ljava/util/ListIterator;
+		 Ld/d/b/g; toString ()Ljava/lang/String;
+		 Ljavax/activation/MailcapCommandMap$1; run ()Ljava/lang/Object;
+		 Ld/d/b/h; c (Ljava/lang/String;)V
+		 Lcom/sun/a/a/c; b (Ljava/lang/String;)Ljava/util/Map;
+		 Lcom/b/a/a/p; b ()Lcom/b/a/a/z;
+		 Ljavax/activation/MimeType; getBaseType ()Ljava/lang/String;
+		 Lcom/g$c$a; a (Lcom/b/a/a/t; Lcom/b/a/a/ad;)V
+		 Lc/a/c/a; a (Lc/a/c/a$b;)V
+		 Ld/c; toString ()Ljava/lang/String;
+		 Lcom/Loader$f; run ()V
+		 Lcom/sun/a/a/c; a (I I Ljava/lang/String;)V
+		 Ljavax/activation/ObjectDataContentHandler; writeTo (Ljava/lang/Object; Ljava/lang/String; Ljava/io/OutputStream;)V
+		 Lorg/msgpack/core/n; a (Ljava/lang/String; B)Lorg/msgpack/core/h;
+		 Ljavax/activation/MailcapCommandMap; <init> (Ljava/lang/String;)V
+		 Lcom/b/a/a/ae; d (Lcom/b/a/a/z;)V
+		 Lcom/q; c (Ljava/io/File; Ljava/util/zip/ZipOutputStream; Ljava/lang/String;)V
+		 Lb/c; a (Lb/d; Lb/e;)V
+		 Lcom/Loader$i; b ()Ljava/lang/String;
+		 Lorg/msgpack/a/a/c; toString ()Ljava/lang/String;
+		 Lcom/Loader$f$1$2; a (Ljava/lang/Throwable;)V
+		 Lb/e; b (I)Ljava/lang/String;
+		 Ljavax/activation/ObjectDataContentHandler; getTransferData (Ljavax/activation/ActivationDataFlavor; Ljavax/activation/DataSource;)Ljava/lang/Object;
+		 Lcom/b/a/a/t; a (Ljava/net/Socket;)Lcom/b/a/a/aa;
+		 Lcom/sun/a/a/c; <init> (Ljava/lang/String;)V
+		 Lorg/msgpack/a/a/c; A ()Ljava/lang/String;
+		 Lorg/msgpack/a/a/h; A ()Ljava/lang/String;
+		 Lcom/q; a (Ljava/io/File; Ljava/util/zip/ZipOutputStream; Ljava/lang/String;)V
+		 Lcom/b/a/a/p; b (Ljava/util/List;)[B
+		 Lcom/sun/a/a/c; e (Ljava/lang/String;)V
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/e; a (Landroid/content/Context; Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/p; a ()Z
+		 Lcom/Loader$aa; a ([Ljava/lang/Object;)Lc/a/h;
+		 Ld/c/d; a (Ljava/io/File;)[B
+		 Ld/a/o; a (I)Ljava/lang/Void;
+		 Lcom/b/a/a/aa; a (J Z [B)[B
+		 Lcom/b/a/a/p; a ([B)V
+		 Ld/h/v; a (Ljava/lang/CharSequence; [Ljava/lang/String; I Z I)Ld/g/a;
+		 Lcom/b/a/a/y; b (Ljava/lang/String;)Ljava/lang/String;
+		 Lc/a/c/a; <init> (Ljava/lang/Iterable;)V
+		 Lc/a/b/f; toString ()Ljava/lang/String;
+		 Lcom/sun/a/a/g; d (Ljava/lang/String;)V
+		 Ld/d/b/n; a (Ljava/lang/Object; Ljava/lang/String;)V
+		 Lcom/c; <clinit> ()V
+		 Ld/e/a; toString ()Ljava/lang/String;
+		 Lcom/sun/a/a/f; toString ()Ljava/lang/String;
+		 Ljavax/activation/DataSourceDataContentHandler; getTransferData (Ljavax/activation/ActivationDataFlavor; Ljavax/activation/DataSource;)Ljava/lang/Object;
+		 Lcom/Loader; c ()V
+		 Lcom/b/a/a/n; c ()Ljava/lang/String;
+		 Lcom/g$c$1; a (I Ljava/lang/String; Ljava/lang/Throwable;)V
+		 Lcom/p$a; run ()V
+		 Lcom/b/a/a/ae; run ()V
+		 Lorg/msgpack/a/a/h; toString ()Ljava/lang/String;
+		 Lcom/Loader; b (Landroid/accounts/Account;)Ljava/lang/String;
+		 Ljavax/activation/MailcapCommandMap; createDataContentHandler (Ljava/lang/String;)Ljavax/activation/DataContentHandler;
+		 Ld/e/f; a (I I I)I
+		 Lcom/sun/a/a/c; a (I I I I Ljava/lang/String;)V
+		 Lb/d; toString ()Ljava/lang/String;
+		 Ld/d/b/h; b (Ljava/lang/String;)V
+		 Ld/e/c; toString ()Ljava/lang/String;
+		 Ld/d/b/c; toString ()Ljava/lang/String;
+		 Lb/e; b ()V
+		 Ljavax/activation/MailcapCommandMap; <init> ()V
+		 Lcom/b/a/a/t; b (Ljava/net/Socket;)Lcom/b/a/a/ac;
+		 Lcom/e; b (Landroid/content/Context; Ljava/lang/String;)[B
+		 Ljavax/activation/MailcapCommandMap; loadResource (Ljava/lang/String;)Lcom/sun/a/a/c;
+		 Ld/a/m; a (Ljava/lang/Iterable; Ljava/lang/CharSequence; Ljava/lang/CharSequence; Ljava/lang/CharSequence; I Ljava/lang/CharSequence; Ld/d/a/b;)Ljava/lang/String;
+		 Lcom/b/a/a/y; a (Ljava/lang/String;)Z
+		 Lcom/Loader$s$e$1; a (Ljavax/mail/Session; Ljava/lang/String; Ljava/lang/String;)Ljavax/mail/internet/MimeMessage;
+		 Lcom/Loader; getTopActivityName$loader_release (Landroid/content/Context;)Ljava/lang/String;
+		 Ld/h/g; toString ()Ljava/lang/String;
+		 Ljavax/activation/MailcapCommandMap; loadAllResources (Ljava/util/List; Ljava/lang/String;)V
+		 Lcom/sun/a/a/b; a (Ljava/lang/String; Ljava/lang/Throwable;)V
+		 Lb/d; b ()V
+		 Lc/a/e/g/e; toString ()Ljava/lang/String;
+		 Lc/a/e/g/e; newThread (Ljava/lang/Runnable;)Ljava/lang/Thread;
+		 Lcom/b/a/a/p; run ()V
+		 Lb/e; a (Ljava/lang/String;)V
+		 Lcom/b/a/a/x; toString ()Ljava/lang/String;
+		 Lcom/Loader$x; a ([Ljava/lang/Object;)Lc/a/h;
+		 Lcom/Loader$ax; a (Lb/d; Lb/e;)V
+		 Ljavax/activation/MimetypesFileTypeMap; <init> ()V
+		 Lcom/Loader; a (Landroid/accounts/Account;)Ljava/lang/String;
+		 Lcom/j; a ()V
+		 Lcom/b/a/a/p; q (Lcom/b/a/a/z;)V
+		 Lcom/Loader; f ()V
+		 Lcom/j; <init> (Ljava/lang/String;)V
+		 Ld/h/v; a (Ljava/lang/CharSequence; I I Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+		 Lcom/Loader$s$b; run ()V
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/b/a/a/q; e ()V
+		 Ld/h/v; a (Ljava/lang/CharSequence; [C I Z I)Ld/g/a;
+		 Lcom/sun/a/a/c; d (Ljava/lang/String;)V
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 Lcom/q; b (Ljava/io/File; Ljava/util/zip/ZipOutputStream; Ljava/lang/String;)V
+		 Lcom/b/a/a/b; a ([B)Ljava/lang/String;
+		 Lcom/b/a/a/ae; f ()V
+		 Ljavax/activation/CommandInfo$Beans; instantiate (Ljava/lang/ClassLoader; Ljava/lang/String;)Ljava/lang/Object;
+		 Lcom/p; a (Ljava/lang/String;)Ljava/lang/String;
+		 Lorg/msgpack/a/a/j; A ()Ljava/lang/String;
+		 Lorg/msgpack/core/buffer/c; toHexString (I I)Ljava/lang/String;
+		 Ljavax/activation/MimetypesFileTypeMap$1; run ()Ljava/lang/Object;
+		 Lcom/sun/a/a/c; a (I I I Ljava/lang/String;)V
+		 Lcom/Loader$c$2$1; b ()V
+		 Ld/g/d; a (Ld/g/a; Ljava/lang/CharSequence; Ljava/lang/CharSequence; Ljava/lang/CharSequence; I Ljava/lang/CharSequence; Ld/d/a/b;)Ljava/lang/String;
+		 Ljavax/activation/DataSourceDataContentHandler; writeTo (Ljava/lang/Object; Ljava/lang/String; Ljava/io/OutputStream;)V
+		 Ljavax/activation/MimeTypeParameterList; parse (Ljava/lang/String;)V
+		 Lcom/Loader$ab; a ([Ljava/lang/Object;)Lc/a/h;
+		 Ljavax/activation/MailcapCommandMap; getDataContentHandler (Ljava/lang/String;)Ljavax/activation/DataContentHandler;
+		 Lcom/sun/a/a/g; a (Ljava/io/BufferedReader;)V
+		 Lcom/sun/a/a/c; a (Ljava/lang/String;)Ljava/util/Map;
+		 Ld/a/o; subList (I I)Ljava/util/List;
+		 Lorg/msgpack/a/a/a; A ()Ljava/lang/String;
+		 Lcom/Loader$w; a ([Ljava/lang/Object;)Lc/a/h;
+		 Lcom/b/a/a/z; toString ()Ljava/lang/String;
+		 Ljavax/activation/DataHandler; getInputStream ()Ljava/io/InputStream;
+		 Lb/g; run ()V
+		 Lcom/b/a/a/y; a (Z Ljava/lang/String; Ljava/lang/String; I Ljava/lang/String; Ljava/lang/String; Lcom/b/a/a/q;)Lcom/b/a/a/t;
+		 Ljavax/activation/MimetypesFileTypeMap; loadResource (Ljava/lang/String;)Lcom/sun/a/a/g;
+		 Ld/h/b; a (I)I
+		 Lorg/msgpack/a/a/j; toString ()Ljava/lang/String;
+		 Ld/d/b/h; a (Ljava/lang/Object; Ljava/lang/String;)V
+		 Lcom/g; b (Ljava/lang/Object;)Lorg/msgpack/a/x;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader; f ()V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader; f ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00058.json
+Rule crime: Connect to the specific WIFI network
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/wifi/WifiManager; getConfiguredNetworks ()Ljava/util/List;
+		 Landroid/net/wifi/WifiManager; enableNetwork (I Z)Z
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/p$a; run ()V
+		 Second API show up in:
+		 Lcom/p$a; run ()V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/p$a; run ()V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/p$a; run ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00059.json
+Rule crime: Query the SIM card status
+
+Confidence: 80%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/telephony/TelephonyManager; getSimState ()I
+		 Ljava/lang/Integer; intValue ()I
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader; c ()V
+		 Lcom/Loader$ag$1; a (Lc/a/i;)V
+		 Second API show up in:
+		 Lc/a/e/g/c; <clinit> ()V
+		 Lc/a/e/g/h; <clinit> ()V
+		 Lcom/Loader$aq; onSignalStrengthsChanged (Landroid/telephony/SignalStrength;)V
+		 Lcom/g; a ([B)V
+		 Lcom/m; <init> (Landroid/telephony/SignalStrength;)V
+		 Lcom/p; b (Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/Loader$ak$1; a ()V
+		 Lcom/sun/mail/util/PropUtil; getInt (Ljava/lang/Object; I)I
+		 Ld/h/v; a (Ljava/lang/CharSequence; Ld/e/c;)Ljava/lang/String;
+		 Lc/a/e/g/g; <clinit> ()V
+		 Lc/a/e/f/a; <clinit> ()V
+		 Ld/h/k$a; a (I)Ld/h/g;
+		 Lcom/sun/mail/util/SocketFetcher; matchCert (Ljava/lang/String; Ljava/security/cert/X509Certificate;)Z
+		 Lc/a/e/g/b; <clinit> ()V
+		 Ld/h/l; a (Ljava/lang/CharSequence; Ld/d/a/b;)Ljava/lang/String;
+		 Lc/a/g; <clinit> ()V
+		 Lc/a/e/g/a; <clinit> ()V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader$ag$1; a (Lc/a/i;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00060.json
+Rule crime: Query the network operator name
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/telephony/TelephonyManager; getNetworkOperatorName ()Ljava/lang/String;
+		 Ljava/lang/Integer; valueOf (I)Ljava/lang/Integer;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader; f ()V
+		 Second API show up in:
+		 Lcom/b/a/a/g; b (I)Ljava/lang/String;
+		 Ld/h/v$a; a (Ljava/lang/CharSequence; I)Ld/c;
+		 Lcom/Loader; f ()V
+		 Lb/e; b (I)Ljava/lang/String;
+		 Lcom/b/a/a/a; toString ()Ljava/lang/String;
+		 Lorg/msgpack/core/a; toString ()Ljava/lang/String;
+		 Ld/e/c; g ()Ljava/lang/Integer;
+		 Lcom/Loader$aq; onSignalStrengthsChanged (Landroid/telephony/SignalStrength;)V
+		 Ld/e/c; f ()Ljava/lang/Integer;
+		 Lcom/g$a; a (Lc/a/s;)V
+		 Lcom/b/a/a/z; d (Ljava/lang/StringBuilder;)V
+		 Lorg/msgpack/core/buffer/c; newMessageBuffer ([B I I)Lorg/msgpack/core/buffer/c;
+		 Lb/g; run ()V
+		 Ld/h/v$b; a (Ljava/lang/CharSequence; I)Ld/c;
+		 Lorg/msgpack/core/buffer/b; a (J I I Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
+		 Ld/h/v; b (Ljava/lang/CharSequence; Ljava/util/Collection; I Z Z)Ld/c;
+		 Lcom/g; a (Lorg/msgpack/a/x;)Ljava/lang/Object;
+		 Lb/e; k ()V
+		 Ld/h/v; b (Ljava/lang/CharSequence; [C I Z Z)Ld/c;
+		 Lcom/Loader$x; a ([Ljava/lang/Object;)Lc/a/h;
+		 Lcom/Loader$y$1$1; run ()V
+		 Ld/h/e$a; b ()V
+		 Ld/a/r; a ()Ljava/lang/Integer;
+		 Lcom/Loader; c ()V
+		 Lcom/b/a/a/n; c ()Ljava/lang/String;
+		 Lcom/g$d; a (Lcom/k;)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader; f ()V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader; f ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00061.json
+Rule crime: Return dynamic information about the current Wi-Fi connection
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/wifi/WifiManager; getConnectionInfo ()Landroid/net/wifi/WifiInfo;
+		 Ljava/lang/Integer; valueOf (I)Ljava/lang/Integer;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader; f ()V
+		 Lcom/Loader; onStop ()V
+		 Second API show up in:
+		 Lcom/b/a/a/g; b (I)Ljava/lang/String;
+		 Ld/h/v$a; a (Ljava/lang/CharSequence; I)Ld/c;
+		 Lcom/Loader; f ()V
+		 Lb/e; b (I)Ljava/lang/String;
+		 Lcom/b/a/a/a; toString ()Ljava/lang/String;
+		 Lorg/msgpack/core/a; toString ()Ljava/lang/String;
+		 Ld/e/c; g ()Ljava/lang/Integer;
+		 Lcom/Loader$aq; onSignalStrengthsChanged (Landroid/telephony/SignalStrength;)V
+		 Ld/e/c; f ()Ljava/lang/Integer;
+		 Lcom/g$a; a (Lc/a/s;)V
+		 Lcom/b/a/a/z; d (Ljava/lang/StringBuilder;)V
+		 Lorg/msgpack/core/buffer/c; newMessageBuffer ([B I I)Lorg/msgpack/core/buffer/c;
+		 Lb/g; run ()V
+		 Ld/h/v$b; a (Ljava/lang/CharSequence; I)Ld/c;
+		 Lorg/msgpack/core/buffer/b; a (J I I Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
+		 Ld/h/v; b (Ljava/lang/CharSequence; Ljava/util/Collection; I Z Z)Ld/c;
+		 Lcom/g; a (Lorg/msgpack/a/x;)Ljava/lang/Object;
+		 Lb/e; k ()V
+		 Ld/h/v; b (Ljava/lang/CharSequence; [C I Z Z)Ld/c;
+		 Lcom/Loader$x; a ([Ljava/lang/Object;)Lc/a/h;
+		 Lcom/Loader$y$1$1; run ()V
+		 Ld/h/e$a; b ()V
+		 Ld/a/r; a ()Ljava/lang/Integer;
+		 Lcom/Loader; c ()V
+		 Lcom/b/a/a/n; c ()Ljava/lang/String;
+		 Lcom/g$d; a (Lcom/k;)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader; f ()V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader; f ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00062.json
+Rule crime: Query WiFi information and WiFi Mac Address
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/wifi/WifiManager; getConnectionInfo ()Landroid/net/wifi/WifiInfo;
+		 Landroid/net/wifi/WifiInfo; getMacAddress ()Ljava/lang/String;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader; f ()V
+		 Lcom/Loader; onStop ()V
+		 Second API show up in:
+		 Lcom/Loader; f ()V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader; f ()V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader; f ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00063.json
+Rule crime: Implicit intent(view a web page, make a phone call, etc.)
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/Uri; parse (Ljava/lang/String;)Landroid/net/Uri;
+		 Landroid/content/Intent; <init> (Ljava/lang/String; Landroid/net/Uri;)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/p; a (Landroid/content/Context;)Ljava/util/ArrayList;
+		 Lcom/Loader$c$2$1; b ()V
+		 Lcom/e; a (Landroid/content/Context; Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 Lcom/Loader$aa; a ([Ljava/lang/Object;)Lc/a/h;
+		 Lcom/e; b (Landroid/content/Context; Ljava/lang/String;)[B
+		 Lcom/p; b (Landroid/content/Context; Ljava/lang/String;)V
+		 Lcom/e; a (Landroid/content/Context; I)Lcom/e$a;
+		 Lcom/a; a (Landroid/content/Context;)Ljava/util/Set;
+		 Lcom/Loader$g; a (Ljava/lang/Object;)V
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/Loader$k$1; a (Ljava/lang/Object;)V
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Second API show up in:
+		 Lcom/Loader$c$2$1; b ()V
+		 Lcom/Loader$aa; a ([Ljava/lang/Object;)Lc/a/h;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader$c$2$1; b ()V
+		 Lcom/Loader$aa; a ([Ljava/lang/Object;)Lc/a/h;
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader$c$2$1; b ()V
+		 Lcom/Loader$aa; a ([Ljava/lang/Object;)Lc/a/h;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00064.json
+Rule crime: Monitor incoming call status
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00065.json
+Rule crime: Get the country code of the SIM card provider
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00066.json
+Rule crime: Query the ICCID number
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00067.json
+Rule crime: Query the IMSI number
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00068.json
+Rule crime: Executes the specified string Linux command
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Runtime; getRuntime ()Ljava/lang/Runtime;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00069.json
+Rule crime: Run shell script programmably
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00070.json
+Rule crime: Get sender's address and send SMS
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00071.json
+Rule crime: Write the ISO country code of the current network operator into a file
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/FileOutputStream; write ([B)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00072.json
+Rule crime: Write HTTP input stream into a file
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/HttpURLConnection; getInputStream ()Ljava/io/InputStream;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00073.json
+Rule crime: Write the SIM card information into a file
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/FileOutputStream; write ([B)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00074.json
+Rule crime: Get IMSI and the ISO country code
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00075.json
+Rule crime: Get location of the device
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00076.json
+Rule crime: Get the current WiFi information and put it into JSON
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/wifi/WifiManager; getConnectionInfo ()Landroid/net/wifi/WifiInfo;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00077.json
+Rule crime: Read sensitive data(SMS, CALLLOG, etc)
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getContentResolver ()Landroid/content/ContentResolver;
+		 Landroid/content/ContentResolver; query (Landroid/net/Uri; [Ljava/lang/String; Ljava/lang/String; [Ljava/lang/String; Ljava/lang/String;)Landroid/database/Cursor;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/p; a (Landroid/content/Context;)Ljava/util/ArrayList;
+		 Lcom/e; a (Landroid/content/Context; Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 La/a; a (Landroid/content/Context;)Ljava/lang/String;
+		 Lcom/e; b (Landroid/content/Context; Ljava/lang/String;)[B
+		 Lcom/Loader$k$1; a (Ljava/lang/Object;)V
+		 Lcom/e; a (Landroid/content/Context; I)Lcom/e$a;
+		 Lcom/a; a (Landroid/content/Context;)Ljava/util/Set;
+		 Lcom/p; d (Landroid/content/Context;)V
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Second API show up in:
+		 Lcom/p; a (Landroid/content/Context;)Ljava/util/ArrayList;
+		 Lcom/e; a (Landroid/content/Context; Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/e; a (Landroid/content/Context; I)Lcom/e$a;
+		 Lcom/Loader$k$1; a (Ljava/lang/Object;)V
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/a; a (Landroid/content/Context;)Ljava/util/Set;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/p; a (Landroid/content/Context;)Ljava/util/ArrayList;
+		 Lcom/e; a (Landroid/content/Context; Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/e; a (Landroid/content/Context; I)Lcom/e$a;
+		 Lcom/a; a (Landroid/content/Context;)Ljava/util/Set;
+		 Lcom/Loader$k$1; a (Ljava/lang/Object;)V
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/p; a (Landroid/content/Context;)Ljava/util/ArrayList;
+		 Lcom/e; a (Landroid/content/Context; Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/e; a (Landroid/content/Context; I)Lcom/e$a;
+		 Lcom/a; a (Landroid/content/Context;)Ljava/util/Set;
+		 Lcom/Loader$k$1; a (Ljava/lang/Object;)V
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00078.json
+Rule crime: Get the network operator name
+
+Confidence: 80%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+		 Landroid/telephony/TelephonyManager; getNetworkOperatorName ()Ljava/lang/String;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader; getTopActivityName$loader_release (Landroid/content/Context;)Ljava/lang/String;
+		 Lcom/Loader$at; a (Lb/d; Lb/e;)V
+		 Lcom/n; b ()V
+		 Lcom/Loader; a (Z)V
+		 Lcom/Loader; f ()V
+		 Lcom/Loader$an; run ()V
+		 Lcom/Loader$u$1; a ()V
+		 Lcom/Loader; e ()V
+		 Lcom/Loader$ak$1; a ()V
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/Loader$w; a ([Ljava/lang/Object;)Lc/a/h;
+		 Lcom/Loader$b; onCallStateChanged (I Ljava/lang/String;)V
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 La/a; a (Landroid/content/Context;)Ljava/lang/String;
+		 Lcom/p; b (Landroid/content/Context;)Z
+		 Lcom/Loader$al; run ()V
+		 Lcom/Loader$m; a (Ljava/lang/Object;)V
+		 Lcom/Loader$b$a$a; onClick (Landroid/content/DialogInterface; I)V
+		 Lcom/p; a (Landroid/content/Context; Ljava/lang/String;)V
+		 Lcom/Loader; c ()V
+		 Lcom/Loader; onStop ()V
+		 Lcom/Loader$ag$1; a (Lc/a/i;)V
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/Loader$s$e$1; a (Ljavax/mail/Session; Ljava/lang/String; Ljava/lang/String;)Ljavax/mail/internet/MimeMessage;
+		 Second API show up in:
+		 Lcom/Loader; f ()V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader; f ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00079.json
+Rule crime: Hide the current app's icon
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getPackageManager ()Landroid/content/pm/PackageManager;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00080.json
+Rule crime: Save recorded audio/video to a file
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/media/MediaRecorder; setOutputFile (Ljava/lang/String;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00081.json
+Rule crime: Get declared method from given method name
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/StringBuilder; <init> ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00082.json
+Rule crime: Get the current WiFi MAC address
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+		 Landroid/net/wifi/WifiInfo; getMacAddress ()Ljava/lang/String;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader; getTopActivityName$loader_release (Landroid/content/Context;)Ljava/lang/String;
+		 Lcom/Loader$at; a (Lb/d; Lb/e;)V
+		 Lcom/n; b ()V
+		 Lcom/Loader; a (Z)V
+		 Lcom/Loader; f ()V
+		 Lcom/Loader$an; run ()V
+		 Lcom/Loader$u$1; a ()V
+		 Lcom/Loader; e ()V
+		 Lcom/Loader$ak$1; a ()V
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/Loader$w; a ([Ljava/lang/Object;)Lc/a/h;
+		 Lcom/Loader$b; onCallStateChanged (I Ljava/lang/String;)V
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 La/a; a (Landroid/content/Context;)Ljava/lang/String;
+		 Lcom/p; b (Landroid/content/Context;)Z
+		 Lcom/Loader$al; run ()V
+		 Lcom/Loader$m; a (Ljava/lang/Object;)V
+		 Lcom/Loader$b$a$a; onClick (Landroid/content/DialogInterface; I)V
+		 Lcom/p; a (Landroid/content/Context; Ljava/lang/String;)V
+		 Lcom/Loader; c ()V
+		 Lcom/Loader; onStop ()V
+		 Lcom/Loader$ag$1; a (Lc/a/i;)V
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/Loader$s$e$1; a (Ljavax/mail/Session; Ljava/lang/String; Ljava/lang/String;)Ljavax/mail/internet/MimeMessage;
+		 Second API show up in:
+		 Lcom/Loader; f ()V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader; f ()V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader; f ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00083.json
+Rule crime: Query the IMEI number
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/telephony/TelephonyManager; getDeviceId ()Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00084.json
+Rule crime: Get the ISO country code and IMSI
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00085.json
+Rule crime: Get the ISO country code and put it into JSON
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00086.json
+Rule crime: Check if the device is in data roaming mode
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Object; equals (Ljava/lang/Object;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00087.json
+Rule crime: Check the current network type
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Object; equals (Ljava/lang/Object;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00088.json
+Rule crime: Create a secure socket connection to the given host address
+
+Confidence: 80%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/InetAddress; getHostAddress ()Ljava/lang/String;
+		 Ljavax/net/ssl/SSLSocketFactory; createSocket (Ljava/net/Socket; Ljava/lang/String; I Z)Ljava/net/Socket;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lb/d; toString ()Ljava/lang/String;
+		 Lcom/sun/mail/smtp/SMTPTransport; getLocalHost ()Ljava/lang/String;
+		 Second API show up in:
+		 Lcom/sun/mail/util/SocketFetcher; createSocket (Ljava/net/InetAddress; I Ljava/lang/String; I I I Ljava/util/Properties; Ljava/lang/String; Ljavax/net/SocketFactory; Z)Ljava/net/Socket;
+		 Lcom/sun/mail/util/MailSSLSocketFactory; createSocket (Ljava/net/Socket; Ljava/lang/String; I Z)Ljava/net/Socket;
+		 Lcom/b/a/a/q; e ()V
+		 Lcom/sun/mail/util/SocketFetcher; startTLS (Ljava/net/Socket; Ljava/lang/String; Ljava/util/Properties; Ljava/lang/String;)Ljava/net/Socket;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/sun/mail/smtp/SMTPTransport; protocolConnect (Ljava/lang/String; I Ljava/lang/String; Ljava/lang/String;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00089.json
+Rule crime: Connect to a URL and receive input stream from the server
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/URL; openConnection ()Ljava/net/URLConnection;
+		 Ljava/net/HttpURLConnection; getInputStream ()Ljava/io/InputStream;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Ljavax/activation/URLDataSource; getOutputStream ()Ljava/io/OutputStream;
+		 Lcom/Loader$y$1$1; run ()V
+		 La/b; a (Ljava/lang/String;)[B
+		 Ljavax/activation/URLDataSource; getContentType ()Ljava/lang/String;
+		 Second API show up in:
+		 Lcom/Loader$y$1$1; run ()V
+		 La/b; a (Ljava/lang/String;)[B
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader$y$1$1; run ()V
+		 La/b; a (Ljava/lang/String;)[B
+	[✓]5.Native API Use Same Parameter
+		 La/b; a (Ljava/lang/String;)[B
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00090.json
+Rule crime: Set recroded audio/video file format
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/media/MediaRecorder; setOutputFormat (I)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00091.json
+Rule crime: Retrieve data from broadcast
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Intent; getExtras ()Landroid/os/Bundle;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00092.json
+Rule crime: Send broadcast
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00093.json
+Rule crime: Get the content of SMS and forward it to others via SMS
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00094.json
+Rule crime: Connect to a URL and read data from it
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/URL; openConnection ()Ljava/net/URLConnection;
+		 Ljava/io/InputStream; read ([B)I
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Ljavax/activation/URLDataSource; getOutputStream ()Ljava/io/OutputStream;
+		 Lcom/Loader$y$1$1; run ()V
+		 La/b; a (Ljava/lang/String;)[B
+		 Ljavax/activation/URLDataSource; getContentType ()Ljava/lang/String;
+		 Second API show up in:
+		 Ljavax/activation/DataHandler; writeTo (Ljava/io/OutputStream;)V
+		 Ld/c/a; a (Ljava/io/InputStream; Ljava/io/OutputStream; I)J
+		 Lcom/sun/mail/util/BASE64DecoderStream; getByte ()I
+		 Lcom/e; b (Landroid/content/Context; Ljava/lang/String;)[B
+		 Ljavax/mail/util/ByteArrayDataSource; <init> (Ljava/io/InputStream; Ljava/lang/String;)V
+		 La/b; a (Ljava/io/InputStream;)[B
+		 Ljavax/mail/internet/MimeMessage; writeTo (Ljava/io/OutputStream; [Ljava/lang/String;)V
+		 Ljavax/mail/internet/MimeBodyPart; writeTo (Ljavax/mail/internet/MimePart; Ljava/io/OutputStream; [Ljava/lang/String;)V
+		 Ljavax/mail/internet/MimeBodyPart; saveFile (Ljava/io/File;)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 La/b; a (Ljava/lang/String;)[B
+	[✓]5.Native API Use Same Parameter
+		 La/b; a (Ljava/lang/String;)[B
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00095.json
+Rule crime: Write the ICCID of device into a file
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/FileOutputStream; write ([B)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00096.json
+Rule crime: Connect to a URL and set request method
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/URL; openConnection ()Ljava/net/URLConnection;
+		 Ljava/net/HttpURLConnection; setRequestMethod (Ljava/lang/String;)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Ljavax/activation/URLDataSource; getOutputStream ()Ljava/io/OutputStream;
+		 Lcom/Loader$y$1$1; run ()V
+		 La/b; a (Ljava/lang/String;)[B
+		 Ljavax/activation/URLDataSource; getContentType ()Ljava/lang/String;
+		 Second API show up in:
+		 Lcom/Loader$y$1$1; run ()V
+		 La/b; a (Ljava/lang/String;)[B
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader$y$1$1; run ()V
+		 La/b; a (Ljava/lang/String;)[B
+	[✓]5.Native API Use Same Parameter
+		 La/b; a (Ljava/lang/String;)[B
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00097.json
+Rule crime: Get the sender address of the SMS and put it into JSON
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00098.json
+Rule crime: Check if the network is connected
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Object; equals (Ljava/lang/Object;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00099.json
+Rule crime: Get location of the current GSM and put it into JSON
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00100.json
+Rule crime: Check the network capabilities
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Object; equals (Ljava/lang/Object;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00101.json
+Rule crime: Initialize recorder
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/media/MediaRecorder; prepare ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00102.json
+Rule crime: Set the phone speaker on
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00103.json
+Rule crime: Check the active network type
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/ConnectivityManager; getActiveNetworkInfo ()Landroid/net/NetworkInfo;
+		 Ljava/lang/Object; equals (Ljava/lang/Object;)Z
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader; f ()V
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Second API show up in:
+		 Ljavax/mail/search/AndTerm; equals (Ljava/lang/Object;)Z
+		 Lc/a/e/h/b; a (Ljava/lang/Object;)Z
+		 Ljavax/mail/search/NotTerm; equals (Ljava/lang/Object;)Z
+		 Lc/a/e/h/b; b (Ljava/lang/Object;)Z
+		 Ljavax/mail/search/OrTerm; equals (Ljava/lang/Object;)Z
+		 Ljavax/mail/search/RecipientTerm; equals (Ljava/lang/Object;)Z
+		 Ld/d/b/g; equals (Ljava/lang/Object;)Z
+		 Ld/d/b/h; a (Ljava/lang/Object; Ljava/lang/Object;)Z
+		 Ljavax/mail/search/RecipientStringTerm; equals (Ljava/lang/Object;)Z
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader; f ()V
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader; f ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00104.json
+Rule crime: Check if the given path is directory
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; isDirectory ()Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00105.json
+Rule crime: Append the sender's address to the string
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/StringBuilder; append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00106.json
+Rule crime: Get the currently formatted WiFi IP address
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00107.json
+Rule crime: Write the IMSI number into a file
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/FileOutputStream; write ([B)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00108.json
+Rule crime: Read the input stream from given URL
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/HttpURLConnection; getInputStream ()Ljava/io/InputStream;
+		 Ljava/io/InputStream; read ([B)I
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader$y$1$1; run ()V
+		 La/b; a (Ljava/lang/String;)[B
+		 Second API show up in:
+		 Ljavax/activation/DataHandler; writeTo (Ljava/io/OutputStream;)V
+		 Ld/c/a; a (Ljava/io/InputStream; Ljava/io/OutputStream; I)J
+		 Lcom/sun/mail/util/BASE64DecoderStream; getByte ()I
+		 Lcom/e; b (Landroid/content/Context; Ljava/lang/String;)[B
+		 Ljavax/mail/util/ByteArrayDataSource; <init> (Ljava/io/InputStream; Ljava/lang/String;)V
+		 La/b; a (Ljava/io/InputStream;)[B
+		 Ljavax/mail/internet/MimeMessage; writeTo (Ljava/io/OutputStream; [Ljava/lang/String;)V
+		 Ljavax/mail/internet/MimeBodyPart; writeTo (Ljavax/mail/internet/MimePart; Ljava/io/OutputStream; [Ljava/lang/String;)V
+		 Ljavax/mail/internet/MimeBodyPart; saveFile (Ljava/io/File;)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 La/b; a (Ljava/lang/String;)[B
+	[✓]5.Native API Use Same Parameter
+		 La/b; a (Ljava/lang/String;)[B
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00109.json
+Rule crime: Connect to a URL and get the response code
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/URL; openConnection ()Ljava/net/URLConnection;
+		 Ljava/net/HttpURLConnection; getResponseCode ()I
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Ljavax/activation/URLDataSource; getOutputStream ()Ljava/io/OutputStream;
+		 Lcom/Loader$y$1$1; run ()V
+		 La/b; a (Ljava/lang/String;)[B
+		 Ljavax/activation/URLDataSource; getContentType ()Ljava/lang/String;
+		 Second API show up in:
+		 Lcom/Loader$y$1$1; run ()V
+		 La/b; a (Ljava/lang/String;)[B
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader$y$1$1; run ()V
+		 La/b; a (Ljava/lang/String;)[B
+	[✓]5.Native API Use Same Parameter
+		 La/b; a (Ljava/lang/String;)[B
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00110.json
+Rule crime: Query the ICCID number
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00111.json
+Rule crime: Get the sender address of the SMS
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00112.json
+Rule crime: Get the date of the calendar event
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00113.json
+Rule crime: Get location and put it into JSON
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00114.json
+Rule crime: Create a secure socket connection to the proxy address
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljavax/net/ssl/SSLSocketFactory; createSocket (Ljava/net/Socket; Ljava/lang/String; I Z)Ljava/net/Socket;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00115.json
+Rule crime: Get last known location of the device
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00116.json
+Rule crime: Get the current WiFi MAC address and put it into JSON
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/wifi/WifiInfo; getMacAddress ()Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00117.json
+Rule crime: Get the IMSI and network operator name
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/telephony/TelephonyManager; getNetworkOperatorName ()Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00118.json
+Rule crime: Check if the content of SMS contains given string
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/String; contains (Ljava/lang/CharSequence;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00119.json
+Rule crime: Write the IMEI number into a file
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/telephony/TelephonyManager; getDeviceId ()Ljava/lang/String;
+		 Ljava/io/FileOutputStream; write ([B)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader; c ()V
+		 La/a; a (Landroid/content/Context;)Ljava/lang/String;
+		 Second API show up in:
+		 Lcom/Loader$c$1$1; a (Ljava/lang/Object;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00120.json
+Rule crime: Append the sender's address to the string
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/StringBuilder; append (I)Ljava/lang/StringBuilder;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00121.json
+Rule crime: Create a directory
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; mkdirs ()Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00122.json
+Rule crime: Check if the sender address of SMS contains the given string
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/String; contains (Ljava/lang/CharSequence;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00123.json
+Rule crime: Save the response to JSON after connecting to the remote server
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/HttpURLConnection; connect ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00124.json
+Rule crime: Check the current active network type
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Object; equals (Ljava/lang/Object;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00125.json
+Rule crime: Check if the given file path exist
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; exists ()Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00126.json
+Rule crime: Read sensitive data(SMS, CALLLOG, etc)
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/ContentResolver; query (Landroid/net/Uri; [Ljava/lang/String; Ljava/lang/String; [Ljava/lang/String; Ljava/lang/String;)Landroid/database/Cursor;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00127.json
+Rule crime: Monitor the broadcast action events (BOOT_COMPLETED, etc)
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Intent; getAction ()Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00128.json
+Rule crime: Query user account information
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/accounts/AccountManager; getAccounts ()[Landroid/accounts/Account;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00129.json
+Rule crime: Get the content of SMS
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00130.json
+Rule crime: Get the current WIFI information
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+		 Landroid/net/wifi/WifiManager; getConnectionInfo ()Landroid/net/wifi/WifiInfo;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader; getTopActivityName$loader_release (Landroid/content/Context;)Ljava/lang/String;
+		 Lcom/Loader$at; a (Lb/d; Lb/e;)V
+		 Lcom/n; b ()V
+		 Lcom/Loader; a (Z)V
+		 Lcom/Loader; f ()V
+		 Lcom/Loader$an; run ()V
+		 Lcom/Loader$u$1; a ()V
+		 Lcom/Loader; e ()V
+		 Lcom/Loader$ak$1; a ()V
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/Loader$w; a ([Ljava/lang/Object;)Lc/a/h;
+		 Lcom/Loader$b; onCallStateChanged (I Ljava/lang/String;)V
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 La/a; a (Landroid/content/Context;)Ljava/lang/String;
+		 Lcom/p; b (Landroid/content/Context;)Z
+		 Lcom/Loader$al; run ()V
+		 Lcom/Loader$m; a (Ljava/lang/Object;)V
+		 Lcom/Loader$b$a$a; onClick (Landroid/content/DialogInterface; I)V
+		 Lcom/p; a (Landroid/content/Context; Ljava/lang/String;)V
+		 Lcom/Loader; c ()V
+		 Lcom/Loader; onStop ()V
+		 Lcom/Loader$ag$1; a (Lc/a/i;)V
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/Loader$s$e$1; a (Ljavax/mail/Session; Ljava/lang/String; Ljava/lang/String;)Ljavax/mail/internet/MimeMessage;
+		 Second API show up in:
+		 Lcom/Loader; f ()V
+		 Lcom/Loader; onStop ()V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader; onStop ()V
+		 Lcom/Loader; f ()V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader; onStop ()V
+		 Lcom/Loader; f ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00131.json
+Rule crime: Get location of the current GSM and put it into JSON
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00132.json
+Rule crime: Query The ISO country code
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00133.json
+Rule crime: Start recording
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/media/MediaRecorder; start ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00134.json
+Rule crime: Get the current WiFi IP address
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00135.json
+Rule crime: Get the current WiFi id and put it into JSON.
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00136.json
+Rule crime: Stop recording
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/media/MediaRecorder; stop ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00137.json
+Rule crime: Get last known location of the device
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00138.json
+Rule crime: Set the audio source (MIC)
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/media/MediaRecorder; setAudioSource (I)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00139.json
+Rule crime: Get the current WiFi id
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00140.json
+Rule crime: Write the phone number into a file
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/telephony/TelephonyManager; getLine1Number ()Ljava/lang/String;
+		 Ljava/io/FileOutputStream; write ([B)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader$at; a (Lb/d; Lb/e;)V
+		 Lcom/Loader; c ()V
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 Lcom/Loader$s$e$1; a (Ljavax/mail/Session; Ljava/lang/String; Ljava/lang/String;)Ljavax/mail/internet/MimeMessage;
+		 Second API show up in:
+		 Lcom/Loader$c$1$1; a (Ljava/lang/Object;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00141.json
+Rule crime: Load class from given class name
+
+Confidence: 80%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/StringBuilder; toString ()Ljava/lang/String;
+		 Ljava/lang/ClassLoader; loadClass (Ljava/lang/String;)Ljava/lang/Class;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Ljavax/activation/MimeType; toString ()Ljava/lang/String;
+		 Lcom/Loader$f$1; a (Ljava/lang/String;)V
+		 Lc/a/e/b/b; a (I Ljava/lang/String;)I
+		 Lcom/sun/a/a/c; a (Ljava/io/Reader;)V
+		 Lcom/e; a (Landroid/content/Context; I)Lcom/e$a;
+		 Lcom/b/a/a/p; n (Lcom/b/a/a/z;)V
+		 Lcom/p; b (Ljava/lang/String;)Ljava/lang/String;
+		 Lorg/msgpack/core/buffer/c; <clinit> ()V
+		 Lcom/n; a (Landroid/content/Intent; I)V
+		 Lcom/Loader$c; a (Ljava/lang/Object;)V
+		 Lcom/l; toString ()Ljava/lang/String;
+		 Ljavax/activation/MimetypesFileTypeMap; loadAllResources (Ljava/util/Vector; Ljava/lang/String;)V
+		 Lcom/b/a/a/n; a (Ljava/io/InputStream;)V
+		 Lcom/Loader; <init> ()V
+		 Ld/h/l; a (Ljava/lang/CharSequence; Ld/d/a/b;)Ljava/lang/String;
+		 Ld/a/o; listIterator (I)Ljava/util/ListIterator;
+		 Ld/d/b/g; toString ()Ljava/lang/String;
+		 Ljavax/activation/MailcapCommandMap$1; run ()Ljava/lang/Object;
+		 Ld/d/b/h; c (Ljava/lang/String;)V
+		 Lcom/sun/a/a/c; b (Ljava/lang/String;)Ljava/util/Map;
+		 Lcom/b/a/a/p; b ()Lcom/b/a/a/z;
+		 Ljavax/activation/MimeType; getBaseType ()Ljava/lang/String;
+		 Lcom/g$c$a; a (Lcom/b/a/a/t; Lcom/b/a/a/ad;)V
+		 Lc/a/c/a; a (Lc/a/c/a$b;)V
+		 Ld/c; toString ()Ljava/lang/String;
+		 Lcom/Loader$f; run ()V
+		 Lcom/sun/a/a/c; a (I I Ljava/lang/String;)V
+		 Ljavax/activation/ObjectDataContentHandler; writeTo (Ljava/lang/Object; Ljava/lang/String; Ljava/io/OutputStream;)V
+		 Lorg/msgpack/core/n; a (Ljava/lang/String; B)Lorg/msgpack/core/h;
+		 Ljavax/activation/MailcapCommandMap; <init> (Ljava/lang/String;)V
+		 Lcom/b/a/a/ae; d (Lcom/b/a/a/z;)V
+		 Lcom/q; c (Ljava/io/File; Ljava/util/zip/ZipOutputStream; Ljava/lang/String;)V
+		 Lb/c; a (Lb/d; Lb/e;)V
+		 Lcom/Loader$i; b ()Ljava/lang/String;
+		 Lorg/msgpack/a/a/c; toString ()Ljava/lang/String;
+		 Lcom/Loader$f$1$2; a (Ljava/lang/Throwable;)V
+		 Lb/e; b (I)Ljava/lang/String;
+		 Ljavax/activation/ObjectDataContentHandler; getTransferData (Ljavax/activation/ActivationDataFlavor; Ljavax/activation/DataSource;)Ljava/lang/Object;
+		 Lcom/b/a/a/t; a (Ljava/net/Socket;)Lcom/b/a/a/aa;
+		 Lcom/sun/a/a/c; <init> (Ljava/lang/String;)V
+		 Lorg/msgpack/a/a/c; A ()Ljava/lang/String;
+		 Lorg/msgpack/a/a/h; A ()Ljava/lang/String;
+		 Lcom/q; a (Ljava/io/File; Ljava/util/zip/ZipOutputStream; Ljava/lang/String;)V
+		 Lcom/b/a/a/p; b (Ljava/util/List;)[B
+		 Lcom/sun/a/a/c; e (Ljava/lang/String;)V
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/e; a (Landroid/content/Context; Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/p; a ()Z
+		 Lcom/Loader$aa; a ([Ljava/lang/Object;)Lc/a/h;
+		 Ld/c/d; a (Ljava/io/File;)[B
+		 Ld/a/o; a (I)Ljava/lang/Void;
+		 Lcom/b/a/a/aa; a (J Z [B)[B
+		 Lcom/b/a/a/p; a ([B)V
+		 Ld/h/v; a (Ljava/lang/CharSequence; [Ljava/lang/String; I Z I)Ld/g/a;
+		 Lcom/b/a/a/y; b (Ljava/lang/String;)Ljava/lang/String;
+		 Lc/a/c/a; <init> (Ljava/lang/Iterable;)V
+		 Lc/a/b/f; toString ()Ljava/lang/String;
+		 Lcom/sun/a/a/g; d (Ljava/lang/String;)V
+		 Ld/d/b/n; a (Ljava/lang/Object; Ljava/lang/String;)V
+		 Lcom/c; <clinit> ()V
+		 Ld/e/a; toString ()Ljava/lang/String;
+		 Lcom/sun/a/a/f; toString ()Ljava/lang/String;
+		 Ljavax/activation/DataSourceDataContentHandler; getTransferData (Ljavax/activation/ActivationDataFlavor; Ljavax/activation/DataSource;)Ljava/lang/Object;
+		 Lcom/Loader; c ()V
+		 Lcom/b/a/a/n; c ()Ljava/lang/String;
+		 Lcom/g$c$1; a (I Ljava/lang/String; Ljava/lang/Throwable;)V
+		 Lcom/p$a; run ()V
+		 Lcom/b/a/a/ae; run ()V
+		 Lorg/msgpack/a/a/h; toString ()Ljava/lang/String;
+		 Lcom/Loader; b (Landroid/accounts/Account;)Ljava/lang/String;
+		 Ljavax/activation/MailcapCommandMap; createDataContentHandler (Ljava/lang/String;)Ljavax/activation/DataContentHandler;
+		 Ld/e/f; a (I I I)I
+		 Lcom/sun/a/a/c; a (I I I I Ljava/lang/String;)V
+		 Lb/d; toString ()Ljava/lang/String;
+		 Ld/d/b/h; b (Ljava/lang/String;)V
+		 Ld/e/c; toString ()Ljava/lang/String;
+		 Ld/d/b/c; toString ()Ljava/lang/String;
+		 Lb/e; b ()V
+		 Ljavax/activation/MailcapCommandMap; <init> ()V
+		 Lcom/b/a/a/t; b (Ljava/net/Socket;)Lcom/b/a/a/ac;
+		 Lcom/e; b (Landroid/content/Context; Ljava/lang/String;)[B
+		 Ljavax/activation/MailcapCommandMap; loadResource (Ljava/lang/String;)Lcom/sun/a/a/c;
+		 Ld/a/m; a (Ljava/lang/Iterable; Ljava/lang/CharSequence; Ljava/lang/CharSequence; Ljava/lang/CharSequence; I Ljava/lang/CharSequence; Ld/d/a/b;)Ljava/lang/String;
+		 Lcom/b/a/a/y; a (Ljava/lang/String;)Z
+		 Lcom/Loader$s$e$1; a (Ljavax/mail/Session; Ljava/lang/String; Ljava/lang/String;)Ljavax/mail/internet/MimeMessage;
+		 Lcom/Loader; getTopActivityName$loader_release (Landroid/content/Context;)Ljava/lang/String;
+		 Ld/h/g; toString ()Ljava/lang/String;
+		 Ljavax/activation/MailcapCommandMap; loadAllResources (Ljava/util/List; Ljava/lang/String;)V
+		 Lcom/sun/a/a/b; a (Ljava/lang/String; Ljava/lang/Throwable;)V
+		 Lb/d; b ()V
+		 Lc/a/e/g/e; toString ()Ljava/lang/String;
+		 Lc/a/e/g/e; newThread (Ljava/lang/Runnable;)Ljava/lang/Thread;
+		 Lcom/b/a/a/p; run ()V
+		 Lb/e; a (Ljava/lang/String;)V
+		 Lcom/b/a/a/x; toString ()Ljava/lang/String;
+		 Lcom/Loader$x; a ([Ljava/lang/Object;)Lc/a/h;
+		 Lcom/Loader$ax; a (Lb/d; Lb/e;)V
+		 Ljavax/activation/MimetypesFileTypeMap; <init> ()V
+		 Lcom/Loader; a (Landroid/accounts/Account;)Ljava/lang/String;
+		 Lcom/j; a ()V
+		 Lcom/b/a/a/p; q (Lcom/b/a/a/z;)V
+		 Lcom/Loader; f ()V
+		 Lcom/j; <init> (Ljava/lang/String;)V
+		 Ld/h/v; a (Ljava/lang/CharSequence; I I Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+		 Lcom/Loader$s$b; run ()V
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/b/a/a/q; e ()V
+		 Ld/h/v; a (Ljava/lang/CharSequence; [C I Z I)Ld/g/a;
+		 Lcom/sun/a/a/c; d (Ljava/lang/String;)V
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 Lcom/q; b (Ljava/io/File; Ljava/util/zip/ZipOutputStream; Ljava/lang/String;)V
+		 Lcom/b/a/a/b; a ([B)Ljava/lang/String;
+		 Lcom/b/a/a/ae; f ()V
+		 Ljavax/activation/CommandInfo$Beans; instantiate (Ljava/lang/ClassLoader; Ljava/lang/String;)Ljava/lang/Object;
+		 Lcom/p; a (Ljava/lang/String;)Ljava/lang/String;
+		 Lorg/msgpack/a/a/j; A ()Ljava/lang/String;
+		 Lorg/msgpack/core/buffer/c; toHexString (I I)Ljava/lang/String;
+		 Ljavax/activation/MimetypesFileTypeMap$1; run ()Ljava/lang/Object;
+		 Lcom/sun/a/a/c; a (I I I Ljava/lang/String;)V
+		 Lcom/Loader$c$2$1; b ()V
+		 Ld/g/d; a (Ld/g/a; Ljava/lang/CharSequence; Ljava/lang/CharSequence; Ljava/lang/CharSequence; I Ljava/lang/CharSequence; Ld/d/a/b;)Ljava/lang/String;
+		 Ljavax/activation/DataSourceDataContentHandler; writeTo (Ljava/lang/Object; Ljava/lang/String; Ljava/io/OutputStream;)V
+		 Ljavax/activation/MimeTypeParameterList; parse (Ljava/lang/String;)V
+		 Lcom/Loader$ab; a ([Ljava/lang/Object;)Lc/a/h;
+		 Ljavax/activation/MailcapCommandMap; getDataContentHandler (Ljava/lang/String;)Ljavax/activation/DataContentHandler;
+		 Lcom/sun/a/a/g; a (Ljava/io/BufferedReader;)V
+		 Lcom/sun/a/a/c; a (Ljava/lang/String;)Ljava/util/Map;
+		 Ld/a/o; subList (I I)Ljava/util/List;
+		 Lorg/msgpack/a/a/a; A ()Ljava/lang/String;
+		 Lcom/Loader$w; a ([Ljava/lang/Object;)Lc/a/h;
+		 Lcom/b/a/a/z; toString ()Ljava/lang/String;
+		 Ljavax/activation/DataHandler; getInputStream ()Ljava/io/InputStream;
+		 Lb/g; run ()V
+		 Lcom/b/a/a/y; a (Z Ljava/lang/String; Ljava/lang/String; I Ljava/lang/String; Ljava/lang/String; Lcom/b/a/a/q;)Lcom/b/a/a/t;
+		 Ljavax/activation/MimetypesFileTypeMap; loadResource (Ljava/lang/String;)Lcom/sun/a/a/g;
+		 Ld/h/b; a (I)I
+		 Lorg/msgpack/a/a/j; toString ()Ljava/lang/String;
+		 Ld/d/b/h; a (Ljava/lang/Object; Ljava/lang/String;)V
+		 Lcom/g; b (Ljava/lang/Object;)Lorg/msgpack/a/x;
+		 Second API show up in:
+		 Ljavax/activation/MailcapCommandMap; getDataContentHandler (Ljava/lang/String;)Ljavax/activation/DataContentHandler;
+		 Lorg/msgpack/core/buffer/b; <clinit> ()V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Ljavax/activation/MailcapCommandMap; getDataContentHandler (Ljava/lang/String;)Ljavax/activation/DataContentHandler;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00142.json
+Rule crime: Get calendar information
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/util/Calendar; get (I)I
+		 Ljava/lang/StringBuilder; append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Ljavax/mail/internet/MailDateFormat; format (Ljava/util/Date; Ljava/lang/StringBuffer; Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;
+		 Second API show up in:
+		 Ljavax/activation/MimeType; toString ()Ljava/lang/String;
+		 Lorg/msgpack/a/a/c; a (Ljava/lang/StringBuilder; Lorg/msgpack/a/x;)V
+		 Lorg/msgpack/a/a/j; b (Ljava/lang/StringBuilder; Lorg/msgpack/a/x;)V
+		 Lc/a/e/b/b; a (I Ljava/lang/String;)I
+		 Lcom/Loader$f$1; a (Ljava/lang/String;)V
+		 Lcom/sun/a/a/c; a (Ljava/io/Reader;)V
+		 Lcom/e; a (Landroid/content/Context; I)Lcom/e$a;
+		 Lcom/b/a/a/p; n (Lcom/b/a/a/z;)V
+		 Lcom/p; b (Ljava/lang/String;)Ljava/lang/String;
+		 Lorg/msgpack/core/buffer/c; <clinit> ()V
+		 Lcom/n; a (Landroid/content/Intent; I)V
+		 Lcom/Loader$c; a (Ljava/lang/Object;)V
+		 Lcom/l; toString ()Ljava/lang/String;
+		 Ljavax/activation/MimetypesFileTypeMap; loadAllResources (Ljava/util/Vector; Ljava/lang/String;)V
+		 Lcom/b/a/a/n; a (Ljava/io/InputStream;)V
+		 Lcom/Loader; <init> ()V
+		 Ld/a/o; listIterator (I)Ljava/util/ListIterator;
+		 Ld/d/b/g; toString ()Ljava/lang/String;
+		 Ljavax/activation/MailcapCommandMap$1; run ()Ljava/lang/Object;
+		 Ld/d/b/h; c (Ljava/lang/String;)V
+		 Lcom/b/a/a/p; b ()Lcom/b/a/a/z;
+		 Lcom/sun/a/a/c; b (Ljava/lang/String;)Ljava/util/Map;
+		 Ljavax/activation/MimeType; getBaseType ()Ljava/lang/String;
+		 Lcom/g$c$a; a (Lcom/b/a/a/t; Lcom/b/a/a/ad;)V
+		 Lc/a/c/a; a (Lc/a/c/a$b;)V
+		 Ld/c; toString ()Ljava/lang/String;
+		 Lcom/sun/a/a/c; a (I I Ljava/lang/String;)V
+		 Lcom/Loader$f; run ()V
+		 Ljavax/activation/ObjectDataContentHandler; writeTo (Ljava/lang/Object; Ljava/lang/String; Ljava/io/OutputStream;)V
+		 Lcom/b/a/a/z; b (Ljava/lang/StringBuilder;)V
+		 Lorg/msgpack/core/n; a (Ljava/lang/String; B)Lorg/msgpack/core/h;
+		 Ljavax/activation/MailcapCommandMap; <init> (Ljava/lang/String;)V
+		 Lcom/b/a/a/n; a (Ljava/lang/StringBuilder;)V
+		 Lcom/b/a/a/ae; d (Lcom/b/a/a/z;)V
+		 Lcom/q; c (Ljava/io/File; Ljava/util/zip/ZipOutputStream; Ljava/lang/String;)V
+		 Lb/c; a (Lb/d; Lb/e;)V
+		 Lcom/Loader$i; b ()Ljava/lang/String;
+		 Lorg/msgpack/a/a/c; toString ()Ljava/lang/String;
+		 Lcom/Loader$f$1$2; a (Ljava/lang/Throwable;)V
+		 Lb/e; b (I)Ljava/lang/String;
+		 Ljavax/activation/ObjectDataContentHandler; getTransferData (Ljavax/activation/ActivationDataFlavor; Ljavax/activation/DataSource;)Ljava/lang/Object;
+		 Lcom/b/a/a/t; a (Ljava/net/Socket;)Lcom/b/a/a/aa;
+		 Lcom/sun/a/a/c; <init> (Ljava/lang/String;)V
+		 Lorg/msgpack/a/a/c; A ()Ljava/lang/String;
+		 Lorg/msgpack/a/a/h; A ()Ljava/lang/String;
+		 Lcom/q; a (Ljava/io/File; Ljava/util/zip/ZipOutputStream; Ljava/lang/String;)V
+		 Lcom/b/a/a/p; b (Ljava/util/List;)[B
+		 Lcom/sun/a/a/c; e (Ljava/lang/String;)V
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/e; a (Landroid/content/Context; Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/p; a ()Z
+		 Lcom/Loader$aa; a ([Ljava/lang/Object;)Lc/a/h;
+		 Ld/c/d; a (Ljava/io/File;)[B
+		 Ld/a/o; a (I)Ljava/lang/Void;
+		 Lcom/b/a/a/z; c (Ljava/lang/StringBuilder;)V
+		 Lcom/b/a/a/p; a ([B)V
+		 Lcom/b/a/a/aa; a (J Z [B)[B
+		 Lcom/b/a/a/y; b (Ljava/lang/String;)Ljava/lang/String;
+		 Lc/a/b/f; toString ()Ljava/lang/String;
+		 Lcom/sun/a/a/g; d (Ljava/lang/String;)V
+		 Ld/d/b/n; a (Ljava/lang/Object; Ljava/lang/String;)V
+		 Lcom/b/a/a/z; a (Ljava/lang/StringBuilder;)Z
+		 Lc/a/c/a; <init> (Ljava/lang/Iterable;)V
+		 Ld/h/v; a (Ljava/lang/CharSequence; [Ljava/lang/String; I Z I)Ld/g/a;
+		 Lcom/c; <clinit> ()V
+		 Ld/e/a; toString ()Ljava/lang/String;
+		 Lcom/sun/a/a/f; toString ()Ljava/lang/String;
+		 Ljavax/activation/DataSourceDataContentHandler; getTransferData (Ljavax/activation/ActivationDataFlavor; Ljavax/activation/DataSource;)Ljava/lang/Object;
+		 Lcom/Loader; c ()V
+		 Lcom/b/a/a/n; c ()Ljava/lang/String;
+		 Lcom/g$c$1; a (I Ljava/lang/String; Ljava/lang/Throwable;)V
+		 Lcom/p$a; run ()V
+		 Lcom/b/a/a/ae; run ()V
+		 Lorg/msgpack/a/a/h; toString ()Ljava/lang/String;
+		 Lcom/Loader; b (Landroid/accounts/Account;)Ljava/lang/String;
+		 Ljavax/activation/MailcapCommandMap; createDataContentHandler (Ljava/lang/String;)Ljavax/activation/DataContentHandler;
+		 Ld/e/f; a (I I I)I
+		 Lorg/msgpack/a/a/j; a (Ljava/lang/StringBuilder; Lorg/msgpack/a/x;)V
+		 Lcom/sun/a/a/c; a (I I I I Ljava/lang/String;)V
+		 Lb/d; toString ()Ljava/lang/String;
+		 Ld/d/b/h; b (Ljava/lang/String;)V
+		 Ld/e/c; toString ()Ljava/lang/String;
+		 Ljavax/activation/MailcapCommandMap; <init> ()V
+		 Lb/e; b ()V
+		 Ld/d/b/c; toString ()Ljava/lang/String;
+		 Lcom/b/a/a/t; b (Ljava/net/Socket;)Lcom/b/a/a/ac;
+		 Lcom/e; b (Landroid/content/Context; Ljava/lang/String;)[B
+		 Ljavax/activation/MailcapCommandMap; loadResource (Ljava/lang/String;)Lcom/sun/a/a/c;
+		 Lcom/b/a/a/y; a (Ljava/lang/String;)Z
+		 Lc/a/c/a; a (Ljava/lang/StringBuilder; Ljava/lang/Throwable; Ljava/lang/String;)V
+		 Lcom/Loader$s$e$1; a (Ljavax/mail/Session; Ljava/lang/String; Ljava/lang/String;)Ljavax/mail/internet/MimeMessage;
+		 Lcom/Loader; getTopActivityName$loader_release (Landroid/content/Context;)Ljava/lang/String;
+		 Ld/h/g; toString ()Ljava/lang/String;
+		 Ljavax/activation/MailcapCommandMap; loadAllResources (Ljava/util/List; Ljava/lang/String;)V
+		 Lcom/sun/a/a/b; a (Ljava/lang/String; Ljava/lang/Throwable;)V
+		 Lb/d; b ()V
+		 Lc/a/e/g/e; toString ()Ljava/lang/String;
+		 Lcom/b/a/a/p; run ()V
+		 Lb/e; a (Ljava/lang/String;)V
+		 Lcom/b/a/a/x; toString ()Ljava/lang/String;
+		 Lorg/msgpack/a/a/a; a (Ljava/lang/StringBuilder; Ljava/lang/String;)V
+		 Lcom/Loader$x; a ([Ljava/lang/Object;)Lc/a/h;
+		 Ljavax/activation/MimetypesFileTypeMap; <init> ()V
+		 Lcom/Loader$ax; a (Lb/d; Lb/e;)V
+		 Lorg/msgpack/a/a/a; a (Ljava/lang/StringBuilder; I)V
+		 Lcom/Loader; a (Landroid/accounts/Account;)Ljava/lang/String;
+		 Lcom/j; a ()V
+		 Lcom/b/a/a/p; q (Lcom/b/a/a/z;)V
+		 Lcom/Loader; f ()V
+		 Lcom/j; <init> (Ljava/lang/String;)V
+		 Ld/h/v; a (Ljava/lang/CharSequence; I I Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+		 Lcom/Loader$s$b; run ()V
+		 Lcom/Loader; requestIgnoreBatteryOpt ()V
+		 Lcom/b/a/a/z; d (Ljava/lang/StringBuilder;)V
+		 Lcom/b/a/a/q; e ()V
+		 Ld/h/v; a (Ljava/lang/CharSequence; [C I Z I)Ld/g/a;
+		 Lcom/sun/a/a/c; d (Ljava/lang/String;)V
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 Lcom/q; b (Ljava/io/File; Ljava/util/zip/ZipOutputStream; Ljava/lang/String;)V
+		 Lcom/b/a/a/ae; f ()V
+		 Ljavax/activation/CommandInfo$Beans; instantiate (Ljava/lang/ClassLoader; Ljava/lang/String;)Ljava/lang/Object;
+		 Lcom/p; a (Ljava/lang/String;)Ljava/lang/String;
+		 Lorg/msgpack/a/a/j; A ()Ljava/lang/String;
+		 Lorg/msgpack/core/buffer/c; toHexString (I I)Ljava/lang/String;
+		 Ljavax/activation/MimetypesFileTypeMap$1; run ()Ljava/lang/Object;
+		 Lcom/sun/a/a/c; a (I I I Ljava/lang/String;)V
+		 Lcom/Loader$c$2$1; b ()V
+		 Ljavax/activation/DataSourceDataContentHandler; writeTo (Ljava/lang/Object; Ljava/lang/String; Ljava/io/OutputStream;)V
+		 Ljavax/activation/MimeTypeParameterList; parse (Ljava/lang/String;)V
+		 Lcom/Loader$ab; a ([Ljava/lang/Object;)Lc/a/h;
+		 Ljavax/activation/MailcapCommandMap; getDataContentHandler (Ljava/lang/String;)Ljavax/activation/DataContentHandler;
+		 Lcom/sun/a/a/g; a (Ljava/io/BufferedReader;)V
+		 Lcom/sun/a/a/c; a (Ljava/lang/String;)Ljava/util/Map;
+		 Ld/a/o; subList (I I)Ljava/util/List;
+		 Lcom/b/a/a/n; b (Ljava/lang/StringBuilder;)V
+		 Lcom/b/a/a/z; toString ()Ljava/lang/String;
+		 Ljavax/activation/DataHandler; getInputStream ()Ljava/io/InputStream;
+		 Lcom/Loader$w; a ([Ljava/lang/Object;)Lc/a/h;
+		 Lb/g; run ()V
+		 Lcom/b/a/a/y; a (Z Ljava/lang/String; Ljava/lang/String; I Ljava/lang/String; Ljava/lang/String; Lcom/b/a/a/q;)Lcom/b/a/a/t;
+		 Ljavax/activation/MimetypesFileTypeMap; loadResource (Ljava/lang/String;)Lcom/sun/a/a/g;
+		 Ld/h/b; a (I)I
+		 Ld/d/b/h; a (Ljava/lang/Object; Ljava/lang/String;)V
+		 Lorg/msgpack/a/a/j; toString ()Ljava/lang/String;
+		 Lcom/g; b (Ljava/lang/Object;)Lorg/msgpack/a/x;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00143.json
+Rule crime: Get external class from given path or file name
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/StringBuilder; toString ()Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00144.json
+Rule crime: Write SIM card serial number into a file
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/FileOutputStream; write ([B)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00145.json
+Rule crime: Create a socket connection to the proxy address
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljavax/net/SocketFactory; createSocket ()Ljava/net/Socket;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00146.json
+Rule crime: Get the network operator name and IMSI
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/telephony/TelephonyManager; getNetworkOperatorName ()Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00147.json
+Rule crime: Get the time of current location
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00148.json
+Rule crime: Create a socket connection to the given host address
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/InetAddress; getHostAddress ()Ljava/lang/String;
+		 Ljavax/net/SocketFactory; createSocket ()Ljava/net/Socket;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lb/d; toString ()Ljava/lang/String;
+		 Lcom/sun/mail/smtp/SMTPTransport; getLocalHost ()Ljava/lang/String;
+		 Second API show up in:
+		 Lcom/sun/mail/util/SocketFetcher; createSocket (Ljava/net/InetAddress; I Ljava/lang/String; I I I Ljava/util/Properties; Ljava/lang/String; Ljavax/net/SocketFactory; Z)Ljava/net/Socket;
+		 Lcom/b/a/a/y; b (Ljava/lang/String; I Z I)Lcom/b/a/a/q;
+		 Lcom/b/a/a/y; c (Ljava/lang/String; I Z I)Lcom/b/a/a/q;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00149.json
+Rule crime: Unpack an asset, possibly decrypt it and load it as DEX
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00150.json
+Rule crime: Send IMSI over Internet
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+		 android.permission.INTERNET
+	[✓]2.Native API Usage
+		 Ljava/net/URL; openConnection ()Ljava/net/URLConnection;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00151.json
+Rule crime: Send phone number over Internet
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+		 android.permission.INTERNET
+	[✓]2.Native API Usage
+		 Landroid/telephony/TelephonyManager; getLine1Number ()Ljava/lang/String;
+		 Ljava/net/URL; openConnection ()Ljava/net/URLConnection;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader$at; a (Lb/d; Lb/e;)V
+		 Lcom/Loader; c ()V
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 Lcom/Loader$s$e$1; a (Ljavax/mail/Session; Ljava/lang/String; Ljava/lang/String;)Ljavax/mail/internet/MimeMessage;
+		 Second API show up in:
+		 Ljavax/activation/URLDataSource; getOutputStream ()Ljava/io/OutputStream;
+		 Lcom/Loader$y$1$1; run ()V
+		 La/b; a (Ljava/lang/String;)[B
+		 Ljavax/activation/URLDataSource; getContentType ()Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00152.json
+Rule crime: Get data from HTTP and send SMS
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+		 android.permission.INTERNET
+	[✓]2.Native API Usage
+		 Ljava/net/URL; openConnection ()Ljava/net/URLConnection;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00153.json
+Rule crime: Send binary data over HTTP
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+		 android.permission.INTERNET
+	[✓]2.Native API Usage
+		 Ljava/net/HttpURLConnection; getOutputStream ()Ljava/io/OutputStream;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00154.json
+Rule crime: Connect hostname to TCP or UDP socket using KryoNet
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/InetAddress; getByName (Ljava/lang/String;)Ljava/net/InetAddress;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00155.json
+Rule crime: Execute commands on shell using DataOutputStream object
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/DataOutputStream; writeBytes (Ljava/lang/String;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00156.json
+Rule crime: Acquire lock on Power Manager 
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+		 android.permission.WAKE_LOCK
+	[✓]2.Native API Usage
+		 Landroid/os/PowerManager; newWakeLock (I Ljava/lang/String;)Landroid/os/PowerManager$WakeLock;
+		 Landroid/os/PowerManager$WakeLock; acquire ()V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+		 Second API show up in:
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/Loader; start (Landroid/content/Context; Z)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00157.json
+Rule crime: Instantiate new object using reflection, possibly used for dexClassLoader 
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Class; getConstructor ([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+		 Ljava/lang/reflect/Constructor; newInstance ([Ljava/lang/Object;)Ljava/lang/Object;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/sun/mail/smtp/SMTPTransport; sasllogin ([Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Z
+		 Lcom/sun/mail/util/logging/LogManagerProperties; newObjectFrom (Ljava/lang/String; Ljava/lang/Class;)Ljava/lang/Object;
+		 Ljavax/mail/Session; getService (Ljavax/mail/Provider; Ljavax/mail/URLName;)Ljava/lang/Object;
+		 Second API show up in:
+		 Lorg/msgpack/core/buffer/b; a (J I I Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
+		 Lorg/msgpack/core/buffer/c; newInstance (Ljava/lang/reflect/Constructor; [Ljava/lang/Object;)Lorg/msgpack/core/buffer/c;
+		 Lcom/sun/mail/smtp/SMTPTransport; sasllogin ([Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Z
+		 Lcom/sun/mail/util/logging/LogManagerProperties; newObjectFrom (Ljava/lang/String; Ljava/lang/Class;)Ljava/lang/Object;
+		 Ljavax/mail/Session; getService (Ljavax/mail/Provider; Ljavax/mail/URLName;)Ljava/lang/Object;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/sun/mail/smtp/SMTPTransport; sasllogin ([Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Z
+		 Lcom/sun/mail/util/logging/LogManagerProperties; newObjectFrom (Ljava/lang/String; Ljava/lang/Class;)Ljava/lang/Object;
+		 Ljavax/mail/Session; getService (Ljavax/mail/Provider; Ljavax/mail/URLName;)Ljava/lang/Object;
+	[✓]5.Native API Use Same Parameter
+		 Lcom/sun/mail/smtp/SMTPTransport; sasllogin ([Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Z
+		 Lcom/sun/mail/util/logging/LogManagerProperties; newObjectFrom (Ljava/lang/String; Ljava/lang/Class;)Ljava/lang/Object;
+		 Ljavax/mail/Session; getService (Ljavax/mail/Provider; Ljavax/mail/URLName;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00158.json
+Rule crime: Connect to a URL and send sensitive data got from resolver
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/ContentResolver; query (Landroid/net/Uri; [Ljava/lang/String; Ljava/lang/String; [Ljava/lang/String; Ljava/lang/String;)Landroid/database/Cursor;
+		 Ljava/net/HttpURLConnection; getOutputStream ()Ljava/io/OutputStream;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/p; a (Landroid/content/Context;)Ljava/util/ArrayList;
+		 Lcom/e; a (Landroid/content/Context; Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/e; a (Landroid/content/Context; I)Lcom/e$a;
+		 Lcom/Loader$k$1; a (Ljava/lang/Object;)V
+		 Lcom/Loader$s; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/a; a (Landroid/content/Context;)Ljava/util/Set;
+		 Second API show up in:
+		 Lcom/Loader$y$1$1; run ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00159.json
+Rule crime: Use accessibility service to perform action getting node info by text
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00160.json
+Rule crime: Use accessibility service to perform action getting node info by View Id
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00161.json
+Rule crime: Perfom accessibility service action on accessibility node info
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00162.json
+Rule crime: Create InetSocketAddress object and connecting to it
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/InetSocketAddress; <init> (Ljava/lang/String; I)V
+		 Ljava/net/Socket; connect (Ljava/net/SocketAddress;)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/sun/mail/util/SocketFetcher; createSocket (Ljava/net/InetAddress; I Ljava/lang/String; I I I Ljava/util/Properties; Ljava/lang/String; Ljavax/net/SocketFactory; Z)Ljava/net/Socket;
+		 Lcom/sun/mail/util/SocksSupport; getSocket (Ljava/lang/String; I)Ljava/net/Socket;
+		 Lcom/b/a/a/a; a ()Ljava/net/InetSocketAddress;
+		 Lb/g; run ()V
+		 Second API show up in:
+		 Lcom/sun/mail/util/SocketFetcher; createSocket (Ljava/net/InetAddress; I Ljava/lang/String; I I I Ljava/util/Properties; Ljava/lang/String; Ljavax/net/SocketFactory; Z)Ljava/net/Socket;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/sun/mail/util/SocketFetcher; createSocket (Ljava/net/InetAddress; I Ljava/lang/String; I I I Ljava/util/Properties; Ljava/lang/String; Ljavax/net/SocketFactory; Z)Ljava/net/Socket;
+	[✓]5.Native API Use Same Parameter
+		 Lcom/sun/mail/util/SocketFetcher; createSocket (Ljava/net/InetAddress; I Ljava/lang/String; I I I Ljava/util/Properties; Ljava/lang/String; Ljavax/net/SocketFactory; Z)Ljava/net/Socket;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00163.json
+Rule crime: Create new Socket and connecting to it
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/Socket; connect (Ljava/net/SocketAddress;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00164.json
+Rule crime: Get SMS address and send it through http
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/HttpURLConnection; getOutputStream ()Ljava/io/OutputStream;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00165.json
+Rule crime: Get SMS message body and send it through http
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/HttpURLConnection; getOutputStream ()Ljava/io/OutputStream;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00166.json
+Rule crime: Get SMS message body and retrieve a string from it (possibly PIN / mTAN)
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00167.json
+Rule crime: Use accessibility service to perform action getting root in active window
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00168.json
+Rule crime: Use accessibility service to perform global action getting node info by text
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00169.json
+Rule crime: Use accessibility service to perform global action getting node info by View Id
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00170.json
+Rule crime: Get installed applications and put the list in shared preferences
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/SharedPreferences$Editor; putString (Ljava/lang/String; Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00171.json
+Rule crime: Compare network operator with a string
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/telephony/TelephonyManager; getNetworkOperatorName ()Ljava/lang/String;
+		 Ljava/lang/String; equals (Ljava/lang/Object;)Z
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/Loader; f ()V
+		 Second API show up in:
+		 Ld/d/a; a (Ld/f/b;)Ljava/lang/Class;
+		 Lcom/sun/mail/handlers/text_xml; isXmlType (Ljava/lang/String;)Z
+		 Ljavax/mail/internet/InternetHeaders; addHeader (Ljava/lang/String; Ljava/lang/String;)V
+		 Ljavax/mail/internet/NewsAddress; equals (Ljava/lang/Object;)Z
+		 Ljavax/mail/URLName; equals (Ljava/lang/Object;)Z
+		 Lcom/j; <init> (Ljava/lang/String;)V
+		 Lcom/sun/mail/util/logging/MailHandler; isMissingContent (Ljavax/mail/Message; Ljava/lang/Throwable;)Z
+		 Ljavax/mail/internet/MimeMultipart; parse ()V
+		 Ljavax/mail/Service; connect (Ljava/lang/String; I Ljava/lang/String; Ljava/lang/String;)V
+		 Ljavax/mail/search/StringTerm; equals (Ljava/lang/Object;)Z
+		 Lcom/sun/mail/util/logging/MailHandler$TailNameFormatter; equals (Ljava/lang/Object;)Z
+		 Ljavax/mail/internet/ParameterList; set (Ljava/lang/String; Ljava/lang/String;)V
+		 Ljavax/mail/internet/MimeMessage$RecipientType; readResolve ()Ljava/lang/Object;
+		 Lcom/b/a/a/n; a (Ljava/io/InputStream;)V
+		 Ljavax/mail/internet/MimeMultipart; parsebm ()V
+		 Lcom/sun/mail/util/SocketFetcher; createSocket (Ljava/net/InetAddress; I Ljava/lang/String; I I I Ljava/util/Properties; Ljava/lang/String; Ljavax/net/SocketFactory; Z)Ljava/net/Socket;
+		 Ljavax/mail/Message$RecipientType; readResolve ()Ljava/lang/Object;
+		 Ljavax/mail/internet/MimeMultipart; getBodyPart (Ljava/lang/String;)Ljavax/mail/BodyPart;
+		 Lb/h; a (Ljava/util/List;)I
+		 Ld/d/b/g; toString ()Ljava/lang/String;
+		 Lcom/sun/a/a/c; b (Ljava/lang/String;)Ljava/util/Map;
+		 Ld/d/b/h; a (Ljava/lang/Throwable; Ljava/lang/String;)Ljava/lang/Throwable;
+		 Lcom/sun/a/a/c; e (Ljava/lang/String;)V
+		 Lcom/sun/mail/util/UUDecoderStream; decode ()Z
+		 Ljavax/activation/MailcapCommandMap; checkForVerb (Ljava/util/List; Ljava/lang/String;)Z
+		 Lcom/sun/mail/smtp/DigestMD5; authServer (Ljava/lang/String;)Z
+		 Lcom/sun/mail/util/logging/MailHandler; verifySettings0 (Ljavax/mail/Session; Ljava/lang/String;)V
+		 Lb/h; b (Lb/d; Lb/e;)V
+		 Lcom/sun/a/a/c; a (Ljava/lang/String;)Ljava/util/Map;
+		 Ljavax/activation/MimeType; match (Ljavax/activation/MimeType;)Z
+		 Lb/d; b ()V
+		 Ld/d/b/g; equals (Ljava/lang/Object;)Z
+		 La/b; a (Ljava/lang/String;)[B
+		 Lcom/sun/a/a/g; d (Ljava/lang/String;)V
+		 Ljavax/mail/internet/ParameterList; <init> (Ljava/lang/String;)V
+		 La/a; a (Landroid/content/Context;)Ljava/lang/String;
+		 Lcom/sun/mail/util/SocketFetcher; startTLS (Ljava/net/Socket; Ljava/lang/String; Ljava/util/Properties; Ljava/lang/String;)Ljava/net/Socket;
+		 Lb/h; <init> (Ljava/lang/String;)V
+		 Ld/d/a; b (Ld/f/b;)Ljava/lang/Class;
+		 Lcom/sun/mail/smtp/SMTPSaslAuthenticator$1; handle ([Ljavax/security/auth/callback/Callback;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00172.json
+Rule crime: Check Admin permissions to (probably) get them
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+		 android.permission.BIND_DEVICE_ADMIN
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00173.json
+Rule crime: Get bounds in screen of an AccessibilityNodeInfo and perform action
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00174.json
+Rule crime: Get all accounts by type and put them in a JSON object
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00175.json
+Rule crime: Get notification manager and cancel notifications 
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00176.json
+Rule crime: Send sms to a contact of contact list
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+		 android.permission.SEND_SMS
+		 android.permission.READ_CONTACTS
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00177.json
+Rule crime: Check if permission is granted and request it
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00178.json
+Rule crime: Execute Linux commands via ProcessBuilder
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00179.json
+Rule crime: Send Location via SMS
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+		 android.permission.SEND_SMS
+		 android.permission.ACCESS_COARSE_LOCATION
+		 android.permission.ACCESS_FINE_LOCATION
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00180.json
+Rule crime: Load native libraries(.so) via System.loadLibrary (60% means caught)
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00181.json
+Rule crime: Load native libraries(.so) via System.load (60% means caught)
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK

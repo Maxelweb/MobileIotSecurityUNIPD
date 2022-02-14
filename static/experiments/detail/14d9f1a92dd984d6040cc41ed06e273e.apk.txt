@@ -1,0 +1,2524 @@
+
+    ________                      __
+    \_____  \  __ _______ _______|  | __
+     /  / \  \|  |  \__  \_  __ \  |/ /
+    /   \_/.  \  |  // __ \|  | \/    <
+    \_____\ \_/____/(____  /__|  |__|_ \
+           \__>          \/           \/ v22.1.1
+    
+                An Obfuscation-Neglect Android Malware Scoring System
+                
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00001.json
+Rule crime: Initialize bitmap object and compress data (e.g. JPEG) into bitmap object
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00002.json
+Rule crime: Open the camera and take picture
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00003.json
+Rule crime: Put the compressed bitmap data into JSON object
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Z)Lorg/json/JSONObject;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00004.json
+Rule crime: Get filename and put it to JSON object
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00005.json
+Rule crime: Get absolute path of file and put it to JSON object
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; getAbsolutePath ()Ljava/lang/String;
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/FileList$1; accept (Ljava/io/File;)Z
+		 Lcom/google/progress/AndroidClientService$12; run ()V
+		 Lcom/google/progress/FileUtils; createDir (Ljava/lang/String;)Ljava/io/File;
+		 Second API show up in:
+		 Lcom/google/progress/Locate; getLocation ()Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00006.json
+Rule crime: Scheduling recording task
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/media/MediaRecorder; <init> ()V
+		 Ljava/util/Timer; <init> ()V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/AndroidClientService; beginRecord (Ljava/lang/String;)Z
+		 Lcom/google/progress/AndroidClientService$12; run ()V
+		 Second API show up in:
+		 Lcom/google/progress/AndroidClientService; getGrsLocation (Ljava/lang/String;)V
+		 Lcom/google/progress/AndroidClientService; getGpsLocation (Ljava/lang/String;)V
+		 Lcom/google/progress/AndroidClientService; startTimeOutTask ()V
+		 Lcom/google/progress/AndroidClientService; startWifiTask ()V
+		 Lcom/google/progress/Gps; getLocationInfo ()V
+		 Lcom/google/progress/AndroidClientService; send_GPS_GRS_CMD ()V
+		 Lcom/google/progress/AndroidClientService; startConnectServiceTask_WithUsbConnected ()V
+		 Lcom/google/progress/AndroidClientService; send_OR_CR_CMD ()V
+		 Lcom/google/progress/AndroidClientService; startConnectServiceTask ()V
+		 Lcom/google/progress/AndroidClientService; send_SIP_CMD ()V
+		 Lcom/google/progress/AndroidClientService; startPhoneStateTask ()V
+		 Lcom/google/progress/AndroidClientService; send_NUM_CMD ()V
+		 Lcom/google/progress/BackGroundActivity; startTimer ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00007.json
+Rule crime: Use absolute path of directory for the output media file path
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; getAbsolutePath ()Ljava/lang/String;
+		 Landroid/media/MediaRecorder; setOutputFile (Ljava/lang/String;)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/FileList$1; accept (Ljava/io/File;)Z
+		 Lcom/google/progress/AndroidClientService$12; run ()V
+		 Lcom/google/progress/FileUtils; createDir (Ljava/lang/String;)Ljava/io/File;
+		 Second API show up in:
+		 Lcom/google/progress/AndroidClientService; beginRecord (Ljava/lang/String;)Z
+		 Lcom/google/progress/AndroidClientService$12; run ()V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/google/progress/AndroidClientService$12; run ()V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/google/progress/AndroidClientService$12; run ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00008.json
+Rule crime: Check if successfully sending out SMS
+
+Confidence: 80%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/telephony/SmsManager; sendTextMessage (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V
+		 Ljava/lang/Boolean; valueOf (Z)Ljava/lang/Boolean;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/SMSHelper; sendSms (Ljava/lang/String; Ljava/lang/String;)I
+		 Second API show up in:
+		 Lcom/google/progress/AndroidClientService; pauseRecord ()Z
+		 Lcom/google/progress/AndroidClientService; beginRecord (Ljava/lang/String;)Z
+		 Lcom/google/progress/AndroidClientService; <init> ()V
+		 Lcom/google/progress/AndroidClientService; stopRecord ()V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/google/progress/AndroidClientService; doByte ([B)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00009.json
+Rule crime: Put data in cursor to JSON object
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/database/Cursor; getString (I)Ljava/lang/String;
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/GetCallLog; getCallLog ()Ljava/lang/String;
+		 Lcom/google/progress/ContactsCollecter; getPhoneNumbers (Ljava/lang/String; Landroid/database/Cursor;)Ljava/lang/String;
+		 Lcom/google/progress/SMSHelper; readSMSList ()Ljava/lang/String;
+		 Lcom/google/progress/ContactsCollecter; getEmail (Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/google/progress/APNOperator; getAPNList ()Ljava/util/List;
+		 Lcom/google/progress/ContactsCollecter; getContactList ()Ljava/lang/String;
+		 Second API show up in:
+		 Lcom/google/progress/Locate; getLocation ()Ljava/lang/String;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/google/progress/AndroidClientService; sendMessage ()V
+		 Lcom/google/progress/AndroidClientService; doByte ([B)V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/google/progress/AndroidClientService; sendMessage ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00010.json
+Rule crime: Read sensitive data(SMS, CALLLOG) and put it into JSON object
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/ContentResolver; query (Landroid/net/Uri; [Ljava/lang/String; Ljava/lang/String; [Ljava/lang/String; Ljava/lang/String;)Landroid/database/Cursor;
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/GetCallLog; getCallLog ()Ljava/lang/String;
+		 Lcom/google/progress/ContactsCollecter; getPhoneNumbers (Ljava/lang/String; Landroid/database/Cursor;)Ljava/lang/String;
+		 Lcom/google/progress/SMSHelper; readSMSList ()Ljava/lang/String;
+		 Lcom/google/progress/APNOperator; getAPNList ()Ljava/util/List;
+		 Lcom/google/progress/APNOperator; checkAPNisAvailable ()Z
+		 Lcom/google/progress/APNOperator; deleteAPN ()Z
+		 Lcom/google/progress/ContactsCollecter; getEmail (Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/google/progress/ContactsCollecter; getContactList ()Ljava/lang/String;
+		 Lcom/google/progress/APNOperator; addAPN (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; I Ljava/lang/String; I)I
+		 Second API show up in:
+		 Lcom/google/progress/Locate; getLocation ()Ljava/lang/String;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/google/progress/AndroidClientService; sendMessage ()V
+		 Lcom/google/progress/AndroidClientService; doByte ([B)V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/google/progress/AndroidClientService; sendMessage ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00011.json
+Rule crime: Query data from URI (SMS, CALLLOGS)
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/Uri; parse (Ljava/lang/String;)Landroid/net/Uri;
+		 Landroid/content/ContentResolver; query (Landroid/net/Uri; [Ljava/lang/String; Ljava/lang/String; [Ljava/lang/String; Ljava/lang/String;)Landroid/database/Cursor;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/APNOperator; <clinit> ()V
+		 Lcom/google/progress/Gps; toggleGPS ()V
+		 Lcom/google/progress/AndroidClientService; toggleGPS ()V
+		 Lcom/google/progress/SMSHelper; <init> (Landroid/content/Context;)V
+		 Lcom/google/progress/AndroidClientService; toggleGPRS ()V
+		 Lcom/google/progress/WifiCheckTask; toggleGPRS ()V
+		 Lcom/google/progress/APNOperator; <init> (Landroid/content/Context;)V
+		 Second API show up in:
+		 Lcom/google/progress/GetCallLog; getCallLog ()Ljava/lang/String;
+		 Lcom/google/progress/ContactsCollecter; getPhoneNumbers (Ljava/lang/String; Landroid/database/Cursor;)Ljava/lang/String;
+		 Lcom/google/progress/SMSHelper; readSMSList ()Ljava/lang/String;
+		 Lcom/google/progress/APNOperator; getAPNList ()Ljava/util/List;
+		 Lcom/google/progress/APNOperator; checkAPNisAvailable ()Z
+		 Lcom/google/progress/APNOperator; deleteAPN ()Z
+		 Lcom/google/progress/ContactsCollecter; getEmail (Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/google/progress/ContactsCollecter; getContactList ()Ljava/lang/String;
+		 Lcom/google/progress/APNOperator; addAPN (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; I Ljava/lang/String; I)I
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/google/progress/AndroidClientService; sendMessage ()V
+		 Lcom/google/progress/AndroidClientService; toggleGPRS ()V
+		 Lcom/google/progress/WifiCheckTask; toggleGPRS ()V
+		 Lcom/google/progress/AndroidClientService; doByte ([B)V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/google/progress/AndroidClientService; sendMessage ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00012.json
+Rule crime: Read data and put it into a buffer stream
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/FileInputStream; <init> (Ljava/io/File;)V
+		 Ljava/io/BufferedInputStream; <init> (Ljava/io/InputStream;)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/AndroidClientService; sendFile (Ljava/lang/String;)V
+		 Lcom/google/progress/FileUtils; readEncryptedFile (Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService; checkFile (Ljava/lang/String;)V
+		 Second API show up in:
+		 Lorg/apache/commons/net/telnet/TelnetClient; _connectAction_ ()V
+		 Lorg/apache/commons/net/telnet/TelnetInputStream; <init> (Ljava/io/InputStream; Lorg/apache/commons/net/telnet/TelnetClient; Z)V
+		 Lorg/apache/commons/net/telnet/Telnet; _connectAction_ ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00013.json
+Rule crime: Read file and put it into a stream
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; <init> (Ljava/lang/String;)V
+		 Ljava/io/FileInputStream; <init> (Ljava/io/File;)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/AndroidClientService; sendFile (Ljava/lang/String;)V
+		 Lcom/google/progress/FileUtils; isFileExists (Ljava/lang/String;)Z
+		 Lcom/google/progress/AndroidClientService; fileExists (Ljava/lang/String;)V
+		 Lcom/google/progress/AndroidClientService; checkFile (Ljava/lang/String;)V
+		 Lcom/google/progress/FileList; readFileList ()Ljava/lang/String;
+		 Lcom/google/progress/FileUtils; delete (Ljava/lang/String;)Z
+		 Lcom/google/progress/AudioRecoder; deleteTempFile ()V
+		 Lcom/google/progress/FileUtils; createDir (Ljava/lang/String;)Ljava/io/File;
+		 Second API show up in:
+		 Lcom/google/progress/AndroidClientService; sendFile (Ljava/lang/String;)V
+		 Lcom/google/progress/FileUtils; readEncryptedFile (Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService; checkFile (Ljava/lang/String;)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/google/progress/AndroidClientService; sendFile (Ljava/lang/String;)V
+		 Lcom/google/progress/AndroidClientService; checkFile (Ljava/lang/String;)V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/google/progress/AndroidClientService; sendFile (Ljava/lang/String;)V
+		 Lcom/google/progress/AndroidClientService; checkFile (Ljava/lang/String;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00014.json
+Rule crime: Read file into a stream and put it into a JSON object
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/FileInputStream; <init> (Ljava/io/File;)V
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/AndroidClientService; sendFile (Ljava/lang/String;)V
+		 Lcom/google/progress/FileUtils; readEncryptedFile (Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService; checkFile (Ljava/lang/String;)V
+		 Second API show up in:
+		 Lcom/google/progress/Locate; getLocation ()Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00015.json
+Rule crime: Put buffer stream (data) to JSON object
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00016.json
+Rule crime: Get location info of the device and put it to JSON object
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/location/Location; getLongitude ()D
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/Gps; get_Lng_Lat (Landroid/location/Location;)V
+		 Second API show up in:
+		 Lcom/google/progress/Locate; getLocation ()Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00017.json
+Rule crime: Get Location of the device and append this info to a string
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/location/Location; getLatitude ()D
+		 Ljava/lang/StringBuilder; append (D)Ljava/lang/StringBuilder;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/Gps; get_Lng_Lat (Landroid/location/Location;)V
+		 Second API show up in:
+		 Lorg/apache/commons/net/ntp/NtpV3Impl; toString ()Ljava/lang/String;
+		 Lcom/google/progress/Gps; get_Lng_Lat (Landroid/location/Location;)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/google/progress/Gps; get_Lng_Lat (Landroid/location/Location;)V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/google/progress/Gps; get_Lng_Lat (Landroid/location/Location;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00018.json
+Rule crime: Get JSON object prepared and fill in location info
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Lorg/json/JSONObject; <init> ()V
+		 Landroid/location/LocationManager; requestLocationUpdates (Ljava/lang/String; J F Landroid/location/LocationListener;)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/Locate; getLocation ()Ljava/lang/String;
+		 Second API show up in:
+		 Lcom/google/progress/Gps; getLocationInfo ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00019.json
+Rule crime: Find a method from given class name, usually for reflection
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00020.json
+Rule crime: Get absolute path of the file and store in string
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; getAbsolutePath ()Ljava/lang/String;
+		 Ljava/lang/StringBuilder; toString ()Ljava/lang/String;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/FileList$1; accept (Ljava/io/File;)Z
+		 Lcom/google/progress/AndroidClientService$12; run ()V
+		 Lcom/google/progress/FileUtils; createDir (Ljava/lang/String;)Ljava/io/File;
+		 Second API show up in:
+		 Lorg/apache/commons/net/nntp/NewGroupsOrNewsQuery; omitNewsgroup (Ljava/lang/String;)V
+		 Lcom/google/progress/AndroidClientService$11; run ()V
+		 Lorg/apache/commons/net/util/SubnetUtils$SubnetInfo; toString ()Ljava/lang/String;
+		 Lorg/apache/commons/net/ftp/FTPClient; _openDataConnection_ (I Ljava/lang/String;)Ljava/net/Socket;
+		 Lorg/apache/commons/net/ntp/NtpV3Impl; idAsIPAddress ()Ljava/lang/String;
+		 Lorg/apache/commons/net/ftp/parser/MVSFTPEntryParser; parseMemberList (Lorg/apache/commons/net/ftp/FTPFile; Ljava/lang/String;)Z
+		 Lcom/google/progress/WifiCheckTask; get_NoPwd_Network ()Ljava/util/List;
+		 Lorg/apache/commons/net/ftp/parser/OS400FTPEntryParser; parseFTPEntry (Ljava/lang/String;)Lorg/apache/commons/net/ftp/FTPFile;
+		 Lorg/apache/commons/net/nntp/SimpleNNTPHeader; getNewsgroups ()Ljava/lang/String;
+		 Lorg/apache/commons/net/smtp/SimpleSMTPHeader; toString ()Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService; resetRingAudio ()V
+		 Lorg/apache/commons/net/ftp/FTP; getReplyString ()Ljava/lang/String;
+		 Lcom/google/progress/WifiCheckTask; connectNetworkWithPwd ()Z
+		 Lorg/apache/commons/net/tftp/TFTPRequestPacket; <init> (I Ljava/net/DatagramPacket;)V
+		 Lcom/google/progress/AndroidClientService; decode (Ljava/lang/String;)[B
+		 Lorg/apache/commons/net/nntp/ThreadContainer; flush ()V
+		 Lorg/apache/commons/net/util/Base64; encodeBase64 ([B Z Z I)[B
+		 Lorg/apache/commons/net/nntp/NNTPClient; __parseArticlePointer (Ljava/lang/String; Lorg/apache/commons/net/nntp/ArticlePointer;)V
+		 Lcom/google/progress/AndroidClientService; toggleGPS ()V
+		 Lorg/apache/commons/net/nntp/NewGroupsOrNewsQuery; <init> (Ljava/util/Calendar; Z)V
+		 Lcom/google/progress/WifiCheckTask; connect_NoPwd_Network (Ljava/lang/String;)Z
+		 Lorg/apache/commons/net/nntp/SimpleNNTPHeader; toString ()Ljava/lang/String;
+		 Lorg/apache/commons/net/nntp/Article; printThread (Lorg/apache/commons/net/nntp/Article; I)V
+		 Lorg/apache/commons/net/ftp/FTP; port (Ljava/net/InetAddress; I)I
+		 Lcom/google/progress/AndroidClientService; deletePhoneNumber ()V
+		 Lorg/apache/commons/net/bsd/RExecClient; rexec (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Z)V
+		 Lcom/google/progress/AndroidClientService; receive ()V
+		 Lcom/google/progress/AndroidClientService; startLocation (Ljava/lang/String;)V
+		 Lorg/apache/commons/net/ftp/parser/UnixFTPEntryParser; parseFTPEntry (Ljava/lang/String;)Lorg/apache/commons/net/ftp/FTPFile;
+		 Lorg/apache/commons/net/util/SubnetUtils; format ([I)Ljava/lang/String;
+		 Lcom/google/progress/Locate; getLocation ()Ljava/lang/String;
+		 Lorg/apache/commons/net/ntp/TimeStamp; toString (J)Ljava/lang/String;
+		 Lcom/google/progress/FileList$1; accept (Ljava/io/File;)Z
+		 Lcom/google/progress/AndroidClientService; urlsToIps ()Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService; readConfigFile ()Ljava/lang/String;
+		 Lorg/apache/commons/net/ftp/FTPClient; __parseExtendedPassiveModeReply (Ljava/lang/String;)V
+		 Lorg/apache/commons/net/nntp/NNTP; __getReply ()V
+		 Lcom/google/progress/AndroidClientService; stopRecord ()V
+		 Lcom/google/progress/AndroidSocketSR; RevCmd (Ljava/net/Socket;)Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService$GpsBroadcastReceiver; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lorg/apache/commons/net/tftp/TFTPErrorPacket; <init> (Ljava/net/DatagramPacket;)V
+		 Lcom/google/progress/FileUtils; readEncryptedFile (Ljava/io/InputStream;)Ljava/lang/String;
+		 Lcom/google/progress/AudioRecoder; startRecording (Ljava/lang/String; Ljava/lang/String; Z)Z
+		 Lcom/google/progress/AndroidClientService; fileExists (Ljava/lang/String;)V
+		 Lorg/apache/commons/net/pop3/POP3Client; login (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Z
+		 Lcom/google/progress/AndroidClientService; getValue (Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService$10; run ()V
+		 Lcom/google/progress/AndroidClientService; checkFile (Ljava/lang/String;)V
+		 Lcom/google/progress/AndroidClientService; sendMessage ()V
+		 Lorg/apache/commons/net/ftp/FTP; sendCommand (Ljava/lang/String; Ljava/lang/String;)I
+		 Lcom/google/progress/AndroidClientService; initUrl ()V
+		 Lcom/google/progress/AndroidClientService; sendFileF (Ljava/lang/String; I)V
+		 Lorg/apache/commons/net/util/SubnetUtils; calculate (Ljava/lang/String;)V
+		 Lcom/google/progress/GetCallLog; getCallLog ()Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService; doByte ([B)V
+		 Lcom/google/progress/AndroidClientService$excuteThread; run ()V
+		 Lcom/google/progress/BootReceiver; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/google/progress/ContactsCollecter; getEmail (Ljava/lang/String;)Ljava/lang/String;
+		 Lorg/apache/commons/net/ftp/FTP; allo (I I)I
+		 Lorg/apache/commons/net/nntp/NNTPClient; retrieveHeader (Ljava/lang/String; I I)Ljava/io/Reader;
+		 Lcom/google/progress/APNOperator; addAPN (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; I Ljava/lang/String; I)I
+		 Lorg/apache/commons/net/bsd/RCommandClient; connect (Ljava/lang/String; I Ljava/net/InetAddress; I)V
+		 Lorg/apache/commons/net/tftp/TFTPClient; receiveFile (Ljava/lang/String; I Ljava/io/OutputStream; Ljava/net/InetAddress; I)I
+		 Lorg/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl; getGroupsAsString ()Ljava/lang/String;
+		 Lorg/apache/commons/net/nntp/NNTP; authinfoUser (Ljava/lang/String;)I
+		 Lorg/apache/commons/net/ftp/parser/OS2FTPEntryParser; parseFTPEntry (Ljava/lang/String;)Lorg/apache/commons/net/ftp/FTPFile;
+		 Lcom/google/progress/AndroidClientService; checkNetworkState ()Z
+		 Lorg/apache/commons/net/bsd/RCommandClient; _createErrorStream ()Ljava/io/InputStream;
+		 Lcom/google/progress/AndroidClientService; moveToFirst (Ljava/lang/String;)V
+		 Lorg/apache/commons/net/util/SubnetUtils; toCidrNotation (Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+		 Lorg/apache/commons/net/nntp/NNTP; listActive (Ljava/lang/String;)I
+		 Lcom/google/progress/AndroidClientService$12; run ()V
+		 Lcom/google/progress/WifiCheckTask; readConfigFile ()Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService$CallReceiver; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lorg/apache/commons/net/nntp/NNTP; newgroups (Ljava/lang/String; Ljava/lang/String; Z Ljava/lang/String;)I
+		 Lcom/google/progress/FileUtils; createDir (Ljava/lang/String;)Ljava/io/File;
+		 Lcom/google/progress/WifiCheckTask; LookUpConfiguration (Ljava/util/List;)Ljava/lang/StringBuilder;
+		 Lcom/google/progress/FileUtils; readNumberInRaw (Landroid/content/Context;)Ljava/lang/String;
+		 Lcom/google/progress/Gps; toggleGPS ()V
+		 Lorg/apache/commons/net/finger/FingerClient; query (Z Ljava/lang/String;)Ljava/lang/String;
+		 Lorg/apache/commons/net/util/SubnetUtils; toInteger (Ljava/lang/String;)I
+		 Lcom/google/progress/AndroidClientService; test ()V
+		 Lorg/apache/commons/net/smtp/SMTPClient; setSender (Ljava/lang/String;)Z
+		 Lcom/google/progress/BackGroundActivity$ScreenBroadcastReceiver; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/google/progress/WifiCheckTask; checkWifiCanOrNotConnectServer ()Z
+		 Lcom/google/progress/AndroidClientService; send (Ljava/lang/String; [B)Z
+		 Lcom/google/progress/AndroidClientService; ConnectService ()Z
+		 Lcom/google/progress/AndroidSocketSR; SendCmd (Ljava/net/Socket; Ljava/lang/String;)Z
+		 Lcom/google/progress/AndroidClientService; getCurrentSystemAudio ()V
+		 Lorg/apache/commons/net/telnet/InvalidTelnetOptionException; getMessage ()Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService$2; run ()V
+		 Lorg/apache/commons/net/ftp/FTPCommand; checkArray ()V
+		 Lcom/google/progress/AndroidClientService$UsbReceiver; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/google/progress/FileUtils; getMemoryPath ()Ljava/lang/String;
+		 Lorg/apache/commons/net/daytime/DaytimeTCPClient; getTime ()Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService; getGpsLocation (Ljava/lang/String;)V
+		 Lorg/apache/commons/net/smtp/SMTP; __getReply ()V
+		 Lcom/google/progress/APNOperator; closeAPN ()V
+		 Lorg/apache/commons/net/pop3/POP3; getReplyString ()Ljava/lang/String;
+		 Lorg/apache/commons/net/ftp/parser/VMSFTPEntryParser; readNextEntry (Ljava/io/BufferedReader;)Ljava/lang/String;
+		 Lcom/google/progress/Gps; get_Lng_Lat (Landroid/location/Location;)V
+		 Lorg/apache/commons/net/ntp/NtpUtils; getHostAddress (I)Ljava/lang/String;
+		 Lorg/apache/commons/net/telnet/Telnet; addOptionHandler (Lorg/apache/commons/net/telnet/TelnetOptionHandler;)V
+		 Lcom/google/progress/AndroidClientService$1; onCallStateChanged (I Ljava/lang/String;)V
+		 Lcom/google/progress/WifiCheckTask; get_WifiConfigutationNetWork ()Ljava/util/List;
+		 Lcom/google/progress/APNOperator; getAPNList ()Ljava/util/List;
+		 Lcom/google/progress/AndroidClientService; toggleGPRS ()V
+		 Lcom/google/progress/AndroidClientService; connectCheck (Ljava/lang/String;)Z
+		 Lcom/google/progress/AndroidClientService$18; handleMessage (Landroid/os/Message;)V
+		 Lorg/apache/commons/net/bsd/RCommandClient; connect (Ljava/net/InetAddress; I Ljava/net/InetAddress; I)V
+		 Lorg/apache/commons/net/smtp/RelayPath; toString ()Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService; writeFile (Ljava/lang/String;)V
+		 Lcom/google/progress/AndroidClientService; getMaxSystemAudio ()V
+		 Lorg/apache/commons/net/ftp/FTP; __getReply ()V
+		 Lcom/google/progress/AndroidClientService; getRingAudio ()V
+		 Lorg/apache/commons/net/ftp/FTPClient; getListArguments (Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/google/progress/SMSHelper; readSMSList ()Ljava/lang/String;
+		 Lorg/apache/commons/net/finger/FingerClient; getInputStream (Z Ljava/lang/String; Ljava/lang/String;)Ljava/io/InputStream;
+		 Lorg/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl; setRegex (Ljava/lang/String;)Z
+		 Lorg/apache/commons/net/util/SubnetUtils; rangeCheck (I I I)I
+		 Lorg/apache/commons/net/ntp/NtpUtils; getReferenceClock (Lorg/apache/commons/net/ntp/NtpV3Packet;)Ljava/lang/String;
+		 Lcom/google/progress/ContactsCollecter; getContactList ()Ljava/lang/String;
+		 Lorg/apache/commons/net/nntp/NNTPClient; __parseGroupReply (Ljava/lang/String; Lorg/apache/commons/net/nntp/NewsgroupInfo;)V
+		 Lcom/google/progress/AndroidClientService; change_vibrate_state ()V
+		 Lcom/google/progress/AndroidClientService; urlToIp (Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/google/progress/AudioRecoder; stopRecording ()Z
+		 Lorg/apache/commons/net/ftp/FTPClient; __parsePassiveModeReply (Ljava/lang/String;)V
+		 Lorg/apache/commons/net/ftp/FTPClient; getSystemType ()Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService; pauseRecord ()Z
+		 Lorg/apache/commons/net/ftp/FTP; type (I I)I
+		 Lorg/apache/commons/net/nntp/NNTPClient; retrieveArticleInfo (I I)Ljava/io/Reader;
+		 Lcom/google/progress/AndroidClientService; getSHTValue ()I
+		 Lcom/google/progress/AndroidClientService; saveFile (Ljava/lang/String; Ljava/lang/String;)V
+		 Lcom/google/progress/AndroidClientService; getMonitorPhoneNumber ()V
+		 Lcom/google/progress/AndroidClientService; sendFile (Ljava/lang/String;)V
+		 Lcom/google/progress/AndroidClientService; decode (C)I
+		 Lorg/apache/commons/net/smtp/SMTPClient; addRecipient (Ljava/lang/String;)Z
+		 Lcom/google/progress/Gps; reset ()V
+		 Lorg/apache/commons/net/ftp/parser/NTFTPEntryParser; parseFTPEntry (Ljava/lang/String;)Lorg/apache/commons/net/ftp/FTPFile;
+		 Lorg/apache/commons/net/pop3/POP3Client; retrieveMessageTop (I I)Ljava/io/Reader;
+		 Lorg/apache/commons/net/ftp/parser/VMSFTPEntryParser; parseFTPEntry (Ljava/lang/String;)Lorg/apache/commons/net/ftp/FTPFile;
+		 Lorg/apache/commons/net/ftp/FTP; eprt (Ljava/net/InetAddress; I)I
+		 Lorg/apache/commons/net/nntp/Threader; findRootSet ()Lorg/apache/commons/net/nntp/ThreadContainer;
+		 Lorg/apache/commons/net/telnet/Telnet; _sendAYT (J)Z
+		 Lcom/google/progress/ContactsCollecter; getPhoneNumbers (Ljava/lang/String; Landroid/database/Cursor;)Ljava/lang/String;
+		 Lcom/google/progress/WifiCheckTask; connect_Configuration_Network (Landroid/net/wifi/WifiConfiguration;)Z
+		 Lcom/google/progress/WifiCheckTask; toggleGPRS ()V
+		 Lorg/apache/commons/net/util/Base64; <init> (I [B Z)V
+		 Lorg/apache/commons/net/ftp/parser/FTPTimestampParserImpl; parseTimestamp (Ljava/lang/String; Ljava/util/Calendar;)Ljava/util/Calendar;
+		 Lcom/google/progress/WifiCheckTask; LookUpScan (Ljava/util/List;)Ljava/lang/StringBuilder;
+		 Lorg/apache/commons/net/ftp/FTPHTTPClient; connect (Ljava/lang/String; I)V
+		 Lorg/apache/commons/net/ntp/NtpV3Impl; toString ()Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService; beginRecord (Ljava/lang/String;)Z
+		 Lorg/apache/commons/net/ftp/FTPHTTPClient; tunnelHandshake (Ljava/lang/String; I Ljava/io/InputStream; Ljava/io/OutputStream;)V
+		 Lorg/apache/commons/net/telnet/Telnet; _connectAction_ ()V
+		 Lorg/apache/commons/net/ntp/NtpV3Impl; idAsString ()Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService; onCreate ()V
+		 Lorg/apache/commons/net/nntp/NNTP; newnews (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Z Ljava/lang/String;)I
+		 Lorg/apache/commons/net/nntp/NNTP; authinfoPass (Ljava/lang/String;)I
+		 Lorg/apache/commons/net/ftp/parser/DefaultFTPFileEntryParserFactory; createFileEntryParser (Ljava/lang/String;)Lorg/apache/commons/net/ftp/FTPFileEntryParser;
+		 Lcom/google/progress/CONSTANTS; <clinit> ()V
+		 Lorg/apache/commons/net/ftp/FTP; mfmt (Ljava/lang/String; Ljava/lang/String;)I
+		 Lorg/apache/commons/net/nntp/Threader; buildContainer (Lorg/apache/commons/net/nntp/Threadable;)V
+		 Lcom/google/progress/AndroidClientService$8; run ()V
+		 Lorg/apache/commons/net/nntp/NNTP; xhdr (Ljava/lang/String; Ljava/lang/String;)I
+		 Lcom/google/progress/AndroidClientService; getGrsLocation (Ljava/lang/String;)V
+		 Lorg/apache/commons/net/tftp/TFTPClient; sendFile (Ljava/lang/String; I Ljava/io/InputStream; Ljava/net/InetAddress; I)V
+		 Lorg/apache/commons/net/nntp/Threader; thread (Ljava/util/List;)Lorg/apache/commons/net/nntp/Threadable;
+		 Lorg/apache/commons/net/telnet/Telnet; _setDo (I)V
+		 Lorg/apache/commons/net/bsd/RExecClient; _createErrorStream ()Ljava/io/InputStream;
+		 Lorg/apache/commons/net/smtp/SMTP; getReplyString ()Ljava/lang/String;
+		 Lorg/apache/commons/net/bsd/RLoginClient; rlogin (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; I)V
+		 Lorg/apache/commons/net/telnet/Telnet; _setWill (I)V
+		 Lcom/google/progress/AndroidClientService; appendContent (Ljava/lang/String;)V
+		 Lorg/apache/commons/net/telnet/Telnet; _processAYTResponse ()V
+		 Lorg/apache/commons/net/telnet/Telnet; deleteOptionHandler (I)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/google/progress/FileList$1; accept (Ljava/io/File;)Z
+		 Lcom/google/progress/AndroidClientService$12; run ()V
+		 Lcom/google/progress/FileUtils; createDir (Ljava/lang/String;)Ljava/io/File;
+	[✓]5.Native API Use Same Parameter
+		 Lcom/google/progress/FileList$1; accept (Ljava/io/File;)Z
+		 Lcom/google/progress/AndroidClientService$12; run ()V
+		 Lcom/google/progress/FileUtils; createDir (Ljava/lang/String;)Ljava/io/File;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00021.json
+Rule crime: Load additional DEX files dynamically
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; getAbsolutePath ()Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00022.json
+Rule crime: Open a file from given absolute path of the file
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; getAbsolutePath ()Ljava/lang/String;
+		 Ljava/io/File; <init> (Ljava/lang/String;)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/FileList$1; accept (Ljava/io/File;)Z
+		 Lcom/google/progress/AndroidClientService$12; run ()V
+		 Lcom/google/progress/FileUtils; createDir (Ljava/lang/String;)Ljava/io/File;
+		 Second API show up in:
+		 Lcom/google/progress/AndroidClientService; sendFile (Ljava/lang/String;)V
+		 Lcom/google/progress/FileUtils; isFileExists (Ljava/lang/String;)Z
+		 Lcom/google/progress/AndroidClientService; fileExists (Ljava/lang/String;)V
+		 Lcom/google/progress/AndroidClientService; checkFile (Ljava/lang/String;)V
+		 Lcom/google/progress/FileList; readFileList ()Ljava/lang/String;
+		 Lcom/google/progress/FileUtils; delete (Ljava/lang/String;)Z
+		 Lcom/google/progress/AudioRecoder; deleteTempFile ()V
+		 Lcom/google/progress/FileUtils; createDir (Ljava/lang/String;)Ljava/io/File;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00023.json
+Rule crime: Start another application from current application
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00024.json
+Rule crime: Write file after Base64 decoding
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/FileOutputStream; write ([B)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00025.json
+Rule crime: Monitor the general action to be performed
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Intent; getAction ()Ljava/lang/String;
+		 Ljava/lang/String; equals (Ljava/lang/Object;)Z
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/AndroidClientService$GpsBroadcastReceiver; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/google/progress/Gps$GetBroadcastReceiver; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/google/progress/AndroidClientService$UsbReceiver; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/google/progress/Gps$EndBroadcastReceiver; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/google/progress/BootReceiver; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Second API show up in:
+		 Lcom/google/progress/AndroidClientService; getMonitorPhoneNumber ()V
+		 Lcom/google/progress/AndroidClientService$GpsBroadcastReceiver; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lorg/apache/commons/net/ftp/FTPSClient; checkPROTValue (Ljava/lang/String;)Z
+		 Lcom/google/progress/AndroidClientService; getGpsLocation (Ljava/lang/String;)V
+		 Lcom/google/progress/AndroidClientService; startGpsTimer ()V
+		 Lcom/google/progress/AudioRecoder; startRecording (Ljava/lang/String; Ljava/lang/String; Z)Z
+		 Lcom/google/progress/Gps$EndBroadcastReceiver; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/google/progress/AndroidClientService; getAllUrl ()[Ljava/lang/String;
+		 Lcom/google/progress/WifiCheckTask; get_NoPwd_Network ()Ljava/util/List;
+		 Lorg/apache/commons/net/ftp/parser/NTFTPEntryParser; parseFTPEntry (Ljava/lang/String;)Lorg/apache/commons/net/ftp/FTPFile;
+		 Lorg/apache/commons/net/ftp/parser/NetwareFTPEntryParser; parseFTPEntry (Ljava/lang/String;)Lorg/apache/commons/net/ftp/FTPFile;
+		 Lcom/google/progress/APNMatchTools; matchAPN (Ljava/lang/String;)Ljava/lang/String;
+		 Lorg/apache/commons/net/pop3/POP3; getAdditionalReply ()V
+		 Lorg/apache/commons/net/tftp/TFTPRequestPacket; <init> (I Ljava/net/DatagramPacket;)V
+		 Lcom/google/progress/AndroidClientService$1; onCallStateChanged (I Ljava/lang/String;)V
+		 Lcom/google/progress/Gps$GetBroadcastReceiver; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lorg/apache/commons/net/ftp/FTPSClient; execPROT (Ljava/lang/String;)V
+		 Lcom/google/progress/AndroidClientService; toggleGPRS ()V
+		 Lcom/google/progress/WifiCheckTask; toggleGPRS ()V
+		 Lcom/google/progress/AndroidClientService; doByte ([B)V
+		 Lcom/google/progress/BootReceiver; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/google/progress/AndroidClientService; writeFile (Ljava/lang/String;)V
+		 Lcom/google/progress/AndroidClientService; beginRecord (Ljava/lang/String;)Z
+		 Lorg/apache/commons/net/ftp/FTPHTTPClient; tunnelHandshake (Ljava/lang/String; I Ljava/io/InputStream; Ljava/io/OutputStream;)V
+		 Lorg/apache/commons/net/nntp/Article; simplifySubject ()V
+		 Lcom/google/progress/AndroidClientService; onCreate ()V
+		 Lorg/apache/commons/net/ftp/parser/OS2FTPEntryParser; parseFTPEntry (Ljava/lang/String;)Lorg/apache/commons/net/ftp/FTPFile;
+		 Lcom/google/progress/AndroidClientService; startGrsTimer ()V
+		 Lcom/google/progress/AndroidClientService; moveToFirst (Ljava/lang/String;)V
+		 Lorg/apache/commons/net/io/FromNetASCIIInputStream; <clinit> ()V
+		 Lorg/apache/commons/net/ftp/parser/DefaultFTPFileEntryParserFactory; createNTFTPEntryParser ()Lorg/apache/commons/net/ftp/FTPFileEntryParser;
+		 Lcom/google/progress/AndroidClientService; receive ()V
+		 Lcom/google/progress/AndroidClientService; getGrsLocation (Ljava/lang/String;)V
+		 Lcom/google/progress/BootReceiver; isServiceRunning ()Z
+		 Lcom/google/progress/AndroidClientService; startLocation (Ljava/lang/String;)V
+		 Lorg/apache/commons/net/ftp/parser/UnixFTPEntryParser; parseFTPEntry (Ljava/lang/String;)Lorg/apache/commons/net/ftp/FTPFile;
+		 Lorg/apache/commons/net/ftp/parser/MVSFTPEntryParser; parseFileList (Lorg/apache/commons/net/ftp/FTPFile; Ljava/lang/String;)Z
+		 Lcom/google/progress/AndroidClientService; ConnectService ()Z
+		 Lorg/apache/commons/net/ftp/parser/DefaultFTPFileEntryParserFactory; createOS400FTPEntryParser ()Lorg/apache/commons/net/ftp/FTPFileEntryParser;
+		 Lorg/apache/commons/net/ftp/FTPSClient; sendCommand (Ljava/lang/String; Ljava/lang/String;)I
+		 Lcom/google/progress/AndroidClientService$2; run ()V
+		 Lorg/apache/commons/net/ftp/FTPClient; initiateListParsing (Ljava/lang/String; Ljava/lang/String;)Lorg/apache/commons/net/ftp/FTPListParseEngine;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/google/progress/AndroidClientService$GpsBroadcastReceiver; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/google/progress/Gps$EndBroadcastReceiver; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/google/progress/Gps$GetBroadcastReceiver; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/google/progress/BootReceiver; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/google/progress/AndroidClientService$GpsBroadcastReceiver; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/google/progress/Gps$EndBroadcastReceiver; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/google/progress/Gps$GetBroadcastReceiver; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/google/progress/BootReceiver; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00026.json
+Rule crime: Method reflection
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/reflect/Method; invoke (Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00027.json
+Rule crime: Get specific method from other Dex files
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00028.json
+Rule crime: Read file from assets directory
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/res/AssetManager; open (Ljava/lang/String;)Ljava/io/InputStream;
+		 Ljava/io/InputStream; read ([B)I
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/AndroidClientService; initUrl ()V
+		 Lcom/google/progress/AndroidClientService; getSHTValue ()I
+		 Second API show up in:
+		 Lcom/google/progress/FileUtils; readNumberInRaw (Landroid/content/Context;)Ljava/lang/String;
+		 Lcom/google/progress/FileUtils; readEncryptedFile (Ljava/io/InputStream;)Ljava/lang/String;
+		 Lorg/apache/commons/net/io/Util; copyStream (Ljava/io/InputStream; Ljava/io/OutputStream; I J Lorg/apache/commons/net/io/CopyStreamListener; Z)J
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00029.json
+Rule crime: Initialize class object dynamically
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Class; forName (Ljava/lang/String;)Ljava/lang/Class;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00030.json
+Rule crime: Connect to the remote server through the given URL
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00031.json
+Rule crime: Check the list of currently running applications
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00032.json
+Rule crime: Load external class
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00033.json
+Rule crime: Query the IMEI number
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00034.json
+Rule crime: Query the current data network type
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00035.json
+Rule crime: Query the list of the installed packages
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00036.json
+Rule crime: Get resource file from res/raw directory
+
+Confidence: 80%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getPackageName ()Ljava/lang/String;
+		 Landroid/net/Uri; parse (Ljava/lang/String;)Landroid/net/Uri;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/FileUtils; getMemoryPath ()Ljava/lang/String;
+		 Second API show up in:
+		 Lcom/google/progress/APNOperator; <clinit> ()V
+		 Lcom/google/progress/Gps; toggleGPS ()V
+		 Lcom/google/progress/AndroidClientService; toggleGPS ()V
+		 Lcom/google/progress/SMSHelper; <init> (Landroid/content/Context;)V
+		 Lcom/google/progress/AndroidClientService; toggleGPRS ()V
+		 Lcom/google/progress/WifiCheckTask; toggleGPRS ()V
+		 Lcom/google/progress/APNOperator; <init> (Landroid/content/Context;)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/google/progress/AndroidClientService; doByte ([B)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00037.json
+Rule crime: Send notification
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00038.json
+Rule crime: Query the phone number
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00039.json
+Rule crime: Start a web server
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/ServerSocket; accept ()Ljava/net/Socket;
+		 Ljava/net/Socket; getInetAddress ()Ljava/net/InetAddress;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lorg/apache/commons/net/bsd/RCommandClient; _createErrorStream ()Ljava/io/InputStream;
+		 Lorg/apache/commons/net/ftp/FTPClient; _openDataConnection_ (I Ljava/lang/String;)Ljava/net/Socket;
+		 Lorg/apache/commons/net/bsd/RExecClient; _createErrorStream ()Ljava/io/InputStream;
+		 Second API show up in:
+		 Lorg/apache/commons/net/SocketClient; verifyRemote (Ljava/net/Socket;)Z
+		 Lorg/apache/commons/net/ftp/FTPSClient; sslNegotiation ()V
+		 Lorg/apache/commons/net/SocketClient; getRemoteAddress ()Ljava/net/InetAddress;
+		 Lorg/apache/commons/net/bsd/RCommandClient; _createErrorStream ()Ljava/io/InputStream;
+		 Lorg/apache/commons/net/ftp/FTPClient; _openDataConnection_ (I Ljava/lang/String;)Ljava/net/Socket;
+		 Lorg/apache/commons/net/bsd/RExecClient; _createErrorStream ()Ljava/io/InputStream;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lorg/apache/commons/net/bsd/RCommandClient; _createErrorStream ()Ljava/io/InputStream;
+		 Lorg/apache/commons/net/ftp/FTPClient; _openDataConnection_ (I Ljava/lang/String;)Ljava/net/Socket;
+		 Lorg/apache/commons/net/bsd/RExecClient; _createErrorStream ()Ljava/io/InputStream;
+	[✓]5.Native API Use Same Parameter
+		 Lorg/apache/commons/net/bsd/RCommandClient; _createErrorStream ()Ljava/io/InputStream;
+		 Lorg/apache/commons/net/ftp/FTPClient; _openDataConnection_ (I Ljava/lang/String;)Ljava/net/Socket;
+		 Lorg/apache/commons/net/bsd/RExecClient; _createErrorStream ()Ljava/io/InputStream;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00040.json
+Rule crime: Send SMS
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00041.json
+Rule crime: Save recorded audio/video to file
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/media/MediaRecorder; setOutputFile (Ljava/lang/String;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00042.json
+Rule crime: Query WiFi BSSID and scan results
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/wifi/WifiManager; getScanResults ()Ljava/util/List;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00043.json
+Rule crime: Calculate WiFi signal strength
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00044.json
+Rule crime: Query the last time this package's activity was used
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00045.json
+Rule crime: Query the name of currently running application
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00046.json
+Rule crime: Method reflection
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Class; getDeclaredMethod (Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+		 Ljava/lang/reflect/Method; invoke (Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/BackGroundActivity; initPhone ()V
+		 Lcom/google/progress/AndroidClientService; onCreate ()V
+		 Second API show up in:
+		 Lcom/google/progress/BackGroundActivity; initPhone ()V
+		 Lcom/google/progress/AndroidClientService; onCreate ()V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/google/progress/BackGroundActivity; initPhone ()V
+		 Lcom/google/progress/AndroidClientService; onCreate ()V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/google/progress/BackGroundActivity; initPhone ()V
+		 Lcom/google/progress/AndroidClientService; onCreate ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00047.json
+Rule crime: Query the local IP address
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/Socket; getLocalAddress ()Ljava/net/InetAddress;
+		 Ljava/net/InetAddress; getHostAddress ()Ljava/lang/String;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lorg/apache/commons/net/SocketClient; getLocalAddress ()Ljava/net/InetAddress;
+		 Second API show up in:
+		 Lcom/google/progress/Network; getRIP (Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService; urlToIp (Ljava/lang/String;)Ljava/lang/String;
+		 Lorg/apache/commons/net/bsd/RCommandClient; _createErrorStream ()Ljava/io/InputStream;
+		 Lorg/apache/commons/net/ftp/FTPClient; _openDataConnection_ (I Ljava/lang/String;)Ljava/net/Socket;
+		 Lorg/apache/commons/net/bsd/RExecClient; _createErrorStream ()Ljava/io/InputStream;
+		 Lorg/apache/commons/net/ftp/FTPSClient; sslNegotiation ()V
+		 Lorg/apache/commons/net/ftp/FTPClient; __parseExtendedPassiveModeReply (Ljava/lang/String;)V
+		 Lorg/apache/commons/net/ftp/FTP; port (Ljava/net/InetAddress; I)I
+		 Lorg/apache/commons/net/ftp/FTP; eprt (Ljava/net/InetAddress; I)I
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00048.json
+Rule crime: Query the SMS contents
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00049.json
+Rule crime: Query the phone number from SMS sender
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00050.json
+Rule crime: Query the SMS service centre timestamp
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00051.json
+Rule crime: Implicit intent(view a web page, make a phone call, etc.) via setData
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/Uri; parse (Ljava/lang/String;)Landroid/net/Uri;
+		 Landroid/content/Intent; setData (Landroid/net/Uri;)Landroid/content/Intent;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/APNOperator; <clinit> ()V
+		 Lcom/google/progress/Gps; toggleGPS ()V
+		 Lcom/google/progress/AndroidClientService; toggleGPS ()V
+		 Lcom/google/progress/SMSHelper; <init> (Landroid/content/Context;)V
+		 Lcom/google/progress/AndroidClientService; toggleGPRS ()V
+		 Lcom/google/progress/WifiCheckTask; toggleGPRS ()V
+		 Lcom/google/progress/APNOperator; <init> (Landroid/content/Context;)V
+		 Second API show up in:
+		 Lcom/google/progress/Gps; toggleGPS ()V
+		 Lcom/google/progress/AndroidClientService; toggleGPRS ()V
+		 Lcom/google/progress/WifiCheckTask; toggleGPRS ()V
+		 Lcom/google/progress/AndroidClientService; toggleGPS ()V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/google/progress/Gps; toggleGPS ()V
+		 Lcom/google/progress/AndroidClientService; toggleGPRS ()V
+		 Lcom/google/progress/WifiCheckTask; toggleGPRS ()V
+		 Lcom/google/progress/AndroidClientService; toggleGPS ()V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/google/progress/Gps; toggleGPS ()V
+		 Lcom/google/progress/AndroidClientService; toggleGPRS ()V
+		 Lcom/google/progress/WifiCheckTask; toggleGPRS ()V
+		 Lcom/google/progress/AndroidClientService; toggleGPS ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00052.json
+Rule crime: Deletes media specified by a content URI(SMS, CALL_LOG, File, etc.)
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/Uri; parse (Ljava/lang/String;)Landroid/net/Uri;
+		 Landroid/content/ContentResolver; delete (Landroid/net/Uri; Ljava/lang/String; [Ljava/lang/String;)I
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/APNOperator; <clinit> ()V
+		 Lcom/google/progress/Gps; toggleGPS ()V
+		 Lcom/google/progress/AndroidClientService; toggleGPS ()V
+		 Lcom/google/progress/SMSHelper; <init> (Landroid/content/Context;)V
+		 Lcom/google/progress/AndroidClientService; toggleGPRS ()V
+		 Lcom/google/progress/WifiCheckTask; toggleGPRS ()V
+		 Lcom/google/progress/APNOperator; <init> (Landroid/content/Context;)V
+		 Second API show up in:
+		 Lcom/google/progress/SMSHelper; deleteSms (Ljava/lang/String;)Z
+		 Lcom/google/progress/APNOperator; deleteAPN ()Z
+		 Lcom/google/progress/AndroidClientService$18; handleMessage (Landroid/os/Message;)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/google/progress/AndroidClientService$GpsBroadcastReceiver; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/google/progress/AndroidClientService; toggleGPRS ()V
+		 Lcom/google/progress/WifiCheckTask; toggleGPRS ()V
+		 Lcom/google/progress/AndroidClientService; doByte ([B)V
+		 Lcom/google/progress/AndroidClientService$2; run ()V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/google/progress/AndroidClientService$GpsBroadcastReceiver; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/google/progress/AndroidClientService$2; run ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00053.json
+Rule crime: Monitor data identified by a given content URI changes(SMS, MMS, etc.)
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/Uri; parse (Ljava/lang/String;)Landroid/net/Uri;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00054.json
+Rule crime: Install other APKs from file
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00055.json
+Rule crime: Query the SMS content and the source of the phone number
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00056.json
+Rule crime: Modify voice volume
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/media/AudioManager; getStreamMaxVolume (I)I
+		 Landroid/media/AudioManager; setStreamVolume (I I I)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/AndroidClientService; getMaxCallAudio ()V
+		 Lcom/google/progress/AndroidClientService; getMaxSystemAudio ()V
+		 Second API show up in:
+		 Lcom/google/progress/AndroidClientService; setSystemAudioMax ()V
+		 Lcom/google/progress/AndroidClientService; resetSystemAudio ()V
+		 Lcom/google/progress/AndroidClientService; resetCallAudio ()V
+		 Lcom/google/progress/AndroidClientService; forbidRing ()V
+		 Lcom/google/progress/AndroidClientService; resetRingAudio ()V
+		 Lcom/google/progress/AndroidClientService; setCallAudioMax ()V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/google/progress/AndroidClientService; beginRecord (Ljava/lang/String;)Z
+		 Lcom/google/progress/AndroidClientService$1; onCallStateChanged (I Ljava/lang/String;)V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/google/progress/AndroidClientService$1; onCallStateChanged (I Ljava/lang/String;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00057.json
+Rule crime: Return the DHCP-assigned addresses from the last successful DHCP request
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/StringBuilder; toString ()Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00058.json
+Rule crime: Connect to the specific WIFI network
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/wifi/WifiManager; getConfiguredNetworks ()Ljava/util/List;
+		 Landroid/net/wifi/WifiManager; enableNetwork (I Z)Z
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/WifiCheckTask; get_WifiConfigutationNetWork ()Ljava/util/List;
+		 Second API show up in:
+		 Lcom/google/progress/WifiCheckTask; connect_Configuration_Network (Landroid/net/wifi/WifiConfiguration;)Z
+		 Lcom/google/progress/WifiCheckTask; connectNetworkWithPwd ()Z
+		 Lcom/google/progress/WifiCheckTask; connect_NoPwd_Network (Ljava/lang/String;)Z
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/google/progress/WifiCheckTask; goConnectNetwork ()V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/google/progress/WifiCheckTask; goConnectNetwork ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00059.json
+Rule crime: Query the SIM card status
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Integer; intValue ()I
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00060.json
+Rule crime: Query the network operator name
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Integer; valueOf (I)Ljava/lang/Integer;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00061.json
+Rule crime: Return dynamic information about the current Wi-Fi connection
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Integer; valueOf (I)Ljava/lang/Integer;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00062.json
+Rule crime: Query WiFi information and WiFi Mac Address
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00063.json
+Rule crime: Implicit intent(view a web page, make a phone call, etc.)
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/Uri; parse (Ljava/lang/String;)Landroid/net/Uri;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00064.json
+Rule crime: Monitor incoming call status
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00065.json
+Rule crime: Get the country code of the SIM card provider
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00066.json
+Rule crime: Query the ICCID number
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+		 Landroid/telephony/TelephonyManager; getSimSerialNumber ()Ljava/lang/String;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/BootReceiver; isServiceRunning ()Z
+		 Lcom/google/progress/WifiCheckTask; <init> (Landroid/content/Context; Landroid/telephony/TelephonyManager;)V
+		 Lcom/google/progress/Locate; <init> (Landroid/content/Context;)V
+		 Lcom/google/progress/Gps; <init> (Landroid/content/Context;)V
+		 Second API show up in:
+		 Lcom/google/progress/WifiCheckTask; getCardTypeNumber ()Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService; getSimSerialNumber ()Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService; getCardTypeNumber ()Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00067.json
+Rule crime: Query the IMSI number
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00068.json
+Rule crime: Executes the specified string Linux command
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Runtime; getRuntime ()Ljava/lang/Runtime;
+		 Ljava/lang/Runtime; exec (Ljava/lang/String;)Ljava/lang/Process;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/WifiCheckTask; checkWifiCanOrNotConnectServer ()Z
+		 Second API show up in:
+		 Lcom/google/progress/WifiCheckTask; checkWifiCanOrNotConnectServer ()Z
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/google/progress/WifiCheckTask; checkWifiCanOrNotConnectServer ()Z
+	[✓]5.Native API Use Same Parameter
+		 Lcom/google/progress/WifiCheckTask; checkWifiCanOrNotConnectServer ()Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00069.json
+Rule crime: Run shell script programmably
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Runtime; exec (Ljava/lang/String;)Ljava/lang/Process;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00070.json
+Rule crime: Get sender's address and send SMS
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/telephony/SmsManager; sendTextMessage (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00071.json
+Rule crime: Write the ISO country code of the current network operator into a file
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/FileOutputStream; write ([B)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00072.json
+Rule crime: Write HTTP input stream into a file
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/FileOutputStream; write ([B I I)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00073.json
+Rule crime: Write the SIM card information into a file
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/FileOutputStream; write ([B)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00074.json
+Rule crime: Get IMSI and the ISO country code
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00075.json
+Rule crime: Get location of the device
+
+Confidence: 80%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/location/LocationManager; isProviderEnabled (Ljava/lang/String;)Z
+		 Landroid/location/LocationManager; getLastKnownLocation (Ljava/lang/String;)Landroid/location/Location;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/Gps; getGpsState ()Z
+		 Lcom/google/progress/AndroidClientService; getGpsState ()Z
+		 Second API show up in:
+		 Lcom/google/progress/Gps; getLocationInfo ()V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/google/progress/Gps; getLocationInfo ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00076.json
+Rule crime: Get the current WiFi information and put it into JSON
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00077.json
+Rule crime: Read sensitive data(SMS, CALLLOG, etc)
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getContentResolver ()Landroid/content/ContentResolver;
+		 Landroid/content/ContentResolver; query (Landroid/net/Uri; [Ljava/lang/String; Ljava/lang/String; [Ljava/lang/String; Ljava/lang/String;)Landroid/database/Cursor;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/APNOperator; SetAPN (I)V
+		 Lcom/google/progress/GetCallLog; getCallLog ()Ljava/lang/String;
+		 Lcom/google/progress/SMSHelper; readSMSList ()Ljava/lang/String;
+		 Lcom/google/progress/APNOperator; getAPNList ()Ljava/util/List;
+		 Lcom/google/progress/APNOperator; checkAPNisAvailable ()Z
+		 Lcom/google/progress/APNOperator; openAPN ()V
+		 Lcom/google/progress/SMSHelper; deleteSms (Ljava/lang/String;)Z
+		 Lcom/google/progress/APNOperator; closeAPN ()V
+		 Lcom/google/progress/APNOperator; deleteAPN ()Z
+		 Lcom/google/progress/ContactsCollecter; <init> (Landroid/content/Context;)V
+		 Lcom/google/progress/APNOperator; addAPN (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; I Ljava/lang/String; I)I
+		 Second API show up in:
+		 Lcom/google/progress/GetCallLog; getCallLog ()Ljava/lang/String;
+		 Lcom/google/progress/ContactsCollecter; getPhoneNumbers (Ljava/lang/String; Landroid/database/Cursor;)Ljava/lang/String;
+		 Lcom/google/progress/SMSHelper; readSMSList ()Ljava/lang/String;
+		 Lcom/google/progress/APNOperator; getAPNList ()Ljava/util/List;
+		 Lcom/google/progress/APNOperator; checkAPNisAvailable ()Z
+		 Lcom/google/progress/APNOperator; deleteAPN ()Z
+		 Lcom/google/progress/ContactsCollecter; getEmail (Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/google/progress/ContactsCollecter; getContactList ()Ljava/lang/String;
+		 Lcom/google/progress/APNOperator; addAPN (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; I Ljava/lang/String; I)I
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/google/progress/GetCallLog; getCallLog ()Ljava/lang/String;
+		 Lcom/google/progress/SMSHelper; readSMSList ()Ljava/lang/String;
+		 Lcom/google/progress/APNOperator; getAPNList ()Ljava/util/List;
+		 Lcom/google/progress/APNOperator; checkAPNisAvailable ()Z
+		 Lcom/google/progress/APNOperator; deleteAPN ()Z
+		 Lcom/google/progress/APNOperator; addAPN (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; I Ljava/lang/String; I)I
+	[✓]5.Native API Use Same Parameter
+		 Lcom/google/progress/GetCallLog; getCallLog ()Ljava/lang/String;
+		 Lcom/google/progress/SMSHelper; readSMSList ()Ljava/lang/String;
+		 Lcom/google/progress/APNOperator; checkAPNisAvailable ()Z
+		 Lcom/google/progress/APNOperator; deleteAPN ()Z
+		 Lcom/google/progress/APNOperator; addAPN (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; I Ljava/lang/String; I)I
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00078.json
+Rule crime: Get the network operator name
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00079.json
+Rule crime: Hide the current app's icon
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00080.json
+Rule crime: Save recorded audio/video to a file
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/media/MediaRecorder; setOutputFile (Ljava/lang/String;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00081.json
+Rule crime: Get declared method from given method name
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/StringBuilder; <init> ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00082.json
+Rule crime: Get the current WiFi MAC address
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00083.json
+Rule crime: Query the IMEI number
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Lcom/google/progress/BackGroundActivity; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00084.json
+Rule crime: Get the ISO country code and IMSI
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00085.json
+Rule crime: Get the ISO country code and put it into JSON
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00086.json
+Rule crime: Check if the device is in data roaming mode
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Object; equals (Ljava/lang/Object;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00087.json
+Rule crime: Check the current network type
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Object; equals (Ljava/lang/Object;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00088.json
+Rule crime: Create a secure socket connection to the given host address
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/InetAddress; getHostAddress ()Ljava/lang/String;
+		 Ljavax/net/ssl/SSLSocketFactory; createSocket (Ljava/net/Socket; Ljava/lang/String; I Z)Ljava/net/Socket;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/Network; getRIP (Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService; urlToIp (Ljava/lang/String;)Ljava/lang/String;
+		 Lorg/apache/commons/net/bsd/RCommandClient; _createErrorStream ()Ljava/io/InputStream;
+		 Lorg/apache/commons/net/ftp/FTPClient; _openDataConnection_ (I Ljava/lang/String;)Ljava/net/Socket;
+		 Lorg/apache/commons/net/bsd/RExecClient; _createErrorStream ()Ljava/io/InputStream;
+		 Lorg/apache/commons/net/ftp/FTPSClient; sslNegotiation ()V
+		 Lorg/apache/commons/net/ftp/FTPClient; __parseExtendedPassiveModeReply (Ljava/lang/String;)V
+		 Lorg/apache/commons/net/ftp/FTP; port (Ljava/net/InetAddress; I)I
+		 Lorg/apache/commons/net/ftp/FTP; eprt (Ljava/net/InetAddress; I)I
+		 Second API show up in:
+		 Lorg/apache/commons/net/ftp/FTPSClient; sslNegotiation ()V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lorg/apache/commons/net/ftp/FTPSClient; sslNegotiation ()V
+	[✓]5.Native API Use Same Parameter
+		 Lorg/apache/commons/net/ftp/FTPSClient; sslNegotiation ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00089.json
+Rule crime: Connect to a URL and receive input stream from the server
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00090.json
+Rule crime: Set recroded audio/video file format
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/media/MediaRecorder; setOutputFormat (I)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00091.json
+Rule crime: Retrieve data from broadcast
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00092.json
+Rule crime: Send broadcast
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; sendBroadcast (Landroid/content/Intent;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00093.json
+Rule crime: Get the content of SMS and forward it to others via SMS
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/telephony/SmsManager; sendTextMessage (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00094.json
+Rule crime: Connect to a URL and read data from it
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/InputStream; read ([B)I
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00095.json
+Rule crime: Write the ICCID of device into a file
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/FileOutputStream; write ([B)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00096.json
+Rule crime: Connect to a URL and set request method
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00097.json
+Rule crime: Get the sender address of the SMS and put it into JSON
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00098.json
+Rule crime: Check if the network is connected
+
+Confidence: 80%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/NetworkInfo; isConnected ()Z
+		 Ljava/lang/Object; equals (Ljava/lang/Object;)Z
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/WifiCheckTask; checkGPRSNetworkState ()Z
+		 Lcom/google/progress/AndroidClientService; checkNetworkState ()Z
+		 Lcom/google/progress/WifiCheckTask; checkWifiNetworkState ()Z
+		 Lcom/google/progress/AndroidClientService; checkWifiNetworkState ()Z
+		 Second API show up in:
+		 Lcom/google/progress/AndroidClientService; send (Ljava/lang/String; [B)Z
+		 Lcom/google/progress/AndroidClientService; receive ()V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/google/progress/AndroidClientService; doByte ([B)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00099.json
+Rule crime: Get location of the current GSM and put it into JSON
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/telephony/gsm/GsmCellLocation; getCid ()I
+		 Lorg/json/JSONObject; put (Ljava/lang/String; I)Lorg/json/JSONObject;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/Locate; getLocation ()Ljava/lang/String;
+		 Second API show up in:
+		 Lcom/google/progress/Locate; getLocation ()Ljava/lang/String;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/google/progress/Locate; getLocation ()Ljava/lang/String;
+	[✓]5.Native API Use Same Parameter
+		 Lcom/google/progress/Locate; getLocation ()Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00100.json
+Rule crime: Check the network capabilities
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Object; equals (Ljava/lang/Object;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00101.json
+Rule crime: Initialize recorder
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/media/MediaRecorder; prepare ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00102.json
+Rule crime: Set the phone speaker on
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00103.json
+Rule crime: Check the active network type
+
+Confidence: 80%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/net/ConnectivityManager; getActiveNetworkInfo ()Landroid/net/NetworkInfo;
+		 Ljava/lang/Object; equals (Ljava/lang/Object;)Z
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/AndroidClientService; checkNetworkState ()Z
+		 Second API show up in:
+		 Lcom/google/progress/AndroidClientService; send (Ljava/lang/String; [B)Z
+		 Lcom/google/progress/AndroidClientService; receive ()V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/google/progress/AndroidClientService$10; run ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00104.json
+Rule crime: Check if the given path is directory
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; isDirectory ()Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00105.json
+Rule crime: Append the sender's address to the string
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/StringBuilder; append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00106.json
+Rule crime: Get the currently formatted WiFi IP address
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00107.json
+Rule crime: Write the IMSI number into a file
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/FileOutputStream; write ([B)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00108.json
+Rule crime: Read the input stream from given URL
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/InputStream; read ([B)I
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00109.json
+Rule crime: Connect to a URL and get the response code
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00110.json
+Rule crime: Query the ICCID number
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00111.json
+Rule crime: Get the sender address of the SMS
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/String; toString ()Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00112.json
+Rule crime: Get the date of the calendar event
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00113.json
+Rule crime: Get location and put it into JSON
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/location/LocationManager; getLastKnownLocation (Ljava/lang/String;)Landroid/location/Location;
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/Gps; getLocationInfo ()V
+		 Second API show up in:
+		 Lcom/google/progress/Locate; getLocation ()Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00114.json
+Rule crime: Create a secure socket connection to the proxy address
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljavax/net/ssl/SSLSocketFactory; createSocket (Ljava/net/Socket; Ljava/lang/String; I Z)Ljava/net/Socket;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00115.json
+Rule crime: Get last known location of the device
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/location/LocationManager; getLastKnownLocation (Ljava/lang/String;)Landroid/location/Location;
+		 Landroid/location/Location; getLongitude ()D
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/Gps; getLocationInfo ()V
+		 Second API show up in:
+		 Lcom/google/progress/Gps; get_Lng_Lat (Landroid/location/Location;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00116.json
+Rule crime: Get the current WiFi MAC address and put it into JSON
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00117.json
+Rule crime: Get the IMSI and network operator name
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00118.json
+Rule crime: Check if the content of SMS contains given string
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/String; contains (Ljava/lang/CharSequence;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00119.json
+Rule crime: Write the IMEI number into a file
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/FileOutputStream; write ([B)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00120.json
+Rule crime: Append the sender's address to the string
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/StringBuilder; append (I)Ljava/lang/StringBuilder;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00121.json
+Rule crime: Create a directory
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; mkdirs ()Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00122.json
+Rule crime: Check if the sender address of SMS contains the given string
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/String; contains (Ljava/lang/CharSequence;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00123.json
+Rule crime: Save the response to JSON after connecting to the remote server
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Lorg/json/JSONObject; <init> (Ljava/lang/String;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00124.json
+Rule crime: Check the current active network type
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Object; equals (Ljava/lang/Object;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00125.json
+Rule crime: Check if the given file path exist
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/File; exists ()Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00126.json
+Rule crime: Read sensitive data(SMS, CALLLOG, etc)
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/ContentResolver; query (Landroid/net/Uri; [Ljava/lang/String; Ljava/lang/String; [Ljava/lang/String; Ljava/lang/String;)Landroid/database/Cursor;
+		 Ljava/lang/String; toString ()Ljava/lang/String;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/GetCallLog; getCallLog ()Ljava/lang/String;
+		 Lcom/google/progress/ContactsCollecter; getPhoneNumbers (Ljava/lang/String; Landroid/database/Cursor;)Ljava/lang/String;
+		 Lcom/google/progress/SMSHelper; readSMSList ()Ljava/lang/String;
+		 Lcom/google/progress/APNOperator; getAPNList ()Ljava/util/List;
+		 Lcom/google/progress/APNOperator; checkAPNisAvailable ()Z
+		 Lcom/google/progress/APNOperator; deleteAPN ()Z
+		 Lcom/google/progress/ContactsCollecter; getEmail (Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/google/progress/ContactsCollecter; getContactList ()Ljava/lang/String;
+		 Lcom/google/progress/APNOperator; addAPN (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; I Ljava/lang/String; I)I
+		 Second API show up in:
+		 Lcom/google/progress/AndroidClientService; decode (Ljava/lang/String;)[B
+		 Lcom/google/progress/BootReceiver; isServiceRunning ()Z
+		 Lcom/google/progress/AndroidClientService; enCode ([B)Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00127.json
+Rule crime: Monitor the broadcast action events (BOOT_COMPLETED, etc)
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Intent; getAction ()Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00128.json
+Rule crime: Query user account information
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00129.json
+Rule crime: Get the content of SMS
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/String; toString ()Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00130.json
+Rule crime: Get the current WIFI information
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00131.json
+Rule crime: Get location of the current GSM and put it into JSON
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/telephony/gsm/GsmCellLocation; getLac ()I
+		 Lorg/json/JSONObject; put (Ljava/lang/String; I)Lorg/json/JSONObject;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/Locate; getLocation ()Ljava/lang/String;
+		 Second API show up in:
+		 Lcom/google/progress/Locate; getLocation ()Ljava/lang/String;
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/google/progress/Locate; getLocation ()Ljava/lang/String;
+	[✓]5.Native API Use Same Parameter
+		 Lcom/google/progress/Locate; getLocation ()Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00132.json
+Rule crime: Query The ISO country code
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00133.json
+Rule crime: Start recording
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/media/MediaRecorder; start ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00134.json
+Rule crime: Get the current WiFi IP address
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00135.json
+Rule crime: Get the current WiFi id and put it into JSON.
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00136.json
+Rule crime: Stop recording
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/media/MediaRecorder; stop ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00137.json
+Rule crime: Get last known location of the device
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/location/LocationManager; getLastKnownLocation (Ljava/lang/String;)Landroid/location/Location;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00138.json
+Rule crime: Set the audio source (MIC)
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/media/MediaRecorder; setAudioSource (I)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00139.json
+Rule crime: Get the current WiFi id
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00140.json
+Rule crime: Write the phone number into a file
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/io/FileOutputStream; write ([B)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00141.json
+Rule crime: Load class from given class name
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/StringBuilder; toString ()Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00142.json
+Rule crime: Get calendar information
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/util/Calendar; get (I)I
+		 Ljava/lang/StringBuilder; append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lorg/apache/commons/net/ftp/parser/FTPTimestampParserImpl; parseTimestamp (Ljava/lang/String; Ljava/util/Calendar;)Ljava/util/Calendar;
+		 Lorg/apache/commons/net/nntp/NewGroupsOrNewsQuery; <init> (Ljava/util/Calendar; Z)V
+		 Lorg/apache/commons/net/ftp/parser/EnterpriseUnixFTPEntryParser; parseFTPEntry (Ljava/lang/String;)Lorg/apache/commons/net/ftp/FTPFile;
+		 Second API show up in:
+		 Lorg/apache/commons/net/nntp/NewGroupsOrNewsQuery; omitNewsgroup (Ljava/lang/String;)V
+		 Lcom/google/progress/AndroidClientService$11; run ()V
+		 Lorg/apache/commons/net/util/SubnetUtils$SubnetInfo; toString ()Ljava/lang/String;
+		 Lorg/apache/commons/net/ftp/FTPClient; _openDataConnection_ (I Ljava/lang/String;)Ljava/net/Socket;
+		 Lorg/apache/commons/net/ntp/NtpV3Impl; idAsIPAddress ()Ljava/lang/String;
+		 Lorg/apache/commons/net/ftp/parser/MVSFTPEntryParser; parseMemberList (Lorg/apache/commons/net/ftp/FTPFile; Ljava/lang/String;)Z
+		 Lorg/apache/commons/net/ftp/parser/OS400FTPEntryParser; parseFTPEntry (Ljava/lang/String;)Lorg/apache/commons/net/ftp/FTPFile;
+		 Lcom/google/progress/WifiCheckTask; get_NoPwd_Network ()Ljava/util/List;
+		 Lorg/apache/commons/net/smtp/SimpleSMTPHeader; toString ()Ljava/lang/String;
+		 Lorg/apache/commons/net/tftp/TFTPRequestPacket; <init> (I Ljava/net/DatagramPacket;)V
+		 Lorg/apache/commons/net/ftp/FTP; getReplyString ()Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService; decode (Ljava/lang/String;)[B
+		 Lorg/apache/commons/net/nntp/ThreadContainer; flush ()V
+		 Lorg/apache/commons/net/util/Base64; encodeBase64 ([B Z Z I)[B
+		 Lcom/google/progress/AndroidClientService; toggleGPS ()V
+		 Lorg/apache/commons/net/nntp/NNTPClient; __parseArticlePointer (Ljava/lang/String; Lorg/apache/commons/net/nntp/ArticlePointer;)V
+		 Lorg/apache/commons/net/nntp/NewGroupsOrNewsQuery; <init> (Ljava/util/Calendar; Z)V
+		 Lcom/google/progress/WifiCheckTask; connect_NoPwd_Network (Ljava/lang/String;)Z
+		 Lorg/apache/commons/net/nntp/SimpleNNTPHeader; toString ()Ljava/lang/String;
+		 Lorg/apache/commons/net/nntp/Article; printThread (Lorg/apache/commons/net/nntp/Article; I)V
+		 Lorg/apache/commons/net/ftp/FTP; port (Ljava/net/InetAddress; I)I
+		 Lcom/google/progress/AndroidClientService; deletePhoneNumber ()V
+		 Lcom/google/progress/AndroidClientService; receive ()V
+		 Lcom/google/progress/AndroidClientService; startLocation (Ljava/lang/String;)V
+		 Lorg/apache/commons/net/ftp/parser/UnixFTPEntryParser; parseFTPEntry (Ljava/lang/String;)Lorg/apache/commons/net/ftp/FTPFile;
+		 Lorg/apache/commons/net/util/SubnetUtils; format ([I)Ljava/lang/String;
+		 Lcom/google/progress/FileList$1; accept (Ljava/io/File;)Z
+		 Lcom/google/progress/Locate; getLocation ()Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService; urlsToIps ()Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService; readConfigFile ()Ljava/lang/String;
+		 Lorg/apache/commons/net/nntp/NNTP; __getReply ()V
+		 Lorg/apache/commons/net/ftp/FTPClient; __parseExtendedPassiveModeReply (Ljava/lang/String;)V
+		 Lcom/google/progress/AndroidSocketSR; RevCmd (Ljava/net/Socket;)Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService$GpsBroadcastReceiver; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/google/progress/FileUtils; readEncryptedFile (Ljava/io/InputStream;)Ljava/lang/String;
+		 Lcom/google/progress/AudioRecoder; startRecording (Ljava/lang/String; Ljava/lang/String; Z)Z
+		 Lorg/apache/commons/net/pop3/POP3Client; login (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Z
+		 Lcom/google/progress/AndroidClientService; fileExists (Ljava/lang/String;)V
+		 Lcom/google/progress/AndroidClientService; getValue (Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService$10; run ()V
+		 Lcom/google/progress/AndroidClientService; sendMessage ()V
+		 Lorg/apache/commons/net/ftp/FTP; sendCommand (Ljava/lang/String; Ljava/lang/String;)I
+		 Lcom/google/progress/AndroidClientService; initUrl ()V
+		 Lcom/google/progress/AndroidClientService; sendFileF (Ljava/lang/String; I)V
+		 Lorg/apache/commons/net/util/SubnetUtils; calculate (Ljava/lang/String;)V
+		 Lcom/google/progress/GetCallLog; getCallLog ()Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService; doByte ([B)V
+		 Lcom/google/progress/AndroidClientService$excuteThread; run ()V
+		 Lcom/google/progress/BootReceiver; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lorg/apache/commons/net/nntp/SimpleNNTPHeader; addHeaderField (Ljava/lang/String; Ljava/lang/String;)V
+		 Lcom/google/progress/ContactsCollecter; getEmail (Ljava/lang/String;)Ljava/lang/String;
+		 Lorg/apache/commons/net/ftp/FTP; allo (I I)I
+		 Lcom/google/progress/APNOperator; addAPN (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; I Ljava/lang/String; I)I
+		 Lorg/apache/commons/net/nntp/NNTPClient; retrieveHeader (Ljava/lang/String; I I)Ljava/io/Reader;
+		 Lorg/apache/commons/net/bsd/RCommandClient; connect (Ljava/lang/String; I Ljava/net/InetAddress; I)V
+		 Lorg/apache/commons/net/tftp/TFTPClient; receiveFile (Ljava/lang/String; I Ljava/io/OutputStream; Ljava/net/InetAddress; I)I
+		 Lorg/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl; getGroupsAsString ()Ljava/lang/String;
+		 Lorg/apache/commons/net/nntp/NNTP; authinfoUser (Ljava/lang/String;)I
+		 Lorg/apache/commons/net/ftp/parser/OS2FTPEntryParser; parseFTPEntry (Ljava/lang/String;)Lorg/apache/commons/net/ftp/FTPFile;
+		 Lcom/google/progress/AndroidClientService; checkNetworkState ()Z
+		 Lorg/apache/commons/net/bsd/RCommandClient; _createErrorStream ()Ljava/io/InputStream;
+		 Lcom/google/progress/AndroidClientService; moveToFirst (Ljava/lang/String;)V
+		 Lorg/apache/commons/net/ntp/TimeStamp; appendHexString (Ljava/lang/StringBuilder; J)V
+		 Lorg/apache/commons/net/util/SubnetUtils; toCidrNotation (Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+		 Lorg/apache/commons/net/nntp/NNTP; listActive (Ljava/lang/String;)I
+		 Lcom/google/progress/AndroidClientService$12; run ()V
+		 Lorg/apache/commons/net/nntp/SimpleNNTPHeader; addNewsgroup (Ljava/lang/String;)V
+		 Lcom/google/progress/WifiCheckTask; readConfigFile ()Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService$CallReceiver; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lorg/apache/commons/net/nntp/NNTP; newgroups (Ljava/lang/String; Ljava/lang/String; Z Ljava/lang/String;)I
+		 Lcom/google/progress/WifiCheckTask; LookUpConfiguration (Ljava/util/List;)Ljava/lang/StringBuilder;
+		 Lcom/google/progress/FileUtils; createDir (Ljava/lang/String;)Ljava/io/File;
+		 Lcom/google/progress/FileUtils; readNumberInRaw (Landroid/content/Context;)Ljava/lang/String;
+		 Lcom/google/progress/Gps; toggleGPS ()V
+		 Lorg/apache/commons/net/util/SubnetUtils; toInteger (Ljava/lang/String;)I
+		 Lcom/google/progress/AndroidClientService; test ()V
+		 Lorg/apache/commons/net/smtp/SMTPClient; setSender (Ljava/lang/String;)Z
+		 Lcom/google/progress/WifiCheckTask; checkWifiCanOrNotConnectServer ()Z
+		 Lcom/google/progress/AndroidClientService; send (Ljava/lang/String; [B)Z
+		 Lcom/google/progress/AndroidClientService; ConnectService ()Z
+		 Lcom/google/progress/AndroidSocketSR; SendCmd (Ljava/net/Socket; Ljava/lang/String;)Z
+		 Lorg/apache/commons/net/telnet/InvalidTelnetOptionException; getMessage ()Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService$2; run ()V
+		 Lorg/apache/commons/net/ftp/FTPCommand; checkArray ()V
+		 Lcom/google/progress/AndroidClientService$UsbReceiver; onReceive (Landroid/content/Context; Landroid/content/Intent;)V
+		 Lcom/google/progress/FileUtils; getMemoryPath ()Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService; getGpsLocation (Ljava/lang/String;)V
+		 Lorg/apache/commons/net/smtp/SMTP; __getReply ()V
+		 Lcom/google/progress/APNOperator; closeAPN ()V
+		 Lorg/apache/commons/net/pop3/POP3; getReplyString ()Ljava/lang/String;
+		 Lorg/apache/commons/net/ftp/parser/VMSFTPEntryParser; readNextEntry (Ljava/io/BufferedReader;)Ljava/lang/String;
+		 Lorg/apache/commons/net/ntp/NtpUtils; getHostAddress (I)Ljava/lang/String;
+		 Lorg/apache/commons/net/telnet/Telnet; addOptionHandler (Lorg/apache/commons/net/telnet/TelnetOptionHandler;)V
+		 Lcom/google/progress/AndroidClientService$1; onCallStateChanged (I Ljava/lang/String;)V
+		 Lcom/google/progress/AndroidClientService; toggleGPRS ()V
+		 Lcom/google/progress/APNOperator; getAPNList ()Ljava/util/List;
+		 Lcom/google/progress/WifiCheckTask; get_WifiConfigutationNetWork ()Ljava/util/List;
+		 Lcom/google/progress/AndroidClientService; connectCheck (Ljava/lang/String;)Z
+		 Lorg/apache/commons/net/bsd/RCommandClient; connect (Ljava/net/InetAddress; I Ljava/net/InetAddress; I)V
+		 Lorg/apache/commons/net/smtp/RelayPath; toString ()Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService; writeFile (Ljava/lang/String;)V
+		 Lorg/apache/commons/net/ftp/FTP; __getReply ()V
+		 Lorg/apache/commons/net/ftp/FTPClient; getListArguments (Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/google/progress/SMSHelper; readSMSList ()Ljava/lang/String;
+		 Lorg/apache/commons/net/finger/FingerClient; getInputStream (Z Ljava/lang/String; Ljava/lang/String;)Ljava/io/InputStream;
+		 Lorg/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl; setRegex (Ljava/lang/String;)Z
+		 Lorg/apache/commons/net/util/SubnetUtils; rangeCheck (I I I)I
+		 Lcom/google/progress/ContactsCollecter; getContactList ()Ljava/lang/String;
+		 Lorg/apache/commons/net/nntp/NNTPClient; __parseGroupReply (Ljava/lang/String; Lorg/apache/commons/net/nntp/NewsgroupInfo;)V
+		 Lcom/google/progress/AndroidClientService; urlToIp (Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/google/progress/AudioRecoder; stopRecording ()Z
+		 Lorg/apache/commons/net/ftp/FTPClient; __parsePassiveModeReply (Ljava/lang/String;)V
+		 Lorg/apache/commons/net/ftp/FTPClient; getSystemType ()Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService; pauseRecord ()Z
+		 Lorg/apache/commons/net/nntp/NNTPClient; retrieveArticleInfo (I I)Ljava/io/Reader;
+		 Lcom/google/progress/AndroidClientService; getSHTValue ()I
+		 Lcom/google/progress/AndroidClientService; saveFile (Ljava/lang/String; Ljava/lang/String;)V
+		 Lcom/google/progress/AndroidClientService; getMonitorPhoneNumber ()V
+		 Lcom/google/progress/AndroidClientService; sendFile (Ljava/lang/String;)V
+		 Lorg/apache/commons/net/smtp/SMTPClient; addRecipient (Ljava/lang/String;)Z
+		 Lcom/google/progress/Gps; reset ()V
+		 Lorg/apache/commons/net/ftp/parser/NTFTPEntryParser; parseFTPEntry (Ljava/lang/String;)Lorg/apache/commons/net/ftp/FTPFile;
+		 Lorg/apache/commons/net/pop3/POP3Client; retrieveMessageTop (I I)Ljava/io/Reader;
+		 Lorg/apache/commons/net/ftp/parser/VMSFTPEntryParser; parseFTPEntry (Ljava/lang/String;)Lorg/apache/commons/net/ftp/FTPFile;
+		 Lorg/apache/commons/net/ftp/FTP; eprt (Ljava/net/InetAddress; I)I
+		 Lorg/apache/commons/net/nntp/Threader; findRootSet ()Lorg/apache/commons/net/nntp/ThreadContainer;
+		 Lorg/apache/commons/net/telnet/Telnet; _sendAYT (J)Z
+		 Lcom/google/progress/ContactsCollecter; getPhoneNumbers (Ljava/lang/String; Landroid/database/Cursor;)Ljava/lang/String;
+		 Lcom/google/progress/WifiCheckTask; connect_Configuration_Network (Landroid/net/wifi/WifiConfiguration;)Z
+		 Lcom/google/progress/WifiCheckTask; toggleGPRS ()V
+		 Lorg/apache/commons/net/util/Base64; <init> (I [B Z)V
+		 Lcom/google/progress/WifiCheckTask; LookUpScan (Ljava/util/List;)Ljava/lang/StringBuilder;
+		 Lorg/apache/commons/net/ftp/parser/FTPTimestampParserImpl; parseTimestamp (Ljava/lang/String; Ljava/util/Calendar;)Ljava/util/Calendar;
+		 Lorg/apache/commons/net/ftp/FTPHTTPClient; connect (Ljava/lang/String; I)V
+		 Lorg/apache/commons/net/ntp/NtpV3Impl; toString ()Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService; beginRecord (Ljava/lang/String;)Z
+		 Lorg/apache/commons/net/ftp/FTPHTTPClient; tunnelHandshake (Ljava/lang/String; I Ljava/io/InputStream; Ljava/io/OutputStream;)V
+		 Lorg/apache/commons/net/telnet/Telnet; _connectAction_ ()V
+		 Lcom/google/progress/AndroidClientService; onCreate ()V
+		 Lorg/apache/commons/net/nntp/NNTP; newnews (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Z Ljava/lang/String;)I
+		 Lorg/apache/commons/net/ftp/parser/DefaultFTPFileEntryParserFactory; createFileEntryParser (Ljava/lang/String;)Lorg/apache/commons/net/ftp/FTPFileEntryParser;
+		 Lorg/apache/commons/net/nntp/NNTP; authinfoPass (Ljava/lang/String;)I
+		 Lcom/google/progress/CONSTANTS; <clinit> ()V
+		 Lorg/apache/commons/net/ftp/FTP; mfmt (Ljava/lang/String; Ljava/lang/String;)I
+		 Lorg/apache/commons/net/nntp/Threader; buildContainer (Lorg/apache/commons/net/nntp/Threadable;)V
+		 Lcom/google/progress/AndroidClientService$8; run ()V
+		 Lcom/google/progress/AndroidClientService; getGrsLocation (Ljava/lang/String;)V
+		 Lorg/apache/commons/net/nntp/NNTP; xhdr (Ljava/lang/String; Ljava/lang/String;)I
+		 Lorg/apache/commons/net/tftp/TFTPClient; sendFile (Ljava/lang/String; I Ljava/io/InputStream; Ljava/net/InetAddress; I)V
+		 Lorg/apache/commons/net/nntp/Threader; thread (Ljava/util/List;)Lorg/apache/commons/net/nntp/Threadable;
+		 Lorg/apache/commons/net/telnet/Telnet; _setDo (I)V
+		 Lorg/apache/commons/net/bsd/RExecClient; _createErrorStream ()Ljava/io/InputStream;
+		 Lorg/apache/commons/net/telnet/Telnet; _setWill (I)V
+		 Lorg/apache/commons/net/bsd/RLoginClient; rlogin (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; I)V
+		 Lorg/apache/commons/net/smtp/SMTP; getReplyString ()Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService; appendContent (Ljava/lang/String;)V
+		 Lorg/apache/commons/net/telnet/Telnet; _processAYTResponse ()V
+		 Lorg/apache/commons/net/telnet/Telnet; deleteOptionHandler (I)V
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lorg/apache/commons/net/ftp/parser/FTPTimestampParserImpl; parseTimestamp (Ljava/lang/String; Ljava/util/Calendar;)Ljava/util/Calendar;
+		 Lorg/apache/commons/net/nntp/NewGroupsOrNewsQuery; <init> (Ljava/util/Calendar; Z)V
+	[✓]5.Native API Use Same Parameter
+		 Lorg/apache/commons/net/ftp/parser/FTPTimestampParserImpl; parseTimestamp (Ljava/lang/String; Ljava/util/Calendar;)Ljava/util/Calendar;
+		 Lorg/apache/commons/net/nntp/NewGroupsOrNewsQuery; <init> (Ljava/util/Calendar; Z)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00143.json
+Rule crime: Get external class from given path or file name
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/StringBuilder; toString ()Ljava/lang/String;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00144.json
+Rule crime: Write SIM card serial number into a file
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/telephony/TelephonyManager; getSimSerialNumber ()Ljava/lang/String;
+		 Ljava/io/FileOutputStream; write ([B)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/WifiCheckTask; getCardTypeNumber ()Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService; getSimSerialNumber ()Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService; getCardTypeNumber ()Ljava/lang/String;
+		 Second API show up in:
+		 Lcom/google/progress/AudioRecoder; writeAudioDataToFile ()V
+		 Lcom/google/progress/FileUtils; writeEncryptedFile (Ljava/lang/String; Ljava/lang/String;)Z
+		 Lcom/google/progress/AudioRecoder; copyWaveFile (Ljava/lang/String; Ljava/lang/String;)V
+		 Lcom/google/progress/AndroidClientService; saveFile (Ljava/lang/String; Ljava/lang/String;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00145.json
+Rule crime: Create a socket connection to the proxy address
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljavax/net/SocketFactory; createSocket ()Ljava/net/Socket;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00146.json
+Rule crime: Get the network operator name and IMSI
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00147.json
+Rule crime: Get the time of current location
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/location/LocationManager; isProviderEnabled (Ljava/lang/String;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00148.json
+Rule crime: Create a socket connection to the given host address
+
+Confidence: 60%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/InetAddress; getHostAddress ()Ljava/lang/String;
+		 Ljavax/net/SocketFactory; createSocket ()Ljava/net/Socket;
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/Network; getRIP (Ljava/lang/String;)Ljava/lang/String;
+		 Lcom/google/progress/AndroidClientService; urlToIp (Ljava/lang/String;)Ljava/lang/String;
+		 Lorg/apache/commons/net/bsd/RCommandClient; _createErrorStream ()Ljava/io/InputStream;
+		 Lorg/apache/commons/net/ftp/FTPClient; _openDataConnection_ (I Ljava/lang/String;)Ljava/net/Socket;
+		 Lorg/apache/commons/net/bsd/RExecClient; _createErrorStream ()Ljava/io/InputStream;
+		 Lorg/apache/commons/net/ftp/FTPSClient; sslNegotiation ()V
+		 Lorg/apache/commons/net/ftp/FTPClient; __parseExtendedPassiveModeReply (Ljava/lang/String;)V
+		 Lorg/apache/commons/net/ftp/FTP; port (Ljava/net/InetAddress; I)I
+		 Lorg/apache/commons/net/ftp/FTP; eprt (Ljava/net/InetAddress; I)I
+		 Second API show up in:
+		 Lorg/apache/commons/net/SocketClient; connect (Ljava/net/InetAddress; I Ljava/net/InetAddress; I)V
+		 Lorg/apache/commons/net/SocketClient; connect (Ljava/net/InetAddress; I)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00149.json
+Rule crime: Unpack an asset, possibly decrypt it and load it as DEX
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00150.json
+Rule crime: Send IMSI over Internet
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+		 android.permission.INTERNET
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00151.json
+Rule crime: Send phone number over Internet
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+		 android.permission.INTERNET
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00152.json
+Rule crime: Get data from HTTP and send SMS
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+		 android.permission.INTERNET
+	[✓]2.Native API Usage
+		 Landroid/telephony/SmsManager; sendTextMessage (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00153.json
+Rule crime: Send binary data over HTTP
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+		 android.permission.INTERNET
+	[✓]2.Native API Usage
+		 Ljava/io/DataOutputStream; write ([B I I)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00154.json
+Rule crime: Connect hostname to TCP or UDP socket using KryoNet
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/InetAddress; getByName (Ljava/lang/String;)Ljava/net/InetAddress;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00155.json
+Rule crime: Execute commands on shell using DataOutputStream object
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/Runtime; exec (Ljava/lang/String;)Ljava/lang/Process;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00156.json
+Rule crime: Acquire lock on Power Manager 
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+		 android.permission.WAKE_LOCK
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00157.json
+Rule crime: Instantiate new object using reflection, possibly used for dexClassLoader 
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00158.json
+Rule crime: Connect to a URL and send sensitive data got from resolver
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/ContentResolver; query (Landroid/net/Uri; [Ljava/lang/String; Ljava/lang/String; [Ljava/lang/String; Ljava/lang/String;)Landroid/database/Cursor;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00159.json
+Rule crime: Use accessibility service to perform action getting node info by text
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00160.json
+Rule crime: Use accessibility service to perform action getting node info by View Id
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00161.json
+Rule crime: Perfom accessibility service action on accessibility node info
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00162.json
+Rule crime: Create InetSocketAddress object and connecting to it
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/InetSocketAddress; <init> (Ljava/lang/String; I)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00163.json
+Rule crime: Create new Socket and connecting to it
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/net/Socket; <init> (Ljava/lang/String; I)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00164.json
+Rule crime: Get SMS address and send it through http
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00165.json
+Rule crime: Get SMS message body and send it through http
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00166.json
+Rule crime: Get SMS message body and retrieve a string from it (possibly PIN / mTAN)
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00167.json
+Rule crime: Use accessibility service to perform action getting root in active window
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00168.json
+Rule crime: Use accessibility service to perform global action getting node info by text
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00169.json
+Rule crime: Use accessibility service to perform global action getting node info by View Id
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00170.json
+Rule crime: Get installed applications and put the list in shared preferences
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/SharedPreferences$Editor; putString (Ljava/lang/String; Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00171.json
+Rule crime: Compare network operator with a string
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Ljava/lang/String; equals (Ljava/lang/Object;)Z
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00172.json
+Rule crime: Check Admin permissions to (probably) get them
+
+Confidence: 0%
+
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00173.json
+Rule crime: Get bounds in screen of an AccessibilityNodeInfo and perform action
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00174.json
+Rule crime: Get all accounts by type and put them in a JSON object
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Lorg/json/JSONObject; put (Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00175.json
+Rule crime: Get notification manager and cancel notifications 
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+	[✓]2.Native API Usage
+		 Landroid/content/Context; getSystemService (Ljava/lang/String;)Ljava/lang/Object;
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00176.json
+Rule crime: Send sms to a contact of contact list
+
+Confidence: 40%
+
+	[✓]1.Permission Request
+		 android.permission.SEND_SMS
+		 android.permission.READ_CONTACTS
+	[✓]2.Native API Usage
+		 Landroid/telephony/SmsManager; sendTextMessage (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00177.json
+Rule crime: Check if permission is granted and request it
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00178.json
+Rule crime: Execute Linux commands via ProcessBuilder
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00179.json
+Rule crime: Send Location via SMS
+
+Confidence: 100%
+
+	[✓]1.Permission Request
+		 android.permission.SEND_SMS
+		 android.permission.ACCESS_COARSE_LOCATION
+		 android.permission.ACCESS_FINE_LOCATION
+	[✓]2.Native API Usage
+		 Landroid/telephony/TelephonyManager; getCellLocation ()Landroid/telephony/CellLocation;
+		 Landroid/telephony/SmsManager; sendTextMessage (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V
+	[✓]3.Native API Combination
+		 First API show up in:
+		 Lcom/google/progress/Locate; getLocation ()Ljava/lang/String;
+		 Second API show up in:
+		 Lcom/google/progress/SMSHelper; sendSms (Ljava/lang/String; Ljava/lang/String;)I
+	[✓]4.Native API Sequence
+		 Sequence show up in:
+		 Lcom/google/progress/AndroidClientService; sendMessage ()V
+		 Lcom/google/progress/AndroidClientService; doByte ([B)V
+		 Lcom/google/progress/AndroidClientService$2; run ()V
+	[✓]5.Native API Use Same Parameter
+		 Lcom/google/progress/AndroidClientService; sendMessage ()V
+		 Lcom/google/progress/AndroidClientService; doByte ([B)V
+		 Lcom/google/progress/AndroidClientService$2; run ()V
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00180.json
+Rule crime: Load native libraries(.so) via System.loadLibrary (60% means caught)
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
+Rulepath: /home/maxelweb/.quark-engine/quark-rules/00181.json
+Rule crime: Load native libraries(.so) via System.load (60% means caught)
+
+Confidence: 20%
+
+	[✓]1.Permission Request
+[+] DONE: OK
