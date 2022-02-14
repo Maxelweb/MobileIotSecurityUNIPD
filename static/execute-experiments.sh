@@ -18,14 +18,14 @@ case $1 in
     *) exit 1;;
 esac
 
-# for FILE in extra/apk-malware-samples/*
-# do
-#     if [[ $FILE == "extra/apk-malware-samples/README.md" ]]; then 
-#         continue
-#     fi
-#     echo "[Experiment] executing $FILE"
-#     quark -a "$FILE" "$1" > experiments/$NAME/"$(basename "$FILE")".txt
-# done
+for FILE in extra/apk-malware-samples/*
+do
+    if [[ $FILE == "extra/apk-malware-samples/README.md" ]]; then 
+        continue
+    fi
+    echo "[Experiment] executing $FILE"
+    quark -a "$FILE" "$1" > experiments/$NAME/"$(basename "$FILE")".txt
+done
 
 echo "[Experiment] executing VerificaC19"
 quark -a extra/verificac19.apk "$1" > experiments/$NAME/verificac19.apk.txt
