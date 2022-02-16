@@ -1,0 +1,2248 @@
+
+-->INDEX: [0]
+Class: com.scottyab.rootbeer.sample.MainActivity$initView$1
+Method: public final void onClick(android.view.View)
+
+-->INDEX: [1]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public static final void access$checkForRoot(com.scottyab.rootbeer.sample.MainActivity)
+
+-->INDEX: [2]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: private final void checkForRoot()
+
+-->INDEX: [3]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: private final void resetView()
+
+-->INDEX: [4]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [5]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [6]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [7]
+Class: com.scottyab.rootbeer.sample.extensions.ViewExtensionsKt
+Method: public static final void show(android.view.View)
+
+-->INDEX: [8]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [9]
+Class: com.scottyab.rootbeer.sample.extensions.ViewExtensionsKt
+Method: public static final void hide(android.view.View)
+
+-->INDEX: [10]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public final void clear()
+
+-->INDEX: [11]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [12]
+Class: com.scottyab.rootbeer.sample.ui.ScopedActivity
+Method: public kotlin.coroutines.CoroutineContext getCoroutineContext()
+
+-->INDEX: [13]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [14]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [15]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public static final com.scottyab.rootbeer.sample.CheckForRootWorker access$getCheckForRoot$p(com.scottyab.rootbeer.sample.MainActivity)
+
+-->INDEX: [16]
+Class: com.scottyab.rootbeer.sample.CheckForRootWorker
+Method: public final java.lang.Object invoke(kotlin.coroutines.Continuation)
+
+-->INDEX: [17]
+Class: com.scottyab.rootbeer.sample.CheckForRootWorker
+Method: private final java.util.List getRootResults()
+
+-->INDEX: [18]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public static final void access$animateResults(com.scottyab.rootbeer.sample.MainActivity,java.util.List)
+
+-->INDEX: [19]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: private final void animateResults(java.util.List)
+
+-->INDEX: [20]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [21]
+Class: com.scottyab.rootbeer.sample.ui.ScopedActivity
+Method: public kotlin.coroutines.CoroutineContext getCoroutineContext()
+
+-->INDEX: [22]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [23]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [24]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [25]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [26]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [27]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [28]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [29]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [30]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [31]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [32]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [33]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [34]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [35]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [36]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [37]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [38]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [39]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [40]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [41]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [42]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public static final com.scottyab.rootbeer.sample.ui.RootItemAdapter access$getRootItemAdapter$p(com.scottyab.rootbeer.sample.MainActivity)
+
+-->INDEX: [43]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public final void add(com.scottyab.rootbeer.sample.RootItemResult)
+
+-->INDEX: [44]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [45]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [46]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [47]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH onCreateViewHolder(android.view.ViewGroup,int)
+
+-->INDEX: [48]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [49]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [50]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [51]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [52]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [53]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [54]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [55]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [56]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [57]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [58]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [59]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [60]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [61]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [62]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [63]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [64]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [65]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [66]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [67]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [68]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [69]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [70]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [71]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [72]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [73]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [74]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [75]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [76]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [77]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [78]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [79]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [80]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [81]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [82]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [83]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [84]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [85]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [86]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [87]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [88]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [89]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [90]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [91]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [92]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [93]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [94]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [95]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [96]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [97]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [98]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [99]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [100]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [101]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [102]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [103]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [104]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [105]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [106]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [107]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [108]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [109]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [110]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [111]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [112]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [113]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [114]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [115]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [116]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [117]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [118]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [119]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [120]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [121]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [122]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [123]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [124]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [125]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [126]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [127]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [128]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [129]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [130]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [131]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [132]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [133]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [134]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [135]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [136]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [137]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [138]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [139]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [140]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [141]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [142]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [143]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [144]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [145]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [146]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [147]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [148]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [149]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [150]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [151]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [152]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [153]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [154]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [155]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [156]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [157]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [158]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [159]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [160]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [161]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [162]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [163]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [164]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [165]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [166]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [167]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [168]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [169]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [170]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [171]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [172]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [173]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [174]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [175]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [176]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [177]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [178]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [179]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [180]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [181]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [182]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [183]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [184]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [185]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [186]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [187]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [188]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [189]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [190]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [191]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [192]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [193]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [194]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [195]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [196]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [197]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [198]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [199]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [200]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [201]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [202]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [203]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [204]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [205]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [206]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [207]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [208]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [209]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [210]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [211]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [212]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [213]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [214]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [215]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [216]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [217]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [218]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [219]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [220]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [221]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [222]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [223]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [224]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [225]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [226]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [227]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [228]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [229]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [230]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [231]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+
+-->INDEX: [234]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [235]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [236]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [237]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [238]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [239]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [240]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [241]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [242]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [243]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [244]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [245]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [246]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [247]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [248]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [249]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [250]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [251]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [252]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [253]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [254]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public static final com.scottyab.rootbeer.sample.ui.RootItemAdapter access$getRootItemAdapter$p(com.scottyab.rootbeer.sample.MainActivity)
+
+-->INDEX: [255]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public final void add(com.scottyab.rootbeer.sample.RootItemResult)
+
+-->INDEX: [256]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [257]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [258]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [259]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [260]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [261]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH onCreateViewHolder(android.view.ViewGroup,int)
+
+-->INDEX: [262]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [263]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [264]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [265]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [266]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [267]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [268]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [269]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [270]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [271]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [272]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [273]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [274]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [275]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [276]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [277]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [278]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [279]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [280]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [281]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [282]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [283]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public static final com.scottyab.rootbeer.sample.ui.RootItemAdapter access$getRootItemAdapter$p(com.scottyab.rootbeer.sample.MainActivity)
+
+-->INDEX: [284]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public final void add(com.scottyab.rootbeer.sample.RootItemResult)
+
+-->INDEX: [285]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [286]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [287]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [288]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [289]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [290]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [291]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [292]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH onCreateViewHolder(android.view.ViewGroup,int)
+
+-->INDEX: [293]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [294]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [295]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [296]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [297]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [298]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [299]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [300]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [301]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [302]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [303]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [304]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [305]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [306]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [307]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [308]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [309]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [310]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [311]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [312]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [313]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [314]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public static final com.scottyab.rootbeer.sample.ui.RootItemAdapter access$getRootItemAdapter$p(com.scottyab.rootbeer.sample.MainActivity)
+
+-->INDEX: [315]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public final void add(com.scottyab.rootbeer.sample.RootItemResult)
+
+-->INDEX: [316]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [317]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [318]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [319]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [320]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [321]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [322]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [323]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [324]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [325]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH onCreateViewHolder(android.view.ViewGroup,int)
+
+-->INDEX: [326]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [327]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [328]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [329]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [330]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [331]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [332]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [333]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [334]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [335]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [336]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [337]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [338]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [339]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [340]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [341]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [342]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [343]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [344]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [345]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [346]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [347]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [348]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [349]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [350]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [351]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [352]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [353]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [354]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [355]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [356]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH onCreateViewHolder(android.view.ViewGroup,int)
+
+-->INDEX: [357]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [358]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [359]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [360]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [361]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [362]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [363]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [364]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [365]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [366]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [367]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [368]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [369]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [370]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [371]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [372]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH onCreateViewHolder(android.view.ViewGroup,int)
+
+-->INDEX: [373]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [374]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [375]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [376]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [377]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [378]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [379]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [380]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [381]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [382]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [383]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [384]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [385]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [386]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [387]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [388]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [389]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH onCreateViewHolder(android.view.ViewGroup,int)
+
+-->INDEX: [390]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [391]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [392]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [393]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [394]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [395]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [396]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [397]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [398]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [399]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [400]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [401]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [402]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [403]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [404]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [405]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [406]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [407]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [408]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH onCreateViewHolder(android.view.ViewGroup,int)
+
+-->INDEX: [409]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [410]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [411]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [412]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [413]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [414]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [415]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [416]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [417]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [418]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [419]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [420]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [421]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [422]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [423]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [424]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [425]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [426]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [427]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [428]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [429]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH onCreateViewHolder(android.view.ViewGroup,int)
+
+-->INDEX: [430]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [431]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [432]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [433]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [434]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [435]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [436]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [437]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [438]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [439]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [440]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [441]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [442]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [443]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [444]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [445]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [446]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [447]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [448]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [449]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [450]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [451]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [452]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH onCreateViewHolder(android.view.ViewGroup,int)
+
+-->INDEX: [453]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [454]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [455]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [456]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [457]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [458]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [459]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [460]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [461]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [462]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [463]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [464]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [465]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [466]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [467]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [468]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [469]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [470]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [471]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [472]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [473]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [474]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [475]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [476]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH onCreateViewHolder(android.view.ViewGroup,int)
+
+-->INDEX: [477]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+
+-->INDEX: [478]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [479]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: private final void onRootCheckFinished(boolean)
+
+-->INDEX: [480]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [481]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [482]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: public final void update(boolean)
+
+-->INDEX: [483]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: private final void rooted()
+
+-->INDEX: [484]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [485]
+Class: com.scottyab.rootbeer.sample.extensions.ViewExtensionsKt
+Method: public static final void show(android.view.View)
+
+-->INDEX: [486]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: private final void onRootCheckFinished(boolean)
+
+-->INDEX: [487]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [488]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [489]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: public final void update(boolean)
+
+-->INDEX: [490]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: private final void rooted()
+
+-->INDEX: [491]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [492]
+Class: com.scottyab.rootbeer.sample.extensions.ViewExtensionsKt
+Method: public static final void show(android.view.View)
+
+-->INDEX: [493]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: private final void onRootCheckFinished(boolean)
+
+-->INDEX: [494]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [495]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [496]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: public final void update(boolean)
+
+-->INDEX: [497]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: private final void rooted()
+
+-->INDEX: [498]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [499]
+Class: com.scottyab.rootbeer.sample.extensions.ViewExtensionsKt
+Method: public static final void show(android.view.View)
+
+-->INDEX: [500]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: private final void onRootCheckFinished(boolean)
+
+-->INDEX: [501]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [502]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [503]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: public final void update(boolean)
+
+-->INDEX: [504]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: private final void rooted()
+
+-->INDEX: [505]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [506]
+Class: com.scottyab.rootbeer.sample.extensions.ViewExtensionsKt
+Method: public static final void show(android.view.View)
+
+-->INDEX: [507]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: private final void onRootCheckFinished(boolean)
+
+-->INDEX: [508]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [509]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [510]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: public final void update(boolean)
+
+-->INDEX: [511]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: private final void rooted()
+
+-->INDEX: [512]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [513]
+Class: com.scottyab.rootbeer.sample.extensions.ViewExtensionsKt
+Method: public static final void show(android.view.View)
+
+-->INDEX: [514]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: private final void onRootCheckFinished(boolean)
+
+-->INDEX: [515]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [516]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [517]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: public final void update(boolean)
+
+-->INDEX: [518]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: private final void rooted()
+
+-->INDEX: [519]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [520]
+Class: com.scottyab.rootbeer.sample.extensions.ViewExtensionsKt
+Method: public static final void show(android.view.View)
+
+-->INDEX: [521]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: private final void onRootCheckFinished(boolean)
+
+-->INDEX: [522]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [523]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [524]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: public final void update(boolean)
+
+-->INDEX: [525]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: private final void rooted()
+
+-->INDEX: [526]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [527]
+Class: com.scottyab.rootbeer.sample.extensions.ViewExtensionsKt
+Method: public static final void show(android.view.View)
+
+-->INDEX: [528]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: private final void onRootCheckFinished(boolean)
+
+-->INDEX: [529]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [530]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [531]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: public final void update(boolean)
+
+-->INDEX: [532]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: private final void rooted()
+
+-->INDEX: [533]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [534]
+Class: com.scottyab.rootbeer.sample.extensions.ViewExtensionsKt
+Method: public static final void show(android.view.View)
+
+-->INDEX: [535]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: private final void onRootCheckFinished(boolean)
+
+-->INDEX: [536]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [537]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [538]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: public final void update(boolean)
+
+-->INDEX: [539]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: private final void rooted()
+
+-->INDEX: [540]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [541]
+Class: com.scottyab.rootbeer.sample.extensions.ViewExtensionsKt
+Method: public static final void show(android.view.View)
+
+-->INDEX: [542]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: private final void onRootCheckFinished(boolean)
+
+-->INDEX: [543]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [544]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [545]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: public final void update(boolean)
+
+-->INDEX: [546]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: private final void rooted()
+
+-->INDEX: [547]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+
+-->INDEX: [548]
+Class: com.scottyab.rootbeer.sample.extensions.ViewExtensionsKt
+Method: public static final void show(android.view.View)
+
+-->INDEX: [549]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [550]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [551]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [552]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [553]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [554]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [555]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [556]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [557]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [558]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [559]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+
+-->INDEX: [560]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH onCreateViewHolder(android.view.ViewGroup,int)
+
+-->INDEX: [561]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)

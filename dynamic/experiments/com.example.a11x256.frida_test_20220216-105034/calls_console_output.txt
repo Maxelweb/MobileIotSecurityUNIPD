@@ -1,0 +1,192 @@
+
+-->INDEX: [0]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [1]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+-->INDEX: [2]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [3]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+-->INDEX: [4]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [5]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+-->INDEX: [6]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [7]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+-->INDEX: [8]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [9]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+-->INDEX: [10]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [11]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+-->INDEX: [12]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [13]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+-->INDEX: [14]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [15]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+-->INDEX: [16]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [17]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+-->INDEX: [18]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [19]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+-->INDEX: [20]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [21]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+-->INDEX: [22]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [23]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+-->INDEX: [24]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [25]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+-->INDEX: [26]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [27]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+-->INDEX: [28]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [29]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+-->INDEX: [30]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [31]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+-->INDEX: [32]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [33]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+-->INDEX: [34]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [35]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+-->INDEX: [36]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [37]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+-->INDEX: [38]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [39]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+-->INDEX: [40]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [41]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+-->INDEX: [42]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+-->INDEX: [43]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+-->INDEX: [44]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+-->INDEX: [45]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+-->INDEX: [46]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+-->INDEX: [47]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)

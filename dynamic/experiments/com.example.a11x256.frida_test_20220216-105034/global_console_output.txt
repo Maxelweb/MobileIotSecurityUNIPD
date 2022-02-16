@@ -1,0 +1,1248 @@
+
+-->INDEX: [0]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [1]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+INFO for INDEX: [1]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+Called by: com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+Input: :hardcoded_secret_password
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity.send_data(Native Method)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+INFO for INDEX: [0]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+Called by: android.view.View.performClick(View.java:6597)
+Input: android.support.v7.widget.AppCompatButton{c427c67 VFED..C.. ...P.... 79,370-379,448 #7f0b0060 app:id/button}
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+-->INDEX: [2]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [3]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+INFO for INDEX: [3]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+Called by: com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+Input: :hardcoded_secret_password
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity.send_data(Native Method)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+INFO for INDEX: [2]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+Called by: android.view.View.performClick(View.java:6597)
+Input: android.support.v7.widget.AppCompatButton{c427c67 VFED..C.. ...P.... 79,370-379,448 #7f0b0060 app:id/button}
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+-->INDEX: [4]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [5]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+INFO for INDEX: [5]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+Called by: com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+Input: :hardcoded_secret_password
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity.send_data(Native Method)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+INFO for INDEX: [4]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+Called by: android.view.View.performClick(View.java:6597)
+Input: android.support.v7.widget.AppCompatButton{c427c67 VFED..C.. ...P.... 79,370-379,448 #7f0b0060 app:id/button}
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+-->INDEX: [6]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [7]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+INFO for INDEX: [7]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+Called by: com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+Input: :hardcoded_secret_password
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity.send_data(Native Method)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+INFO for INDEX: [6]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+Called by: android.view.View.performClick(View.java:6597)
+Input: android.support.v7.widget.AppCompatButton{c427c67 VFED..C.. ...P.... 79,370-379,448 #7f0b0060 app:id/button}
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+-->INDEX: [8]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [9]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+INFO for INDEX: [9]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+Called by: com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+Input: :hardcoded_secret_password
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity.send_data(Native Method)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+INFO for INDEX: [8]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+Called by: android.view.View.performClick(View.java:6597)
+Input: android.support.v7.widget.AppCompatButton{c427c67 VFED..C.. ...P.... 79,370-379,448 #7f0b0060 app:id/button}
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+-->INDEX: [10]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [11]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+INFO for INDEX: [11]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+Called by: com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+Input: :hardcoded_secret_password
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity.send_data(Native Method)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+INFO for INDEX: [10]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+Called by: android.view.View.performClick(View.java:6597)
+Input: android.support.v7.widget.AppCompatButton{c427c67 VFED..C.. ...P.... 79,370-379,448 #7f0b0060 app:id/button}
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+-->INDEX: [12]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [13]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+INFO for INDEX: [13]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+Called by: com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+Input: :hardcoded_secret_password
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity.send_data(Native Method)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+INFO for INDEX: [12]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+Called by: android.view.View.performClick(View.java:6597)
+Input: android.support.v7.widget.AppCompatButton{c427c67 VFED..C.. ...P.... 79,370-379,448 #7f0b0060 app:id/button}
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+-->INDEX: [14]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [15]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+INFO for INDEX: [15]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+Called by: com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+Input: aaaaaaa:hardcoded_secret_password
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity.send_data(Native Method)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+INFO for INDEX: [14]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+Called by: android.view.View.performClick(View.java:6597)
+Input: android.support.v7.widget.AppCompatButton{c427c67 VFED..C.. ...P.... 79,370-379,448 #7f0b0060 app:id/button}
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+-->INDEX: [16]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [17]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+INFO for INDEX: [17]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+Called by: com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+Input: aaaaaaa:hardcoded_secret_password
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity.send_data(Native Method)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+INFO for INDEX: [16]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+Called by: android.view.View.performClick(View.java:6597)
+Input: android.support.v7.widget.AppCompatButton{c427c67 VFED..C.. ...P.... 79,370-379,448 #7f0b0060 app:id/button}
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+-->INDEX: [18]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [19]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+INFO for INDEX: [19]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+Called by: com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+Input: aaaaaaa:hardcoded_secret_password
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity.send_data(Native Method)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+INFO for INDEX: [18]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+Called by: android.view.View.performClick(View.java:6597)
+Input: android.support.v7.widget.AppCompatButton{c427c67 VFED..C.. ...P.... 79,370-379,448 #7f0b0060 app:id/button}
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+-->INDEX: [20]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [21]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+INFO for INDEX: [21]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+Called by: com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+Input: aaaaaaa:hardcoded_secret_password
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity.send_data(Native Method)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+INFO for INDEX: [20]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+Called by: android.view.View.performClick(View.java:6597)
+Input: android.support.v7.widget.AppCompatButton{c427c67 VFED..C.. ...P.... 79,370-379,448 #7f0b0060 app:id/button}
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+-->INDEX: [22]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [23]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+INFO for INDEX: [23]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+Called by: com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+Input: aaaaaaa:hardcoded_secret_password
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity.send_data(Native Method)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+INFO for INDEX: [22]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+Called by: android.view.View.performClick(View.java:6597)
+Input: android.support.v7.widget.AppCompatButton{c427c67 VFED..C.. ...P.... 79,370-379,448 #7f0b0060 app:id/button}
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+-->INDEX: [24]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [25]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+INFO for INDEX: [25]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+Called by: com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+Input: aaaaaaa:hardcoded_secret_password
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity.send_data(Native Method)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+INFO for INDEX: [24]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+Called by: android.view.View.performClick(View.java:6597)
+Input: android.support.v7.widget.AppCompatButton{c427c67 VFED..C.. ...P.... 79,370-379,448 #7f0b0060 app:id/button}
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+-->INDEX: [26]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [27]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+INFO for INDEX: [27]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+Called by: com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+Input: aaaaaaa:hardcoded_secret_password
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity.send_data(Native Method)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+INFO for INDEX: [26]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+Called by: android.view.View.performClick(View.java:6597)
+Input: android.support.v7.widget.AppCompatButton{c427c67 VFED..C.. ...P.... 79,370-379,448 #7f0b0060 app:id/button}
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+-->INDEX: [28]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [29]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+INFO for INDEX: [29]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+Called by: com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+Input: aaaaaaa:hardcoded_secret_password
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity.send_data(Native Method)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+INFO for INDEX: [28]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+Called by: android.view.View.performClick(View.java:6597)
+Input: android.support.v7.widget.AppCompatButton{c427c67 VFED..C.. ...P.... 79,370-379,448 #7f0b0060 app:id/button}
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+-->INDEX: [30]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [31]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+INFO for INDEX: [31]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+Called by: com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+Input: aaaaaaa:hardcoded_secret_password
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity.send_data(Native Method)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+INFO for INDEX: [30]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+Called by: android.view.View.performClick(View.java:6597)
+Input: android.support.v7.widget.AppCompatButton{c427c67 VFED..C.. ...P.... 79,370-379,448 #7f0b0060 app:id/button}
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+-->INDEX: [32]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [33]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+INFO for INDEX: [33]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+Called by: com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+Input: aaaaaaa:hardcoded_secret_password
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity.send_data(Native Method)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+INFO for INDEX: [32]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+Called by: android.view.View.performClick(View.java:6597)
+Input: android.support.v7.widget.AppCompatButton{c427c67 VFED..C.. ...P.... 79,370-379,448 #7f0b0060 app:id/button}
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+-->INDEX: [34]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [35]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+INFO for INDEX: [35]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+Called by: com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+Input: aaaaaaa:hardcoded_secret_password
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity.send_data(Native Method)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+INFO for INDEX: [34]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+Called by: android.view.View.performClick(View.java:6597)
+Input: android.support.v7.widget.AppCompatButton{c427c67 VFED..C.. ...P.... 79,370-379,448 #7f0b0060 app:id/button}
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+-->INDEX: [36]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [37]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+INFO for INDEX: [37]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+Called by: com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+Input: aaaaaaa:hardcoded_secret_password
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity.send_data(Native Method)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+INFO for INDEX: [36]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+Called by: android.view.View.performClick(View.java:6597)
+Input: android.support.v7.widget.AppCompatButton{c427c67 VFED..C.. ...P.... 79,370-379,448 #7f0b0060 app:id/button}
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+-->INDEX: [38]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [39]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+INFO for INDEX: [39]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+Called by: com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+Input: aaaaaaa:hardcoded_secret_password
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity.send_data(Native Method)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+INFO for INDEX: [38]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+Called by: android.view.View.performClick(View.java:6597)
+Input: android.support.v7.widget.AppCompatButton{c427c67 VFED..C.. ...P.... 79,370-379,448 #7f0b0060 app:id/button}
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+-->INDEX: [40]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+
+-->INDEX: [41]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+INFO for INDEX: [41]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+Called by: com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+Input: aaaaaaa:hardcoded_secret_password
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity.send_data(Native Method)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+INFO for INDEX: [40]
+Class: com.example.a11x256.frida_test.my_activity$1
+Method: public void onClick(android.view.View)
+Called by: android.view.View.performClick(View.java:6597)
+Input: android.support.v7.widget.AppCompatButton{c427c67 VFED..C.. ...P.... 79,370-379,448 #7f0b0060 app:id/button}
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity$1.onClick(Native Method)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+-->INDEX: [42]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+INFO for INDEX: [42]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+Called by: com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+Input: aaaaaaa:hardcoded_secret_password
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity.send_data(Native Method)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+-->INDEX: [43]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+INFO for INDEX: [43]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+Called by: com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+Input: aaaaaaa:hardcoded_secret_password
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity.send_data(Native Method)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+-->INDEX: [44]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+INFO for INDEX: [44]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+Called by: com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+Input: aaaaaaa:hardcoded_secret_password
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity.send_data(Native Method)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+-->INDEX: [45]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+INFO for INDEX: [45]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+Called by: com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+Input: aaaaaaa:hardcoded_secret_password
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity.send_data(Native Method)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+-->INDEX: [46]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+INFO for INDEX: [46]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+Called by: com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+Input: aaaaaaa:hardcoded_secret_password
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity.send_data(Native Method)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+
+
+-->INDEX: [47]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+
+INFO for INDEX: [47]
+Class: com.example.a11x256.frida_test.my_activity
+Method: void send_data(java.lang.String)
+Called by: com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+Input: aaaaaaa:hardcoded_secret_password
+Output: undefined
+StackTrace: 
+	at com.example.a11x256.frida_test.my_activity.send_data(Native Method)
+	at com.example.a11x256.frida_test.my_activity$1.onClick(my_activity.java:46)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+

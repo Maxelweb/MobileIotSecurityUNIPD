@@ -1,0 +1,2528 @@
+
+-->INDEX: [0]
+Class: it.ministerodellasalute.verificaC19.ui.FirstActivity
+Method: public void onClick(android.view.View)
+
+-->INDEX: [1]
+Class: it.ministerodellasalute.verificaC19.ui.FirstActivity
+Method: private final void openSettings()
+
+-->INDEX: [2]
+Class: it.ministerodellasalute.verificaC19.ui.Hilt_SettingsActivity
+Method: private void init()
+
+-->INDEX: [3]
+Class: it.ministerodellasalute.verificaC19.ui.SettingsActivity
+Method: protected void onCreate(android.os.Bundle)
+
+-->INDEX: [4]
+Class: it.ministerodellasalute.verificaC19.ui.Hilt_SettingsActivity
+Method: protected void inject()
+
+-->INDEX: [5]
+Class: it.ministerodellasalute.verificaC19.ui.Hilt_SettingsActivity
+Method: public final java.lang.Object generatedComponent()
+
+-->INDEX: [6]
+Class: it.ministerodellasalute.verificaC19.ui.Hilt_SettingsActivity
+Method: public dagger.hilt.internal.GeneratedComponentManager componentManager()
+
+-->INDEX: [7]
+Class: it.ministerodellasalute.verificaC19.ui.Hilt_SettingsActivity
+Method: protected dagger.hilt.android.internal.managers.ActivityComponentManager createComponentManager()
+
+-->INDEX: [8]
+Class: it.ministerodellasalute.verificaC19.Hilt_WhiteLabelApplication
+Method: public final java.lang.Object generatedComponent()
+
+-->INDEX: [9]
+Class: it.ministerodellasalute.verificaC19.Hilt_WhiteLabelApplication
+Method: public dagger.hilt.internal.GeneratedComponentManager componentManager()
+
+-->INDEX: [10]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC
+Method: public dagger.hilt.android.internal.builders.ActivityRetainedComponentBuilder retainedComponentBuilder()
+
+-->INDEX: [11]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC$ActivityRetainedCBuilder
+Method: public it.ministerodellasalute.verificaC19.WhiteLabelApplication_HiltComponents$ActivityRetainedC build()
+
+-->INDEX: [12]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC$ActivityRetainedCImpl
+Method: public dagger.hilt.android.internal.builders.ActivityComponentBuilder activityComponentBuilder()
+
+-->INDEX: [13]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC$ActivityRetainedCImpl$ActivityCBuilder
+Method: public it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC$ActivityRetainedCImpl$ActivityCBuilder activity(android.app.Activity)
+
+-->INDEX: [14]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC$ActivityRetainedCImpl$ActivityCBuilder
+Method: public it.ministerodellasalute.verificaC19.WhiteLabelApplication_HiltComponents$ActivityC build()
+
+-->INDEX: [15]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC$ActivityRetainedCImpl$ActivityCImpl
+Method: public void injectSettingsActivity(it.ministerodellasalute.verificaC19.ui.SettingsActivity)
+
+-->INDEX: [16]
+Class: it.ministerodellasalute.verificaC19.ui.SettingsActivity
+Method: private final void setSwitchesValue()
+
+-->INDEX: [17]
+Class: it.ministerodellasalute.verificaC19.ui.SettingsActivity
+Method: private final it.ministerodellasalute.verificaC19sdk.model.VerificationViewModel getViewModel()
+
+-->INDEX: [18]
+Class: it.ministerodellasalute.verificaC19.ui.Hilt_SettingsActivity
+Method: public androidx.lifecycle.ViewModelProvider$Factory getDefaultViewModelProviderFactory()
+
+-->INDEX: [19]
+Class: it.ministerodellasalute.verificaC19.ui.Hilt_SettingsActivity
+Method: public final java.lang.Object generatedComponent()
+
+-->INDEX: [20]
+Class: it.ministerodellasalute.verificaC19.ui.Hilt_SettingsActivity
+Method: public dagger.hilt.internal.GeneratedComponentManager componentManager()
+
+-->INDEX: [21]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC$ActivityRetainedCImpl$ActivityCImpl
+Method: public dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories$InternalFactoryFactory getHiltInternalFactoryFactory()
+
+-->INDEX: [22]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC
+Method: static dagger.hilt.android.internal.modules.ApplicationContextModule access$800(it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC)
+
+-->INDEX: [23]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC$ActivityRetainedCImpl$ActivityCImpl
+Method: public java.util.Set getViewModelKeys()
+
+-->INDEX: [24]
+Class: it.ministerodellasalute.verificaC19sdk.model.FirstViewModel_HiltModules_KeyModule_ProvideFactory
+Method: public static java.lang.String provide()
+
+-->INDEX: [25]
+Class: it.ministerodellasalute.verificaC19sdk.model.FirstViewModel_HiltModules$KeyModule
+Method: public static java.lang.String provide()
+
+-->INDEX: [26]
+Class: it.ministerodellasalute.verificaC19sdk.model.VerificationViewModel_HiltModules_KeyModule_ProvideFactory
+Method: public static java.lang.String provide()
+
+-->INDEX: [27]
+Class: it.ministerodellasalute.verificaC19sdk.model.VerificationViewModel_HiltModules$KeyModule
+Method: public static java.lang.String provide()
+
+-->INDEX: [28]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC$ActivityRetainedCImpl$ActivityCImpl
+Method: private java.util.Set defaultActivityViewModelFactorySetOfViewModelProviderFactory()
+
+-->INDEX: [29]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC$ActivityRetainedCImpl$ActivityCImpl
+Method: private androidx.lifecycle.ViewModelProvider$Factory provideFactory()
+
+-->INDEX: [30]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC
+Method: static dagger.hilt.android.internal.modules.ApplicationContextModule access$800(it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC)
+
+-->INDEX: [31]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC$ActivityRetainedCImpl$ViewModelCBuilder
+Method: public it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC$ActivityRetainedCImpl$ViewModelCBuilder savedStateHandle(androidx.lifecycle.SavedStateHandle)
+
+-->INDEX: [32]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC$ActivityRetainedCImpl$ViewModelCBuilder
+Method: public it.ministerodellasalute.verificaC19.WhiteLabelApplication_HiltComponents$ViewModelC build()
+
+-->INDEX: [33]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC$ActivityRetainedCImpl$ViewModelCImpl
+Method: public java.util.Map getHiltViewModelMap()
+
+-->INDEX: [34]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC$ActivityRetainedCImpl$ViewModelCImpl
+Method: private javax.inject.Provider firstViewModelProvider()
+
+-->INDEX: [35]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC$ActivityRetainedCImpl$ViewModelCImpl
+Method: private javax.inject.Provider verificationViewModelProvider()
+
+-->INDEX: [36]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC$ActivityRetainedCImpl$ViewModelCImpl$SwitchingProvider
+Method: public java.lang.Object get()
+
+-->INDEX: [37]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC$ActivityRetainedCImpl$ViewModelCImpl
+Method: static it.ministerodellasalute.verificaC19sdk.model.VerificationViewModel access$2800(it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC$ActivityRetainedCImpl$ViewModelCImpl)
+
+-->INDEX: [38]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC$ActivityRetainedCImpl$ViewModelCImpl
+Method: private it.ministerodellasalute.verificaC19sdk.model.VerificationViewModel verificationViewModel()
+
+-->INDEX: [39]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC
+Method: static dgca.verifier.app.decoder.prefixvalidation.PrefixValidationService access$2000(it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC)
+
+-->INDEX: [40]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC
+Method: private dgca.verifier.app.decoder.prefixvalidation.PrefixValidationService prefixValidationService()
+
+-->INDEX: [41]
+Class: it.ministerodellasalute.verificaC19sdk.di.DecoderModule_ProvidePrefixValidationServiceFactory
+Method: public static dgca.verifier.app.decoder.prefixvalidation.PrefixValidationService providePrefixValidationService()
+
+-->INDEX: [42]
+Class: it.ministerodellasalute.verificaC19sdk.di.DecoderModule
+Method: public final dgca.verifier.app.decoder.prefixvalidation.PrefixValidationService providePrefixValidationService()
+
+-->INDEX: [43]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC
+Method: static dgca.verifier.app.decoder.base45.Base45Service access$2100(it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC)
+
+-->INDEX: [44]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC
+Method: private dgca.verifier.app.decoder.base45.Base45Service base45Service()
+
+-->INDEX: [45]
+Class: it.ministerodellasalute.verificaC19sdk.di.DecoderModule_ProvideBase45DecoderFactory
+Method: public static dgca.verifier.app.decoder.base45.Base45Service provideBase45Decoder()
+
+-->INDEX: [46]
+Class: it.ministerodellasalute.verificaC19sdk.di.DecoderModule
+Method: public final dgca.verifier.app.decoder.base45.Base45Service provideBase45Decoder()
+
+-->INDEX: [47]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC
+Method: static dgca.verifier.app.decoder.compression.CompressorService access$2200(it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC)
+
+-->INDEX: [48]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC
+Method: private dgca.verifier.app.decoder.compression.CompressorService compressorService()
+
+-->INDEX: [49]
+Class: it.ministerodellasalute.verificaC19sdk.di.DecoderModule_ProvideCompressorServiceFactory
+Method: public static dgca.verifier.app.decoder.compression.CompressorService provideCompressorService()
+
+-->INDEX: [50]
+Class: it.ministerodellasalute.verificaC19sdk.di.DecoderModule
+Method: public final dgca.verifier.app.decoder.compression.CompressorService provideCompressorService()
+
+-->INDEX: [51]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC
+Method: static dgca.verifier.app.decoder.cose.CryptoService access$2300(it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC)
+
+-->INDEX: [52]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC
+Method: private dgca.verifier.app.decoder.cose.CryptoService cryptoService()
+
+-->INDEX: [53]
+Class: it.ministerodellasalute.verificaC19sdk.di.DecoderModule_ProvideCryptoServiceFactory
+Method: public static dgca.verifier.app.decoder.cose.CryptoService provideCryptoService()
+
+-->INDEX: [54]
+Class: it.ministerodellasalute.verificaC19sdk.di.DecoderModule
+Method: public final dgca.verifier.app.decoder.cose.CryptoService provideCryptoService()
+
+-->INDEX: [55]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC
+Method: static dgca.verifier.app.decoder.cose.CoseService access$2400(it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC)
+
+-->INDEX: [56]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC
+Method: private dgca.verifier.app.decoder.cose.CoseService coseService()
+
+-->INDEX: [57]
+Class: it.ministerodellasalute.verificaC19sdk.di.DecoderModule_ProvideCoseServiceFactory
+Method: public static dgca.verifier.app.decoder.cose.CoseService provideCoseService()
+
+-->INDEX: [58]
+Class: it.ministerodellasalute.verificaC19sdk.di.DecoderModule
+Method: public final dgca.verifier.app.decoder.cose.CoseService provideCoseService()
+
+-->INDEX: [59]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC
+Method: static dgca.verifier.app.decoder.schema.SchemaValidator access$2500(it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC)
+
+-->INDEX: [60]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC
+Method: private dgca.verifier.app.decoder.schema.SchemaValidator schemaValidator()
+
+-->INDEX: [61]
+Class: it.ministerodellasalute.verificaC19sdk.di.DecoderModule_ProvideSchemaValidatorFactory
+Method: public static dgca.verifier.app.decoder.schema.SchemaValidator provideSchemaValidator()
+
+-->INDEX: [62]
+Class: it.ministerodellasalute.verificaC19sdk.di.DecoderModule
+Method: public final dgca.verifier.app.decoder.schema.SchemaValidator provideSchemaValidator()
+
+-->INDEX: [63]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC
+Method: static dgca.verifier.app.decoder.cbor.CborService access$2600(it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC)
+
+-->INDEX: [64]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC
+Method: private dgca.verifier.app.decoder.cbor.CborService cborService()
+
+-->INDEX: [65]
+Class: it.ministerodellasalute.verificaC19sdk.di.DecoderModule_ProvideCborServiceFactory
+Method: public static dgca.verifier.app.decoder.cbor.CborService provideCborService()
+
+-->INDEX: [66]
+Class: it.ministerodellasalute.verificaC19sdk.di.DecoderModule
+Method: public final dgca.verifier.app.decoder.cbor.CborService provideCborService()
+
+-->INDEX: [67]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC
+Method: static it.ministerodellasalute.verificaC19sdk.data.VerifierRepository access$1800(it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC)
+
+-->INDEX: [68]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC
+Method: private it.ministerodellasalute.verificaC19sdk.data.VerifierRepository verifierRepository()
+
+-->INDEX: [69]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC
+Method: static it.ministerodellasalute.verificaC19sdk.data.local.Preferences access$1900(it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC)
+
+-->INDEX: [70]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC
+Method: private it.ministerodellasalute.verificaC19sdk.data.local.Preferences preferences()
+
+-->INDEX: [71]
+Class: it.ministerodellasalute.verificaC19sdk.model.VerificationViewModel
+Method: public final boolean getTotemMode()
+
+-->INDEX: [72]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.PreferencesImpl
+Method: public boolean isTotemModeActive()
+
+-->INDEX: [73]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.BooleanPreference
+Method: public java.lang.Object getValue(java.lang.Object,kotlin.reflect.KProperty)
+
+-->INDEX: [74]
+Class: it.ministerodellasalute.verificaC19.ui.SettingsActivity
+Method: private final void setButtonsListener()
+
+-->INDEX: [75]
+Class: it.ministerodellasalute.verificaC19.ui.SettingsActivity
+Method: public void onClick(android.view.View)
+
+-->INDEX: [76]
+Class: it.ministerodellasalute.verificaC19.ui.SettingsActivity
+Method: private final it.ministerodellasalute.verificaC19sdk.model.VerificationViewModel getViewModel()
+
+-->INDEX: [77]
+Class: it.ministerodellasalute.verificaC19sdk.model.VerificationViewModel
+Method: public final void setTotemMode(boolean)
+
+-->INDEX: [78]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.PreferencesImpl
+Method: public void setTotemModeActive(boolean)
+
+-->INDEX: [79]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.BooleanPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,boolean)
+
+-->INDEX: [80]
+Class: it.ministerodellasalute.verificaC19.ui.FirstActivity
+Method: public void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)
+
+-->INDEX: [81]
+Class: it.ministerodellasalute.verificaC19.ui.SettingsActivity
+Method: public void onClick(android.view.View)
+
+-->INDEX: [82]
+Class: it.ministerodellasalute.verificaC19.ui.FirstActivity
+Method: protected void onStart()
+
+-->INDEX: [83]
+Class: it.ministerodellasalute.verificaC19.ui.FirstActivity
+Method: protected void onResume()
+
+-->INDEX: [84]
+Class: it.ministerodellasalute.verificaC19.ui.FirstActivity
+Method: private final it.ministerodellasalute.verificaC19sdk.model.FirstViewModel getViewModel()
+
+-->INDEX: [85]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.PreferencesImpl
+Method: public java.lang.String getScanMode()
+
+-->INDEX: [86]
+Class: it.ministerodellasalute.verificaC19.ui.FirstActivity
+Method: private final void setScanModeButtonText(java.lang.String)
+
+-->INDEX: [87]
+Class: it.ministerodellasalute.verificaC19.ui.FirstActivity
+Method: private final it.ministerodellasalute.verificaC19sdk.model.FirstViewModel getViewModel()
+
+-->INDEX: [88]
+Class: it.ministerodellasalute.verificaC19sdk.model.FirstViewModel
+Method: public final boolean getScanModeFlag()
+
+-->INDEX: [89]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.PreferencesImpl
+Method: public boolean getHasScanModeBeenChosen()
+
+-->INDEX: [90]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.BooleanPreference
+Method: public java.lang.Object getValue(java.lang.Object,kotlin.reflect.KProperty)
+
+-->INDEX: [91]
+Class: it.ministerodellasalute.verificaC19.ui.FirstActivity
+Method: private final void checkAppMinimumVersion()
+
+-->INDEX: [92]
+Class: it.ministerodellasalute.verificaC19.ui.FirstActivity
+Method: private final it.ministerodellasalute.verificaC19sdk.model.FirstViewModel getViewModel()
+
+-->INDEX: [93]
+Class: it.ministerodellasalute.verificaC19sdk.model.FirstViewModel
+Method: public final java.lang.String getAppMinVersion()
+
+-->INDEX: [94]
+Class: it.ministerodellasalute.verificaC19sdk.model.FirstViewModel
+Method: private final it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule[] getValidationRules()
+
+-->INDEX: [95]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.PreferencesImpl
+Method: public java.lang.String getValidationRulesJson()
+
+-->INDEX: [96]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public java.lang.String toString()
+
+-->INDEX: [97]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public java.lang.String toString()
+
+-->INDEX: [98]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public java.lang.String toString()
+
+-->INDEX: [99]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public java.lang.String toString()
+
+-->INDEX: [100]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public java.lang.String toString()
+
+-->INDEX: [101]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public java.lang.String toString()
+
+-->INDEX: [102]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public java.lang.String toString()
+
+-->INDEX: [103]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public java.lang.String toString()
+
+-->INDEX: [104]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public java.lang.String toString()
+
+-->INDEX: [105]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public java.lang.String toString()
+
+-->INDEX: [106]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public java.lang.String toString()
+
+-->INDEX: [107]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public java.lang.String toString()
+
+-->INDEX: [108]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public java.lang.String toString()
+
+-->INDEX: [109]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public java.lang.String toString()
+
+-->INDEX: [110]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public java.lang.String toString()
+
+-->INDEX: [111]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public java.lang.String toString()
+
+-->INDEX: [112]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public java.lang.String toString()
+
+-->INDEX: [113]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public java.lang.String toString()
+
+-->INDEX: [114]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public java.lang.String toString()
+
+-->INDEX: [115]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public java.lang.String toString()
+
+-->INDEX: [116]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [117]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [118]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [119]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [120]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [121]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [122]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [123]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [124]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [125]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [126]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [127]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [128]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [129]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [130]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [131]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [132]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [133]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [134]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [135]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [136]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [137]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [138]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [139]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [140]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [141]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [142]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [143]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [144]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [145]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [146]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [147]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [148]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [149]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [150]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [151]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [152]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [153]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [154]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [155]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [156]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [157]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [158]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [159]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [160]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [161]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [162]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [163]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [164]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getValue()
+
+-->INDEX: [165]
+Class: it.ministerodellasalute.verificaC19sdk.util.Utility
+Method: public final int versionCompare(java.lang.String,java.lang.String)
+
+-->INDEX: [166]
+Class: it.ministerodellasalute.verificaC19.ui.FirstActivity
+Method: private final it.ministerodellasalute.verificaC19sdk.model.FirstViewModel getViewModel()
+
+-->INDEX: [167]
+Class: it.ministerodellasalute.verificaC19sdk.model.FirstViewModel
+Method: public final boolean isSDKVersionObsoleted()
+
+-->INDEX: [168]
+Class: it.ministerodellasalute.verificaC19sdk.model.FirstViewModel
+Method: private final java.lang.String getSDKMinVersion()
+
+-->INDEX: [169]
+Class: it.ministerodellasalute.verificaC19sdk.model.FirstViewModel
+Method: private final it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule[] getValidationRules()
+
+-->INDEX: [170]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.PreferencesImpl
+Method: public java.lang.String getValidationRulesJson()
+
+-->INDEX: [171]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [172]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [173]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [174]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [175]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [176]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [177]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [178]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [179]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [180]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [181]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [182]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [183]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [184]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [185]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [186]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [187]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [188]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [189]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [190]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [191]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [192]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [193]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [194]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [195]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [196]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [197]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [198]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [199]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [200]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [201]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [202]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [203]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [204]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [205]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [206]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [207]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [208]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [209]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [210]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [211]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [212]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [213]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [214]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [215]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [216]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [217]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [218]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [219]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [220]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [221]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [222]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [223]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [224]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [225]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [226]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [227]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [228]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [229]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [230]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [231]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [232]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [233]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [234]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [235]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [236]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [237]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [238]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [239]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [240]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [241]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [242]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [243]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [244]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [245]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [246]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [247]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [248]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [249]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [250]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [251]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [252]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [253]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [254]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [255]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [256]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [257]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [258]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [259]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [260]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [261]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [262]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [263]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [264]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [265]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [266]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [267]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [268]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [269]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [270]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [271]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [272]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [273]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [274]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [275]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [276]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [277]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [278]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [279]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [280]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [281]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [282]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [283]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [284]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [285]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [286]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [287]
+Class: it.ministerodellasalute.verificaC19sdk.data.remote.model.Rule
+Method: public final java.lang.String getName()
+
+-->INDEX: [288]
+Class: it.ministerodellasalute.verificaC19sdk.model.ValidationRulesEnum
+Method: public final java.lang.String getValue()
+
+-->INDEX: [289]
+Class: it.ministerodellasalute.verificaC19sdk.util.Utility
+Method: public final int versionCompare(java.lang.String,java.lang.String)
+
+-->INDEX: [290]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC$ActivityRetainedCImpl
+Method: public dagger.hilt.android.ActivityRetainedLifecycle getActivityRetainedLifecycle()
+
+-->INDEX: [291]
+Class: it.ministerodellasalute.verificaC19.DaggerWhiteLabelApplication_HiltComponents_SingletonC$ActivityRetainedCImpl
+Method: private java.lang.Object lifecycle()
+
+-->INDEX: [292]
+Class: it.ministerodellasalute.verificaC19.ui.FirstActivity
+Method: public void onClick(android.view.View)
+
+-->INDEX: [293]
+Class: it.ministerodellasalute.verificaC19.ui.FirstActivity
+Method: private final void showScanModeChoiceAlertDialog()
+
+-->INDEX: [294]
+Class: it.ministerodellasalute.verificaC19.ui.FirstActivity
+Method: private final it.ministerodellasalute.verificaC19sdk.model.FirstViewModel getViewModel()
+
+-->INDEX: [295]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.PreferencesImpl
+Method: public java.lang.String getScanMode()
+
+-->INDEX: [296]
+Class: it.ministerodellasalute.verificaC19.ui.FirstActivity$showScanModeChoiceAlertDialog$1
+Method: public final void onClick(android.content.DialogInterface,int)
+
+-->INDEX: [297]
+Class: it.ministerodellasalute.verificaC19.ui.FirstActivity
+Method: public static final it.ministerodellasalute.verificaC19sdk.model.FirstViewModel access$getViewModel$p(it.ministerodellasalute.verificaC19.ui.FirstActivity)
+
+-->INDEX: [298]
+Class: it.ministerodellasalute.verificaC19.ui.FirstActivity
+Method: private final it.ministerodellasalute.verificaC19sdk.model.FirstViewModel getViewModel()
+
+-->INDEX: [299]
+Class: it.ministerodellasalute.verificaC19sdk.model.FirstViewModel
+Method: public final boolean getScanModeFlag()
+
+-->INDEX: [300]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.PreferencesImpl
+Method: public boolean getHasScanModeBeenChosen()
+
+-->INDEX: [301]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.BooleanPreference
+Method: public java.lang.Object getValue(java.lang.Object,kotlin.reflect.KProperty)
+
+-->INDEX: [302]
+Class: it.ministerodellasalute.verificaC19.ui.FirstActivity
+Method: public static final it.ministerodellasalute.verificaC19sdk.model.FirstViewModel access$getViewModel$p(it.ministerodellasalute.verificaC19.ui.FirstActivity)
+
+-->INDEX: [303]
+Class: it.ministerodellasalute.verificaC19.ui.FirstActivity
+Method: private final it.ministerodellasalute.verificaC19sdk.model.FirstViewModel getViewModel()
+
+-->INDEX: [304]
+Class: it.ministerodellasalute.verificaC19sdk.model.FirstViewModel
+Method: public final void setScanMode(java.lang.String)
+
+-->INDEX: [305]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.PreferencesImpl
+Method: public void setScanMode(java.lang.String)
+
+-->INDEX: [306]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [307]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [308]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [309]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [310]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [311]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [312]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [313]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [314]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [315]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [316]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [317]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [318]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [319]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [320]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [321]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [322]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [323]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [324]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [325]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [326]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [327]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [328]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [329]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [330]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [331]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [332]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [333]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [334]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [335]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [336]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [337]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [338]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [339]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [340]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [341]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [342]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [343]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [344]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [345]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [346]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [347]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [348]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [349]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [350]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [351]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [352]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [353]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [354]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [355]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [356]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [357]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [358]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [359]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [360]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [361]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [362]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [363]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [364]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [365]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [366]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [367]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [368]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [369]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [370]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [371]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [372]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [373]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [374]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [375]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [376]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [377]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [378]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [379]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [380]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [381]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [382]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [383]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [384]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [385]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [386]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [387]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [388]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [389]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [390]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [391]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [392]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [393]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [394]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [395]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [396]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [397]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [398]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [399]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [400]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [401]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [402]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [403]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [404]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [405]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [406]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [407]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [408]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [409]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [410]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [411]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [412]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [413]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [414]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [415]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [416]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [417]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [418]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [419]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [420]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [421]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [422]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [423]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [424]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [425]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [426]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [427]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [428]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [429]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [430]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [431]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [432]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [433]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [434]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [435]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [436]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [437]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [438]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [439]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [440]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [441]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [442]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [443]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [444]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [445]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [446]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [447]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [448]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [449]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [450]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [451]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [452]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [453]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [454]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [455]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [456]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [457]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [458]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [459]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [460]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [461]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [462]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [463]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [464]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [465]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [466]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [467]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [468]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [469]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [470]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [471]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [472]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [473]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [474]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [475]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [476]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [477]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [478]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [479]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [480]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [481]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [482]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [483]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [484]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [485]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [486]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [487]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [488]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [489]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [490]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [491]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [492]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [493]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [494]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [495]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [496]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [497]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [498]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [499]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [500]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [501]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [502]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [503]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [504]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [505]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [506]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [507]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [508]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [509]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [510]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [511]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [512]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [513]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [514]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [515]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [516]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [517]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [518]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [519]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [520]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [521]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [522]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [523]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [524]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [525]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [526]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [527]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [528]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [529]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [530]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [531]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [532]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [533]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [534]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [535]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [536]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [537]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [538]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [539]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [540]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [541]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [542]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [543]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [544]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [545]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [546]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [547]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [548]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [549]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [550]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [551]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [552]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [553]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [554]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [555]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [556]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [557]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [558]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [559]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [560]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [561]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [562]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [563]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [564]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [565]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [566]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [567]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [568]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [569]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [570]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [571]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [572]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [573]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [574]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [575]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [576]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [577]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [578]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [579]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [580]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [581]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [582]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [583]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [584]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [585]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [586]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [587]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [588]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [589]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [590]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [591]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [592]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [593]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [594]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [595]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [596]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [597]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [598]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [599]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [600]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [601]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [602]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [603]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [604]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [605]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [606]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [607]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [608]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [609]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [610]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [611]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [612]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [613]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [614]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [615]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [616]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [617]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [618]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [619]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [620]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [621]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [622]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [623]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
+
+-->INDEX: [624]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.StringPreference
+Method: public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.String)
+
+-->INDEX: [625]
+Class: it.ministerodellasalute.verificaC19.ui.FirstActivity
+Method: public void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)
+
+-->INDEX: [626]
+Class: it.ministerodellasalute.verificaC19.ui.FirstActivity
+Method: public static final void access$setScanModeButtonText(it.ministerodellasalute.verificaC19.ui.FirstActivity,java.lang.String)
+
+-->INDEX: [627]
+Class: it.ministerodellasalute.verificaC19.ui.FirstActivity
+Method: private final void setScanModeButtonText(java.lang.String)
+
+-->INDEX: [628]
+Class: it.ministerodellasalute.verificaC19.ui.FirstActivity
+Method: private final it.ministerodellasalute.verificaC19sdk.model.FirstViewModel getViewModel()
+
+-->INDEX: [629]
+Class: it.ministerodellasalute.verificaC19sdk.model.FirstViewModel
+Method: public final boolean getScanModeFlag()
+
+-->INDEX: [630]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.PreferencesImpl
+Method: public boolean getHasScanModeBeenChosen()
+
+-->INDEX: [631]
+Class: it.ministerodellasalute.verificaC19sdk.data.local.BooleanPreference
+Method: public java.lang.Object getValue(java.lang.Object,kotlin.reflect.KProperty)

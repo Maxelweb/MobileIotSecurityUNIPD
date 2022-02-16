@@ -1,0 +1,3934 @@
+
+INFO for INDEX: [4]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.resetView(MainActivity.kt:41)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [5]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.resetView(MainActivity.kt:42)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [6]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.resetView(MainActivity.kt:43)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [7]
+Class: com.scottyab.rootbeer.sample.extensions.ViewExtensionsKt
+Method: public static final void show(android.view.View)
+Called by: com.scottyab.rootbeer.sample.MainActivity.resetView(MainActivity.kt:43)
+Input: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+Output: undefined
+
+INFO for INDEX: [8]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.resetView(MainActivity.kt:44)
+Input: 2131230915
+Output: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 G.ED..... ......I. 0,0-0,0 #7f0800c3 app:id/isRootedTextView}
+
+INFO for INDEX: [9]
+Class: com.scottyab.rootbeer.sample.extensions.ViewExtensionsKt
+Method: public static final void hide(android.view.View)
+Called by: com.scottyab.rootbeer.sample.MainActivity.resetView(MainActivity.kt:44)
+Input: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 G.ED..... ......I. 0,0-0,0 #7f0800c3 app:id/isRootedTextView}
+Output: undefined
+
+INFO for INDEX: [10]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public final void clear()
+Called by: com.scottyab.rootbeer.sample.MainActivity.resetView(MainActivity.kt:45)
+Input: undefined
+Output: undefined
+
+INFO for INDEX: [3]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: private final void resetView()
+Called by: com.scottyab.rootbeer.sample.MainActivity.checkForRoot(MainActivity.kt:49)
+Input: undefined
+Output: undefined
+
+INFO for INDEX: [11]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.checkForRoot(MainActivity.kt:50)
+Input: 2131230881
+Output: com.google.android.material.floatingactionbutton.FloatingActionButton{c72ba62 VFED..C.. ...P.... 372,692-456,776 #7f0800a1 app:id/fab}
+
+INFO for INDEX: [12]
+Class: com.scottyab.rootbeer.sample.ui.ScopedActivity
+Method: public kotlin.coroutines.CoroutineContext getCoroutineContext()
+Called by: kotlinx.coroutines.CoroutineContextKt.newCoroutineContext(CoroutineContext.kt:33)
+Input: undefined
+Output: [object Object]
+
+INFO for INDEX: [2]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: private final void checkForRoot()
+Called by: com.scottyab.rootbeer.sample.MainActivity.access$checkForRoot(MainActivity.kt:20)
+Input: undefined
+Output: undefined
+
+INFO for INDEX: [1]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public static final void access$checkForRoot(com.scottyab.rootbeer.sample.MainActivity)
+Called by: com.scottyab.rootbeer.sample.MainActivity$initView$1.onClick(MainActivity.kt:35)
+Input: com.scottyab.rootbeer.sample.MainActivity@48802eb
+Output: undefined
+
+INFO for INDEX: [0]
+Class: com.scottyab.rootbeer.sample.MainActivity$initView$1
+Method: public final void onClick(android.view.View)
+Called by: android.view.View.performClick(View.java:6597)
+Input: com.google.android.material.floatingactionbutton.FloatingActionButton{c72ba62 VFED..C.. ...P.... 372,692-456,776 #7f0800a1 app:id/fab}
+Output: undefined
+
+INFO for INDEX: [13]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView.dispatchLayoutStep1(RecyclerView.java:4044)
+Input: undefined
+Output: 0
+
+INFO for INDEX: [14]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView.dispatchLayoutStep2(RecyclerView.java:4129)
+Input: undefined
+Output: 0
+
+INFO for INDEX: [15]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public static final com.scottyab.rootbeer.sample.CheckForRootWorker access$getCheckForRoot$p(com.scottyab.rootbeer.sample.MainActivity)
+Called by: com.scottyab.rootbeer.sample.MainActivity$checkForRoot$1.invokeSuspend(MainActivity.kt:53)
+Input: com.scottyab.rootbeer.sample.MainActivity@48802eb
+Output: com.scottyab.rootbeer.sample.CheckForRootWorker@7c48b5e
+
+INFO for INDEX: [17]
+Class: com.scottyab.rootbeer.sample.CheckForRootWorker
+Method: private final java.util.List getRootResults()
+Called by: com.scottyab.rootbeer.sample.CheckForRootWorker.invoke(CheckForRootWorker.kt:11)
+Input: undefined
+Output: [object Object]
+
+INFO for INDEX: [16]
+Class: com.scottyab.rootbeer.sample.CheckForRootWorker
+Method: public final java.lang.Object invoke(kotlin.coroutines.Continuation)
+Called by: com.scottyab.rootbeer.sample.MainActivity$checkForRoot$1.invokeSuspend(MainActivity.kt:53)
+Input: [object Object]
+Output: [RootItemResult(text=Root Management Apps, result=false), RootItemResult(text=Potentially Dangerous Apps, result=false), RootItemResult(text=Root Cloaking Apps, result=false), RootItemResult(text=TestKeys, result=false), RootItemResult(text=BusyBoxBinary, result=false), RootItemResult(text=SU Binary, result=true), RootItemResult(text=2nd SU Binary check, result=false), RootItemResult(text=For RW Paths, result=false), RootItemResult(text=Dangerous Props, result=true), RootItemResult(text=Root via native check, result=false), RootItemResult(text=SE linux Flag Is Enabled, result=false), RootItemResult(text=Magisk specific checks, result=false)]
+
+INFO for INDEX: [20]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.animateResults(MainActivity.kt:66)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [21]
+Class: com.scottyab.rootbeer.sample.ui.ScopedActivity
+Method: public kotlin.coroutines.CoroutineContext getCoroutineContext()
+Called by: kotlinx.coroutines.CoroutineContextKt.newCoroutineContext(CoroutineContext.kt:33)
+Input: undefined
+Output: [object Object]
+
+INFO for INDEX: [19]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: private final void animateResults(java.util.List)
+Called by: com.scottyab.rootbeer.sample.MainActivity.access$animateResults(MainActivity.kt:20)
+Input: [object Object]
+Output: undefined
+
+INFO for INDEX: [18]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public static final void access$animateResults(com.scottyab.rootbeer.sample.MainActivity,java.util.List)
+Called by: com.scottyab.rootbeer.sample.MainActivity$checkForRoot$1.invokeSuspend(MainActivity.kt:54)
+Input: [object Object]
+Output: undefined
+
+INFO for INDEX: [22]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [23]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [24]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [25]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [26]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [27]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [28]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [29]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [30]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [31]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [32]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [33]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [34]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [35]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [36]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [37]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [38]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [39]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [40]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [41]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [42]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public static final com.scottyab.rootbeer.sample.ui.RootItemAdapter access$getRootItemAdapter$p(com.scottyab.rootbeer.sample.MainActivity)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:80)
+Input: com.scottyab.rootbeer.sample.MainActivity@48802eb
+Output: com.scottyab.rootbeer.sample.ui.RootItemAdapter@4d4f24b
+
+INFO for INDEX: [43]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public final void add(com.scottyab.rootbeer.sample.RootItemResult)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:80)
+Input: RootItemResult(text=Root Management Apps, result=false)
+Output: undefined
+
+INFO for INDEX: [44]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView.dispatchLayoutStep1(RecyclerView.java:4044)
+Input: undefined
+Output: 1
+
+INFO for INDEX: [45]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView.dispatchLayoutStep2(RecyclerView.java:4129)
+Input: undefined
+Output: 1
+
+INFO for INDEX: [46]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.tryGetViewHolderForPositionByDeadline(RecyclerView.java:6180)
+Input: undefined
+Output: 1
+
+INFO for INDEX: [47]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH onCreateViewHolder(android.view.ViewGroup,int)
+Called by: androidx.recyclerview.widget.RecyclerView$Adapter.createViewHolder(RecyclerView.java:7078)
+Input: 0
+Output: RootItemVH{2218ae6 position=-1 id=-1, oldPos=-1, pLpos:-1 unbound no parent}
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(Native Method)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [233]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH,int)
+Called by: com.scottyab.rootbeer.sample.ui.RootItemAdapter.onBindViewHolder(RootItemAdapter.kt:12)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [232]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: androidx.recyclerview.widget.RecyclerView$Adapter.onBindViewHolder(RecyclerView.java:7065)
+Input: 0
+Output: undefined
+
+INFO for INDEX: [234]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......I. 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [235]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......I. 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [236]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [237]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [238]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [239]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [240]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [241]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [242]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [243]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [244]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [245]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [246]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [247]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [248]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [249]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [250]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [251]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [252]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [253]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [254]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public static final com.scottyab.rootbeer.sample.ui.RootItemAdapter access$getRootItemAdapter$p(com.scottyab.rootbeer.sample.MainActivity)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:80)
+Input: com.scottyab.rootbeer.sample.MainActivity@48802eb
+Output: com.scottyab.rootbeer.sample.ui.RootItemAdapter@4d4f24b
+
+INFO for INDEX: [255]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public final void add(com.scottyab.rootbeer.sample.RootItemResult)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:80)
+Input: RootItemResult(text=Potentially Dangerous Apps, result=false)
+Output: undefined
+
+INFO for INDEX: [256]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView.dispatchLayoutStep1(RecyclerView.java:4044)
+Input: undefined
+Output: 2
+
+INFO for INDEX: [257]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 2
+
+INFO for INDEX: [258]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView.dispatchLayoutStep2(RecyclerView.java:4129)
+Input: undefined
+Output: 2
+
+INFO for INDEX: [259]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 2
+
+INFO for INDEX: [260]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.tryGetViewHolderForPositionByDeadline(RecyclerView.java:6180)
+Input: undefined
+Output: 2
+
+INFO for INDEX: [261]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH onCreateViewHolder(android.view.ViewGroup,int)
+Called by: androidx.recyclerview.widget.RecyclerView$Adapter.createViewHolder(RecyclerView.java:7078)
+Input: 0
+Output: RootItemVH{f6406c position=-1 id=-1, oldPos=-1, pLpos:-1 unbound no parent}
+
+INFO for INDEX: [262]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: androidx.recyclerview.widget.RecyclerView$Adapter.onBindViewHolder(RecyclerView.java:7065)
+Input: 1
+Output: undefined
+
+INFO for INDEX: [263]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......I. 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [264]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......I. 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [265]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [266]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [267]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [268]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [269]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [270]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [271]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [272]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [273]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [274]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [275]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [276]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [277]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [278]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [279]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [280]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [281]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [282]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [283]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public static final com.scottyab.rootbeer.sample.ui.RootItemAdapter access$getRootItemAdapter$p(com.scottyab.rootbeer.sample.MainActivity)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:80)
+Input: com.scottyab.rootbeer.sample.MainActivity@48802eb
+Output: com.scottyab.rootbeer.sample.ui.RootItemAdapter@4d4f24b
+
+INFO for INDEX: [284]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public final void add(com.scottyab.rootbeer.sample.RootItemResult)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:80)
+Input: RootItemResult(text=Root Cloaking Apps, result=false)
+Output: undefined
+
+INFO for INDEX: [285]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView.dispatchLayoutStep1(RecyclerView.java:4044)
+Input: undefined
+Output: 3
+
+INFO for INDEX: [286]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 3
+
+INFO for INDEX: [287]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 3
+
+INFO for INDEX: [288]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView.dispatchLayoutStep2(RecyclerView.java:4129)
+Input: undefined
+Output: 3
+
+INFO for INDEX: [289]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 3
+
+INFO for INDEX: [290]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 3
+
+INFO for INDEX: [291]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.tryGetViewHolderForPositionByDeadline(RecyclerView.java:6180)
+Input: undefined
+Output: 3
+
+INFO for INDEX: [292]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH onCreateViewHolder(android.view.ViewGroup,int)
+Called by: androidx.recyclerview.widget.RecyclerView$Adapter.createViewHolder(RecyclerView.java:7078)
+Input: 0
+Output: RootItemVH{71a46ed position=-1 id=-1, oldPos=-1, pLpos:-1 unbound no parent}
+
+INFO for INDEX: [293]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: androidx.recyclerview.widget.RecyclerView$Adapter.onBindViewHolder(RecyclerView.java:7065)
+Input: 2
+Output: undefined
+
+INFO for INDEX: [294]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......I. 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [295]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......I. 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [296]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [297]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [298]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [299]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [300]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [301]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [302]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [303]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [304]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [305]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [306]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [307]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [308]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [309]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [310]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [311]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [312]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [313]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [314]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public static final com.scottyab.rootbeer.sample.ui.RootItemAdapter access$getRootItemAdapter$p(com.scottyab.rootbeer.sample.MainActivity)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:80)
+Input: com.scottyab.rootbeer.sample.MainActivity@48802eb
+Output: com.scottyab.rootbeer.sample.ui.RootItemAdapter@4d4f24b
+
+INFO for INDEX: [315]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public final void add(com.scottyab.rootbeer.sample.RootItemResult)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:80)
+Input: RootItemResult(text=TestKeys, result=false)
+Output: undefined
+
+INFO for INDEX: [316]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView.dispatchLayoutStep1(RecyclerView.java:4044)
+Input: undefined
+Output: 4
+
+INFO for INDEX: [317]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 4
+
+INFO for INDEX: [318]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 4
+
+INFO for INDEX: [319]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 4
+
+INFO for INDEX: [320]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView.dispatchLayoutStep2(RecyclerView.java:4129)
+Input: undefined
+Output: 4
+
+INFO for INDEX: [321]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 4
+
+INFO for INDEX: [322]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 4
+
+INFO for INDEX: [323]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 4
+
+INFO for INDEX: [324]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.tryGetViewHolderForPositionByDeadline(RecyclerView.java:6180)
+Input: undefined
+Output: 4
+
+INFO for INDEX: [325]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH onCreateViewHolder(android.view.ViewGroup,int)
+Called by: androidx.recyclerview.widget.RecyclerView$Adapter.createViewHolder(RecyclerView.java:7078)
+Input: 0
+Output: RootItemVH{c4a2a7a position=-1 id=-1, oldPos=-1, pLpos:-1 unbound no parent}
+
+INFO for INDEX: [326]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: androidx.recyclerview.widget.RecyclerView$Adapter.onBindViewHolder(RecyclerView.java:7065)
+Input: 3
+Output: undefined
+
+INFO for INDEX: [327]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......I. 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [328]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......I. 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [329]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [330]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [331]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [332]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [333]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [334]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [335]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [336]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [337]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [338]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [339]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [340]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [341]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [342]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [343]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [344]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......ID 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [345]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView.dispatchLayoutStep1(RecyclerView.java:4044)
+Input: undefined
+Output: 5
+
+INFO for INDEX: [346]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 5
+
+INFO for INDEX: [347]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 5
+
+INFO for INDEX: [348]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 5
+
+INFO for INDEX: [349]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 5
+
+INFO for INDEX: [350]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView.dispatchLayoutStep2(RecyclerView.java:4129)
+Input: undefined
+Output: 5
+
+INFO for INDEX: [351]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 5
+
+INFO for INDEX: [352]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 5
+
+INFO for INDEX: [353]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 5
+
+INFO for INDEX: [354]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 5
+
+INFO for INDEX: [355]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.tryGetViewHolderForPositionByDeadline(RecyclerView.java:6180)
+Input: undefined
+Output: 5
+
+INFO for INDEX: [356]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH onCreateViewHolder(android.view.ViewGroup,int)
+Called by: androidx.recyclerview.widget.RecyclerView$Adapter.createViewHolder(RecyclerView.java:7078)
+Input: 0
+Output: RootItemVH{8bffba3 position=-1 id=-1, oldPos=-1, pLpos:-1 unbound no parent}
+
+INFO for INDEX: [357]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: androidx.recyclerview.widget.RecyclerView$Adapter.onBindViewHolder(RecyclerView.java:7065)
+Input: 4
+Output: undefined
+
+INFO for INDEX: [358]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......I. 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [359]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView.dispatchLayoutStep1(RecyclerView.java:4044)
+Input: undefined
+Output: 6
+
+INFO for INDEX: [360]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 6
+
+INFO for INDEX: [361]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 6
+
+INFO for INDEX: [362]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 6
+
+INFO for INDEX: [363]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 6
+
+INFO for INDEX: [364]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 6
+
+INFO for INDEX: [365]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView.dispatchLayoutStep2(RecyclerView.java:4129)
+Input: undefined
+Output: 6
+
+INFO for INDEX: [366]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 6
+
+INFO for INDEX: [367]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 6
+
+INFO for INDEX: [368]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 6
+
+INFO for INDEX: [369]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 6
+
+INFO for INDEX: [370]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 6
+
+INFO for INDEX: [371]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.tryGetViewHolderForPositionByDeadline(RecyclerView.java:6180)
+Input: undefined
+Output: 6
+
+INFO for INDEX: [372]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH onCreateViewHolder(android.view.ViewGroup,int)
+Called by: androidx.recyclerview.widget.RecyclerView$Adapter.createViewHolder(RecyclerView.java:7078)
+Input: 0
+Output: RootItemVH{b0701b8 position=-1 id=-1, oldPos=-1, pLpos:-1 unbound no parent}
+
+INFO for INDEX: [373]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: androidx.recyclerview.widget.RecyclerView$Adapter.onBindViewHolder(RecyclerView.java:7065)
+Input: 5
+Output: undefined
+
+INFO for INDEX: [374]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView.dispatchLayoutStep1(RecyclerView.java:4044)
+Input: undefined
+Output: 7
+
+INFO for INDEX: [375]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 7
+
+INFO for INDEX: [376]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 7
+
+INFO for INDEX: [377]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 7
+
+INFO for INDEX: [378]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 7
+
+INFO for INDEX: [379]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 7
+
+INFO for INDEX: [380]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 7
+
+INFO for INDEX: [381]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView.dispatchLayoutStep2(RecyclerView.java:4129)
+Input: undefined
+Output: 7
+
+INFO for INDEX: [382]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 7
+
+INFO for INDEX: [383]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 7
+
+INFO for INDEX: [384]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 7
+
+INFO for INDEX: [385]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 7
+
+INFO for INDEX: [386]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 7
+
+INFO for INDEX: [387]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 7
+
+INFO for INDEX: [388]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.tryGetViewHolderForPositionByDeadline(RecyclerView.java:6180)
+Input: undefined
+Output: 7
+
+INFO for INDEX: [389]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH onCreateViewHolder(android.view.ViewGroup,int)
+Called by: androidx.recyclerview.widget.RecyclerView$Adapter.createViewHolder(RecyclerView.java:7078)
+Input: 0
+Output: RootItemVH{25bf2ce position=-1 id=-1, oldPos=-1, pLpos:-1 unbound no parent}
+
+INFO for INDEX: [390]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: androidx.recyclerview.widget.RecyclerView$Adapter.onBindViewHolder(RecyclerView.java:7065)
+Input: 6
+Output: undefined
+
+INFO for INDEX: [391]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView.dispatchLayoutStep1(RecyclerView.java:4044)
+Input: undefined
+Output: 8
+
+INFO for INDEX: [392]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 8
+
+INFO for INDEX: [393]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 8
+
+INFO for INDEX: [394]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 8
+
+INFO for INDEX: [395]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 8
+
+INFO for INDEX: [396]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 8
+
+INFO for INDEX: [397]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 8
+
+INFO for INDEX: [398]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 8
+
+INFO for INDEX: [399]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView.dispatchLayoutStep2(RecyclerView.java:4129)
+Input: undefined
+Output: 8
+
+INFO for INDEX: [400]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 8
+
+INFO for INDEX: [401]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 8
+
+INFO for INDEX: [402]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 8
+
+INFO for INDEX: [403]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 8
+
+INFO for INDEX: [404]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 8
+
+INFO for INDEX: [405]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 8
+
+INFO for INDEX: [406]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 8
+
+INFO for INDEX: [407]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.tryGetViewHolderForPositionByDeadline(RecyclerView.java:6180)
+Input: undefined
+Output: 8
+
+INFO for INDEX: [408]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH onCreateViewHolder(android.view.ViewGroup,int)
+Called by: androidx.recyclerview.widget.RecyclerView$Adapter.createViewHolder(RecyclerView.java:7078)
+Input: 0
+Output: RootItemVH{6c13e7 position=-1 id=-1, oldPos=-1, pLpos:-1 unbound no parent}
+
+INFO for INDEX: [409]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: androidx.recyclerview.widget.RecyclerView$Adapter.onBindViewHolder(RecyclerView.java:7065)
+Input: 7
+Output: undefined
+
+INFO for INDEX: [410]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView.dispatchLayoutStep1(RecyclerView.java:4044)
+Input: undefined
+Output: 9
+
+INFO for INDEX: [411]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 9
+
+INFO for INDEX: [412]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 9
+
+INFO for INDEX: [413]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 9
+
+INFO for INDEX: [414]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 9
+
+INFO for INDEX: [415]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 9
+
+INFO for INDEX: [416]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 9
+
+INFO for INDEX: [417]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 9
+
+INFO for INDEX: [418]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 9
+
+INFO for INDEX: [419]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView.dispatchLayoutStep2(RecyclerView.java:4129)
+Input: undefined
+Output: 9
+
+INFO for INDEX: [420]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 9
+
+INFO for INDEX: [421]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 9
+
+INFO for INDEX: [422]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 9
+
+INFO for INDEX: [423]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 9
+
+INFO for INDEX: [424]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 9
+
+INFO for INDEX: [425]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 9
+
+INFO for INDEX: [426]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 9
+
+INFO for INDEX: [427]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 9
+
+INFO for INDEX: [428]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.tryGetViewHolderForPositionByDeadline(RecyclerView.java:6180)
+Input: undefined
+Output: 9
+
+INFO for INDEX: [429]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH onCreateViewHolder(android.view.ViewGroup,int)
+Called by: androidx.recyclerview.widget.RecyclerView$Adapter.createViewHolder(RecyclerView.java:7078)
+Input: 0
+Output: RootItemVH{298392c position=-1 id=-1, oldPos=-1, pLpos:-1 unbound no parent}
+
+INFO for INDEX: [430]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: androidx.recyclerview.widget.RecyclerView$Adapter.onBindViewHolder(RecyclerView.java:7065)
+Input: 8
+Output: undefined
+
+INFO for INDEX: [431]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView.dispatchLayoutStep1(RecyclerView.java:4044)
+Input: undefined
+Output: 10
+
+INFO for INDEX: [432]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 10
+
+INFO for INDEX: [433]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 10
+
+INFO for INDEX: [434]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 10
+
+INFO for INDEX: [435]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 10
+
+INFO for INDEX: [436]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 10
+
+INFO for INDEX: [437]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 10
+
+INFO for INDEX: [438]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 10
+
+INFO for INDEX: [439]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 10
+
+INFO for INDEX: [440]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 10
+
+INFO for INDEX: [441]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView.dispatchLayoutStep2(RecyclerView.java:4129)
+Input: undefined
+Output: 10
+
+INFO for INDEX: [442]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 10
+
+INFO for INDEX: [443]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 10
+
+INFO for INDEX: [444]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 10
+
+INFO for INDEX: [445]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 10
+
+INFO for INDEX: [446]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 10
+
+INFO for INDEX: [447]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 10
+
+INFO for INDEX: [448]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 10
+
+INFO for INDEX: [449]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 10
+
+INFO for INDEX: [450]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 10
+
+INFO for INDEX: [451]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.tryGetViewHolderForPositionByDeadline(RecyclerView.java:6180)
+Input: undefined
+Output: 10
+
+INFO for INDEX: [452]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH onCreateViewHolder(android.view.ViewGroup,int)
+Called by: androidx.recyclerview.widget.RecyclerView$Adapter.createViewHolder(RecyclerView.java:7078)
+Input: 0
+Output: RootItemVH{56728ad position=-1 id=-1, oldPos=-1, pLpos:-1 unbound no parent}
+
+INFO for INDEX: [453]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: androidx.recyclerview.widget.RecyclerView$Adapter.onBindViewHolder(RecyclerView.java:7065)
+Input: 9
+Output: undefined
+
+INFO for INDEX: [454]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView.dispatchLayoutStep1(RecyclerView.java:4044)
+Input: undefined
+Output: 11
+
+INFO for INDEX: [455]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 11
+
+INFO for INDEX: [456]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 11
+
+INFO for INDEX: [457]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 11
+
+INFO for INDEX: [458]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 11
+
+INFO for INDEX: [459]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 11
+
+INFO for INDEX: [460]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 11
+
+INFO for INDEX: [461]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 11
+
+INFO for INDEX: [462]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 11
+
+INFO for INDEX: [463]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 11
+
+INFO for INDEX: [464]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 11
+
+INFO for INDEX: [465]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView.dispatchLayoutStep2(RecyclerView.java:4129)
+Input: undefined
+Output: 11
+
+INFO for INDEX: [466]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 11
+
+INFO for INDEX: [467]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 11
+
+INFO for INDEX: [468]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 11
+
+INFO for INDEX: [469]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 11
+
+INFO for INDEX: [470]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 11
+
+INFO for INDEX: [471]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 11
+
+INFO for INDEX: [472]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 11
+
+INFO for INDEX: [473]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 11
+
+INFO for INDEX: [474]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 11
+
+INFO for INDEX: [475]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 11
+
+INFO for INDEX: [476]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH onCreateViewHolder(android.view.ViewGroup,int)
+Called by: androidx.recyclerview.widget.RecyclerView$Adapter.createViewHolder(RecyclerView.java:7078)
+Input: 0
+Output: RootItemVH{cebe13a position=-1 id=-1, oldPos=-1, pLpos:-1 unbound no parent}
+
+INFO for INDEX: [477]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: androidx.recyclerview.widget.RecyclerView$Adapter.onBindViewHolder(RecyclerView.java:7065)
+Input: 10
+Output: undefined
+
+INFO for INDEX: [478]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1.invokeSuspend(MainActivity.kt:76)
+Input: 2131231011
+Output: uk.co.barbuzz.beerprogressview.BeerProgressView{3385261 V.ED..... ......I. 0,0-480,680 #7f080123 app:id/progressView}
+
+INFO for INDEX: [480]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:137)
+Input: 2131230881
+Output: com.google.android.material.floatingactionbutton.FloatingActionButton{c72ba62 GFED..C.. ........ 372,692-456,776 #7f0800a1 app:id/fab}
+
+INFO for INDEX: [481]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:138)
+Input: 2131230915
+Output: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 G.ED..... ......I. 0,0-0,0 #7f0800c3 app:id/isRootedTextView}
+
+INFO for INDEX: [483]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: private final void rooted()
+Called by: com.scottyab.rootbeer.sample.ui.RootedResultTextView.update(RootedResultTextView.kt:34)
+Input: undefined
+Output: undefined
+
+INFO for INDEX: [482]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: public final void update(boolean)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:138)
+Input: true
+Output: undefined
+
+INFO for INDEX: [484]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:139)
+Input: 2131230915
+Output: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 G.ED..... ......I. 0,0-0,0 #7f0800c3 app:id/isRootedTextView}
+
+INFO for INDEX: [485]
+Class: com.scottyab.rootbeer.sample.extensions.ViewExtensionsKt
+Method: public static final void show(android.view.View)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:139)
+Input: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 V.ED..... ......I. 0,0-0,0 #7f0800c3 app:id/isRootedTextView}
+Output: undefined
+
+INFO for INDEX: [479]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: private final void onRootCheckFinished(boolean)
+Called by: com.scottyab.rootbeer.sample.MainActivity.access$onRootCheckFinished(MainActivity.kt:20)
+Input: true
+Output: undefined
+
+INFO for INDEX: [487]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:137)
+Input: 2131230881
+Output: com.google.android.material.floatingactionbutton.FloatingActionButton{c72ba62 VFED..C.. ........ 372,692-456,776 #7f0800a1 app:id/fab}
+
+INFO for INDEX: [488]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:138)
+Input: 2131230915
+Output: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 V.ED..... ........ 132,312-348,367 #7f0800c3 app:id/isRootedTextView}
+
+INFO for INDEX: [490]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: private final void rooted()
+Called by: com.scottyab.rootbeer.sample.ui.RootedResultTextView.update(RootedResultTextView.kt:34)
+Input: undefined
+Output: undefined
+
+INFO for INDEX: [489]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: public final void update(boolean)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:138)
+Input: true
+Output: undefined
+
+INFO for INDEX: [491]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:139)
+Input: 2131230915
+Output: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 V.ED..... ......ID 132,312-348,367 #7f0800c3 app:id/isRootedTextView}
+
+INFO for INDEX: [492]
+Class: com.scottyab.rootbeer.sample.extensions.ViewExtensionsKt
+Method: public static final void show(android.view.View)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:139)
+Input: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 V.ED..... ......ID 132,312-348,367 #7f0800c3 app:id/isRootedTextView}
+Output: undefined
+
+INFO for INDEX: [486]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: private final void onRootCheckFinished(boolean)
+Called by: com.scottyab.rootbeer.sample.MainActivity.access$onRootCheckFinished(MainActivity.kt:20)
+Input: true
+Output: undefined
+
+INFO for INDEX: [494]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:137)
+Input: 2131230881
+Output: com.google.android.material.floatingactionbutton.FloatingActionButton{c72ba62 VFED..C.. ........ 372,692-456,776 #7f0800a1 app:id/fab}
+
+INFO for INDEX: [495]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:138)
+Input: 2131230915
+Output: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 V.ED..... ........ 132,312-348,367 #7f0800c3 app:id/isRootedTextView}
+
+INFO for INDEX: [497]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: private final void rooted()
+Called by: com.scottyab.rootbeer.sample.ui.RootedResultTextView.update(RootedResultTextView.kt:34)
+Input: undefined
+Output: undefined
+
+INFO for INDEX: [496]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: public final void update(boolean)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:138)
+Input: true
+Output: undefined
+
+INFO for INDEX: [498]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:139)
+Input: 2131230915
+Output: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 V.ED..... ......ID 132,312-348,367 #7f0800c3 app:id/isRootedTextView}
+
+INFO for INDEX: [499]
+Class: com.scottyab.rootbeer.sample.extensions.ViewExtensionsKt
+Method: public static final void show(android.view.View)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:139)
+Input: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 V.ED..... ......ID 132,312-348,367 #7f0800c3 app:id/isRootedTextView}
+Output: undefined
+
+INFO for INDEX: [493]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: private final void onRootCheckFinished(boolean)
+Called by: com.scottyab.rootbeer.sample.MainActivity.access$onRootCheckFinished(MainActivity.kt:20)
+Input: true
+Output: undefined
+
+INFO for INDEX: [501]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:137)
+Input: 2131230881
+Output: com.google.android.material.floatingactionbutton.FloatingActionButton{c72ba62 VFED..C.. ........ 372,692-456,776 #7f0800a1 app:id/fab}
+
+INFO for INDEX: [502]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:138)
+Input: 2131230915
+Output: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 V.ED..... ........ 132,312-348,367 #7f0800c3 app:id/isRootedTextView}
+
+INFO for INDEX: [504]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: private final void rooted()
+Called by: com.scottyab.rootbeer.sample.ui.RootedResultTextView.update(RootedResultTextView.kt:34)
+Input: undefined
+Output: undefined
+
+INFO for INDEX: [503]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: public final void update(boolean)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:138)
+Input: true
+Output: undefined
+
+INFO for INDEX: [505]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:139)
+Input: 2131230915
+Output: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 V.ED..... ......ID 132,312-348,367 #7f0800c3 app:id/isRootedTextView}
+
+INFO for INDEX: [506]
+Class: com.scottyab.rootbeer.sample.extensions.ViewExtensionsKt
+Method: public static final void show(android.view.View)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:139)
+Input: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 V.ED..... ......ID 132,312-348,367 #7f0800c3 app:id/isRootedTextView}
+Output: undefined
+
+INFO for INDEX: [500]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: private final void onRootCheckFinished(boolean)
+Called by: com.scottyab.rootbeer.sample.MainActivity.access$onRootCheckFinished(MainActivity.kt:20)
+Input: true
+Output: undefined
+
+INFO for INDEX: [508]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:137)
+Input: 2131230881
+Output: com.google.android.material.floatingactionbutton.FloatingActionButton{c72ba62 VFED..C.. ........ 372,692-456,776 #7f0800a1 app:id/fab}
+
+INFO for INDEX: [509]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:138)
+Input: 2131230915
+Output: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 V.ED..... ........ 132,312-348,367 #7f0800c3 app:id/isRootedTextView}
+
+INFO for INDEX: [511]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: private final void rooted()
+Called by: com.scottyab.rootbeer.sample.ui.RootedResultTextView.update(RootedResultTextView.kt:34)
+Input: undefined
+Output: undefined
+
+INFO for INDEX: [510]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: public final void update(boolean)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:138)
+Input: true
+Output: undefined
+
+INFO for INDEX: [512]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:139)
+Input: 2131230915
+Output: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 V.ED..... ......ID 132,312-348,367 #7f0800c3 app:id/isRootedTextView}
+
+INFO for INDEX: [513]
+Class: com.scottyab.rootbeer.sample.extensions.ViewExtensionsKt
+Method: public static final void show(android.view.View)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:139)
+Input: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 V.ED..... ......ID 132,312-348,367 #7f0800c3 app:id/isRootedTextView}
+Output: undefined
+
+INFO for INDEX: [507]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: private final void onRootCheckFinished(boolean)
+Called by: com.scottyab.rootbeer.sample.MainActivity.access$onRootCheckFinished(MainActivity.kt:20)
+Input: true
+Output: undefined
+
+INFO for INDEX: [515]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:137)
+Input: 2131230881
+Output: com.google.android.material.floatingactionbutton.FloatingActionButton{c72ba62 VFED..C.. ........ 372,692-456,776 #7f0800a1 app:id/fab}
+
+INFO for INDEX: [516]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:138)
+Input: 2131230915
+Output: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 V.ED..... ........ 132,312-348,367 #7f0800c3 app:id/isRootedTextView}
+
+INFO for INDEX: [518]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: private final void rooted()
+Called by: com.scottyab.rootbeer.sample.ui.RootedResultTextView.update(RootedResultTextView.kt:34)
+Input: undefined
+Output: undefined
+
+INFO for INDEX: [517]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: public final void update(boolean)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:138)
+Input: true
+Output: undefined
+
+INFO for INDEX: [519]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:139)
+Input: 2131230915
+Output: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 V.ED..... ......ID 132,312-348,367 #7f0800c3 app:id/isRootedTextView}
+
+INFO for INDEX: [520]
+Class: com.scottyab.rootbeer.sample.extensions.ViewExtensionsKt
+Method: public static final void show(android.view.View)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:139)
+Input: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 V.ED..... ......ID 132,312-348,367 #7f0800c3 app:id/isRootedTextView}
+Output: undefined
+
+INFO for INDEX: [514]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: private final void onRootCheckFinished(boolean)
+Called by: com.scottyab.rootbeer.sample.MainActivity.access$onRootCheckFinished(MainActivity.kt:20)
+Input: true
+Output: undefined
+
+INFO for INDEX: [522]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:137)
+Input: 2131230881
+Output: com.google.android.material.floatingactionbutton.FloatingActionButton{c72ba62 VFED..C.. ........ 372,692-456,776 #7f0800a1 app:id/fab}
+
+INFO for INDEX: [523]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:138)
+Input: 2131230915
+Output: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 V.ED..... ........ 132,312-348,367 #7f0800c3 app:id/isRootedTextView}
+
+INFO for INDEX: [525]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: private final void rooted()
+Called by: com.scottyab.rootbeer.sample.ui.RootedResultTextView.update(RootedResultTextView.kt:34)
+Input: undefined
+Output: undefined
+
+INFO for INDEX: [524]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: public final void update(boolean)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:138)
+Input: true
+Output: undefined
+
+INFO for INDEX: [526]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:139)
+Input: 2131230915
+Output: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 V.ED..... ......ID 132,312-348,367 #7f0800c3 app:id/isRootedTextView}
+
+INFO for INDEX: [527]
+Class: com.scottyab.rootbeer.sample.extensions.ViewExtensionsKt
+Method: public static final void show(android.view.View)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:139)
+Input: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 V.ED..... ......ID 132,312-348,367 #7f0800c3 app:id/isRootedTextView}
+Output: undefined
+
+INFO for INDEX: [521]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: private final void onRootCheckFinished(boolean)
+Called by: com.scottyab.rootbeer.sample.MainActivity.access$onRootCheckFinished(MainActivity.kt:20)
+Input: true
+Output: undefined
+
+INFO for INDEX: [529]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:137)
+Input: 2131230881
+Output: com.google.android.material.floatingactionbutton.FloatingActionButton{c72ba62 VFED..C.. ........ 372,692-456,776 #7f0800a1 app:id/fab}
+
+INFO for INDEX: [530]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:138)
+Input: 2131230915
+Output: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 V.ED..... ........ 132,312-348,367 #7f0800c3 app:id/isRootedTextView}
+
+INFO for INDEX: [532]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: private final void rooted()
+Called by: com.scottyab.rootbeer.sample.ui.RootedResultTextView.update(RootedResultTextView.kt:34)
+Input: undefined
+Output: undefined
+
+INFO for INDEX: [531]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: public final void update(boolean)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:138)
+Input: true
+Output: undefined
+
+INFO for INDEX: [533]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:139)
+Input: 2131230915
+Output: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 V.ED..... ......ID 132,312-348,367 #7f0800c3 app:id/isRootedTextView}
+
+INFO for INDEX: [534]
+Class: com.scottyab.rootbeer.sample.extensions.ViewExtensionsKt
+Method: public static final void show(android.view.View)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:139)
+Input: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 V.ED..... ......ID 132,312-348,367 #7f0800c3 app:id/isRootedTextView}
+Output: undefined
+
+INFO for INDEX: [528]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: private final void onRootCheckFinished(boolean)
+Called by: com.scottyab.rootbeer.sample.MainActivity.access$onRootCheckFinished(MainActivity.kt:20)
+Input: true
+Output: undefined
+
+INFO for INDEX: [536]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:137)
+Input: 2131230881
+Output: com.google.android.material.floatingactionbutton.FloatingActionButton{c72ba62 VFED..C.. ........ 372,692-456,776 #7f0800a1 app:id/fab}
+
+INFO for INDEX: [537]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:138)
+Input: 2131230915
+Output: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 V.ED..... ........ 132,312-348,367 #7f0800c3 app:id/isRootedTextView}
+
+INFO for INDEX: [539]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: private final void rooted()
+Called by: com.scottyab.rootbeer.sample.ui.RootedResultTextView.update(RootedResultTextView.kt:34)
+Input: undefined
+Output: undefined
+
+INFO for INDEX: [538]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: public final void update(boolean)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:138)
+Input: true
+Output: undefined
+
+INFO for INDEX: [540]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:139)
+Input: 2131230915
+Output: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 V.ED..... ......ID 132,312-348,367 #7f0800c3 app:id/isRootedTextView}
+
+INFO for INDEX: [541]
+Class: com.scottyab.rootbeer.sample.extensions.ViewExtensionsKt
+Method: public static final void show(android.view.View)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:139)
+Input: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 V.ED..... ......ID 132,312-348,367 #7f0800c3 app:id/isRootedTextView}
+Output: undefined
+
+INFO for INDEX: [535]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: private final void onRootCheckFinished(boolean)
+Called by: com.scottyab.rootbeer.sample.MainActivity.access$onRootCheckFinished(MainActivity.kt:20)
+Input: true
+Output: undefined
+
+INFO for INDEX: [543]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:137)
+Input: 2131230881
+Output: com.google.android.material.floatingactionbutton.FloatingActionButton{c72ba62 VFED..C.. ........ 372,692-456,776 #7f0800a1 app:id/fab}
+
+INFO for INDEX: [544]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:138)
+Input: 2131230915
+Output: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 V.ED..... ........ 132,312-348,367 #7f0800c3 app:id/isRootedTextView}
+
+INFO for INDEX: [546]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: private final void rooted()
+Called by: com.scottyab.rootbeer.sample.ui.RootedResultTextView.update(RootedResultTextView.kt:34)
+Input: undefined
+Output: undefined
+
+INFO for INDEX: [545]
+Class: com.scottyab.rootbeer.sample.ui.RootedResultTextView
+Method: public final void update(boolean)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:138)
+Input: true
+Output: undefined
+
+INFO for INDEX: [547]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: public android.view.View _$_findCachedViewById(int)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:139)
+Input: 2131230915
+Output: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 V.ED..... ......ID 132,312-348,367 #7f0800c3 app:id/isRootedTextView}
+
+INFO for INDEX: [548]
+Class: com.scottyab.rootbeer.sample.extensions.ViewExtensionsKt
+Method: public static final void show(android.view.View)
+Called by: com.scottyab.rootbeer.sample.MainActivity.onRootCheckFinished(MainActivity.kt:139)
+Input: com.scottyab.rootbeer.sample.ui.RootedResultTextView{1ad186 V.ED..... ......ID 132,312-348,367 #7f0800c3 app:id/isRootedTextView}
+Output: undefined
+
+INFO for INDEX: [542]
+Class: com.scottyab.rootbeer.sample.MainActivity
+Method: private final void onRootCheckFinished(boolean)
+Called by: com.scottyab.rootbeer.sample.MainActivity.access$onRootCheckFinished(MainActivity.kt:20)
+Input: true
+Output: undefined
+
+INFO for INDEX: [549]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 12
+
+INFO for INDEX: [550]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 12
+
+INFO for INDEX: [551]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 12
+
+INFO for INDEX: [552]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 12
+
+INFO for INDEX: [553]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 12
+
+INFO for INDEX: [554]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 12
+
+INFO for INDEX: [555]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 12
+
+INFO for INDEX: [556]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 12
+
+INFO for INDEX: [557]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 12
+
+INFO for INDEX: [558]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView$Recycler.validateViewHolderForOffsetPosition(RecyclerView.java:5972)
+Input: undefined
+Output: 12
+
+INFO for INDEX: [559]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public int getItemCount()
+Called by: androidx.recyclerview.widget.RecyclerView.dispatchLayoutStep2(RecyclerView.java:4129)
+Input: undefined
+Output: 12
+
+INFO for INDEX: [560]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public com.scottyab.rootbeer.sample.ui.RootItemAdapter$RootItemVH onCreateViewHolder(android.view.ViewGroup,int)
+Called by: androidx.recyclerview.widget.RecyclerView$Adapter.createViewHolder(RecyclerView.java:7078)
+Input: 0
+Output: RootItemVH{2e04f42 position=-1 id=-1, oldPos=-1, pLpos:-1 unbound no parent}
+
+INFO for INDEX: [561]
+Class: com.scottyab.rootbeer.sample.ui.RootItemAdapter
+Method: public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+Called by: androidx.recyclerview.widget.RecyclerView$Adapter.onBindViewHolder(RecyclerView.java:7065)
+Input: 11
+Output: undefined
