@@ -10,3 +10,6 @@
 [submodule "reverse/extra/simplify"]
 	path = reverse/extra/simplify
 	url = https://github.com/CalebFenton/simplify.git
+[submodule "dynamic/extra/rms"]
+	path = dynamic/extra/rms
+	url = https://github.com/m0bilesecurity/RMS-Runtime-Mobile-Security.git
