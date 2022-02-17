@@ -1,9 +1,6 @@
 [submodule "static/extra/apk-malware-samples"]
 	path = static/extra/apk-malware-samples
 	url = https://github.com/quark-engine/apk-malware-samples.git
-[submodule "reverse/extra/jd-gui"]
-	path = reverse/extra/jd-gui
-	url = https://github.com/java-decompiler/jd-gui.git
 [submodule "reverse/extra/simplify"]
 	path = reverse/extra/simplify
 	url = https://github.com/CalebFenton/simplify.git
