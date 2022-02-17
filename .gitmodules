@@ -10,3 +10,6 @@
 [submodule "reverse/extra/dex2jar"]
 	path = reverse/extra/dex2jar
 	url = https://github.com/pxb1988/dex2jar.git
+[submodule "reverse/extra/jd-gui"]
+	path = reverse/extra/jd-gui
+	url = https://github.com/java-decompiler/jd-gui.git
