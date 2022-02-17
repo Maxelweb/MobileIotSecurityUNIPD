@@ -1,6 +1,10 @@
 # VerificaC19 App APK test
 **/verificac19.apk
 **/verificac19-original.apk
+**/**.apk
+**/simplify.jar
+**/smalivm.jar
+**/jd-gui**
 
 # Logs
 logs

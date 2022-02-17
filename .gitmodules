@@ -1,3 +1,18 @@
 [submodule "static/extra/apk-malware-samples"]
 	path = static/extra/apk-malware-samples
 	url = https://github.com/quark-engine/apk-malware-samples
+[submodule "reverse/simplify"]
+	path = reverse/simplify
+	url = https://github.com/CalebFenton/simplify.git
+[submodule "reverse/extra/simplify"]
+	path = reverse/extra/simplify
+	url = https://github.com/CalebFenton/simplify.git
+[submodule "reverse/extra/dex2jar"]
+	path = reverse/extra/dex2jar
+	url = https://github.com/pxb1988/dex2jar
+[submodule "reverse/extra/jd-gui"]
+	path = reverse/extra/jd-gui
+	url = https://github.com/java-decompiler/jd-gui
+[submodule "dynamic/extra/RMS-Runtime-Mobile-Security"]
+	path = dynamic/extra/RMS-Runtime-Mobile-Security
+	url = https://github.com/m0bilesecurity/RMS-Runtime-Mobile-Security
