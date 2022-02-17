@@ -10,3 +10,6 @@
 [submodule "dynamic/extra/rms"]
 	path = dynamic/extra/rms
 	url = https://github.com/m0bilesecurity/RMS-Runtime-Mobile-Security.git
+[submodule "reverse/extra/dex2jar"]
+	path = reverse/extra/dex2jar
+	url = https://github.com/pxb1988/dex2jar.git
