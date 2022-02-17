@@ -1,0 +1,651 @@
+[1 / 20] Processing top level class Lorg/cf/obfuscated/Reflection;
+(1 / 8) Executing top level method: Lorg/cf/obfuscated/Reflection;->secretMethod2()V
+Simplifying: Lorg/cf/obfuscated/Reflection;->secretMethod2()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(2 / 8) Executing top level method: Lorg/cf/obfuscated/Reflection;->reflectSecretMethod2()V
+Simplifying: Lorg/cf/obfuscated/Reflection;->reflectSecretMethod2()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 3
+	dead assignments removed = 11
+	dead ops removed = 0
+	dead results removed = 3
+	nops removed = 0
+	peephole optmizations = 1
+	unreflected fields = 0
+	unreflected methods = 1
+	useless gotos removed = 0
+(2 / 8) Executing top level method: Lorg/cf/obfuscated/Reflection;->reflectSecretMethod2()V
+Simplifying: Lorg/cf/obfuscated/Reflection;->reflectSecretMethod2()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(3 / 8) Executing top level method: Lorg/cf/obfuscated/Reflection;-><clinit>()V
+Simplifying: Lorg/cf/obfuscated/Reflection;-><clinit>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(4 / 8) Executing top level method: Lorg/cf/obfuscated/Reflection;->reflectedFieldLookup()V
+Simplifying: Lorg/cf/obfuscated/Reflection;->reflectedFieldLookup()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 1
+	dead assignments removed = 9
+	dead ops removed = 0
+	dead results removed = 1
+	nops removed = 0
+	peephole optmizations = 2
+	unreflected fields = 1
+	unreflected methods = 0
+	useless gotos removed = 0
+(4 / 8) Executing top level method: Lorg/cf/obfuscated/Reflection;->reflectedFieldLookup()V
+Simplifying: Lorg/cf/obfuscated/Reflection;->reflectedFieldLookup()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(5 / 8) Executing top level method: Lorg/cf/obfuscated/Reflection;->main([Ljava/lang/String;)V
+Simplifying: Lorg/cf/obfuscated/Reflection;->main([Ljava/lang/String;)V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(6 / 8) Executing top level method: Lorg/cf/obfuscated/Reflection;-><init>()V
+Simplifying: Lorg/cf/obfuscated/Reflection;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(7 / 8) Executing top level method: Lorg/cf/obfuscated/Reflection;->secretMethod(Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;)I
+Simplifying: Lorg/cf/obfuscated/Reflection;->secretMethod(Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;)I
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(8 / 8) Executing top level method: Lorg/cf/obfuscated/Reflection;->reflectSecretMethod()V
+Simplifying: Lorg/cf/obfuscated/Reflection;->reflectSecretMethod()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 9
+	dead assignments removed = 21
+	dead ops removed = 0
+	dead results removed = 6
+	nops removed = 0
+	peephole optmizations = 4
+	unreflected fields = 0
+	unreflected methods = 1
+	useless gotos removed = 0
+(8 / 8) Executing top level method: Lorg/cf/obfuscated/Reflection;->reflectSecretMethod()V
+Simplifying: Lorg/cf/obfuscated/Reflection;->reflectSecretMethod()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[2 / 20] Processing top level class Lorg/cf/obfuscated/R$anim;
+(1 / 1) Executing top level method: Lorg/cf/obfuscated/R$anim;-><init>()V
+Simplifying: Lorg/cf/obfuscated/R$anim;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[3 / 20] Processing top level class Lorg/cf/obfuscated/R$dimen;
+(1 / 1) Executing top level method: Lorg/cf/obfuscated/R$dimen;-><init>()V
+Simplifying: Lorg/cf/obfuscated/R$dimen;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[4 / 20] Processing top level class Lorg/cf/obfuscated/R$id;
+(1 / 1) Executing top level method: Lorg/cf/obfuscated/R$id;-><init>()V
+Simplifying: Lorg/cf/obfuscated/R$id;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[5 / 20] Processing top level class Lorg/cf/obfuscated/R$attr;
+(1 / 1) Executing top level method: Lorg/cf/obfuscated/R$attr;-><init>()V
+Simplifying: Lorg/cf/obfuscated/R$attr;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[6 / 20] Processing top level class Lorg/cf/obfuscated/R$string;
+(1 / 1) Executing top level method: Lorg/cf/obfuscated/R$string;-><init>()V
+Simplifying: Lorg/cf/obfuscated/R$string;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[7 / 20] Processing top level class Lorg/cf/obfuscated/R$interpolator;
+(1 / 1) Executing top level method: Lorg/cf/obfuscated/R$interpolator;-><init>()V
+Simplifying: Lorg/cf/obfuscated/R$interpolator;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[8 / 20] Processing top level class Lorg/cf/obfuscated/StringHolder;
+(1 / 5) Executing top level method: Lorg/cf/obfuscated/StringHolder;->get(I)Ljava/lang/String;
+Simplifying: Lorg/cf/obfuscated/StringHolder;->get(I)Ljava/lang/String;
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(2 / 5) Executing top level method: Lorg/cf/obfuscated/StringHolder;->set(ILjava/lang/String;)V
+Simplifying: Lorg/cf/obfuscated/StringHolder;->set(ILjava/lang/String;)V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(3 / 5) Executing top level method: Lorg/cf/obfuscated/StringHolder;->cacheStrings()Ljava/util/Map;
+Simplifying: Lorg/cf/obfuscated/StringHolder;->cacheStrings()Ljava/util/Map;
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 1
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(4 / 5) Executing top level method: Lorg/cf/obfuscated/StringHolder;-><clinit>()V
+Simplifying: Lorg/cf/obfuscated/StringHolder;-><clinit>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 4
+	dead ops removed = 1
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 1
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(5 / 5) Executing top level method: Lorg/cf/obfuscated/StringHolder;-><init>()V
+Simplifying: Lorg/cf/obfuscated/StringHolder;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[9 / 20] Processing top level class Lorg/cf/obfuscated/R$color;
+(1 / 1) Executing top level method: Lorg/cf/obfuscated/R$color;-><init>()V
+Simplifying: Lorg/cf/obfuscated/R$color;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[10 / 20] Processing top level class Lorg/cf/obfuscated/BuildConfig;
+(1 / 1) Executing top level method: Lorg/cf/obfuscated/BuildConfig;-><init>()V
+Simplifying: Lorg/cf/obfuscated/BuildConfig;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[11 / 20] Processing top level class Lorg/cf/obfuscated/MathCrypt;
+(1 / 7) Executing top level method: Lorg/cf/obfuscated/MathCrypt;->encode(I)[I
+Simplifying: Lorg/cf/obfuscated/MathCrypt;->encode(I)[I
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(2 / 7) Executing top level method: Lorg/cf/obfuscated/MathCrypt;->getPrimes()[I
+Skipping optimization of Lorg/cf/obfuscated/MathCrypt;->getPrimes()[I; null execution graph
+(3 / 7) Executing top level method: Lorg/cf/obfuscated/MathCrypt;->decode([I)I
+Simplifying: Lorg/cf/obfuscated/MathCrypt;->decode([I)I
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(4 / 7) Executing top level method: Lorg/cf/obfuscated/MathCrypt;-><clinit>()V
+Simplifying: Lorg/cf/obfuscated/MathCrypt;-><clinit>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(5 / 7) Executing top level method: Lorg/cf/obfuscated/MathCrypt;->main([Ljava/lang/String;)V
+Simplifying: Lorg/cf/obfuscated/MathCrypt;->main([Ljava/lang/String;)V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(6 / 7) Executing top level method: Lorg/cf/obfuscated/MathCrypt;->decode(III)I
+Simplifying: Lorg/cf/obfuscated/MathCrypt;->decode(III)I
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(7 / 7) Executing top level method: Lorg/cf/obfuscated/MathCrypt;-><init>()V
+Simplifying: Lorg/cf/obfuscated/MathCrypt;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[12 / 20] Processing top level class Lorg/cf/obfuscated/R$integer;
+(1 / 1) Executing top level method: Lorg/cf/obfuscated/R$integer;-><init>()V
+Simplifying: Lorg/cf/obfuscated/R$integer;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[13 / 20] Processing top level class Lorg/cf/obfuscated/R$styleable;
+(1 / 2) Executing top level method: Lorg/cf/obfuscated/R$styleable;-><clinit>()V
+Simplifying: Lorg/cf/obfuscated/R$styleable;-><clinit>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(2 / 2) Executing top level method: Lorg/cf/obfuscated/R$styleable;-><init>()V
+Simplifying: Lorg/cf/obfuscated/R$styleable;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[14 / 20] Processing top level class Lorg/cf/obfuscated/R$bool;
+(1 / 1) Executing top level method: Lorg/cf/obfuscated/R$bool;-><init>()V
+Simplifying: Lorg/cf/obfuscated/R$bool;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[15 / 20] Processing top level class Lorg/cf/obfuscated/R$style;
+(1 / 1) Executing top level method: Lorg/cf/obfuscated/R$style;-><init>()V
+Simplifying: Lorg/cf/obfuscated/R$style;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[16 / 20] Processing top level class Lorg/cf/obfuscated/R$layout;
+(1 / 1) Executing top level method: Lorg/cf/obfuscated/R$layout;-><init>()V
+Simplifying: Lorg/cf/obfuscated/R$layout;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[17 / 20] Processing top level class Lorg/cf/obfuscated/R$menu;
+(1 / 1) Executing top level method: Lorg/cf/obfuscated/R$menu;-><init>()V
+Simplifying: Lorg/cf/obfuscated/R$menu;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[18 / 20] Processing top level class Lorg/cf/obfuscated/WhiteNoise;
+(1 / 8) Executing top level method: Lorg/cf/obfuscated/WhiteNoise;->realTarget()V
+Simplifying: Lorg/cf/obfuscated/WhiteNoise;->realTarget()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(2 / 8) Executing top level method: Lorg/cf/obfuscated/WhiteNoise;->messyMethod()V
+Simplifying: Lorg/cf/obfuscated/WhiteNoise;->messyMethod()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 28
+	dead assignments removed = 67
+	dead ops removed = 2
+	dead results removed = 38
+	nops removed = 0
+	peephole optmizations = 3
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(3 / 8) Executing top level method: Lorg/cf/obfuscated/WhiteNoise;->convolutedMethod()I
+Simplifying: Lorg/cf/obfuscated/WhiteNoise;->convolutedMethod()I
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 3
+	dead assignments removed = 2
+	dead ops removed = 0
+	dead results removed = 2
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(4 / 8) Executing top level method: Lorg/cf/obfuscated/WhiteNoise;->stepA1()I
+Simplifying: Lorg/cf/obfuscated/WhiteNoise;->stepA1()I
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 1
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 1
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(5 / 8) Executing top level method: Lorg/cf/obfuscated/WhiteNoise;-><init>()V
+Simplifying: Lorg/cf/obfuscated/WhiteNoise;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(6 / 8) Executing top level method: Lorg/cf/obfuscated/WhiteNoise;->stepA2()I
+Simplifying: Lorg/cf/obfuscated/WhiteNoise;->stepA2()I
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(7 / 8) Executing top level method: Lorg/cf/obfuscated/WhiteNoise;->stepB1()I
+Simplifying: Lorg/cf/obfuscated/WhiteNoise;->stepB1()I
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 1
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 1
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(8 / 8) Executing top level method: Lorg/cf/obfuscated/WhiteNoise;->stepB2()I
+Simplifying: Lorg/cf/obfuscated/WhiteNoise;->stepB2()I
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[19 / 20] Processing top level class Lorg/cf/obfuscated/R;
+(1 / 1) Executing top level method: Lorg/cf/obfuscated/R;-><init>()V
+Simplifying: Lorg/cf/obfuscated/R;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[20 / 20] Processing top level class Lorg/cf/obfuscated/R$drawable;
+(1 / 1) Executing top level method: Lorg/cf/obfuscated/R$drawable;-><init>()V
+Simplifying: Lorg/cf/obfuscated/R$drawable;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+Simplification complete:
+	total classes = 20
+	total methods = 1
+	optimized methods = 45
+	failed methods = 1
+	run time = 7219 ms
+Total optimizations:
+	constantized ifs = 0
+	constantized ops = 47
+	dead assignments removed = 114
+	dead ops removed = 3
+	dead results removed = 52
+	nops removed = 0
+	peephole optmizations = 11
+	unreflected fields = 1
+	unreflected methods = 2
+	useless gotos removed = 0
+Writing output to obfuscated-app_simple.apk

@@ -23,7 +23,9 @@ do
     elif [[ $base == "rootbeer.apk" ]]; then 
         et="ui" it="com/scottyab/rootbeer/sample" 
     elif [[ $base == "verificac19.apk" ]]; then 
-        et="MainActivity" it="*" 
+        et="Test" it="it/ministerodellasalute/verificaC19" 
+    elif [[ $base == "detectfrida.apk" ]]; then 
+        et="MainActivity" it="com/darwin/security" 
     fi
 
     echo "[Experiment] executing $FILE"

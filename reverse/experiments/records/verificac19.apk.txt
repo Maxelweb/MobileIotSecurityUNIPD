@@ -1,0 +1,9 @@
+Simplification complete:
+	total classes = 0
+	total methods = 0
+	optimized methods = 0
+	failed methods = 0
+	run time = 8997 ms
+Total optimizations:
+
+Writing output to verificac19_simple.apk
