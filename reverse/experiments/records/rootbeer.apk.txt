@@ -1,4 +1,4 @@
-[1 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/R$mipmap;
+[1 / 29] Processing top level class Lcom/scottyab/rootbeer/sample/R$mipmap;
 (1 / 1) Executing top level method: Lcom/scottyab/rootbeer/sample/R$mipmap;-><init>()V
 Simplifying: Lcom/scottyab/rootbeer/sample/R$mipmap;-><init>()V
 Optimizations:
@@ -12,7 +12,7 @@ Optimizations:
 	unreflected fields = 0
 	unreflected methods = 0
 	useless gotos removed = 0
-[2 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/R$anim;
+[2 / 29] Processing top level class Lcom/scottyab/rootbeer/sample/R$anim;
 (1 / 1) Executing top level method: Lcom/scottyab/rootbeer/sample/R$anim;-><init>()V
 Simplifying: Lcom/scottyab/rootbeer/sample/R$anim;-><init>()V
 Optimizations:
@@ -26,7 +26,7 @@ Optimizations:
 	unreflected fields = 0
 	unreflected methods = 0
 	useless gotos removed = 0
-[3 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/R$style;
+[3 / 29] Processing top level class Lcom/scottyab/rootbeer/sample/R$style;
 (1 / 1) Executing top level method: Lcom/scottyab/rootbeer/sample/R$style;-><init>()V
 Simplifying: Lcom/scottyab/rootbeer/sample/R$style;-><init>()V
 Optimizations:
@@ -40,7 +40,101 @@ Optimizations:
 	unreflected fields = 0
 	unreflected methods = 0
 	useless gotos removed = 0
-[4 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/RootItemResult;
+[4 / 29] Processing top level class Lcom/scottyab/rootbeer/sample/ui/RootItemAdapter;
+(1 / 9) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/RootItemAdapter;->onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)V
+(2 / 9) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/RootItemAdapter;->clear()V
+Simplifying: Lcom/scottyab/rootbeer/sample/ui/RootItemAdapter;->clear()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(3 / 9) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/RootItemAdapter;->add(Lcom/scottyab/rootbeer/sample/RootItemResult;)V
+Simplifying: Lcom/scottyab/rootbeer/sample/ui/RootItemAdapter;->add(Lcom/scottyab/rootbeer/sample/RootItemResult;)V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(4 / 9) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/RootItemAdapter;->onBindViewHolder(Lcom/scottyab/rootbeer/sample/ui/RootItemAdapter$RootItemVH;I)V
+(5 / 9) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/RootItemAdapter;->onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
+Simplifying: Lcom/scottyab/rootbeer/sample/ui/RootItemAdapter;->onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(6 / 9) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/RootItemAdapter;->getItemCount()I
+Simplifying: Lcom/scottyab/rootbeer/sample/ui/RootItemAdapter;->getItemCount()I
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(7 / 9) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/RootItemAdapter;->onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/scottyab/rootbeer/sample/ui/RootItemAdapter$RootItemVH;
+Simplifying: Lcom/scottyab/rootbeer/sample/ui/RootItemAdapter;->onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/scottyab/rootbeer/sample/ui/RootItemAdapter$RootItemVH;
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(8 / 9) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/RootItemAdapter;-><init>()V
+Simplifying: Lcom/scottyab/rootbeer/sample/ui/RootItemAdapter;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(9 / 9) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/RootItemAdapter;->update(Ljava/util/List;)V
+Simplifying: Lcom/scottyab/rootbeer/sample/ui/RootItemAdapter;->update(Ljava/util/List;)V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[5 / 29] Processing top level class Lcom/scottyab/rootbeer/sample/RootItemResult;
 (1 / 10) Executing top level method: Lcom/scottyab/rootbeer/sample/RootItemResult;->component2()Z
 Simplifying: Lcom/scottyab/rootbeer/sample/RootItemResult;->component2()Z
 Optimizations:
@@ -171,7 +265,21 @@ Optimizations:
 	unreflected fields = 0
 	unreflected methods = 0
 	useless gotos removed = 0
-[5 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/R$plurals;
+[6 / 29] Processing top level class Lcom/scottyab/rootbeer/sample/BuildConfig;
+(1 / 1) Executing top level method: Lcom/scottyab/rootbeer/sample/BuildConfig;-><init>()V
+Simplifying: Lcom/scottyab/rootbeer/sample/BuildConfig;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[7 / 29] Processing top level class Lcom/scottyab/rootbeer/sample/R$plurals;
 (1 / 1) Executing top level method: Lcom/scottyab/rootbeer/sample/R$plurals;-><init>()V
 Simplifying: Lcom/scottyab/rootbeer/sample/R$plurals;-><init>()V
 Optimizations:
@@ -185,24 +293,7 @@ Optimizations:
 	unreflected fields = 0
 	unreflected methods = 0
 	useless gotos removed = 0
-[6 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1;
-(1 / 4) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1;-><init>(ILcom/scottyab/rootbeer/sample/RootItemResult;ILkotlin/coroutines/Continuation;Lcom/scottyab/rootbeer/sample/MainActivity$animateResults$1$1;)V
-Simplifying: Lcom/scottyab/rootbeer/sample/MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1;-><init>(ILcom/scottyab/rootbeer/sample/RootItemResult;ILkotlin/coroutines/Continuation;Lcom/scottyab/rootbeer/sample/MainActivity$animateResults$1$1;)V
-Optimizations:
-	constantized ifs = 0
-	constantized ops = 0
-	dead assignments removed = 0
-	dead ops removed = 0
-	dead results removed = 0
-	nops removed = 0
-	peephole optmizations = 0
-	unreflected fields = 0
-	unreflected methods = 0
-	useless gotos removed = 0
-(2 / 4) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-(3 / 4) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-(4 / 4) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity$animateResults$1$1$invokeSuspend$$inlined$forEachIndexed$lambda$1;->create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
-[7 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/R$interpolator;
+[8 / 29] Processing top level class Lcom/scottyab/rootbeer/sample/R$interpolator;
 (1 / 1) Executing top level method: Lcom/scottyab/rootbeer/sample/R$interpolator;-><init>()V
 Simplifying: Lcom/scottyab/rootbeer/sample/R$interpolator;-><init>()V
 Optimizations:
@@ -216,48 +307,18 @@ Optimizations:
 	unreflected fields = 0
 	unreflected methods = 0
 	useless gotos removed = 0
-[8 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/MainActivity$checkForRoot$1;
-(1 / 4) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity$checkForRoot$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-(2 / 4) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity$checkForRoot$1;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-Simplifying: Lcom/scottyab/rootbeer/sample/MainActivity$checkForRoot$1;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-Optimizations:
-	constantized ifs = 0
-	constantized ops = 0
-	dead assignments removed = 0
-	dead ops removed = 0
-	dead results removed = 0
-	nops removed = 0
-	peephole optmizations = 1
-	unreflected fields = 0
-	unreflected methods = 0
-	useless gotos removed = 0
-(3 / 4) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity$checkForRoot$1;-><init>(Lcom/scottyab/rootbeer/sample/MainActivity;Lkotlin/coroutines/Continuation;)V
-Simplifying: Lcom/scottyab/rootbeer/sample/MainActivity$checkForRoot$1;-><init>(Lcom/scottyab/rootbeer/sample/MainActivity;Lkotlin/coroutines/Continuation;)V
-Optimizations:
-	constantized ifs = 0
-	constantized ops = 0
-	dead assignments removed = 0
-	dead ops removed = 0
-	dead results removed = 0
-	nops removed = 0
-	peephole optmizations = 0
-	unreflected fields = 0
-	unreflected methods = 0
-	useless gotos removed = 0
-(4 / 4) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity$checkForRoot$1;->create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
-Simplifying: Lcom/scottyab/rootbeer/sample/MainActivity$checkForRoot$1;->create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
-Optimizations:
-	constantized ifs = 0
-	constantized ops = 0
-	dead assignments removed = 0
-	dead ops removed = 0
-	dead results removed = 0
-	nops removed = 0
-	peephole optmizations = 0
-	unreflected fields = 0
-	unreflected methods = 0
-	useless gotos removed = 0
-[9 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/R$integer;
+[9 / 29] Processing top level class Lcom/scottyab/rootbeer/sample/ui/RootedResultTextView;
+(1 / 10) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/RootedResultTextView;->update(Z)V
+(2 / 10) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/RootedResultTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+(3 / 10) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/RootedResultTextView;->_$_clearFindViewByIdCache()V
+(4 / 10) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/RootedResultTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+(5 / 10) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/RootedResultTextView;-><init>(Landroid/content/Context;)V
+(6 / 10) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/RootedResultTextView;->_$_findCachedViewById(I)Landroid/view/View;
+(7 / 10) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/RootedResultTextView;->notRooted()V
+(8 / 10) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/RootedResultTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
+(9 / 10) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/RootedResultTextView;->rooted()V
+(10 / 10) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/RootedResultTextView;->setCustomFont(Landroid/content/Context;Ljava/lang/String;)Z
+[10 / 29] Processing top level class Lcom/scottyab/rootbeer/sample/R$integer;
 (1 / 1) Executing top level method: Lcom/scottyab/rootbeer/sample/R$integer;-><init>()V
 Simplifying: Lcom/scottyab/rootbeer/sample/R$integer;-><init>()V
 Optimizations:
@@ -271,22 +332,7 @@ Optimizations:
 	unreflected fields = 0
 	unreflected methods = 0
 	useless gotos removed = 0
-[10 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/MainActivity$initView$1;
-(1 / 2) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity$initView$1;->onClick(Landroid/view/View;)V
-(2 / 2) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity$initView$1;-><init>(Lcom/scottyab/rootbeer/sample/MainActivity;)V
-Simplifying: Lcom/scottyab/rootbeer/sample/MainActivity$initView$1;-><init>(Lcom/scottyab/rootbeer/sample/MainActivity;)V
-Optimizations:
-	constantized ifs = 0
-	constantized ops = 0
-	dead assignments removed = 0
-	dead ops removed = 0
-	dead results removed = 0
-	nops removed = 0
-	peephole optmizations = 0
-	unreflected fields = 0
-	unreflected methods = 0
-	useless gotos removed = 0
-[11 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/R$string;
+[11 / 29] Processing top level class Lcom/scottyab/rootbeer/sample/R$string;
 (1 / 1) Executing top level method: Lcom/scottyab/rootbeer/sample/R$string;-><init>()V
 Simplifying: Lcom/scottyab/rootbeer/sample/R$string;-><init>()V
 Optimizations:
@@ -300,12 +346,7 @@ Optimizations:
 	unreflected fields = 0
 	unreflected methods = 0
 	useless gotos removed = 0
-[12 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/MainActivity$animateResults$1;
-(1 / 4) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity$animateResults$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-(2 / 4) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity$animateResults$1;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-(3 / 4) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity$animateResults$1;->create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
-(4 / 4) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity$animateResults$1;-><init>(Lcom/scottyab/rootbeer/sample/MainActivity;Ljava/util/List;ILkotlin/jvm/internal/Ref$BooleanRef;Lkotlin/coroutines/Continuation;)V
-[13 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/R$animator;
+[12 / 29] Processing top level class Lcom/scottyab/rootbeer/sample/R$animator;
 (1 / 1) Executing top level method: Lcom/scottyab/rootbeer/sample/R$animator;-><init>()V
 Simplifying: Lcom/scottyab/rootbeer/sample/R$animator;-><init>()V
 Optimizations:
@@ -319,34 +360,17 @@ Optimizations:
 	unreflected fields = 0
 	unreflected methods = 0
 	useless gotos removed = 0
-[14 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/MainActivity$showInfoDialog$2;
-(1 / 2) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity$showInfoDialog$2;->onClick(Landroid/content/DialogInterface;I)V
-Simplifying: Lcom/scottyab/rootbeer/sample/MainActivity$showInfoDialog$2;->onClick(Landroid/content/DialogInterface;I)V
-Optimizations:
-	constantized ifs = 0
-	constantized ops = 0
-	dead assignments removed = 0
-	dead ops removed = 0
-	dead results removed = 0
-	nops removed = 0
-	peephole optmizations = 0
-	unreflected fields = 0
-	unreflected methods = 0
-	useless gotos removed = 0
-(2 / 2) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity$showInfoDialog$2;-><init>(Lcom/scottyab/rootbeer/sample/MainActivity;)V
-Simplifying: Lcom/scottyab/rootbeer/sample/MainActivity$showInfoDialog$2;-><init>(Lcom/scottyab/rootbeer/sample/MainActivity;)V
-Optimizations:
-	constantized ifs = 0
-	constantized ops = 0
-	dead assignments removed = 0
-	dead ops removed = 0
-	dead results removed = 0
-	nops removed = 0
-	peephole optmizations = 0
-	unreflected fields = 0
-	unreflected methods = 0
-	useless gotos removed = 0
-[15 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/R$attr;
+[13 / 29] Processing top level class Lcom/scottyab/rootbeer/sample/ui/ResultIconView;
+(1 / 9) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/ResultIconView;->update(Z)V
+(2 / 9) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/ResultIconView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+(3 / 9) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/ResultIconView;->_$_clearFindViewByIdCache()V
+(4 / 9) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/ResultIconView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+(5 / 9) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/ResultIconView;-><init>(Landroid/content/Context;)V
+(6 / 9) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/ResultIconView;->_$_findCachedViewById(I)Landroid/view/View;
+(7 / 9) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/ResultIconView;->showFail()V
+(8 / 9) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/ResultIconView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
+(9 / 9) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/ResultIconView;->showPass()V
+[14 / 29] Processing top level class Lcom/scottyab/rootbeer/sample/R$attr;
 (1 / 1) Executing top level method: Lcom/scottyab/rootbeer/sample/R$attr;-><init>()V
 Simplifying: Lcom/scottyab/rootbeer/sample/R$attr;-><init>()V
 Optimizations:
@@ -360,7 +384,7 @@ Optimizations:
 	unreflected fields = 0
 	unreflected methods = 0
 	useless gotos removed = 0
-[16 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/R$xml;
+[15 / 29] Processing top level class Lcom/scottyab/rootbeer/sample/R$xml;
 (1 / 1) Executing top level method: Lcom/scottyab/rootbeer/sample/R$xml;-><init>()V
 Simplifying: Lcom/scottyab/rootbeer/sample/R$xml;-><init>()V
 Optimizations:
@@ -374,7 +398,7 @@ Optimizations:
 	unreflected fields = 0
 	unreflected methods = 0
 	useless gotos removed = 0
-[17 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/RootSampleApp;
+[16 / 29] Processing top level class Lcom/scottyab/rootbeer/sample/RootSampleApp;
 (1 / 3) Executing top level method: Lcom/scottyab/rootbeer/sample/RootSampleApp;->initStrictMode()V
 (2 / 3) Executing top level method: Lcom/scottyab/rootbeer/sample/RootSampleApp;->onCreate()V
 Simplifying: Lcom/scottyab/rootbeer/sample/RootSampleApp;->onCreate()V
@@ -402,12 +426,23 @@ Optimizations:
 	unreflected fields = 0
 	unreflected methods = 0
 	useless gotos removed = 0
-[18 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/MainActivity$animateResults$1$1;
-(1 / 4) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity$animateResults$1$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-(2 / 4) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity$animateResults$1$1;-><init>(Lcom/scottyab/rootbeer/sample/MainActivity$animateResults$1;Lkotlin/coroutines/Continuation;)V
-(3 / 4) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity$animateResults$1$1;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-(4 / 4) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity$animateResults$1$1;->create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
-[19 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/R$drawable;
+[17 / 29] Processing top level class Lcom/scottyab/rootbeer/sample/ui/RootItemAdapter$RootItemVH;
+(1 / 3) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/RootItemAdapter$RootItemVH;->bind(Lcom/scottyab/rootbeer/sample/RootItemResult;)V
+(2 / 3) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/RootItemAdapter$RootItemVH;-><init>(Landroid/view/View;)V
+(3 / 3) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/RootItemAdapter$RootItemVH;->getContainerView()Landroid/view/View;
+Simplifying: Lcom/scottyab/rootbeer/sample/ui/RootItemAdapter$RootItemVH;->getContainerView()Landroid/view/View;
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[18 / 29] Processing top level class Lcom/scottyab/rootbeer/sample/R$drawable;
 (1 / 1) Executing top level method: Lcom/scottyab/rootbeer/sample/R$drawable;-><init>()V
 Simplifying: Lcom/scottyab/rootbeer/sample/R$drawable;-><init>()V
 Optimizations:
@@ -421,7 +456,7 @@ Optimizations:
 	unreflected fields = 0
 	unreflected methods = 0
 	useless gotos removed = 0
-[20 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/R$layout;
+[19 / 29] Processing top level class Lcom/scottyab/rootbeer/sample/R$layout;
 (1 / 1) Executing top level method: Lcom/scottyab/rootbeer/sample/R$layout;-><init>()V
 Simplifying: Lcom/scottyab/rootbeer/sample/R$layout;-><init>()V
 Optimizations:
@@ -435,7 +470,7 @@ Optimizations:
 	unreflected fields = 0
 	unreflected methods = 0
 	useless gotos removed = 0
-[21 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/extensions/ViewExtensionsKt;
+[20 / 29] Processing top level class Lcom/scottyab/rootbeer/sample/extensions/ViewExtensionsKt;
 (1 / 4) Executing top level method: Lcom/scottyab/rootbeer/sample/extensions/ViewExtensionsKt;->show(Landroid/view/View;)V
 Simplifying: Lcom/scottyab/rootbeer/sample/extensions/ViewExtensionsKt;->show(Landroid/view/View;)V
 Optimizations:
@@ -488,7 +523,7 @@ Optimizations:
 	unreflected fields = 0
 	unreflected methods = 0
 	useless gotos removed = 0
-[22 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/R$color;
+[21 / 29] Processing top level class Lcom/scottyab/rootbeer/sample/R$color;
 (1 / 1) Executing top level method: Lcom/scottyab/rootbeer/sample/R$color;-><init>()V
 Simplifying: Lcom/scottyab/rootbeer/sample/R$color;-><init>()V
 Optimizations:
@@ -502,7 +537,7 @@ Optimizations:
 	unreflected fields = 0
 	unreflected methods = 0
 	useless gotos removed = 0
-[23 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/CheckForRootWorker;
+[22 / 29] Processing top level class Lcom/scottyab/rootbeer/sample/CheckForRootWorker;
 (1 / 3) Executing top level method: Lcom/scottyab/rootbeer/sample/CheckForRootWorker;->getRootResults()Ljava/util/List;
 (2 / 3) Executing top level method: Lcom/scottyab/rootbeer/sample/CheckForRootWorker;-><init>(Landroid/content/Context;)V
 Simplifying: Lcom/scottyab/rootbeer/sample/CheckForRootWorker;-><init>(Landroid/content/Context;)V
@@ -518,7 +553,50 @@ Optimizations:
 	unreflected methods = 0
 	useless gotos removed = 0
 (3 / 3) Executing top level method: Lcom/scottyab/rootbeer/sample/CheckForRootWorker;->invoke(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-[24 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/R;
+[23 / 29] Processing top level class Lcom/scottyab/rootbeer/sample/ui/ScopedActivity;
+(1 / 5) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/ScopedActivity;->_$_clearFindViewByIdCache()V
+Simplifying: Lcom/scottyab/rootbeer/sample/ui/ScopedActivity;->_$_clearFindViewByIdCache()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(2 / 5) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/ScopedActivity;->_$_findCachedViewById(I)Landroid/view/View;
+Simplifying: Lcom/scottyab/rootbeer/sample/ui/ScopedActivity;->_$_findCachedViewById(I)Landroid/view/View;
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(3 / 5) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/ScopedActivity;->onDestroy()V
+Skipping optimization of Lcom/scottyab/rootbeer/sample/ui/ScopedActivity;->onDestroy()V; null execution graph
+(4 / 5) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/ScopedActivity;-><init>()V
+(5 / 5) Executing top level method: Lcom/scottyab/rootbeer/sample/ui/ScopedActivity;->getCoroutineContext()Lkotlin/coroutines/CoroutineContext;
+Simplifying: Lcom/scottyab/rootbeer/sample/ui/ScopedActivity;->getCoroutineContext()Lkotlin/coroutines/CoroutineContext;
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[24 / 29] Processing top level class Lcom/scottyab/rootbeer/sample/R;
 (1 / 1) Executing top level method: Lcom/scottyab/rootbeer/sample/R;-><init>()V
 Simplifying: Lcom/scottyab/rootbeer/sample/R;-><init>()V
 Optimizations:
@@ -532,7 +610,7 @@ Optimizations:
 	unreflected fields = 0
 	unreflected methods = 0
 	useless gotos removed = 0
-[25 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/R$menu;
+[25 / 29] Processing top level class Lcom/scottyab/rootbeer/sample/R$menu;
 (1 / 1) Executing top level method: Lcom/scottyab/rootbeer/sample/R$menu;-><init>()V
 Simplifying: Lcom/scottyab/rootbeer/sample/R$menu;-><init>()V
 Optimizations:
@@ -546,7 +624,7 @@ Optimizations:
 	unreflected fields = 0
 	unreflected methods = 0
 	useless gotos removed = 0
-[26 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/R$styleable;
+[26 / 29] Processing top level class Lcom/scottyab/rootbeer/sample/R$styleable;
 (1 / 2) Executing top level method: Lcom/scottyab/rootbeer/sample/R$styleable;-><clinit>()V
 Simplifying: Lcom/scottyab/rootbeer/sample/R$styleable;-><clinit>()V
 Optimizations:
@@ -573,7 +651,7 @@ Optimizations:
 	unreflected fields = 0
 	unreflected methods = 0
 	useless gotos removed = 0
-[27 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/R$id;
+[27 / 29] Processing top level class Lcom/scottyab/rootbeer/sample/R$id;
 (1 / 1) Executing top level method: Lcom/scottyab/rootbeer/sample/R$id;-><init>()V
 Simplifying: Lcom/scottyab/rootbeer/sample/R$id;-><init>()V
 Optimizations:
@@ -587,114 +665,7 @@ Optimizations:
 	unreflected fields = 0
 	unreflected methods = 0
 	useless gotos removed = 0
-[28 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/MainActivity;
-(1 / 17) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity;->access$onRootCheckFinished(Lcom/scottyab/rootbeer/sample/MainActivity;Z)V
-(2 / 17) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity;->initView()V
-Skipping optimization of Lcom/scottyab/rootbeer/sample/MainActivity;->initView()V; null execution graph
-(3 / 17) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity;->_$_clearFindViewByIdCache()V
-Simplifying: Lcom/scottyab/rootbeer/sample/MainActivity;->_$_clearFindViewByIdCache()V
-Optimizations:
-	constantized ifs = 0
-	constantized ops = 0
-	dead assignments removed = 0
-	dead ops removed = 0
-	dead results removed = 0
-	nops removed = 0
-	peephole optmizations = 0
-	unreflected fields = 0
-	unreflected methods = 0
-	useless gotos removed = 0
-(4 / 17) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity;->checkForRoot()V
-(5 / 17) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity;->onCreate(Landroid/os/Bundle;)V
-(6 / 17) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity;->resetView()V
-(7 / 17) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity;->access$animateResults(Lcom/scottyab/rootbeer/sample/MainActivity;Ljava/util/List;)V
-(8 / 17) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity;->access$getCheckForRoot$p(Lcom/scottyab/rootbeer/sample/MainActivity;)Lcom/scottyab/rootbeer/sample/CheckForRootWorker;
-Simplifying: Lcom/scottyab/rootbeer/sample/MainActivity;->access$getCheckForRoot$p(Lcom/scottyab/rootbeer/sample/MainActivity;)Lcom/scottyab/rootbeer/sample/CheckForRootWorker;
-Optimizations:
-	constantized ifs = 0
-	constantized ops = 0
-	dead assignments removed = 0
-	dead ops removed = 0
-	dead results removed = 0
-	nops removed = 0
-	peephole optmizations = 0
-	unreflected fields = 0
-	unreflected methods = 0
-	useless gotos removed = 0
-(9 / 17) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity;->access$checkForRoot(Lcom/scottyab/rootbeer/sample/MainActivity;)V
-(10 / 17) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
-(11 / 17) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity;->showInfoDialog()V
-(12 / 17) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity;->animateResults(Ljava/util/List;)V
-(13 / 17) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity;->onRootCheckFinished(Z)V
-(14 / 17) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
-Simplifying: Lcom/scottyab/rootbeer/sample/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
-Optimizations:
-	constantized ifs = 0
-	constantized ops = 0
-	dead assignments removed = 0
-	dead ops removed = 0
-	dead results removed = 0
-	nops removed = 0
-	peephole optmizations = 0
-	unreflected fields = 0
-	unreflected methods = 0
-	useless gotos removed = 0
-(15 / 17) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity;-><clinit>()V
-Simplifying: Lcom/scottyab/rootbeer/sample/MainActivity;-><clinit>()V
-Optimizations:
-	constantized ifs = 0
-	constantized ops = 0
-	dead assignments removed = 0
-	dead ops removed = 0
-	dead results removed = 0
-	nops removed = 0
-	peephole optmizations = 0
-	unreflected fields = 0
-	unreflected methods = 0
-	useless gotos removed = 0
-(16 / 17) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity;-><init>()V
-(17 / 17) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
-[29 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/MainActivity$showInfoDialog$1;
-(1 / 3) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity$showInfoDialog$1;-><clinit>()V
-Simplifying: Lcom/scottyab/rootbeer/sample/MainActivity$showInfoDialog$1;-><clinit>()V
-Optimizations:
-	constantized ifs = 0
-	constantized ops = 0
-	dead assignments removed = 0
-	dead ops removed = 0
-	dead results removed = 0
-	nops removed = 0
-	peephole optmizations = 0
-	unreflected fields = 0
-	unreflected methods = 0
-	useless gotos removed = 0
-(2 / 3) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity$showInfoDialog$1;-><init>()V
-Simplifying: Lcom/scottyab/rootbeer/sample/MainActivity$showInfoDialog$1;-><init>()V
-Optimizations:
-	constantized ifs = 0
-	constantized ops = 0
-	dead assignments removed = 0
-	dead ops removed = 0
-	dead results removed = 0
-	nops removed = 0
-	peephole optmizations = 0
-	unreflected fields = 0
-	unreflected methods = 0
-	useless gotos removed = 0
-(3 / 3) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity$showInfoDialog$1;->onClick(Landroid/content/DialogInterface;I)V
-Simplifying: Lcom/scottyab/rootbeer/sample/MainActivity$showInfoDialog$1;->onClick(Landroid/content/DialogInterface;I)V
-Optimizations:
-	constantized ifs = 0
-	constantized ops = 0
-	dead assignments removed = 0
-	dead ops removed = 0
-	dead results removed = 0
-	nops removed = 0
-	peephole optmizations = 0
-	unreflected fields = 0
-	unreflected methods = 0
-	useless gotos removed = 0
-[30 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/R$dimen;
+[28 / 29] Processing top level class Lcom/scottyab/rootbeer/sample/R$dimen;
 (1 / 1) Executing top level method: Lcom/scottyab/rootbeer/sample/R$dimen;-><init>()V
 Simplifying: Lcom/scottyab/rootbeer/sample/R$dimen;-><init>()V
 Optimizations:
@@ -708,7 +679,7 @@ Optimizations:
 	unreflected fields = 0
 	unreflected methods = 0
 	useless gotos removed = 0
-[31 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/R$bool;
+[29 / 29] Processing top level class Lcom/scottyab/rootbeer/sample/R$bool;
 (1 / 1) Executing top level method: Lcom/scottyab/rootbeer/sample/R$bool;-><init>()V
 Simplifying: Lcom/scottyab/rootbeer/sample/R$bool;-><init>()V
 Optimizations:
@@ -722,39 +693,12 @@ Optimizations:
 	unreflected fields = 0
 	unreflected methods = 0
 	useless gotos removed = 0
-[32 / 32] Processing top level class Lcom/scottyab/rootbeer/sample/MainActivity$Companion;
-(1 / 2) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity$Companion;-><init>()V
-Simplifying: Lcom/scottyab/rootbeer/sample/MainActivity$Companion;-><init>()V
-Optimizations:
-	constantized ifs = 0
-	constantized ops = 0
-	dead assignments removed = 0
-	dead ops removed = 0
-	dead results removed = 0
-	nops removed = 0
-	peephole optmizations = 0
-	unreflected fields = 0
-	unreflected methods = 0
-	useless gotos removed = 0
-(2 / 2) Executing top level method: Lcom/scottyab/rootbeer/sample/MainActivity$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
-Simplifying: Lcom/scottyab/rootbeer/sample/MainActivity$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
-Optimizations:
-	constantized ifs = 0
-	constantized ops = 0
-	dead assignments removed = 0
-	dead ops removed = 0
-	dead results removed = 0
-	nops removed = 0
-	peephole optmizations = 0
-	unreflected fields = 0
-	unreflected methods = 0
-	useless gotos removed = 0
 Simplification complete:
-	total classes = 32
-	total methods = 2
-	optimized methods = 82
-	failed methods = 29
-	run time = 37427 ms
+	total classes = 29
+	total methods = 1
+	optimized methods = 77
+	failed methods = 28
+	run time = 72776 ms
 Total optimizations:
 	constantized ifs = 0
 	constantized ops = 0
@@ -762,7 +706,7 @@ Total optimizations:
 	dead ops removed = 0
 	dead results removed = 0
 	nops removed = 0
-	peephole optmizations = 1
+	peephole optmizations = 0
 	unreflected fields = 0
 	unreflected methods = 0
 	useless gotos removed = 0

@@ -1,9 +1,416 @@
+[1 / 29] Processing top level class Lcom/darvin/security/R$layout;
+(1 / 1) Executing top level method: Lcom/darvin/security/R$layout;-><init>()V
+Simplifying: Lcom/darvin/security/R$layout;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[2 / 29] Processing top level class Landroid/support/compat/R$drawable;
+(1 / 1) Executing top level method: Landroid/support/compat/R$drawable;-><init>()V
+Simplifying: Landroid/support/compat/R$drawable;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[3 / 29] Processing top level class Lcom/darvin/security/R$anim;
+(1 / 1) Executing top level method: Lcom/darvin/security/R$anim;-><init>()V
+Simplifying: Lcom/darvin/security/R$anim;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[4 / 29] Processing top level class Landroid/support/compat/R$attr;
+(1 / 1) Executing top level method: Landroid/support/compat/R$attr;-><init>()V
+Simplifying: Landroid/support/compat/R$attr;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[5 / 29] Processing top level class Landroid/support/constraint/solver/LinearSystem;
+(1 / 1) Executing top level method: Landroid/support/constraint/solver/LinearSystem;->computeValues()V
+Skipping optimization of Landroid/support/constraint/solver/LinearSystem;->computeValues()V; null execution graph
+[6 / 29] Processing top level class Landroid/support/compat/R$string;
+(1 / 1) Executing top level method: Landroid/support/compat/R$string;-><init>()V
+Simplifying: Landroid/support/compat/R$string;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[7 / 29] Processing top level class Landroid/support/compat/R$styleable;
+(1 / 2) Executing top level method: Landroid/support/compat/R$styleable;-><clinit>()V
+Simplifying: Landroid/support/compat/R$styleable;-><clinit>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(2 / 2) Executing top level method: Landroid/support/compat/R$styleable;-><init>()V
+Simplifying: Landroid/support/compat/R$styleable;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[8 / 29] Processing top level class Lcom/darvin/security/R$id;
+(1 / 1) Executing top level method: Lcom/darvin/security/R$id;-><init>()V
+Simplifying: Lcom/darvin/security/R$id;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[9 / 29] Processing top level class Landroid/support/compat/R$integer;
+(1 / 1) Executing top level method: Landroid/support/compat/R$integer;-><init>()V
+Simplifying: Landroid/support/compat/R$integer;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[10 / 29] Processing top level class Lcom/darvin/security/R$attr;
+(1 / 1) Executing top level method: Lcom/darvin/security/R$attr;-><init>()V
+Simplifying: Lcom/darvin/security/R$attr;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[11 / 29] Processing top level class Lcom/darvin/security/R$styleable;
+(1 / 2) Executing top level method: Lcom/darvin/security/R$styleable;-><clinit>()V
+Simplifying: Lcom/darvin/security/R$styleable;-><clinit>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+(2 / 2) Executing top level method: Lcom/darvin/security/R$styleable;-><init>()V
+Simplifying: Lcom/darvin/security/R$styleable;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[12 / 29] Processing top level class Landroid/support/compat/R;
+(1 / 1) Executing top level method: Landroid/support/compat/R;-><init>()V
+Simplifying: Landroid/support/compat/R;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[13 / 29] Processing top level class Lcom/darvin/security/R$dimen;
+(1 / 1) Executing top level method: Lcom/darvin/security/R$dimen;-><init>()V
+Simplifying: Lcom/darvin/security/R$dimen;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[14 / 29] Processing top level class Lcom/darvin/security/R;
+(1 / 1) Executing top level method: Lcom/darvin/security/R;-><init>()V
+Simplifying: Lcom/darvin/security/R;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[15 / 29] Processing top level class Landroid/support/compat/R$layout;
+(1 / 1) Executing top level method: Landroid/support/compat/R$layout;-><init>()V
+Simplifying: Landroid/support/compat/R$layout;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[16 / 29] Processing top level class Landroid/support/compat/R$color;
+(1 / 1) Executing top level method: Landroid/support/compat/R$color;-><init>()V
+Simplifying: Landroid/support/compat/R$color;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[17 / 29] Processing top level class Lcom/darvin/security/R$style;
+(1 / 1) Executing top level method: Lcom/darvin/security/R$style;-><init>()V
+Simplifying: Lcom/darvin/security/R$style;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[18 / 29] Processing top level class Lcom/darvin/security/R$string;
+(1 / 1) Executing top level method: Lcom/darvin/security/R$string;-><init>()V
+Simplifying: Lcom/darvin/security/R$string;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[19 / 29] Processing top level class Lcom/darvin/security/R$integer;
+(1 / 1) Executing top level method: Lcom/darvin/security/R$integer;-><init>()V
+Simplifying: Lcom/darvin/security/R$integer;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[20 / 29] Processing top level class Lcom/darvin/security/R$mipmap;
+(1 / 1) Executing top level method: Lcom/darvin/security/R$mipmap;-><init>()V
+Simplifying: Lcom/darvin/security/R$mipmap;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[21 / 29] Processing top level class Landroid/support/compat/R$dimen;
+(1 / 1) Executing top level method: Landroid/support/compat/R$dimen;-><init>()V
+Simplifying: Landroid/support/compat/R$dimen;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[22 / 29] Processing top level class Landroid/arch/lifecycle/ComputableLiveData;
+[1 / 1] Skipping top level method without implementation: Landroid/arch/lifecycle/ComputableLiveData;->compute()Ljava/lang/Object;
+[23 / 29] Processing top level class Lcom/darvin/security/R$drawable;
+(1 / 1) Executing top level method: Lcom/darvin/security/R$drawable;-><init>()V
+Simplifying: Lcom/darvin/security/R$drawable;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[24 / 29] Processing top level class Lcom/darvin/security/R$color;
+(1 / 1) Executing top level method: Lcom/darvin/security/R$color;-><init>()V
+Simplifying: Lcom/darvin/security/R$color;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[25 / 29] Processing top level class Landroid/support/compat/R$style;
+(1 / 1) Executing top level method: Landroid/support/compat/R$style;-><init>()V
+Simplifying: Landroid/support/compat/R$style;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[26 / 29] Processing top level class Landroid/support/constraint/solver/widgets/ConstraintTableLayout;
+(1 / 1) Executing top level method: Landroid/support/constraint/solver/widgets/ConstraintTableLayout;->computeGuidelinesPercentPositions()V
+Skipping optimization of Landroid/support/constraint/solver/widgets/ConstraintTableLayout;->computeGuidelinesPercentPositions()V; null execution graph
+[27 / 29] Processing top level class Lcom/darvin/security/BuildConfig;
+(1 / 1) Executing top level method: Lcom/darvin/security/BuildConfig;-><init>()V
+Simplifying: Lcom/darvin/security/BuildConfig;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[28 / 29] Processing top level class Lcom/darvin/security/R$bool;
+(1 / 1) Executing top level method: Lcom/darvin/security/R$bool;-><init>()V
+Simplifying: Lcom/darvin/security/R$bool;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
+[29 / 29] Processing top level class Landroid/support/compat/R$id;
+(1 / 1) Executing top level method: Landroid/support/compat/R$id;-><init>()V
+Simplifying: Landroid/support/compat/R$id;-><init>()V
+Optimizations:
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
 Simplification complete:
-	total classes = 0
-	total methods = 0
-	optimized methods = 0
-	failed methods = 0
-	run time = 1830 ms
+	total classes = 29
+	total methods = 1
+	optimized methods = 30
+	failed methods = 2
+	run time = 7665 ms
 Total optimizations:
-
+	constantized ifs = 0
+	constantized ops = 0
+	dead assignments removed = 0
+	dead ops removed = 0
+	dead results removed = 0
+	nops removed = 0
+	peephole optmizations = 0
+	unreflected fields = 0
+	unreflected methods = 0
+	useless gotos removed = 0
 Writing output to detectfrida_simple.apk

@@ -636,7 +636,7 @@ Simplification complete:
 	total methods = 1
 	optimized methods = 45
 	failed methods = 1
-	run time = 7219 ms
+	run time = 7991 ms
 Total optimizations:
 	constantized ifs = 0
 	constantized ops = 47
