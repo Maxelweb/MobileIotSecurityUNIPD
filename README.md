@@ -5,9 +5,9 @@ Analysis on Mobile Security tools - Mobile and Iot Security Project @ UNIPD 2021
 
 ## Security Analysis Tool 
 
-- Quark Engine
-- RMS
-- Simplify
+- Quark Engine (Static)
+- RMS (Dynamic)
+- Simplify (Reverse)
 
 ### Quark experiments
 
@@ -22,4 +22,4 @@ Analysis on Mobile Security tools - Mobile and Iot Security Project @ UNIPD 2021
 
 ### Simplify experiments
 
-- Obfuscation compile time
+- De-obfuscation
