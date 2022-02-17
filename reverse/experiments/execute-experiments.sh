@@ -19,13 +19,13 @@ do
     if [[ $base == ".gitkeep" ]]; then 
         continue
     elif [[ $base == "obfuscated-app.apk" ]]; then 
-        et="MainActivity" it="org/cf/obfuscated" 
+        it="org/cf/obfuscated" 
     elif [[ $base == "rootbeer.apk" ]]; then 
-        et="ui" it="com/scottyab/rootbeer/sample" 
+        it="com/scottyab/rootbeer/sample" 
     elif [[ $base == "verificac19.apk" ]]; then 
-        et="Test" it="it/ministerodellasalute/verificaC19" 
+        it="it" 
     elif [[ $base == "detectfrida.apk" ]]; then 
-        et="MainActivity" it="com/darwin/security" 
+        it="com" 
     fi
 
     echo "[Experiment] executing $FILE"
@@ -36,8 +36,8 @@ do
         --max-execution-time 10 \
         --max-method-visits 1000 \
         --max-passes 10 \
-        -et $et \
         -it $it \
+        -et "MainActivity" \
         > records/"$base".txt
 
     end=$(date +%s)
