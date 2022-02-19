@@ -16,7 +16,7 @@ for FILE in apps/*
 do
     base=$(basename "$FILE")
     start=$(date +%s.%N)
-    if [[ $base == ".gitkeep" ]]; then 
+    if [[ $base == "README.md" ]]; then 
         continue
     elif [[ $base == "obfuscated-app.apk" ]]; then 
         it="org/cf/obfuscated" 
